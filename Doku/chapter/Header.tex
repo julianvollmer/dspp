@@ -1,0 +1,91 @@
+%!TEX root = ../DSPP.tex
+\documentclass[10pt, a4paper]{scrreprt}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc} % needed to display the pipe symbol correct
+\usepackage[utf8x]{inputenc}
+\usepackage{cite}
+\usepackage[colorlinks]{hyperref}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{mathtools}
+\usepackage{tikz} % Charts
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{tocloft}
+\usepackage{moreverb}
+\usepackage{supertabular}
+\usepackage[tracking,kerning,spacing]{microtype} 
+\usepackage{lmodern}                    % optimierte Standard-Schrift für nicht-englische Texte
+\usepackage[section]{placeins}      % Gleitobjekte dürfen jetzt sections nicht mehr verlassen
+% Optionen für die PDF Ausgabe und Hyperlinks
+\hypersetup{
+    pdftitle={Bachelorarbeit Julian Vollmer, HTW Berlin, Wintersemester 2011/2012},
+    pdfauthor={Julian Vollmer},
+    pdfsubject={Datenanalyse zur Erkennung des Händigkeitsprofil bei Kindern},
+    pdfcreator={Julian Vollmer},
+    colorlinks=true,    % false: boxed links; true: colored links
+    linkcolor=black,    % color of internal links
+    citecolor=black,    % color of links to bibliography
+    filecolor=black,    % color of file links
+    urlcolor=black        % color of external links
+}
+
+\lstset{
+language=Java, % oder C++, Pascal, {[77]Fortran}, ...
+numbers=left, % Position der Zeilennummerierung
+firstnumber=auto, % Erste Zeilennummer
+basicstyle=\ttfamily, % Textgröße des Standardtexts
+keywordstyle=\ttfamily\color{darkgviolett}, % Formattierung Schlüsselwörter
+commentstyle=\ttfamily\color{darkgreen}, % Formattierung Kommentar
+stringstyle=\ttfamily\color{blue}, % Formattierung Strings
+numberstyle=\tiny, % Textgröße der Zeilennummern
+stepnumber=1, % Angezeigte Zeilennummern
+numbersep=5pt, % Abstand zw. Zeilennummern und Code
+aboveskip=15pt, % Abstand oberhalb des Codes
+belowskip=11pt, % Abstand unterhalb des Codes
+captionpos=b, % Position der Überschrift
+xleftmargin=10pt, % Linke Einrückung
+frame=single, % Rahmentyp
+breaklines=true, % Umbruch langer Zeilen
+showstringspaces=false % Spezielles Zeichen für Leerzeichen
+}
+
+\newenvironment{mylisting}
+{\begin{list}{}{\setlength{\leftmargin}{1em}}\item\scriptsize\bfseries}
+{\end{list}}
+
+\newenvironment{mytinylisting}
+{\begin{list}{}{\setlength{\leftmargin}{1em}}\item\tiny\bfseries}
+{\end{list}}
+
+%\usepackage{glossaries}
+%\input{glossar}
+%\makeglossaries
+
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\parindent0pt % Nicht einrücken
+\usepackage{geometry}
+%\geometry{a4paper,left=30mm,right=30mm, top=20mm, bottom=20mm} 
+\nonfrenchspacing
+\pagestyle{headings}
+\definecolor{darkblue}{rgb}{0,0,.5}
+\hypersetup{pdftex=true, colorlinks=true, breaklinks=true, linkcolor=darkblue, menucolor=darkblue, pagecolor=darkblue, urlcolor=darkblue}
+\definecolor{tblUeberschriftFarbe}{rgb}{0.8,0.8,0.8}
+\cellcolor{tblUeberschriftFarbe}
+
+\renewcommand{\cftfigpresnum}{Abb. } % Name vor der Nr. 
+\renewcommand{\cftfigaftersnum}{:} % Doppelpunkt nach der Nr.
+\settowidth{\cftfignumwidth}{Abb. 100\quad}
+
+\title{Museumstechnologien - \textbf{"`Möglichkeiten von Wireless Technologien in Museen"'}}
+\author{Julian Vollmer}
+\date{\today}
