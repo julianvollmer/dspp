@@ -22,23 +22,23 @@
 \usepackage{moreverb}
 \usepackage{supertabular}
 \usepackage[tracking,kerning,spacing]{microtype} 
-\usepackage{lmodern}                    % optimierte Standard-Schrift für nicht-englische Texte
+\usepackage{lmodern}                % optimierte Standard-Schrift für nicht-englische Texte
 \usepackage[section]{placeins}      % Gleitobjekte dürfen jetzt sections nicht mehr verlassen
 % Optionen für die PDF Ausgabe und Hyperlinks
 \hypersetup{
-    pdftitle={Bachelorarbeit Julian Vollmer, HTW Berlin, Wintersemester 2011/2012},
-    pdfauthor={Julian Vollmer},
-    pdfsubject={Datenanalyse zur Erkennung des Händigkeitsprofil bei Kindern},
+    pdftitle={Distributed Systems and Parallel Processing},
+    pdfauthor={Julian Vollmer, Philip Stewart},
+    pdfsubject={openCL},
     pdfcreator={Julian Vollmer},
     colorlinks=true,    % false: boxed links; true: colored links
     linkcolor=black,    % color of internal links
     citecolor=black,    % color of links to bibliography
     filecolor=black,    % color of file links
-    urlcolor=black        % color of external links
+    urlcolor=black      % color of external links
 }
 
 \lstset{
-language=Java, % oder C++, Pascal, {[77]Fortran}, ...
+language=C++, % oder C++, Pascal, {[77]Fortran}, ...
 numbers=left, % Position der Zeilennummerierung
 firstnumber=auto, % Erste Zeilennummer
 basicstyle=\ttfamily, % Textgröße des Standardtexts
@@ -72,13 +72,12 @@ showstringspaces=false % Spezielles Zeichen für Leerzeichen
 \DeclareCaptionFont{white}{\color{white}}
 \DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
-\parindent0pt % Nicht einrücken
-\usepackage{geometry}
-%\geometry{a4paper,left=30mm,right=30mm, top=20mm, bottom=20mm} 
+\parindent0pt 			% Nicht einrücken
+\usepackage{geometry}	%\geometry{a4paper,left=30mm,right=30mm, top=20mm, bottom=20mm} 
 \nonfrenchspacing
 \pagestyle{headings}
 \definecolor{darkblue}{rgb}{0,0,.5}
-\hypersetup{pdftex=true, colorlinks=true, breaklinks=true, linkcolor=darkblue, menucolor=darkblue, pagecolor=darkblue, urlcolor=darkblue}
+\hypersetup{colorlinks=true, breaklinks=true, linkcolor=darkblue, menucolor=darkblue,  urlcolor=darkblue}
 \definecolor{tblUeberschriftFarbe}{rgb}{0.8,0.8,0.8}
 \cellcolor{tblUeberschriftFarbe}
 
@@ -86,6 +85,6 @@ showstringspaces=false % Spezielles Zeichen für Leerzeichen
 \renewcommand{\cftfigaftersnum}{:} % Doppelpunkt nach der Nr.
 \settowidth{\cftfignumwidth}{Abb. 100\quad}
 
-\title{Museumstechnologien - \textbf{"`Möglichkeiten von Wireless Technologien in Museen"'}}
+\title{Distributed Systems and Parallel Processing - \textbf{"`???"'}}
 \author{Julian Vollmer}
 \date{\today}

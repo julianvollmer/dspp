@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 APR 2013 00:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 APR 2013 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,13 +846,16 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (/usr/local/texlive/2012/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/ucs/data/uni-0.def
-File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
-)
 Package hyperref Info: Option `colorlinks' set `true' on input line 38.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -869,16 +872,10 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen206
 \Gm@dimlist=\toks41
 )
-
-Package hyperref Warning: Option `pdftex' has already been used,
-(hyperref)                setting the option has no effect on input line 81.
-
-Package hyperref Info: Option `colorlinks' set `true' on input line 81.
-Package hyperref Info: Option `breaklinks' set `true' on input line 81.
-
-Package hyperref Warning: Option `pagecolor' is not available anymore.
-
-) (./DSPP.aux)
+Package hyperref Info: Option `colorlinks' set `true' on input line 80.
+Package hyperref Info: Option `breaklinks' set `true' on input line 80.
+)
+(./DSPP.aux)
 \openout1 = `DSPP.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1097,10 +1094,14 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-(./chapter/10_einleitung.tex) [3
+(./chapter/10_einleitung.tex
+(/usr/local/texlive/2012/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
+)) [3
 
 
-] (./DSPP.lof)
+]
+(./DSPP.lof)
 \tf@lof=\write6
 \openout6 = `DSPP.lof'.
 
@@ -1119,13 +1120,13 @@ Package rerunfilecheck Info: File `DSPP.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
  ) 
 Here is how much of TeX's memory you used:
- 22034 strings out of 493488
- 382089 string characters out of 3141326
- 523292 words of memory out of 3000000
- 24911 multiletter control sequences out of 15000+200000
+ 22059 strings out of 493488
+ 382713 string characters out of 3141326
+ 520799 words of memory out of 3000000
+ 24932 multiletter control sequences out of 15000+200000
  49318 words of font info for 45 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 67i,7n,71p,894b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 67i,7n,71p,978b,482s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
 texlive/2012/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/20
 12/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2012/texmf-d
@@ -1133,7 +1134,7 @@ ist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
 ype1/public/lm/lmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public
 /lm/lmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/lmri12.
 pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on DSPP.pdf (4 pages, 233827 bytes).
+Output written on DSPP.pdf (4 pages, 233763 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream

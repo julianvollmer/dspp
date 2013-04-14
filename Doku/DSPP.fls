@@ -210,10 +210,12 @@ INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/placeins/placeins.sty
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/placeins/placeins.sty
-INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/ucs/data/uni-0.def
-INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/ucs/data/uni-0.def
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT DSPP.aux
@@ -289,6 +291,8 @@ OUTPUT DSPP.toc
 INPUT ./chapter/10_einleitung.tex
 INPUT ./chapter/10_einleitung.tex
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/ucs/data/uni-0.def
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/ucs/data/uni-0.def
 INPUT DSPP.lof
 INPUT DSPP.lof
 OUTPUT DSPP.lof
