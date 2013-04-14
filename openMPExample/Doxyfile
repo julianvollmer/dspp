@@ -1,0 +1,19 @@
+docOUTPUT_DIRECTORY        = doc
+# Basis für die Dokumentation ist das aktuelle Verzeichnis.
+INPUT                   = .
+EXCLUDE_PATTERNS	= *.h
+# Alle in Frage kommenden Dateien werden untersucht.
+EXTRACT_ALL             = YES
+# Das Werkzeug dot wird zum Zeichnen der Aufrufhierarchie benutzt.
+# Es gehört zur Visualisierungssoftware Graphviz.
+# Siehe:    http://www.graphviz.org/
+HAVE_DOT                = YES
+# Die Aufrufhierarchie wird erstellt.
+CALL_GRAPH              = YES
+SHORT_NAMES 		= YES
+OPTIMIZE_OUTPUT_FOR_C	= YES
+# Latex Optionen
+GENERATE_LATEX		= NO
+PAPER_TYPE		= a4
+USE_PDFLATEX		= YES
+
