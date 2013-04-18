@@ -17,8 +17,8 @@ int main( int argc, const char* argv[] )
    cout << endl;
    return 0;
 
-   PathElement p = new PathElement();
-   p.writeNeighbor();
+   // PathElement p = new PathElement();
+   // p.writeNeighbor();
 }
 
 

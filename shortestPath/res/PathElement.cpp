@@ -2,10 +2,10 @@
 
 class PathElement
 {
+public:
     PathElement(){}    
     ~PathElement(){} 
-
-  
+    PathElement::writeNeighbor();
 
 };
 
