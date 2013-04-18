@@ -1,0 +1,79 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>libs/mein_zufall.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Erzeugt von Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Auflistung&nbsp;der&nbsp;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+<h1>libs/mein_zufall.h</h1><a href="mein__zufall_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef _MEIN_ZUFALL_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define _MEIN_ZUFALL_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &lt;cstdio&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;cstdlib&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;ctime&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00007"></a>00007 <span class="keyword">using namespace </span>std;
+<a name="l00008"></a>00008 <span class="keywordtype">void</span> <a class="code" href="mein__zufall_8cpp.html#ad8076fcc381dc1998e84e91356cf6349">initialisiere_zufallsgenerator</a>(<span class="keywordtype">void</span>);
+<a name="l00009"></a>00009 <span class="keywordtype">int</span> <a class="code" href="mein__zufall_8cpp.html#a97ee4d988f63d5afa24abb44c7126770">zufallszahl_int</a>(<span class="keywordtype">int</span> max);
+<a name="l00010"></a>00010 <span class="keywordtype">int</span> <a class="code" href="mein__zufall_8cpp.html#a59450f41ec4c9e9061c19fc494e0e804">liefere_ganze_zufallszahl</a>(<span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max);
+<a name="l00011"></a>00011 <span class="keywordtype">double</span> <a class="code" href="mein__zufall_8cpp.html#abf028db593c155dc6753338773653372">zufallszahl_dbl</a>();
+<a name="l00012"></a>00012 <span class="keywordtype">double</span> <a class="code" href="mein__zufall_8cpp.html#a06e20618a67c1a5b1b3c8b2a088356af">zufallszahl_dbl_max</a>(<span class="keywordtype">double</span> max);
+<a name="l00013"></a>00013 <span class="keywordtype">double</span> <a class="code" href="mein__zufall_8cpp.html#ab87584b0dce9ddeb6c30f29f2d022165">zufallszahl_dbl_min_max</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max);
+<a name="l00014"></a>00014 <span class="keywordtype">char</span> <a class="code" href="mein__zufall_8h.html#aff50220ab62d2fa4de5f2bf5697b967b">liefere_zufallszahl_als_char</a>();
+<a name="l00015"></a>00015 <span class="keywordtype">string</span> <a class="code" href="mein__zufall_8h.html#a297393eed02f714c9f86806edf168ef0">liefere_zufallszahl_als_string</a>( <span class="keywordtype">int</span> laenge);
+<a name="l00016"></a>00016 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Typdefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Makrodefinitionen</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Erzeugt am Fri Jul 9 12:05:28 2010 von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

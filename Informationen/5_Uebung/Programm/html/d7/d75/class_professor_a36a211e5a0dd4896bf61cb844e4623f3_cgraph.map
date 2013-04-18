@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$d6/d66/class_fachbereich.html#ac6185247a468f4e677423ebf080c6b05" title="Fachbereich::get_fachbereich" alt="" coords="227,5,419,35"/>
+<area shape="rect" href="$df/d5a/class_sprechstunde.html#a5370d40871d4ecca1ba20ae6118dd236" title="Sprechstunde::get_sprechstunde" alt="" coords="217,59,428,88"/>
+<area shape="rect" href="$de/d38/class_studiengang.html#ae3c7f4f67e986fef20434c38de47affa" title="Studiengang::get_studiengang" alt="" coords="225,112,420,141"/>
+<area shape="rect" href="$d1/d36/class_uhrzeit.html#a6d86040047fe7c1f02d75fb47b03c1bd" title="Uhrzeit::get_uhrzeit" alt="" coords="521,32,655,61"/>
+<area shape="rect" href="$df/d13/class_wochentag.html#a8b4a69a006f34877a17c1a1fa0ecd06d" title="Wochentag::get_wochentag_name" alt="" coords="479,85,697,115"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" href="$class_fachbereich.html#a10d67724a514333d0b5e766ee0cd38b0" title="Fachbereich::erfasse_bereichsnummer" alt="" coords="140,5,385,35"/>
+<area shape="rect" href="$class_fachbereich.html#a3179826dec1d1eab553a99f7c35b97fc" title="Fachbereich::erfasse_fachbereich" alt="" coords="445,216,661,245"/>
+<area shape="rect" href="$class_anschrift.html#afca34a48638f2fb5d8e6a4c9c342be8d" title="Anschrift::erfasse_hausnummer" alt="" coords="160,264,365,293"/>
+<area shape="rect" href="$main_8h.html#ad9e7947721206896005e3a6fc07523ad" title="erzeuge_person" alt="" coords="945,309,1057,339"/>
+<area shape="rect" href="$eingabe_8h.html#a6f4d4fa74ae47b6bd21dda9f9e1b735c" title="erfasse_int" alt="" coords="220,528,305,557"/>
+<area shape="rect" href="$class_datum.html#a10607a7a2f7e8ce4b64184fddda6789d" title="Datum::erfasse_jahr" alt="" coords="193,424,332,453"/>
+<area shape="rect" href="$class_datum.html#a33880cd5a3a42c9aa16bf399dbe633e0" title="Datum::erfasse_monat" alt="" coords="187,317,339,347"/>
+<area shape="rect" href="$class_studiengang.html#a1e82ba32c70d0e189e3daf6a4e84f76c" title="Studiengang::erfasse_studiengang" alt="" coords="443,163,664,192"/>
+<area shape="rect" href="$class_datum.html#aad4a0798298b3a1c9d0b5ca3741aaf98" title="Datum::erfasse_tag" alt="" coords="195,371,331,400"/>
+<area shape="rect" href="$class_wochentag.html#a0ef9bc0d08d5d3e13e53686baa683793" title="Wochentag::erfasse_wochentag" alt="" coords="160,109,365,139"/>
+<area shape="rect" href="$main_8h.html#ae83fcdbeb2b6757fc741ae953b633ee1" title="menu" alt="" coords="975,419,1028,448"/>
+<area shape="rect" href="$eingabe_8h.html#a081cacbe6d2b71f50e1a1b5826fdb7bb" title="pruefe_bereich_int" alt="" coords="199,581,327,611"/>
+<area shape="rect" href="$class_student.html#aca6748d0c0516bb39554567cee817878" title="Student::erfasse_person" alt="" coords="727,243,889,272"/>
+<area shape="rect" href="$class_professor.html#a8a956f881e70056dfb1f1d0f47aacb78" title="Professor::erfasse_person" alt="" coords="721,163,895,192"/>
+<area shape="rect" href="$class_anschrift.html#abe8254b60bb4b209dc982f98b09d7d5b" title="Anschrift::erfasse_anschrift" alt="" coords="463,269,644,299"/>
+<area shape="rect" href="$class_person.html#a716306089e0d35b29e95de8834a1a77e" title="Person::erfasse_person" alt="" coords="729,309,887,339"/>
+<area shape="rect" href="$main_8h.html#aeed5bd2c34035cc728193434a5b9a86f" title="verarbeite_eingabe" alt="" coords="1107,324,1237,353"/>
+<area shape="rect" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1287,357,1335,387"/>
+<area shape="rect" href="$class_datum.html#aa98a025836bf5b2a9334c7aa1fbe4130" title="Datum::erfasse_datum" alt="" coords="477,323,629,352"/>
+<area shape="rect" href="$class_sprechstunde.html#a88e67881f5c883ea73c64162b037de44" title="Sprechstunde::erfasse_sprechstunde" alt="" coords="435,109,672,139"/>
+</map>

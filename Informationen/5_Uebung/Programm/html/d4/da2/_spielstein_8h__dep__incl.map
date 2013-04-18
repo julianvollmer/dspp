@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" href="$db/d80/_auswahlstein_8cpp.html" title="lib/Auswahlstein.cpp" alt="" coords="17,160,156,189"/>
+<area shape="rect" href="$d0/def/_spielfeld_8h.html" title="lib/Spielfeld.h" alt="" coords="204,160,303,189"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html" title="main.cpp" alt="" coords="303,237,377,267"/>
+<area shape="rect" href="$d4/dbf/main_8h.html" title="main.h" alt="" coords="468,237,527,267"/>
+<area shape="rect" href="$db/d3a/_spielstein_8cpp.html" title="lib/Spielstein.cpp" alt="" coords="407,83,527,112"/>
+<area shape="rect" href="$d5/d47/utility_8h.html" title="lib/utility.h" alt="" coords="303,83,383,112"/>
+<area shape="rect" href="$de/d04/_spielfeld_8cpp.html" title="lib/Spielfeld.cpp" alt="" coords="167,237,279,267"/>
+<area shape="rect" href="$d7/d11/_auswahlstein_8h.html" title="lib/Auswahlstein.h" alt="" coords="377,160,503,189"/>
+<area shape="rect" href="$dc/dfa/utility_8cpp.html" title="lib/utility.cpp" alt="" coords="577,160,671,189"/>
+</map>

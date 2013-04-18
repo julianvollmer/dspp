@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$de/ddb/class_dienstzimmer.html#a9c25ea3ad1f68aa92e9851def88ff6fb" title="Dienstzimmer::erfasse_dienstzimmer" alt="" coords="235,32,472,61"/>
+<area shape="rect" href="$df/d6e/class_email.html#a1d78f32c720f9f8d4b7da71e3139ea01" title="Email::erfasse_email" alt="" coords="283,85,424,115"/>
+<area shape="rect" href="$d1/d57/class_mitarbeiter.html#a329757e790cbfbed2fa0f9418141f75b" title="Mitarbeiter::erfasse_funktion" alt="" coords="260,139,447,168"/>
+<area shape="rect" href="$d5/d96/class_telefon.html#a42668c1022f23819dad2c9418443d439" title="Telefon::erfasse_telefon" alt="" coords="273,192,433,221"/>
+<area shape="rect" href="$de/ddb/class_dienstzimmer.html#a80c17805d95af73f042f20a6c81bcb1a" title="Dienstzimmer::erfasse_gebaeude" alt="" coords="520,5,736,35"/>
+<area shape="rect" href="$de/ddb/class_dienstzimmer.html#a2e0ef875be69fc409f15c7d1d460106a" title="Dienstzimmer::erfasse_raum" alt="" coords="535,59,721,88"/>
+<area shape="rect" href="$d5/d96/class_telefon.html#a2f0cde237fdc378d0d5ba4ff02abd9f4" title="Telefon::erfasse_anschluss" alt="" coords="539,165,717,195"/>
+<area shape="rect" href="$d5/d96/class_telefon.html#a251a0ee219feeb95fcd91ebcf378f37c" title="Telefon::erfasse_vorwahl" alt="" coords="545,219,711,248"/>
+</map>

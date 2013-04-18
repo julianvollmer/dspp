@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Personenverwaltung: libs/Anschrift.h Quellcode</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Erzeugt von Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>Hauptseite</span></a></li>
+      <li><a href="../../annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>Auflistung&nbsp;der&nbsp;Dateien</span></a></li>
+      <li><a href="../../globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+<h1>libs/Anschrift.h</h1><a href="../../d2/da5/_anschrift_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * Anschrift.h</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> *  Created on: 12.06.2010</span>
+<a name="l00005"></a>00005 <span class="comment"> *      Author: jule</span>
+<a name="l00006"></a>00006 <span class="comment"> */</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#ifndef ANSCHRIFT_H_</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span><span class="preprocessor">#define ANSCHRIFT_H_</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00012"></a>00012 <span class="keyword">using namespace </span>std;
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d9/dad/_ort_8h.html">Ort.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d5/dd2/mein__zufall_8h.html">mein_zufall.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d9d/eingabe_8h.html">eingabe.h</a>&quot;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a><a class="code" href="../../d6/d79/class_anschrift.html">00017</a> <span class="keyword">class </span><a class="code" href="../../d6/d79/class_anschrift.html">Anschrift</a>{
+<a name="l00018"></a>00018         <span class="keyword">private</span>:
+<a name="l00019"></a>00019                 <a class="code" href="../../de/d3d/class_ort.html">Ort</a> ort;
+<a name="l00020"></a>00020                 <span class="keywordtype">string</span> strasse;
+<a name="l00021"></a>00021                 <span class="keywordtype">int</span> hausnummer;
+<a name="l00022"></a>00022         <span class="keyword">public</span>:
+<a name="l00023"></a>00023                 <a class="code" href="../../d6/d79/class_anschrift.html#a31cc65c54d432ffb989dfc43983457d3">Anschrift</a>();
+<a name="l00024"></a>00024                 <span class="keywordtype">string</span> <a class="code" href="../../d6/d79/class_anschrift.html#ac232f99d509a3fe03cb016b079691bef">get_strasse</a>();
+<a name="l00025"></a>00025                 <span class="keywordtype">int</span> <a class="code" href="../../d6/d79/class_anschrift.html#ac3bfc77ac1e04fa503e0d72eb8aba2dd">get_hausnummer</a>();
+<a name="l00026"></a>00026                 <a class="code" href="../../de/d3d/class_ort.html">Ort</a> <a class="code" href="../../d6/d79/class_anschrift.html#aa308487a2cdb2b45313f3422091d9889">get_ort</a>();
+<a name="l00027"></a>00027                 <span class="keywordtype">void</span> <a class="code" href="../../d6/d79/class_anschrift.html#a504a718b1a62ebe1a5144826d274e03b">erfasse_strasse</a>();
+<a name="l00028"></a>00028                 <span class="keywordtype">void</span> <a class="code" href="../../d6/d79/class_anschrift.html#afca34a48638f2fb5d8e6a4c9c342be8d">erfasse_hausnummer</a>();
+<a name="l00029"></a>00029                 <span class="keywordtype">void</span> <a class="code" href="../../d6/d79/class_anschrift.html#abe8254b60bb4b209dc982f98b09d7d5b">erfasse_anschrift</a>();
+<a name="l00030"></a>00030 };
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 <span class="preprocessor">#endif </span><span class="comment">/* ANSCHRIFT_H_ */</span>
+</pre></div></div>
+<hr class="footer"/><address style="text-align: right;"><small>Erzeugt am Fri Jul 9 12:46:12 2010 für Personenverwaltung von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

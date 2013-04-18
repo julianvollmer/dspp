@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" href="$dc/dfa/utility_8cpp.html#a156055aa6ce027d6911aef350b20753c" title="feld_leer" alt="" coords="180,5,249,35"/>
+<area shape="rect" href="$dc/dfa/utility_8cpp.html#a39a642dab98a93b3a35ee650ebcc3030" title="is_equal" alt="" coords="415,57,484,87"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a3dbac9ab8826efed24ba511a4eaa0336" title="Spielstein::get_posx" alt="" coords="145,109,284,139"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a929dff89ad0d8b917ce1f563c4c56127" title="Spielstein::get_posy" alt="" coords="145,163,284,192"/>
+<area shape="rect" href="$d0/d13/class_spielfeld.html#ac9ddff572ea6cf8dbd49276c07286b1a" title="Spielfeld::get_spielfeldgroesse" alt="" coords="116,216,313,245"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html#ac5c3dbf4f08eb51ed1305857e770d956" title="is_gegner" alt="" coords="176,269,253,299"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#a68a001b3ff34fa1783c5b484cbf76740" title="Spieler::player_change" alt="" coords="139,323,291,352"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#a1f9e8a20d225eb39781bc5be163051c6" title="Spieler::stein_bewegen" alt="" coords="137,376,292,405"/>
+<area shape="rect" href="$dc/dfa/utility_8cpp.html#ac1273e328f3a9baf715fc6160ddcccae" title="gewonnen" alt="" coords="409,216,489,245"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a26f78d752e365ef511f81900a618a0a2" title="Spielstein::is_weiss" alt="" coords="381,269,517,299"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#ade8d5b8c2347a74279f834ebf3855cd0" title="Spieler::is_spieler_eins" alt="" coords="372,323,527,352"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a67705128cf5d38da1b8658788d67db7f" title="Spielstein::steinbewegung" alt="" coords="364,376,535,405"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$d4/d0d/struct___g_l_mgroup.html" title="{_GLMgroup\n|+ name\l+ numtriangles\l+ triangles\l+ material\l+ next\l|}" alt="" coords="5,15,112,177"/>
+<area shape="rect" href="$d5/db0/struct_g_l_mtriangle.html" title="{GLMtriangle\n|+ vindices\l+ nindices\l+ tindices\l+ findex\l|}" alt="" coords="185,24,276,168"/>
+<area shape="rect" href="$dd/da2/struct___g_l_mmaterial.html" title="{_GLMmaterial\n|+ name\l+ diffuse\l+ ambient\l+ specular\l+ emmissive\l+ shininess\l|}" alt="" coords="300,5,401,187"/>
+</map>

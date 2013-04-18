@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" href="$d6/d79/class_anschrift.html#afca34a48638f2fb5d8e6a4c9c342be8d" title="Anschrift::erfasse_hausnummer" alt="" coords="236,19,441,48"/>
+<area shape="rect" href="$de/d3d/class_ort.html#aa0d2156004d5993cd63ebb559aab5f8f" title="Ort::erfasse_ort" alt="" coords="283,85,395,115"/>
+<area shape="rect" href="$d6/d79/class_anschrift.html#a504a718b1a62ebe1a5144826d274e03b" title="Anschrift::erfasse_strasse" alt="" coords="252,139,425,168"/>
+<area shape="rect" href="$d6/d95/eingabe_8cpp.html#a6ed8ebda70d479be8719510ac7d31841" title="erfasse_int" alt="" coords="524,5,609,35"/>
+<area shape="rect" href="$d6/d95/eingabe_8cpp.html#ad8882eee77198f558c6ec27ea26f8a18" title="erfasse_long" alt="" coords="691,5,787,35"/>
+<area shape="rect" href="$d0/d9d/eingabe_8h.html#a2c9d7ef296b54cce1ad3b4e0c47e43fa" title="eingabe" alt="" coords="835,5,901,35"/>
+<area shape="rect" href="$de/d3d/class_ort.html#a16e911cd5c51cf55cfdeaf4fdef4e22a" title="Ort::erfasse_land" alt="" coords="507,59,627,88"/>
+<area shape="rect" href="$de/d3d/class_ort.html#af4557f76891180e7451ec1efab0f5add" title="Ort::erfasse_ortsname" alt="" coords="491,112,643,141"/>
+<area shape="rect" href="$de/d3d/class_ort.html#aa86e4961d42959073564640e138ea5f1" title="Ort::erfasse_plz" alt="" coords="509,165,624,195"/>
+</map>

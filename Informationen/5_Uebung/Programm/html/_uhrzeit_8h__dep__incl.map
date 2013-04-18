@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$_sprechstunde_8h.html" title="libs/Sprechstunde.h" alt="" coords="109,83,245,112"/>
+<area shape="rect" href="$_uhrzeit_8cpp.html" title="libs/Uhrzeit.cpp" alt="" coords="269,83,381,112"/>
+<area shape="rect" href="$_professor_8h.html" title="libs/Professor.h" alt="" coords="44,160,156,189"/>
+<area shape="rect" href="$_sprechstunde_8cpp.html" title="libs/Sprechstunde.cpp" alt="" coords="180,160,329,189"/>
+<area shape="rect" href="$main_8cpp.html" title="main.cpp" alt="" coords="5,237,80,267"/>
+<area shape="rect" href="$main_8h.html" title="main.h" alt="" coords="128,237,187,267"/>
+</map>

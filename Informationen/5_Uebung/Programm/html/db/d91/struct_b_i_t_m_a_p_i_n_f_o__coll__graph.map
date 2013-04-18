@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$d0/db2/struct_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html" title="{BITMAPINFOHEADER\n|+ biSize\l+ biWidth\l+ biHeight\l+ biPlanes\l+ biBitCount\l+ biCompression\l+ biSizeImage\l+ biXPelsPerMeter\l+ biYPelsPerMeter\l+ biClrUsed\l+ biClrImportant\l|}" alt="" coords="5,5,160,280"/>
+<area shape="rect" href="$d8/dec/struct_r_g_b_q_u_a_d.html" title="{RGBQUAD\n|+ rgbBlue\l+ rgbGreen\l+ rgbRed\l+ rgbReserved\l|}" alt="" coords="184,71,291,215"/>
+</map>

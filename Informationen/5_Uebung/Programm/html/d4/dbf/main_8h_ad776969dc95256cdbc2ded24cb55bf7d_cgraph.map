@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$d5/d16/class_spielstein.html#a43501a1b365c85d7d8127895db52e608" title="Spielstein::erhoehe_posx" alt="" coords="156,5,321,35"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#adf26ded615388f33c9b1e0b24a3cebdd" title="Spielstein::erhoehe_posy" alt="" coords="155,59,323,88"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#ade8d5b8c2347a74279f834ebf3855cd0" title="Spieler::is_spieler_eins" alt="" coords="161,112,316,141"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#a62d38846defeb885071dc5583aa8d072" title="Spieler::spielerwechsel" alt="" coords="161,165,316,195"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#a1f9e8a20d225eb39781bc5be163051c6" title="Spieler::stein_bewegen" alt="" coords="161,219,316,248"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a9ed924db045038db52bf5c37c49e1c04" title="Spielstein::verringere_posx" alt="" coords="151,272,327,301"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#aa39357cb2f7a9f17bf80f63cb45d8405" title="Spielstein::verringere_posy" alt="" coords="149,325,328,355"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a67705128cf5d38da1b8658788d67db7f" title="Spielstein::steinbewegung" alt="" coords="377,219,548,248"/>
+</map>

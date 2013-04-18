@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" href="$_mitarbeiter_8cpp.html" title="libs/Mitarbeiter.cpp" alt="" coords="203,83,333,112"/>
+<area shape="rect" href="$_person_8h.html" title="libs/Person.h" alt="" coords="432,83,528,112"/>
+<area shape="rect" href="$_student_8cpp.html" title="libs/Student.cpp" alt="" coords="816,160,931,189"/>
+<area shape="rect" href="$_student_8h.html" title="libs/Student.h" alt="" coords="5,160,107,189"/>
+<area shape="rect" href="$_mitarbeiter_8h.html" title="libs/Mitarbeiter.h" alt="" coords="491,160,608,189"/>
+<area shape="rect" href="$main_8cpp.html" title="main.cpp" alt="" coords="443,237,517,267"/>
+<area shape="rect" href="$main_8h.html" title="main.h" alt="" coords="237,237,296,267"/>
+<area shape="rect" href="$_person_8cpp.html" title="libs/Person.cpp" alt="" coords="632,160,741,189"/>
+<area shape="rect" href="$_professor_8cpp.html" title="libs/Professor.cpp" alt="" coords="181,160,307,189"/>
+<area shape="rect" href="$_professor_8h.html" title="libs/Professor.h" alt="" coords="355,160,467,189"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="G" name="G">
+<area shape="rect" href="$_person_8h.html" title="./libs/Person.h" alt="" coords="745,160,849,189"/>
+<area shape="rect" href="$mein__zufall_8h.html" title="mein_zufall.h" alt="" coords="535,392,633,421"/>
+<area shape="rect" href="$_student_8h.html" title="./libs/Student.h" alt="" coords="600,83,709,112"/>
+<area shape="rect" href="$_mitarbeiter_8h.html" title="./libs/Mitarbeiter.h" alt="" coords="991,83,1116,112"/>
+<area shape="rect" href="$_professor_8h.html" title="./libs/Professor.h" alt="" coords="172,83,292,112"/>
+<area shape="rect" href="$ausgabe_8h.html" title="./libs/ausgabe.h" alt="" coords="1361,392,1473,421"/>
+<area shape="rect" href="$_name_8h.html" title="Name.h" alt="" coords="911,315,977,344"/>
+<area shape="rect" href="$_anschrift_8h.html" title="Anschrift.h" alt="" coords="569,237,652,267"/>
+<area shape="rect" href="$_ort_8h.html" title="Ort.h" alt="" coords="684,315,735,344"/>
+<area shape="rect" href="$_telefon_8h.html" title="Telefon.h" alt="" coords="1161,237,1236,267"/>
+<area shape="rect" href="$_datum_8h.html" title="Datum.h" alt="" coords="361,315,431,344"/>
+<area shape="rect" href="$eingabe_8h.html" title="eingabe.h" alt="" coords="140,392,217,421"/>
+<area shape="rect" href="$_email_8h.html" title="Email.h" alt="" coords="972,160,1036,189"/>
+<area shape="rect" href="$_fachbereich_8h.html" title="Fachbereich.h" alt="" coords="137,315,241,344"/>
+<area shape="rect" href="$_studiengang_8h.html" title="Studiengang.h" alt="" coords="505,315,609,344"/>
+<area shape="rect" href="$_dienstzimmer_8h.html" title="Dienstzimmer.h" alt="" coords="1001,315,1113,344"/>
+<area shape="rect" href="$_sprechstunde_8h.html" title="Sprechstunde.h" alt="" coords="79,237,191,267"/>
+<area shape="rect" href="$_wochentag_8h.html" title="Wochentag.h" alt="" coords="17,315,113,344"/>
+<area shape="rect" href="$_uhrzeit_8h.html" title="Uhrzeit.h" alt="" coords="265,315,337,344"/>
+</map>

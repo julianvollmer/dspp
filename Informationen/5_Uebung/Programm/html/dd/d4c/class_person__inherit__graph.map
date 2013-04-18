@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$d1/d57/class_mitarbeiter.html" title="{Mitarbeiter\n|&#45; raum\l&#45; telefon\l&#45; fax\l&#45; email\l&#45; funktion\l|+ Mitarbeiter()\l+ ~Mitarbeiter()\l+ zeige_person()\l+ erfasse_person()\l+ erfasse_funktion()\l}" alt="" coords="5,384,141,621"/>
+<area shape="rect" href="$d7/d75/class_professor.html" title="{Professor\n|&#45; fb\l&#45; stg\l&#45; spr\l|+ Professor()\l+ ~Professor()\l+ zeige_person()\l+ erfasse_person()\l}" alt="" coords="165,412,296,593"/>
+<area shape="rect" href="$db/d66/class_student.html" title="{Student\n|&#45; fb\l&#45; sg\l&#45; matrikelnummer\l&#45; imma_datum\l&#45; ex_datum\l&#45; heimat\l&#45; email\l|+ Student()\l+ ~Student()\l+ zeige_person()\l+ erfasse_person()\l+ erfasse_matrikelnummer()\l+ get_matrikelnummer()\l+ get_fachbereich()\l}" alt="" coords="320,347,504,659"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" href="$d5/d16/class_spielstein.html#af3dd5dc7e894257f73cbdbdffe99fef7" title="Spielstein::erstelle_und_zeichne_startsteine" alt="" coords="228,31,503,60"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#a1f9e8a20d225eb39781bc5be163051c6" title="Spieler::stein_bewegen" alt="" coords="288,84,443,113"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html#a910ccb1f48deb125396a8a7f5257ffc9" title="zeichne_startbrett" alt="" coords="303,163,428,192"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html#aef7ba2f69afb2d954545f64c7fe24b14" title="keyboard" alt="" coords="696,57,771,87"/>
+<area shape="rect" href="$d4/dbf/main_8h.html#ae937462aab50ddcd9da7877ca93edf43" title="pressa" alt="" coords="571,31,629,60"/>
+<area shape="rect" href="$d4/dbf/main_8h.html#a6de1627a9e26b3f5daa3a52dfdf7f433" title="pressd" alt="" coords="571,84,629,113"/>
+<area shape="rect" href="$d4/dbf/main_8h.html#ad776969dc95256cdbc2ded24cb55bf7d" title="stein_ziehen" alt="" coords="553,137,647,167"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="820,136,868,165"/>
+<area shape="rect" href="$d4/dbf/main_8h.html#a4ea013001a5fb47853d0fab8f8de35cd" title="display" alt="" coords="703,136,764,165"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html#a2858154e2009b0e6e616f313177762bc" title="init" alt="" coords="715,189,752,219"/>
+</map>

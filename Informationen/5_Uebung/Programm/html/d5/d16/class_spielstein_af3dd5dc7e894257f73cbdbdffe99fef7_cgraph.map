@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" href="$d5/d16/class_spielstein.html#a43501a1b365c85d7d8127895db52e608" title="Spielstein::erhoehe_posx" alt="" coords="348,5,513,35"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#ab869101533c5e21ae0ecc432ba81107f" title="Spielstein::set_posx" alt="" coords="361,59,500,88"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#adb54da258b12350c74a1df54ca157590" title="Spielstein::set_posy" alt="" coords="361,112,500,141"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a134c598bc6a1c06ad28cb39abda63597" title="Spielstein::set_weiss" alt="" coords="359,165,503,195"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a67705128cf5d38da1b8658788d67db7f" title="Spielstein::steinbewegung" alt="" coords="345,219,516,248"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#aa39357cb2f7a9f17bf80f63cb45d8405" title="Spielstein::verringere_posy" alt="" coords="341,272,520,301"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a46c4ece0aa88a8396c952a4a808d2476" title="Spielstein::zeichne_spielsteine" alt="" coords="331,325,531,355"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a3dbac9ab8826efed24ba511a4eaa0336" title="Spielstein::get_posx" alt="" coords="580,272,719,301"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a929dff89ad0d8b917ce1f563c4c56127" title="Spielstein::get_posy" alt="" coords="580,325,719,355"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a26f78d752e365ef511f81900a618a0a2" title="Spielstein::is_weiss" alt="" coords="581,379,717,408"/>
+</map>

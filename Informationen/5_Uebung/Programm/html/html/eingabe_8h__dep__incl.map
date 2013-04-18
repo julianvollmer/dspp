@@ -1,0 +1,26 @@
+<map id="G" name="G">
+<area shape="rect" href="$_anschrift_8h.html" title="libs/Anschrift.h" alt="" coords="20,83,127,112"/>
+<area shape="rect" href="$_mitarbeiter_8cpp.html" title="libs/Mitarbeiter.cpp" alt="" coords="8,160,139,189"/>
+<area shape="rect" href="$_professor_8cpp.html" title="libs/Professor.cpp" alt="" coords="380,237,505,267"/>
+<area shape="rect" href="$_datum_8cpp.html" title="libs/Datum.cpp" alt="" coords="268,83,375,112"/>
+<area shape="rect" href="$_datum_8h.html" title="libs/Datum.h" alt="" coords="151,83,244,112"/>
+<area shape="rect" href="$eingabe_8cpp.html" title="libs/eingabe.cpp" alt="" coords="473,83,588,112"/>
+<area shape="rect" href="$_fachbereich_8cpp.html" title="libs/Fachbereich.cpp" alt="" coords="612,83,753,112"/>
+<area shape="rect" href="$_fachbereich_8h.html" title="libs/Fachbereich.h" alt="" coords="703,160,831,189"/>
+<area shape="rect" href="$_name_8h.html" title="libs/Name.h" alt="" coords="801,83,892,112"/>
+<area shape="rect" href="$_studiengang_8h.html" title="libs/Studiengang.h" alt="" coords="855,160,983,189"/>
+<area shape="rect" href="$_wochentag_8h.html" title="libs/Wochentag.h" alt="" coords="1017,83,1137,112"/>
+<area shape="rect" href="$_person_8h.html" title="libs/Person.h" alt="" coords="295,160,391,189"/>
+<area shape="rect" href="$_mitarbeiter_8h.html" title="libs/Mitarbeiter.h" alt="" coords="55,237,172,267"/>
+<area shape="rect" href="$main_8cpp.html" title="main.cpp" alt="" coords="199,315,273,344"/>
+<area shape="rect" href="$main_8h.html" title="main.h" alt="" coords="444,315,503,344"/>
+<area shape="rect" href="$_person_8cpp.html" title="libs/Person.cpp" alt="" coords="196,237,305,267"/>
+<area shape="rect" href="$_professor_8h.html" title="libs/Professor.h" alt="" coords="841,237,953,267"/>
+<area shape="rect" href="$_student_8cpp.html" title="libs/Student.cpp" alt="" coords="679,237,793,267"/>
+<area shape="rect" href="$_student_8h.html" title="libs/Student.h" alt="" coords="553,237,655,267"/>
+<area shape="rect" href="$_name_8cpp.html" title="libs/Name.cpp" alt="" coords="575,160,679,189"/>
+<area shape="rect" href="$_studiengang_8cpp.html" title="libs/Studiengang.cpp" alt="" coords="977,237,1119,267"/>
+<area shape="rect" href="$_sprechstunde_8h.html" title="libs/Sprechstunde.h" alt="" coords="1008,160,1144,189"/>
+<area shape="rect" href="$_wochentag_8cpp.html" title="libs/Wochentag.cpp" alt="" coords="1168,160,1301,189"/>
+<area shape="rect" href="$_sprechstunde_8cpp.html" title="libs/Sprechstunde.cpp" alt="" coords="1143,237,1292,267"/>
+</map>

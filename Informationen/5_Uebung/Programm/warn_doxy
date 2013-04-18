@@ -1,0 +1,28 @@
+Warning: The selected output language "german" has not been updated
+since release 1.6.0.  As a result some sentences may appear in English.
+
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:177: Warning: The following parameters of erzeuge_personen_gemischt(int anz, vector< Person * > pvec) are not documented:
+  parameter 'pvec'
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:163: Warning: argument 'Vector' of command @param is not found in the argument list of erzeuge_studies(int anz, vector< Person * > pvec)
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:163: Warning: The following parameters of erzeuge_studies(int anz, vector< Person * > pvec) are not documented:
+  parameter 'pvec'
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:215: Warning: argument 'Pointer' of command @param is not found in the argument list of zeige_studenten(vector< Person * > &vect, bool(*cmp)(Student *p1, Student *p2))
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:215: Warning: The following parameters of zeige_studenten(vector< Person * > &vect, bool(*cmp)(Student *p1, Student *p2)) are not documented:
+  parameter 'cmp'
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:177: Warning: The following parameters of erzeuge_personen_gemischt(int anz, vector< Person * > pvec) are not documented:
+  parameter 'pvec'
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:163: Warning: argument 'Vector' of command @param is not found in the argument list of erzeuge_studies(int anz, vector< Person * > pvec)
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:163: Warning: The following parameters of erzeuge_studies(int anz, vector< Person * > pvec) are not documented:
+  parameter 'pvec'
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:215: Warning: argument 'Pointer' of command @param is not found in the argument list of zeige_studenten(vector< Person * > &vect, bool(*cmp)(Student *p1, Student *p2))
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/main.cpp:215: Warning: The following parameters of zeige_studenten(vector< Person * > &vect, bool(*cmp)(Student *p1, Student *p2)) are not documented:
+  parameter 'cmp'
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/libs/Datum.cpp:111: Warning: argument 'Jahr' of command @param is not found in the argument list of Datum::set_jahr(int das_jahr)
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/libs/Datum.cpp:111: Warning: The following parameters of Datum::set_jahr(int das_jahr) are not documented:
+  parameter 'das_jahr'
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/libs/Datum.cpp:104: Warning: argument 'Monat' of command @param is not found in the argument list of Datum::set_monat(int der_monat)
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/libs/Datum.cpp:104: Warning: The following parameters of Datum::set_monat(int der_monat) are not documented:
+  parameter 'der_monat'
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/libs/Name.cpp:78: Warning: argument 'der_nachname' of command @param is not found in the argument list of Name::set_nachname(string der_nachnam)
+/home/jule/Dropbox/Uni/Programmieren/5_Uebung/Programm/libs/Name.cpp:78: Warning: The following parameters of Name::set_nachname(string der_nachnam) are not documented:
+  parameter 'der_nachnam'

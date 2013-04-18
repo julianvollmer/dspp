@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$class_mitarbeiter.html#ada784d76f4417f4669b22955228bdb2b" title="Mitarbeiter::Mitarbeiter" alt="" coords="256,5,408,35"/>
+<area shape="rect" href="$class_student.html#af9168cedbfa5565cf0b20c1a9d3f5c9d" title="Student::Student" alt="" coords="272,59,392,88"/>
+<area shape="rect" href="$_person_8h.html#ab75a86c6f41fdb15bc2096a17fe0322e" title="vergleiche_person_geb_nachname_vorname" alt="" coords="193,112,471,141"/>
+<area shape="rect" href="$_person_8h.html#ac89f234b554d97a15e99f551a1a29630" title="vergleiche_person_gebjahr_nachname_vorname" alt="" coords="183,165,481,195"/>
+<area shape="rect" href="$_person_8h.html#a42d05e4b650de4525bc5057932a5241f" title="vergleiche_person_nachname_vorname_geb" alt="" coords="193,219,471,248"/>
+<area shape="rect" href="$_student_8h.html#a27c39f2e751f08b897065accfade8479" title="vergleiche_student_fb_nachname_vorname" alt="" coords="196,272,468,301"/>
+<area shape="rect" href="$main_8h.html#aeed5bd2c34035cc728193434a5b9a86f" title="verarbeite_eingabe" alt="" coords="531,192,661,221"/>
+<area shape="rect" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="711,192,759,221"/>
+</map>

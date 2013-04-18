@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$class_datum.html#a10607a7a2f7e8ce4b64184fddda6789d" title="Datum::erfasse_jahr" alt="" coords="216,5,355,35"/>
+<area shape="rect" href="$class_datum.html#a33880cd5a3a42c9aa16bf399dbe633e0" title="Datum::erfasse_monat" alt="" coords="209,59,361,88"/>
+<area shape="rect" href="$class_datum.html#aad4a0798298b3a1c9d0b5ca3741aaf98" title="Datum::erfasse_tag" alt="" coords="217,112,353,141"/>
+<area shape="rect" href="$eingabe_8cpp.html#a6ed8ebda70d479be8719510ac7d31841" title="erfasse_int" alt="" coords="411,59,496,88"/>
+<area shape="rect" href="$eingabe_8cpp.html#ad8882eee77198f558c6ec27ea26f8a18" title="erfasse_long" alt="" coords="544,59,640,88"/>
+<area shape="rect" href="$eingabe_8h.html#a2c9d7ef296b54cce1ad3b4e0c47e43fa" title="eingabe" alt="" coords="688,59,755,88"/>
+</map>

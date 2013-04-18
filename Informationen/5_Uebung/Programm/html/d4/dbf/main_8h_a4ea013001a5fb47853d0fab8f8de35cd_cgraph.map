@@ -1,0 +1,26 @@
+<map id="G" name="G">
+<area shape="rect" href="$d5/d47/utility_8h.html#af0e0f7580a510ef7e701adb3ad7be8a6" title="Draw_Earth" alt="" coords="184,5,272,35"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html#acc89095c9486a99cafdfe08b8cea8c9f" title="drehe_erde" alt="" coords="185,59,271,88"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html#a12e9bfd690d2fd145f314c09d55f2b0c" title="kamerafahrt" alt="" coords="183,112,273,141"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html#ad52c38514a565e791c25abc84761749d" title="loesche_spielstein" alt="" coords="164,165,292,195"/>
+<area shape="rect" href="$dd/d7d/class_auswahlstein.html#a46d476732730bc498c17ab0f52405a8e" title="Auswahlstein::move_auswahlstein" alt="" coords="119,219,337,248"/>
+<area shape="rect" href="$df/d0a/main_8cpp.html#ad776969dc95256cdbc2ded24cb55bf7d" title="stein_ziehen" alt="" coords="181,272,275,301"/>
+<area shape="rect" href="$d0/d13/class_spielfeld.html#a2511362479c5a308015504d984209004" title="Spielfeld::zeichne_spielfeld" alt="" coords="139,485,317,515"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a46c4ece0aa88a8396c952a4a808d2476" title="Spielstein::zeichne_spielsteine" alt="" coords="128,645,328,675"/>
+<area shape="rect" href="$dd/d7d/class_auswahlstein.html#a7a4df307cf9f5cb32436f9bae97e312e" title="Auswahlstein::zeichne_auswahlstein" alt="" coords="388,32,620,61"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a43501a1b365c85d7d8127895db52e608" title="Spielstein::erhoehe_posx" alt="" coords="421,85,587,115"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#adf26ded615388f33c9b1e0b24a3cebdd" title="Spielstein::erhoehe_posy" alt="" coords="420,139,588,168"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#ade8d5b8c2347a74279f834ebf3855cd0" title="Spieler::is_spieler_eins" alt="" coords="427,192,581,221"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#a62d38846defeb885071dc5583aa8d072" title="Spieler::spielerwechsel" alt="" coords="427,245,581,275"/>
+<area shape="rect" href="$d0/d2c/class_spieler.html#a1f9e8a20d225eb39781bc5be163051c6" title="Spieler::stein_bewegen" alt="" coords="427,299,581,328"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a9ed924db045038db52bf5c37c49e1c04" title="Spielstein::verringere_posx" alt="" coords="416,352,592,381"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#aa39357cb2f7a9f17bf80f63cb45d8405" title="Spielstein::verringere_posy" alt="" coords="415,405,593,435"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a67705128cf5d38da1b8658788d67db7f" title="Spielstein::steinbewegung" alt="" coords="671,299,841,328"/>
+<area shape="rect" href="$dc/dfa/utility_8cpp.html#a8f513ac23d18b8f4cc1ab01c9fd64e00" title="delete_texture" alt="" coords="452,459,556,488"/>
+<area shape="rect" href="$dc/dfa/utility_8cpp.html#a1b79a0ebdec46c2a0203e686c3f8b380" title="init_texture" alt="" coords="461,512,547,541"/>
+<area shape="rect" href="$d0/d13/class_spielfeld.html#a58fd5d0264535a130ab982ff5ac144e7" title="Spielfeld::male_viereck" alt="" coords="427,565,581,595"/>
+<area shape="rect" href="$dc/dfa/utility_8cpp.html#ad75b1ebce453cdd727643b206f8569e3" title="zeichne_viereck" alt="" coords="699,565,813,595"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a3dbac9ab8826efed24ba511a4eaa0336" title="Spielstein::get_posx" alt="" coords="435,619,573,648"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a929dff89ad0d8b917ce1f563c4c56127" title="Spielstein::get_posy" alt="" coords="435,672,573,701"/>
+<area shape="rect" href="$d5/d16/class_spielstein.html#a26f78d752e365ef511f81900a618a0a2" title="Spielstein::is_weiss" alt="" coords="436,725,572,755"/>
+</map>
