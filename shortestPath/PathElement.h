@@ -2,4 +2,10 @@
 #include <list>
 using namespace std;
 
-void writeNeighbor();
+class PathElement{
+
+public: 
+	PathElement();
+	void writeNeighbor();
+};
+

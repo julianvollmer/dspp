@@ -1,5 +1,5 @@
 #include "shortPath.h"
-#include "PathElement.h"
+
 
 int main( int argc, const char* argv[] )
 {
@@ -17,7 +17,7 @@ int main( int argc, const char* argv[] )
    cout << endl;
    return 0;
 
-   // PathElement p = new PathElement();
+    PathElement* p = new PathElement();
    // p.writeNeighbor();
 }
 
