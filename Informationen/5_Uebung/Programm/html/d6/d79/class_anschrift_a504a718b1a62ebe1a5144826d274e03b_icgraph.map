@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$d6/d79/class_anschrift.html#abe8254b60bb4b209dc982f98b09d7d5b" title="Anschrift::erfasse_anschrift" alt="" coords="229,32,411,61"/>
-<area shape="rect" href="$db/d66/class_student.html#aca6748d0c0516bb39554567cee817878" title="Student::erfasse_person" alt="" coords="460,5,623,35"/>
-<area shape="rect" href="$d5/d4a/class_person.html#a716306089e0d35b29e95de8834a1a77e" title="Person::erfasse_person" alt="" coords="463,59,620,88"/>
-<area shape="rect" href="$d4/dbf/main_8h.html#ad9e7947721206896005e3a6fc07523ad" title="erzeuge_person" alt="" coords="673,59,785,88"/>
-<area shape="rect" href="$d4/dbf/main_8h.html#aeed5bd2c34035cc728193434a5b9a86f" title="verarbeite_eingabe" alt="" coords="835,59,965,88"/>
-<area shape="rect" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1015,59,1063,88"/>
-</map>

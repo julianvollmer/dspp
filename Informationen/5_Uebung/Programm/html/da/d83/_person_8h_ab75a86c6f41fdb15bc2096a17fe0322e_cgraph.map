@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$dc/d78/class_datum.html#a1dac11c37a67806bf0484d9748f7e06c" title="Datum::get_datum" alt="" coords="344,5,472,35"/>
-<area shape="rect" href="$d5/d4a/class_person.html#a3ade9c7f5c0979fe8c198d985b682b4a" title="Person::get_gebdat" alt="" coords="341,59,475,88"/>
-<area shape="rect" href="$d0/d7c/class_name.html#aeb581d4bb334a96ba7e298951e454cc3" title="Name::get_nachname" alt="" coords="335,112,481,141"/>
-<area shape="rect" href="$d5/d4a/class_person.html#aa98c855f01723a98e96d950728fdcb05" title="Person::get_name" alt="" coords="345,165,471,195"/>
-<area shape="rect" href="$d0/d7c/class_name.html#ab7e0ef965ecfdafb9acf28c506afff6e" title="Name::get_vorname" alt="" coords="339,219,477,248"/>
-</map>

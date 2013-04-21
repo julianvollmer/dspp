@@ -1,3 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$d5/d16/class_spielstein.html" title="{Spielstein\n|&#45; steingroesse\l&#45; posx\l&#45; posy\l&#45; posz\l&#45; weiss\l&#45; dame\l|+ Spielstein()\l+ ~Spielstein()\l+ set_steingroesse()\l+ set_posx()\l+ set_weiss()\l+ set_posy()\l+ get_posx()\l+ get_posy()\l+ get_posz()\l+ get_steingroesse()\l+ verringere_posy()\l+ verringere_posx()\l+ verringere_posz()\l+ erhoehe_posx()\l+ erhoehe_posy()\l+ erhoehe_posz()\l+ zeichne_spielstein()\l+ drop_spielstein()\l+ steinbewegung()\l+ is_weiss()\l+ is_schwarz()\l+ zeichne_spielsteine()\l+ erstelle_und_zeichne_startsteine()\l}" alt="" coords="5,5,237,597"/>
-</map>

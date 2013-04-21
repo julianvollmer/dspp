@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$class_student.html#a4f39175d25b850dad99a7aadcffc1bf4" title="Student::get_fachbereich" alt="" coords="367,5,532,35"/>
-<area shape="rect" href="$class_fachbereich.html#a283319756c399281fb82ff2f1e924df1" title="Fachbereich::get_fachbereichsnummer" alt="" coords="327,59,572,88"/>
-<area shape="rect" href="$class_name.html#aeb581d4bb334a96ba7e298951e454cc3" title="Name::get_nachname" alt="" coords="376,112,523,141"/>
-<area shape="rect" href="$class_person.html#aa98c855f01723a98e96d950728fdcb05" title="Person::get_name" alt="" coords="387,165,512,195"/>
-<area shape="rect" href="$class_name.html#ab7e0ef965ecfdafb9acf28c506afff6e" title="Name::get_vorname" alt="" coords="380,219,519,248"/>
-</map>

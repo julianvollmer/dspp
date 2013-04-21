@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$class_name.html#aeb581d4bb334a96ba7e298951e454cc3" title="Name::get_nachname" alt="" coords="216,5,363,35"/>
-<area shape="rect" href="$class_person.html#aa98c855f01723a98e96d950728fdcb05" title="Person::get_name" alt="" coords="227,59,352,88"/>
-<area shape="rect" href="$class_name.html#ab7e0ef965ecfdafb9acf28c506afff6e" title="Name::get_vorname" alt="" coords="220,112,359,141"/>
-<area shape="rect" href="$mein__zufall_8cpp.html#a59450f41ec4c9e9061c19fc494e0e804" title="liefere_ganze_zufallszahl" alt="" coords="205,165,373,195"/>
-<area shape="rect" href="$class_email.html#a6c264ec6deaf744704d28d24448bc147" title="Email::set_email" alt="" coords="231,219,348,248"/>
-<area shape="rect" href="$mein__zufall_8cpp.html#a97ee4d988f63d5afa24abb44c7126770" title="zufallszahl_int" alt="" coords="421,165,525,195"/>
-<area shape="rect" href="$mein__zufall_8cpp.html#ad8076fcc381dc1998e84e91356cf6349" title="initialisiere_zufallsgenerator" alt="" coords="573,165,755,195"/>
-</map>

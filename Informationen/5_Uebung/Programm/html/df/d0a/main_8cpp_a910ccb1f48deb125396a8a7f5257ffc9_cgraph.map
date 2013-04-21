@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$d5/d16/class_spielstein.html#a43501a1b365c85d7d8127895db52e608" title="Spielstein::erhoehe_posx" alt="" coords="213,5,379,35"/>
-<area shape="rect" href="$d5/d16/class_spielstein.html#adf26ded615388f33c9b1e0b24a3cebdd" title="Spielstein::erhoehe_posy" alt="" coords="212,59,380,88"/>
-<area shape="rect" href="$d5/d16/class_spielstein.html#ab869101533c5e21ae0ecc432ba81107f" title="Spielstein::set_posx" alt="" coords="227,112,365,141"/>
-<area shape="rect" href="$d5/d16/class_spielstein.html#adb54da258b12350c74a1df54ca157590" title="Spielstein::set_posy" alt="" coords="227,165,365,195"/>
-<area shape="rect" href="$d5/d16/class_spielstein.html#a134c598bc6a1c06ad28cb39abda63597" title="Spielstein::set_weiss" alt="" coords="224,219,368,248"/>
-<area shape="rect" href="$d5/d16/class_spielstein.html#a67705128cf5d38da1b8658788d67db7f" title="Spielstein::steinbewegung" alt="" coords="211,272,381,301"/>
-<area shape="rect" href="$dd/d7d/class_auswahlstein.html#a7a4df307cf9f5cb32436f9bae97e312e" title="Auswahlstein::zeichne_auswahlstein" alt="" coords="180,325,412,355"/>
-</map>

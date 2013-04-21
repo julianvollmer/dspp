@@ -1,4 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$d1/d36/class_uhrzeit.html" title="{Uhrzeit\n|&#45; stunde\l&#45; minute\l&#45; sekunde\l|+ Uhrzeit()\l+ ~Uhrzeit()\l+ zeige_uhrzeit()\l+ get_uhrzeit()\l}" alt="" coords="5,5,123,187"/>
-<area shape="rect" href="$df/d13/class_wochentag.html" title="{Wochentag\n|&#45; name\l|+ Wochentag()\l+ ~Wochentag()\l+ zeige_wochentag()\l+ get_wochentag_name()\l+ erfasse_wochentag()\l}" alt="" coords="147,15,315,177"/>
-</map>

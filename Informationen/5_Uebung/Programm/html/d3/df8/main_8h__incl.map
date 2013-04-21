@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$d0/def/_spielfeld_8h.html" title="lib/Spielfeld.h" alt="" coords="275,83,373,112"/>
-<area shape="rect" href="$df/de8/_spielstein_8h.html" title="Spielstein.h" alt="" coords="143,237,231,267"/>
-<area shape="rect" href="$d5/d47/utility_8h.html" title="utility.h" alt="" coords="337,160,401,189"/>
-<area shape="rect" href="$d7/d11/_auswahlstein_8h.html" title="lib/Auswahlstein.h" alt="" coords="593,83,719,112"/>
-<area shape="rect" href="$dd/d68/_spieler_8h.html" title="lib/Spieler.h" alt="" coords="796,83,884,112"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$class_email.html#a27a040d5c97b7f047e33db2c0efdf10f" title="Email::get_email" alt="" coords="259,5,376,35"/>
-<area shape="rect" href="$class_dienstzimmer.html#a73cf283558f99f717d9fe4262f840826" title="Dienstzimmer::get_gebaeude" alt="" coords="223,59,412,88"/>
-<area shape="rect" href="$class_dienstzimmer.html#a2b4d3f388a4ba74050621414d29e55ca" title="Dienstzimmer::get_raum" alt="" coords="236,112,399,141"/>
-<area shape="rect" href="$class_telefon.html#adc44bdfef3180f4e880a7ced3dc7cbf4" title="Telefon::get_telefon" alt="" coords="249,165,385,195"/>
-</map>

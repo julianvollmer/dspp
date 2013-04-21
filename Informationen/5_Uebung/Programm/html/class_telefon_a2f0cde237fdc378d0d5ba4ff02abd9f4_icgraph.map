@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$class_telefon.html#a42668c1022f23819dad2c9418443d439" title="Telefon::erfasse_telefon" alt="" coords="235,32,395,61"/>
-<area shape="rect" href="$class_person.html#a716306089e0d35b29e95de8834a1a77e" title="Person::erfasse_person" alt="" coords="455,5,612,35"/>
-<area shape="rect" href="$class_mitarbeiter.html#a4a3f255e11db4b14ec23a6728ca87812" title="Mitarbeiter::erfasse_person" alt="" coords="444,59,623,88"/>
-<area shape="rect" href="$main_8h.html#ad9e7947721206896005e3a6fc07523ad" title="erzeuge_person" alt="" coords="673,5,785,35"/>
-<area shape="rect" href="$main_8h.html#aeed5bd2c34035cc728193434a5b9a86f" title="verarbeite_eingabe" alt="" coords="835,5,965,35"/>
-<area shape="rect" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1015,5,1063,35"/>
-</map>

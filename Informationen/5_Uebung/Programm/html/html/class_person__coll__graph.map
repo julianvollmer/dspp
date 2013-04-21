@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$class_anschrift.html" title="Anschrift" alt="" coords="64,101,136,131"/>
-<area shape="rect" href="$class_ort.html" title="Ort" alt="" coords="19,5,59,35"/>
-<area shape="rect" href="$class_datum.html" title="Datum" alt="" coords="160,101,219,131"/>
-<area shape="rect" href="$class_name.html" title="Name" alt="" coords="243,101,299,131"/>
-<area shape="rect" href="$class_telefon.html" title="Telefon" alt="" coords="323,101,387,131"/>
-</map>

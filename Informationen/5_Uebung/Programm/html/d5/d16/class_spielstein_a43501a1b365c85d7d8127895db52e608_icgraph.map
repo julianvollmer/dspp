@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$d5/d16/class_spielstein.html#af3dd5dc7e894257f73cbdbdffe99fef7" title="Spielstein::erstelle_und_zeichne_startsteine" alt="" coords="223,5,497,35"/>
-<area shape="rect" href="$d4/dbf/main_8h.html#ad776969dc95256cdbc2ded24cb55bf7d" title="stein_ziehen" alt="" coords="313,59,407,88"/>
-<area shape="rect" href="$df/d0a/main_8cpp.html#a910ccb1f48deb125396a8a7f5257ffc9" title="zeichne_startbrett" alt="" coords="297,112,423,141"/>
-<area shape="rect" href="$d4/dbf/main_8h.html#a4ea013001a5fb47853d0fab8f8de35cd" title="display" alt="" coords="548,59,609,88"/>
-<area shape="rect" href="$df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="660,85,708,115"/>
-<area shape="rect" href="$df/d0a/main_8cpp.html#a2858154e2009b0e6e616f313177762bc" title="init" alt="" coords="560,112,597,141"/>
-</map>
