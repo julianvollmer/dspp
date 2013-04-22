@@ -8,13 +8,15 @@
 #include "main.h"
 int main(int argc, const char * argv[])
 {
+
+	loesche_bildschirm_mit_header();
     
     PathElement *p = new PathElement;
     p->setName("Julian");
  
  	PathVector *v = new PathVector;   
  	
- 	v->initVector();
+ 	
  	
  	v->addElement(*p);
  	v->addElement(*p);
@@ -24,6 +26,6 @@ int main(int argc, const char * argv[])
  	v->addElement(*p);
 
  	v->printVector();
-
+ 	wait();	
     return 0;
 }

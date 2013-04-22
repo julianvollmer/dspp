@@ -18,7 +18,6 @@ using namespace std;
 
 class PathVector {
     
-    
 public:
     vector< vector<int> > vec;
 
