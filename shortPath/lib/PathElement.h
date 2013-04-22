@@ -10,14 +10,22 @@
 #define __shortPath__PathElement__
 
 #include <iostream>
+#include <vector>
+using namespace std;
 
 
 class PathElement {
     int zahl;
+    string name;
+    vector<int> distance;
     
 public:
     PathElement();
     void writeHelloWorld();
+    void setName(string name);
+    void setDistance(vector<int> distance);
+    vector<int> getDistance();
+    string getName();
 };
 
 
