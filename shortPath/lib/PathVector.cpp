@@ -26,26 +26,14 @@ void PathVector::initVector(){
 	
 }
 
-
-void PathVector::generateDistancesForElement(PathElement element){
+void PathVector::generateDistancesForElement(PathElement *element){
 	int vecLength = vec.size();
-	
 	vector<int> distanceVector(vecLength);
-
 	for (int i = 0; i < vecLength; ++i){
-		distanceVector.push_back(liefere_ganze_zufallszahl(1,100));
+		distanceVector[i] = liefere_ganze_zufallszahl(1,100);
 	}
 	
-
-	element.setDistance(distanceVector);
-
-	vector<int>::iterator itit;
-	std::vector<int> distance_tmp;
-	distance_tmp = element.getDistance();
-	for(itit = distance_tmp.begin(); itit != distance_tmp.end(); ++itit){
-		cout << *itit << " llele" << endl;
-	}
-
+	element->setDistance(distanceVector);
 }
 
 /**
@@ -55,13 +43,18 @@ void PathVector::generateDistancesForElement(PathElement element){
  */
 void PathVector::addElement(PathElement element){
 
-	generateDistancesForElement(element);
-	vector< vector<int> > tmp_vec(1, vector<int>(1));
+	generateDistancesForElement(&element);
 
-	tmp_vec[0][0] = 123; //richtige Distanz angeben !!! XXX
+	vector<int>::iterator it;
+	std::vector<int> distance_tmp;
+	distance_tmp = element.getDistance();
+
+	vector< vector<int> > tmp_vec(1, vector<int>(distance_tmp.size()));
+
+	tmp_vec[0] = distance_tmp; 
 
 	vec.insert(vec.end(),tmp_vec.begin(),tmp_vec.end());
-	cout << ".size:" << vec.size() <<endl;
+	
 }
 
 
