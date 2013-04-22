@@ -13,6 +13,7 @@
 #include <iostream>
 #include "PathElement.h"
 #include "../helper/random.h"
+#include "../helper/ausgabe.h"
 using namespace std;
 
 

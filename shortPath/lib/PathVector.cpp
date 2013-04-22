@@ -30,8 +30,13 @@ void PathVector::generateDistancesForElement(PathElement *element){
 	int vecLength = vec.size();
 	vector<int> distanceVector(vecLength);
 	for (int i = 0; i < vecLength; ++i){
-		distanceVector[i] = liefere_ganze_zufallszahl(1,100);
+		distanceVector[i] = liefere_ganze_zufallszahl(1,99);
 	}
+
+	int length = distanceVector.size();
+	
+	if(length != 0)
+		distanceVector[length-1] = 0;
 	
 	element->setDistance(distanceVector);
 }
@@ -53,6 +58,7 @@ void PathVector::addElement(PathElement element){
 
 	tmp_vec[0] = distance_tmp; 
 
+
 	vec.insert(vec.end(),tmp_vec.begin(),tmp_vec.end());
 	
 }
@@ -67,11 +73,14 @@ void PathVector::printVector(){
 	for(vec_it = vec.begin(); vec_it != vec.end(); ++vec_it){
 		cout << endl;
 		for(inner_it = vec_it->begin(); inner_it != vec_it->end(); ++inner_it){
-			cout<<*inner_it<<' ';
+			// cout<<*inner_it<<' ';
+			schreibe_text(convertInt(*inner_it), 12);
 		}
 	}
 	cout<<endl;
 }
+
+
 
 
 
