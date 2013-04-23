@@ -33,9 +33,10 @@ void PathVector::generateDistancesForElement(PathElement *element){
 		distanceVector[i] = liefere_ganze_zufallszahl(1,99);
 	}
 
+
 	int length = distanceVector.size();
 	
-	if(length != 0)
+	if(length < 0)
 		distanceVector[length-1] = 0;
 	
 	element->setDistance(distanceVector);
