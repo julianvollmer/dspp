@@ -14,17 +14,6 @@
 PathVector::PathVector(){};
 
 
-void PathVector::initVector(){
-	
- 	vector< vector<int> > tmp_vec(2, vector<int>(2));
-    tmp_vec[0][0] = 10;
-    tmp_vec[0][1] = 10;
-    tmp_vec[1][0] = 10;
-    tmp_vec[1][1] = 10;
-    
-    this->vec = tmp_vec;
-	
-}
 
 void PathVector::generateDistancesForElement(PathElement *element){
 	int vecLength = vec.size();
@@ -36,10 +25,10 @@ void PathVector::generateDistancesForElement(PathElement *element){
 
 	int length = distanceVector.size();
 	
-	if(length < 0)
+	if(length != 0)
 		distanceVector[length-1] = 0;
 	
-	element->setDistance(distanceVector);
+	element->setDistances(distanceVector);
 }
 
 /**
@@ -53,7 +42,7 @@ void PathVector::addElement(PathElement element){
 
 	vector<int>::iterator it;
 	std::vector<int> distance_tmp;
-	distance_tmp = element.getDistance();
+	distance_tmp = element.getDistances();
 
 	vector< vector<int> > tmp_vec(1, vector<int>(distance_tmp.size()));
 

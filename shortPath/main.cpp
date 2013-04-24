@@ -34,6 +34,7 @@ void testing_purpose(int counter){
  		v->addElement(*p);
  	}
 
+
  	v->printVector();
 }
 

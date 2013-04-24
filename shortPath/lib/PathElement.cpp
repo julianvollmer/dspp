@@ -21,10 +21,10 @@ string PathElement::getName(){
 	return this->name;
 }
 
-void PathElement::setDistance(vector<int> distance){
+void PathElement::setDistances(vector<int> distance){
 	this->distance = distance;
 }
 
-vector < int > PathElement::getDistance(){
+vector < int > PathElement::getDistances(){
 	return this->distance;
 }

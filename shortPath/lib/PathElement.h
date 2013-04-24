@@ -23,8 +23,8 @@ public:
     PathElement();
     void writeHelloWorld();
     void setName(string name);
-    void setDistance(vector<int> distance);
-    vector<int> getDistance();
+    void setDistances(vector<int> distance);
+    vector<int> getDistances();
     string getName();
 };
 
