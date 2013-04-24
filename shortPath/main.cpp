@@ -33,7 +33,7 @@ void testing_purpose(int counter){
  	{
  		v->addElement(*p);
  	}
-
+ 	v->fillRestOfVector();
 
  	v->printVector();
 }

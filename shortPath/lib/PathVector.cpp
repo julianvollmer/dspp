@@ -19,7 +19,9 @@ void PathVector::generateDistancesForElement(PathElement *element){
 	int vecLength = vec.size();
 	vector<int> distanceVector(vecLength);
 	for (int i = 0; i < vecLength; ++i){
-		distanceVector[i] = liefere_ganze_zufallszahl(1,99);
+		int tmp = liefere_ganze_zufallszahl(1,99);
+		distanceVector[i] = tmp;
+
 	}
 
 
@@ -31,6 +33,15 @@ void PathVector::generateDistancesForElement(PathElement *element){
 	element->setDistances(distanceVector);
 }
 
+void PathVector::fillRestOfVector(){
+	
+	vec[1].push_back(vec[2][0]);
+	vec[1].push_back(vec[3][0]);
+	vec[1].push_back(vec[4][0]);
+
+
+}
+
 /**
  * [PathVector::addElement description]
  * add one element to the multidimensionell vector.
@@ -39,6 +50,7 @@ void PathVector::generateDistancesForElement(PathElement *element){
 void PathVector::addElement(PathElement element){
 
 	generateDistancesForElement(&element);
+	
 
 	vector<int>::iterator it;
 	std::vector<int> distance_tmp;
