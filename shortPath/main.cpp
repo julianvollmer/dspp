@@ -29,11 +29,12 @@ void testing_purpose(int counter){
  
  	PathVector *v = new PathVector;   
  	
- 	for (int i = 0; i < counter; ++i)
+ 	for (int i = 0; i <= counter; i++)
  	{
  		v->addElement(*p);
  	}
- 	v->fillRestOfVector();
+ 	v->set_diagonale_zero();
+ 	v->fill_rest_of_vector();
 
  	v->printVector();
 }

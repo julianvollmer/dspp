@@ -25,8 +25,9 @@ public:
     PathVector();
     void addElement(PathElement element);
     void printVector();
-    void generateDistancesForElement(PathElement *element);
-    void fillRestOfVector();
+    void generate_distance_for_element(PathElement *element);
+    void fill_rest_of_vector();
+    void set_diagonale_zero();
     
     // vector<vector <int> > vec;
 };

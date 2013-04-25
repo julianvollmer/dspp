@@ -28,3 +28,4 @@ void PathElement::setDistances(vector<int> distance){
 vector < int > PathElement::getDistances(){
 	return this->distance;
 }
+
