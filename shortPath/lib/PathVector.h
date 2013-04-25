@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Julian Vollmer. All rights reserved.
 //
 
-#ifndef __shortPath__PathVector__
-#define __shortPath__PathVector__
+#ifndef __shortPath
+#define __shortPath
 
 #include <vector>
 #include <iostream>
@@ -28,9 +28,7 @@ public:
     void generate_distance_for_element(PathElement *element);
     void fill_rest_of_vector();
     void set_diagonale_zero();
-    
-    // vector<vector <int> > vec;
 };
 
 
-#endif /* defined(__shortPath__PathVector__) */
+#endif /* defined(__shortPath) */

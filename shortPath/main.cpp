@@ -35,7 +35,6 @@ void testing_purpose(int counter){
  	}
  	v->set_diagonale_zero();
  	v->fill_rest_of_vector();
-
  	v->printVector();
 }
 
@@ -47,7 +46,7 @@ void testing_purpose(int counter){
  */
 bool parameter_ok(int argc, char *argv[]){
 
-	return (argc == 1 || (atoi(argv[1]) && argc == 2)) ;
+	return (argc == 1 || ((atoi(argv[1]) > 0) && argc == 2 )) ;
 	//return false;
 }
 

@@ -58,6 +58,7 @@ void PathVector::printVector(){
 	vector<int>::iterator inner_it;
 
 	for(vec_it = vec.begin(); vec_it != vec.end(); ++vec_it){
+		cout << "julian";
 		for(inner_it = vec_it->begin(); inner_it != vec_it->end(); ++inner_it){
 			// cout<<*inner_it<<' ';
 			schreibe_text(convertInt(*inner_it), 12);
