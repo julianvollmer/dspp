@@ -36,11 +36,15 @@ void PathVector::add_element(PathElement element){
 }
 
 void PathVector::test(){
-	vec[2].push_distance(123);
+	int vec_size = vec.size();
+	for(int i = 0; i < vec_size; i++){
+		for(int j = i+1; j < vec_size; j++)
+			vec[i].push_distance(vec[j].get_distance(i));	
+	
+	}
+	
+	
 }
-
-
-
 
 void PathVector::print_vector(){
 	vector<PathElement >::iterator it;
@@ -55,8 +59,3 @@ void PathVector::print_vector(){
 		cout<<endl;
 	}
 }
-
-
-
-
-
