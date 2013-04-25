@@ -51,7 +51,7 @@ void schreibe_text(string text, streamsize feldbreite);
 void schreibe_zahl(double zahl, streamsize feldbreite, char fuellzeichen, ios_base::fmtflags format[], int anzahl_formate);
 void schreibe_zahl(int zahl, streamsize feldbreite, char fuellzeichen, ios_base::fmtflags format[], int anzahl_formate);
 
-string convertInt(int number);
+string konvertiere_int(int number);
 
 void wait();
 #endif

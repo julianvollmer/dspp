@@ -24,18 +24,20 @@ int main(int argc, char *argv[])
 }
 
 void testing_purpose(int counter){
- PathElement *p = new PathElement;
-    p->setName("Julian");
+ 
+    
  
  	PathVector *v = new PathVector;   
  	
- 	for (int i = 0; i <= counter; i++)
+ 	for (int i = 0; i < counter; i++)
  	{
- 		v->addElement(*p);
+ 		PathElement *p = new PathElement;
+ 		p->set_name("Julian" + konvertiere_int(i));
+ 		v->add_element(*p);
  	}
- 	v->set_diagonale_zero();
- 	v->fill_rest_of_vector();
- 	v->printVector();
+ 	
+ 	v->test();
+ 	v->print_vector();
 }
 
 /**

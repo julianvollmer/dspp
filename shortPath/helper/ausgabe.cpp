@@ -387,7 +387,7 @@ void wait(){
 	getline(cin,str);
 }
 
-string convertInt(int number)
+string konvertiere_int(int number)
 {
 	ostringstream convert;
 	convert << number;

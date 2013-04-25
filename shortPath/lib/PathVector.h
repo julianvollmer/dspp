@@ -20,14 +20,14 @@ using namespace std;
 class PathVector {
     
 public:
-    vector< vector<int> > vec;
+    vector<PathElement> vec;
 
     PathVector();
-    void addElement(PathElement element);
-    void printVector();
+    void add_element(PathElement element);
+    void print_vector();
     void generate_distance_for_element(PathElement *element);
     void fill_rest_of_vector();
-    void set_diagonale_zero();
+    void test();
 };
 
 

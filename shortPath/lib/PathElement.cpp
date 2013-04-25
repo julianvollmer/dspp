@@ -13,19 +13,23 @@
  */
 PathElement::PathElement(){};
 
-void PathElement::setName(string name){
+void PathElement::set_name(string name){
 	this->name = name;
 }
 
-string PathElement::getName(){
+string PathElement::get_name(){
 	return this->name;
 }
 
-void PathElement::setDistances(vector<int> distance){
-	this->distance = distance;
+void PathElement::push_distance(int dist){
+	this->distance.push_back(dist);
 }
 
-vector < int > PathElement::getDistances(){
+vector < int > PathElement::get_distances(){
 	return this->distance;
+}
+
+int PathElement::get_distance(int pos){
+	return distance[pos];
 }
 

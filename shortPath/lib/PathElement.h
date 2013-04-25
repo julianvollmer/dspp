@@ -22,10 +22,12 @@ class PathElement {
 public:
     PathElement();
     void writeHelloWorld();
-    void setName(string name);
-    void setDistances(vector<int> distance);
-    vector<int> getDistances();
-    string getName();
+    void set_name(string name);
+    void push_distance(int dist);
+    vector<int> get_distances();
+    int get_distance(int pos);
+
+    string get_name();
 };
 
 
