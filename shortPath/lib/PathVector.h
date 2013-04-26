@@ -14,6 +14,8 @@
 #include "PathElement.h"
 #include "../helper/random.h"
 #include "../helper/ausgabe.h"
+#include "Dijkstra.h"
+
 using namespace std;
 
 
@@ -23,11 +25,15 @@ public:
     vector<PathElement> vec;
 
     PathVector();
+    PathVector(int anzahl);
     void add_element(PathElement element);
     void print_vector();
     void generate_distance_for_element(PathElement *element);
     void fill_rest_of_vector();
-    void test();
+    void fill();
+    void mark_node();
+    void add_random_elements(int anzahl);
+    void print_shortest_way();
 };
 
 

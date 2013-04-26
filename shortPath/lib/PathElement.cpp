@@ -21,6 +21,13 @@ string PathElement::get_name(){
 	return this->name;
 }
 
+void PathElement::set_distance(int pos, int value){
+	if(distance.size() > pos){
+		
+	}
+		
+}
+
 void PathElement::push_distance(int dist){
 	this->distance.push_back(dist);
 }

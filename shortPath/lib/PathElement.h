@@ -26,6 +26,7 @@ public:
     void push_distance(int dist);
     vector<int> get_distances();
     int get_distance(int pos);
+    void set_distance(int pos, int value);
 
     string get_name();
 };
