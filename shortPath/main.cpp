@@ -33,48 +33,32 @@ int main(int argc, char *argv[]){
 		// 	anleitung();
 		wait();
 	}while(eingabe);
-
+	
     return 0;
 }
 
 void verarbeite_eingabe(int weiter, PathVector *p){
 	int auswahl = 0;
 	
-	// if(weiter == 1){
-	// 	// p->add_random_elements(liefere_ganze_zufallszahl(2,3));
-	// 	p->add_random_elements(2);
-	// 	cout << "Neue Knoten wurden erstellt" << endl;
-	// }
-	// else if(weiter == 2){
-	// 	p->print_vector();
-	// }
-	// else if()
-	// else
-	// 	cout << "Vielen Dank fuer die Nutzung!";
-
 	switch (weiter)
     {
-    case 1:
-    	p->add_random_elements(4);
-    	cout << "Neue Knoten wurden erstellt!" << endl;
-    break;
+	    case 1:
+	    	p->add_random_elements(4);
+	    	cout << "Neue Knoten wurden erstellt!" << endl;
+	    break;
 
-    case 2: 
-        p->print_vector();
+	    case 2: 
+	        p->print_vector();
+	    break;
 
-    break;
+	    case 3: 
+	        p->print_shortest_way();
+	    break;
 
-    case 3: 
-        p->print_shortest_way();
-    break;
-
-
-    default:
-    	cout << "Vielen Dank für die Nutzung!" << endl;
-    }
-
+	    default:
+	    	cout << "Vielen Dank für die Nutzung!" << endl;
+    } 
 }
-
 
 /**
  * Zeigt das Menu und erfasst die Eingabe.
@@ -120,4 +104,3 @@ void anleitung(){
 	cout << "Wird das Programm mit einem Parameter aufgerufen muss dieser eine Zahl sein"<<endl;
 	cout << "Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden"<<endl;
 }
-

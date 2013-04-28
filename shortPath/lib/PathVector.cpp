@@ -12,10 +12,6 @@
  */
 PathVector::PathVector(){};
 
-PathVector::PathVector(int anzahl){
-	
-};
-
 void PathVector::generate_distance_for_element(PathElement *element){
 	int length = vec.size();
 	for(int i = 0; i < length; i++){
