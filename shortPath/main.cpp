@@ -55,6 +55,10 @@ void verarbeite_eingabe(int weiter, PathVector *p){
 	        p->print_shortest_way();
 	    break;
 
+	    case 4: 
+	        test_function();
+	    break;
+
 	    default:
 	    	cout << "Vielen Dank für die Nutzung!" << endl;
     } 
@@ -69,6 +73,7 @@ int menu(){
 							"Zufaellig neue Knoten erstellen",
 							"Knoten ausgeben",
 							"Berechne kuerzesten Weg",
+							"Datei einlesen",
 							"irgendwas anderes"
 						};
 

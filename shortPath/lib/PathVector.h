@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Julian Vollmer. All rights reserved.
 //
 
-#ifndef __shortPath
-#define __shortPath
+#ifndef __pathVector
+#define __pathVector
 
 #include <vector>
 #include <iostream>
@@ -37,4 +37,4 @@ public:
 };
 
 
-#endif /* defined(__shortPath) */
+#endif /* defined(__pathVector) */

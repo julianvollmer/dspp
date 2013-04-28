@@ -2,7 +2,7 @@
 TARGET=main
 
 # The objects that make up the main executables
-OBJS=lib/PathElement.o lib/PathVector.o lib/Dijkstra.o helper/random.o helper/ausgabe.o helper/eingabe.o 
+OBJS=lib/PathElement.o lib/PathVector.o lib/Dijkstra.o helper/random.o helper/ausgabe.o helper/eingabe.o helper/load_file.o helper/helpers.o 
 
 # The test executables
 #TESTS=core_test
