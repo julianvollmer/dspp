@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Julian Vollmer. All rights reserved.
 //
 
-#ifndef __shortPath__PathElement__
-#define __shortPath__PathElement__
+#ifndef __shortPath
+#define __shortPath
 
 #include <iostream>
 #include <vector>
@@ -18,6 +18,7 @@ class PathElement {
     int zahl;
     string name;
     vector<int> distance;
+
     
 public:
     PathElement();
@@ -27,9 +28,8 @@ public:
     vector<int> get_distances();
     int get_distance(int pos);
     void set_distance(int pos, int value);
-
     string get_name();
 };
 
 
-#endif /* defined(__shortPath__PathElement__) */
+#endif /* defined(__shortPath) */

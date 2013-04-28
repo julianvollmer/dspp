@@ -9,6 +9,7 @@
 #include "helper/random.h"
 #include "helper/ausgabe.h"
 #include "helper/eingabe.h"
+#include "helper/load_file.h"
 
 void anleitung();
 int menu();

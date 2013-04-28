@@ -32,7 +32,9 @@ void PathElement::push_distance(int dist){
 	this->distance.push_back(dist);
 }
 
-vector < int > PathElement::get_distances(){
+
+
+vector <int> PathElement::get_distances(){
 	return this->distance;
 }
 
