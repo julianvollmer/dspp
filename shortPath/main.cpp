@@ -61,13 +61,10 @@ void verarbeite_eingabe(int weiter, PathVector *p){
 
     case 2: 
         p->print_vector();
+
     break;
 
     case 3: 
-        p->fill();
-    break;
-
-    case 4: 
         p->print_shortest_way();
     break;
 
@@ -87,7 +84,6 @@ int menu(){
 						{
 							"Zufaellig neue Knoten erstellen",
 							"Knoten ausgeben",
-							"Fuelle Matrix(Fix it !!!)",
 							"Berechne kuerzesten Weg",
 							"irgendwas anderes"
 						};
