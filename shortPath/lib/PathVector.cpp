@@ -35,6 +35,10 @@ void PathVector::add_element(PathElement element){
 	generate_distance_for_element(&element);
 
 	vec.push_back(element);
+	// for(int i = 0; i < vec.size(); i++){
+	 	if(vec.size() > 1 )
+	 	vec[0].push_distance(element.get_distance(0));
+	// }
 }
 
 void PathVector::add_random_elements(int anzahl){
@@ -56,6 +60,8 @@ void PathVector::fill(){
 	}
 	
 }
+
+
 
 void PathVector::mark_node(){
 	vec[1].set_distance(2,1337);

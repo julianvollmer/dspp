@@ -55,7 +55,7 @@ void verarbeite_eingabe(int weiter, PathVector *p){
 	switch (weiter)
     {
     case 1:
-    	p->add_random_elements(2);
+    	p->add_random_elements(4);
     	cout << "Neue Knoten wurden erstellt!" << endl;
     break;
 
