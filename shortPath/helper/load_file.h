@@ -18,7 +18,7 @@ using namespace std;
 
 
 
-void test_function();
+void load_file();
 void create_nodes_from_file_char(char c);
 
 #endif /* defined(__shortPath) */
