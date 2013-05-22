@@ -8,6 +8,43 @@
 #include "main.h"
 int main(int argc, char *argv[]){
 	
+
+
+
+  unsigned int test[nodenum][nodenum] = {
+        {   0,  15, INF, INF, INF, INF, INF, INF, INF },
+        {  15,   0, INF,  30,  10, INF,  25,  10,  30 },
+        { INF, INF,   0,  20, INF, INF,  15, INF, INF },
+        { INF,  30,  20,   0, INF, INF, INF, INF, INF },
+        { INF,  10, INF, INF,   0,  40,  10, INF, INF },
+        { INF, INF, INF, INF,  40,   0,  20, INF, INF },
+        { INF,  25,  15, INF,  10,  20,   0, INF, INF },
+        { INF,  10, INF, INF, INF, INF, INF,   0,  10 },
+        { INF,  30, INF, INF, INF, INF, INF,  10,   0 }
+    };
+
+    Dijkstra *blubb = new Dijkstra();
+
+    // Matrix setzen
+    blubb->setMatrix(test);
+
+    // Startknoten setzen
+    blubb->setSource(8);
+
+    // Algorithmus ausführen
+    blubb->calculate(true);
+
+    // Günstigste Wege aufzeigen
+    blubb->trace();
+
+    system("Pause");
+
+
+
+
+
+
+	
 	int anzahl_nodes;
 	PathVector *p = new PathVector();
 
@@ -56,7 +93,10 @@ void verarbeite_eingabe(int weiter, PathVector *p){
 	    break;
 
 	    case 4: 
-	        test_function();
+	        load_file();
+
+	    case 5: 
+	        boost_it();
 	    break;
 
 	    default:
@@ -74,7 +114,7 @@ int menu(){
 							"Knoten ausgeben",
 							"Berechne kuerzesten Weg",
 							"Datei einlesen",
-							"irgendwas anderes"
+							"Boost testen"
 						};
 
 	int anz_punkte = sizeof(menuepunkte) / sizeof(menuepunkte[0]);
@@ -98,6 +138,10 @@ bool parameter_ok(int argc, char *argv[]){
 }
 
 
+void boost_it(){
+	Dijkstra *d = new Dijkstra();
+	d->test_boost();
+}
 
 /**
  * Zeigt die Anleitung zu dem Programm
@@ -109,3 +153,21 @@ void anleitung(){
 	cout << "Wird das Programm mit einem Parameter aufgerufen muss dieser eine Zahl sein"<<endl;
 	cout << "Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden"<<endl;
 }
+
+
+
+
+/*
+
+
+
+
+int main(int argc, char *argv[])
+{
+   
+}
+
+ */
+
+
+

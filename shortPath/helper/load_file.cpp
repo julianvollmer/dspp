@@ -8,7 +8,7 @@ int result;
 string tmp_result;
 	
 
-void test_function(){
+void load_file(){
 	ifstream Quelldatei;                          // neuen Lese-Stream erzeugen 
 	Quelldatei.open("in.txt", ios_base::in);      // Datei_1.txt öffnen 
 
@@ -23,18 +23,6 @@ void test_function(){
 			string input;
 			while (Quelldatei.get(c)) {               // ... einzeln ... 
 				create_nodes_from_file_char(c);
-				// if(c == ';'){
-				// 	cout << input;
-				// 	input = "";
-				// }
-				// else{
-				// 	input += c;	
-				// }
-				// if(c == '\n'){
-				// 	cout << " neue Zeile" << endl;
-				// }
-
-				// Zieldatei.put(c);                       // ... in die Zieldatei schreiben. 
 			} 
 		} 
 	} 

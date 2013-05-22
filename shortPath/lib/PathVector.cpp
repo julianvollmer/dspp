@@ -99,7 +99,7 @@ void PathVector::print_shortest_way(){
 	 cout << endl;
 
 	 Dijkstra *d = new Dijkstra;
-	 d->test_funktion();
+	 // d->test_funktion();
 
 }
 

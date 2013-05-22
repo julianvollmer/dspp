@@ -11,9 +11,14 @@
 #include "helper/eingabe.h"
 #include "helper/load_file.h"
 
+
+using namespace boost;
+
 void anleitung();
 int menu();
 void testing_purpose(int counter);
 bool parameter_ok(int argc, char *argv[]);
 void verarbeite_eingabe(int weiter, PathVector *p);
+void boost_it();
+
 #endif /* MAIN_H_ */
