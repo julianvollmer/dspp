@@ -23,18 +23,6 @@ void load_file(){
 			string input;
 			while (Quelldatei.get(c)) {               // ... einzeln ... 
 				create_nodes_from_file_char(c);
-				// if(c == ';'){
-				// 	cout << input;
-				// 	input = "";
-				// }
-				// else{
-				// 	input += c;	
-				// }
-				// if(c == '\n'){
-				// 	cout << " neue Zeile" << endl;
-				// }
-
-				// Zieldatei.put(c);                       // ... in die Zieldatei schreiben. 
 			} 
 		} 
 	} 
