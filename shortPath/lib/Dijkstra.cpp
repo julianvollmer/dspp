@@ -183,33 +183,7 @@ class Dijkstra {
 
 void main() {
 
-    unsigned int test[nodenum][nodenum] = {
-        {   0,  15, INF, INF, INF, INF, INF, INF, INF },
-        {  15,   0, INF,  30,  10, INF,  25,  10,  30 },
-        { INF, INF,   0,  20, INF, INF,  15, INF, INF },
-        { INF,  30,  20,   0, INF, INF, INF, INF, INF },
-        { INF,  10, INF, INF,   0,  40,  10, INF, INF },
-        { INF, INF, INF, INF,  40,   0,  20, INF, INF },
-        { INF,  25,  15, INF,  10,  20,   0, INF, INF },
-        { INF,  10, INF, INF, INF, INF, INF,   0,  10 },
-        { INF,  30, INF, INF, INF, INF, INF,  10,   0 }
-    };
-
-    Dijkstra *blubb = new Dijkstra();
-
-    // Matrix setzen
-    blubb->setMatrix(test);
-
-    // Startknoten setzen
-    blubb->setSource(8);
-
-    // Algorithmus ausführen
-    blubb->calculate(true);
-
-    // Günstigste Wege aufzeigen
-    blubb->trace();
-
-    system("Pause");
+  
 }
 
  */
