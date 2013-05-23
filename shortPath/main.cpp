@@ -8,23 +8,21 @@
 #include "main.h"
 int main(int argc, char *argv[]){
 	
-
-
-
-  unsigned int test[nodenum][nodenum] = {
-        {   0,  15, INF, INF, INF, INF, INF, INF, INF },
-        {  15,   0, INF,  30,  10, INF,  25,  10,  30 },
-        { INF, INF,   0,  20, INF, INF,  15, INF, INF },
-        { INF,  30,  20,   0, INF, INF, INF, INF, INF },
-        { INF,  10, INF, INF,   0,  40,  10, INF, INF },
-        { INF, INF, INF, INF,  40,   0,  20, INF, INF },
-        { INF,  25,  15, INF,  10,  20,   0, INF, INF },
-        { INF,  10, INF, INF, INF, INF, INF,   0,  10 },
-        { INF,  30, INF, INF, INF, INF, INF,  10,   0 }
-    };
+	unsigned int test[nodenum][nodenum] = {
+		{   0,  15, INF, INF, INF, INF, INF, INF, INF },
+		{  15,   0, INF,  30,  10, INF,  25,  10,  30 },
+		{ INF, INF,   0,  20, INF, INF,  15, INF, INF },
+		{ INF,  30,  20,   0, INF, INF, INF, INF, INF },
+		{ INF,  10, INF, INF,   0,  40,  10, INF, INF },
+		{ INF, INF, INF, INF,  40,   0,  20, INF, INF },
+		{ INF,  25,  15, INF,  10,  20,   0, INF, INF },
+		{ INF,  10, INF, INF, INF, INF, INF,   0,  10 },
+		{ INF,  30, INF, INF, INF, INF, INF,  10,   0 }
+	};
 
     Dijkstra *blubb = new Dijkstra();
 
+    //int matrix = blubb->generateMatrix();
     // Matrix setzen
     blubb->setMatrix(test);
 
@@ -37,12 +35,14 @@ int main(int argc, char *argv[]){
     // Günstigste Wege aufzeigen
     blubb->trace();
 
+	
+ 
+    int (*matrix)[10][20] = 0;
+    blubb->get(matrix);
+ 
+        (*matrix)[2][3] = 25; /// ZUGRIFF
+
     system("Pause");
-
-
-
-
-
 
 	
 	int anzahl_nodes;
@@ -59,16 +59,7 @@ int main(int argc, char *argv[]){
 			loesche_bildschirm_mit_header();
 			eingabe = menu();
 			verarbeite_eingabe(eingabe, p);
-
-		// if(parameter_ok(argc, argv)){
-		// 	if(argc == 1)
-		// 		testing_purpose(liefere_ganze_zufallszahl(3,12));
-		// 	else
-		// 		testing_purpose(atoi(argv[1]));
-		// }
-		// else
-		// 	anleitung();
-		wait();
+		//wait();
 	}while(eingabe);
 	
     return 0;
@@ -95,8 +86,6 @@ void verarbeite_eingabe(int weiter, PathVector *p){
 	    case 4: 
 	        load_file();
 
-	    case 5: 
-	        boost_it();
 	    break;
 
 	    default:
@@ -113,8 +102,8 @@ int menu(){
 							"Zufaellig neue Knoten erstellen",
 							"Knoten ausgeben",
 							"Berechne kuerzesten Weg",
-							"Datei einlesen",
-							"Boost testen"
+							"Datei einlesen"
+							
 						};
 
 	int anz_punkte = sizeof(menuepunkte) / sizeof(menuepunkte[0]);
@@ -137,12 +126,6 @@ bool parameter_ok(int argc, char *argv[]){
 	return (argc == 2 && atoi(argv[1]) > 0);
 }
 
-
-void boost_it(){
-	Dijkstra *d = new Dijkstra();
-	d->test_boost();
-}
-
 /**
  * Zeigt die Anleitung zu dem Programm
  */
@@ -153,21 +136,3 @@ void anleitung(){
 	cout << "Wird das Programm mit einem Parameter aufgerufen muss dieser eine Zahl sein"<<endl;
 	cout << "Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden"<<endl;
 }
-
-
-
-
-/*
-
-
-
-
-int main(int argc, char *argv[])
-{
-   
-}
-
- */
-
-
-

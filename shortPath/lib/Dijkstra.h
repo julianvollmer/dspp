@@ -20,14 +20,19 @@ class Dijkstra {
     
 public:
 	Dijkstra(); 
-    void test_boost();
+    
     void setMatrix(unsigned int matrix[nodenum][nodenum]);
     void setSource(unsigned int root);
     void calculate(bool step);
     void trace();
 
-private:
+    void get(int (*&retVal)[10][20])
+     {
+        retVal = &intern;
+     }
 
+private:
+    int intern[10][20];
     unsigned int matrix[nodenum][nodenum];
     unsigned int root;
     unsigned int distance[nodenum];         // Array für Entfernungen/Kosten
