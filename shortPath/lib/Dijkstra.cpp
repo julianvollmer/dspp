@@ -124,11 +124,11 @@ void Dijkstra::calculate(bool step = false) {
 
             // jeden einzelnen Verbesserungsschritt ausgeben?
             if(step == true)
-                (this->distance[j] == INF) ? printf("INF\\t") : printf("%3d\\t", this->distance[j]);
+                (this->distance[j] == INF) ? printf("INF\t") : printf("%3d\t", this->distance[j]);
         }
 
         if(step == true)
-            printf("\\n\\n");
+            printf("\n\n");
         
         // gerade bestimmten Minimumknoten markieren
         marked[node] = true;
@@ -148,11 +148,11 @@ void Dijkstra::trace() {
     for(int x = 0; x < nodenum; ++x) {
         // Wenn kein Vorgänger vorhanden und Knoten != Startknoten existiert keine Verbindung
         if(this->predecessor[x] == 0 && x != this->root) {
-            printf("Keine Verbindung zwischen %d und %d gefunden\\n\\n", this->root, x);
+            printf("Keine Verbindung zwischen %d und %d gefunden\n\n", this->root, x);
             continue;
         }
 
-        printf("G\\x81nstigste Verbindung von %d nach %d\\n", root, x);
+        printf("G\\x81nstigste Verbindung von %d nach %d\n", root, x);
 
         int j = x;
 
@@ -162,28 +162,6 @@ void Dijkstra::trace() {
             j = this->predecessor[j];
         }
 
-        printf("%d\\n\\nKosten: %3d\\n\\n", j, this->distance[x]);
+        printf("%d \n \nKosten: %3d \n \n", j, this->distance[x]);
  }
 }
-
-/*
-#include 
-
-
-
-class Dijkstra {
-
-
-
-};
-
-
-
-// Beispielaufruf
-
-void main() {
-
-  
-}
-
- */
