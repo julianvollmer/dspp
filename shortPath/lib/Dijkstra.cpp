@@ -12,11 +12,7 @@ Dijkstra::Dijkstra(){
                 j++;
                 k = 0;
             }
-            printf("hahaha: %d\n",arr[i] );
     }
-
-    printf("bhalloasldjalksdja: %d\n", this->intern[0][1]);
-
 };
 
 void Dijkstra::setSource(unsigned int root) {

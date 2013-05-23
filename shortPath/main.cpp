@@ -9,64 +9,44 @@
 int main(int argc, char *argv[]){
 	unsigned int (*matrix)[nodenum][nodenum] = 0;
 	
+int eingabe = 0;
 
-    Dijkstra *blubb = new Dijkstra();
-	
-	blubb->get(matrix);
-    //int matrix = blubb->generateMatrix();
-    // Matrix setzen
-    blubb->setMatrix(*matrix);
-
-    // Startknoten setzen
-    blubb->setSource(8);
-
-    // Algorithmus ausführen
-    blubb->calculate(true);
-
-    // Günstigste Wege aufzeigen
-    blubb->trace();
- 
- 
-	(*matrix)[2][3] = 25; /// ZUGRIFF
-	printf(" hallo %d\n", (*matrix)[2][3]);
-
-	
-	int anzahl_nodes;
-	PathVector *p = new PathVector();
-
-	if(parameter_ok(argc, argv)){
-
-		}
-
-	else
-		anleitung();
-	int eingabe = 0;
-	do{
+	// if(parameter_ok(argc, argv)){
+		Dijkstra *dk = new Dijkstra();	
+		dk->get(matrix);
+		dk->setMatrix(*matrix);
+		dk->setSource(8);
+		dk->calculate(true);
+		do{
 			loesche_bildschirm_mit_header();
 			eingabe = menu();
-			verarbeite_eingabe(eingabe, p);
-		//wait();
-	}while(eingabe);
+			verarbeite_eingabe(eingabe, dk);
+		}while(eingabe);
+
+	// }
+
+	// else
+		anleitung();
 	
+
     return 0;
 }
 
-void verarbeite_eingabe(int weiter, PathVector *p){
+void verarbeite_eingabe(int weiter, Dijkstra *dk){
 	int auswahl = 0;
 	
 	switch (weiter)
     {
 	    case 1:
-	    	p->add_random_elements(4);
-	    	cout << "Neue Knoten wurden erstellt!" << endl;
+	    	dk->setSource(8);
 	    break;
 
 	    case 2: 
-	        p->print_vector();
+	        dk->trace();
 	    break;
 
 	    case 3: 
-	        p->print_shortest_way();
+	         dk->calculate(true);
 	    break;
 
 	    case 4: 

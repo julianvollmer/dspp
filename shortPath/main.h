@@ -18,7 +18,7 @@ void anleitung();
 int menu();
 void testing_purpose(int counter);
 bool parameter_ok(int argc, char *argv[]);
-void verarbeite_eingabe(int weiter, PathVector *p);
+void verarbeite_eingabe(int weiter, Dijkstra *dk);
 void boost_it();
 
 #endif /* MAIN_H_ */
