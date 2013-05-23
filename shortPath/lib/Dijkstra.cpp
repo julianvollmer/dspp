@@ -1,6 +1,23 @@
 #include "Dijkstra.h"
 
-Dijkstra::Dijkstra(){};
+Dijkstra::Dijkstra(){
+
+    unsigned int arr[] = {0,  15, 999, 999, 999, 999, 999, 999, 999 , 15,   0, 999,  30,  10, 999,  25,  10,  30 ,999, 999,   0,  20, 999, 999,  15, 999, 999 ,999,  30,  20,   0, 999, 999, 999, 999, 999 ,999,  10, 999, 999,   0,  40,  10, 999, 999 ,999, 999, 999, 999,  40,   0,  20, 999, 999 ,999,  25,  15, 999,  10,  20,   0, 999, 999 ,999,  10, 999, 999, 999, 999, 999,   0,  10 ,999,  30, 999, 999, 999, 999, 999,  10,   0};
+    int j,k = 0;
+    for(int i = 0; i < (sizeof(arr) / sizeof(arr[0])); i++){
+     
+            this->intern[j][k] = arr[i];
+            k++;
+            if(i == nodenum){
+                j++;
+                k = 0;
+            }
+            printf("hahaha: %d\n",arr[i] );
+    }
+
+    printf("bhalloasldjalksdja: %d\n", this->intern[0][1]);
+
+};
 
 void Dijkstra::setSource(unsigned int root) {
     this->root = root;
@@ -8,7 +25,7 @@ void Dijkstra::setSource(unsigned int root) {
 
 
 void Dijkstra::setMatrix(unsigned int matrix[nodenum][nodenum]) {
-    memcpy(this->matrix, matrix, nodenum * nodenum * sizeof(unsigned int));
+    memcpy(this->intern, matrix, nodenum * nodenum * sizeof(unsigned int));
 }
 
 
@@ -22,8 +39,8 @@ void Dijkstra::calculate(bool step = false) {
         // Kein Knoten ist markiert
         marked[x] = false;
 
-        // Kosten sind zunächst unendlich (INF = INT_MAX)
-        this->distance[x] = INF;
+        // Kosten sind zunächst unendlich (999 = INT_MAX)
+        this->distance[x] = 999;
 
         // Vorgänger sind nicht vorhanden
         this->predecessor[x] = 0;
@@ -36,7 +53,7 @@ void Dijkstra::calculate(bool step = false) {
 
     while(flag) {
         // minimale Kosten initialisieren
-        unsigned int minimum = INF;
+        unsigned int minimum = 999;
 
         // zugehöriger (minimaler) Knoten
         int node = 0;
@@ -55,14 +72,14 @@ void Dijkstra::calculate(bool step = false) {
 
         // Distanz aktualisieren, wenn Zielknoten über den gefundenen Minimumknoten billiger erreichbar
         for(int j = 0; j < nodenum; ++j) {
-            if(!marked[j] && this->matrix[node][j] != 0 && this->distance[node] + this->matrix[node][j] < this->distance[j]) {
-                this->distance[j] = this->distance[node] + this->matrix[node][j];
+            if(!marked[j] && this->intern[node][j] != 0 && this->distance[node] + this->intern[node][j] < this->distance[j]) {
+                this->distance[j] = this->distance[node] + this->intern[node][j];
                 this->predecessor[j] = node;
             }
 
             // jeden einzelnen Verbesserungsschritt ausgeben?
             if(step == true)
-                (this->distance[j] == INF) ? printf("INF\t") : printf("%3d\t", this->distance[j]);
+                (this->distance[j] == 999) ? printf("999\t") : printf("%3d\t", this->distance[j]);
         }
 
         if(step == true)
@@ -103,25 +120,3 @@ void Dijkstra::trace() {
         printf("%d\n\nKosten: %3d\n\n", j, this->distance[x]);
  }
 }
-
-/*
-#include 
-
-
-
-class Dijkstra {
-
-
-
-};
-
-
-
-// Beispielaufruf
-
-void main() {
-
-  
-}
-
- */

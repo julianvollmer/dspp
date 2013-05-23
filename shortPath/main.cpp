@@ -7,24 +7,15 @@
 //
 #include "main.h"
 int main(int argc, char *argv[]){
+	unsigned int (*matrix)[nodenum][nodenum] = 0;
 	
-	unsigned int test[nodenum][nodenum] = {
-		{   0,  15, INF, INF, INF, INF, INF, INF, INF },
-		{  15,   0, INF,  30,  10, INF,  25,  10,  30 },
-		{ INF, INF,   0,  20, INF, INF,  15, INF, INF },
-		{ INF,  30,  20,   0, INF, INF, INF, INF, INF },
-		{ INF,  10, INF, INF,   0,  40,  10, INF, INF },
-		{ INF, INF, INF, INF,  40,   0,  20, INF, INF },
-		{ INF,  25,  15, INF,  10,  20,   0, INF, INF },
-		{ INF,  10, INF, INF, INF, INF, INF,   0,  10 },
-		{ INF,  30, INF, INF, INF, INF, INF,  10,   0 }
-	};
 
     Dijkstra *blubb = new Dijkstra();
-
+	
+	blubb->get(matrix);
     //int matrix = blubb->generateMatrix();
     // Matrix setzen
-    blubb->setMatrix(test);
+    blubb->setMatrix(*matrix);
 
     // Startknoten setzen
     blubb->setSource(8);
@@ -34,15 +25,10 @@ int main(int argc, char *argv[]){
 
     // Günstigste Wege aufzeigen
     blubb->trace();
-
-	
  
-    int (*matrix)[10][20] = 0;
-    blubb->get(matrix);
  
-        (*matrix)[2][3] = 25; /// ZUGRIFF
-
-    system("Pause");
+	(*matrix)[2][3] = 25; /// ZUGRIFF
+	printf(" hallo %d\n", (*matrix)[2][3]);
 
 	
 	int anzahl_nodes;

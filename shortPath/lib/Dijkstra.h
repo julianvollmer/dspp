@@ -26,14 +26,14 @@ public:
     void calculate(bool step);
     void trace();
 
-    void get(int (*&retVal)[10][20])
+    void get(unsigned int (*&retVal)[nodenum][nodenum])
      {
         retVal = &intern;
      }
 
 private:
-    int intern[10][20];
-    unsigned int matrix[nodenum][nodenum];
+    unsigned int intern[nodenum][nodenum];
+    
     unsigned int root;
     unsigned int distance[nodenum];         // Array für Entfernungen/Kosten
     unsigned int predecessor[nodenum];      // Array für Vorgängerknoten
