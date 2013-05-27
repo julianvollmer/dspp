@@ -6,4 +6,5 @@ using namespace std;
 
 int string_to_number(string str);
 
+
 #endif /*_HELPERS_H*/

@@ -38,7 +38,7 @@ void verarbeite_eingabe(int weiter, Dijkstra *dk){
 	switch (weiter)
     {
 	    case 1:
-	    	dk->setSource(8);
+	    	set_starting_point(dk);
 	    break;
 
 	    case 2: 
@@ -53,22 +53,41 @@ void verarbeite_eingabe(int weiter, Dijkstra *dk){
 	        load_file();
 
 	    break;
+	    case 5: 
+	        test_new_dijkstra(dk);
+
+	    break;
 
 	    default:
 	    	cout << "Vielen Dank für die Nutzung!" << endl;
     } 
 }
 
+
+void test_new_dijkstra(Dijkstra *dk){
+	dk->read();
+    dk->calculateDistance();
+    dk->output();
+}
+
+
 /**
  * Zeigt das Menu und erfasst die Eingabe.
  */
+
+void set_starting_point(Dijkstra *dk){
+	int input = 0;
+	input = erfasse_int(0, nodenum-1, "Bitte geben sie den Startpunkt ein.");
+	dk->setSource(input);
+}
 int menu(){
 	string menuepunkte[] = 
 						{
 							"Zufaellig neue Knoten erstellen",
 							"Knoten ausgeben",
 							"Berechne kuerzesten Weg",
-							"Datei einlesen"
+							"Datei einlesen",
+							"test_new_dijkstra"
 							
 						};
 

@@ -1,11 +1,14 @@
 #include "helpers.h"
 
-	int string_to_number(string str){
-
-	int Result;//number which will contain the result
-
+/**
+ * Konvertiert einen string in einen int Wert.
+ * @param  str string der zurück gegeben werden soll.
+ * @return     Der konvertierte string als int Wert.
+ */
+int string_to_number(string str){
+	int Result;
 	stringstream convert(str);
-	if ( !(convert >> Result) )//give the value to Result using the characters in the string
+	if ( !(convert >> Result) )
     	Result = 0;
  return Result;
 }

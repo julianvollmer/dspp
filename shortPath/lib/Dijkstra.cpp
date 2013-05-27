@@ -2,8 +2,10 @@
 
 Dijkstra::Dijkstra(){
 
-    unsigned int arr[] = {0,  15, 999, 999, 999, 999, 999, 999, 999 , 15,   0, 999,  30,  10, 999,  25,  10,  30 ,999, 999,   0,  20, 999, 999,  15, 999, 999 ,999,  30,  20,   0, 999, 999, 999, 999, 999 ,999,  10, 999, 999,   0,  40,  10, 999, 999 ,999, 999, 999, 999,  40,   0,  20, 999, 999 ,999,  25,  15, 999,  10,  20,   0, 999, 999 ,999,  10, 999, 999, 999, 999, 999,   0,  10 ,999,  30, 999, 999, 999, 999, 999,  10,   0};
+    unsigned int arr[] = {0,  15, 99999, 99999, 99999, 99999, 99999, 99999, 99999 , 15,   0, 99999,  30,  10, 99999,  25,  10,  30 ,99999, 99999,   0,  20, 99999, 99999,  15, 99999, 99999 ,99999,  30,  20,   0, 99999, 99999, 99999, 99999, 99999 ,99999,  10, 99999, 99999,   0,  40,  10, 99999, 99999 ,99999, 99999, 99999, 99999,  40,   0,  20, 99999, 99999 ,99999,  25,  15, 99999,  10,  20,   0, 99999, 99999 ,99999,  10, 99999, 99999, 99999, 99999, 99999,   0,  10 ,99999,  30, 99999, 99999, 99999, 99999, 99999,  10,   0};
+    
     int j,k = 0;
+    
     for(int i = 0; i < (sizeof(arr) / sizeof(arr[0])); i++){
      
             this->intern[j][k] = arr[i];
@@ -35,8 +37,8 @@ void Dijkstra::calculate(bool step = false) {
         // Kein Knoten ist markiert
         marked[x] = false;
 
-        // Kosten sind zunächst unendlich (999 = INT_MAX)
-        this->distance[x] = 999;
+        // Kosten sind zunächst unendlich (99999 = INT_MAX)
+        this->distance[x] = 99999;
 
         // Vorgänger sind nicht vorhanden
         this->predecessor[x] = 0;
@@ -49,7 +51,7 @@ void Dijkstra::calculate(bool step = false) {
 
     while(flag) {
         // minimale Kosten initialisieren
-        unsigned int minimum = 999;
+        unsigned int minimum = 99999;
 
         // zugehöriger (minimaler) Knoten
         int node = 0;
@@ -75,7 +77,7 @@ void Dijkstra::calculate(bool step = false) {
 
             // jeden einzelnen Verbesserungsschritt ausgeben?
             if(step == true)
-                (this->distance[j] == 999) ? printf("999\t") : printf("%3d\t", this->distance[j]);
+                (this->distance[j] == 99999) ? printf("INF\t") : printf("%3d\t", this->distance[j]);
         }
 
         if(step == true)
@@ -103,7 +105,7 @@ void Dijkstra::trace() {
             continue;
         }
 
-        printf("G\x81nstigste Verbindung von %d nach %d\n", root, x);
+        printf("Guenstigste Verbindung von %d nach %d\n", root, x);
 
         int j = x;
 
@@ -115,4 +117,92 @@ void Dijkstra::trace() {
 
         printf("%d\n\nKosten: %3d\n\n", j, this->distance[x]);
  }
+}
+
+
+
+
+
+void Dijkstra::read(){
+    numOfVertices = erfasse_int(0,nodenum,"Geben sie die Anzahl der Knoten des Graphen ein:");
+    cout<<"Enter the adjacency matrix for the graph\n"<<"To enter infinity enter "<<INFINITY<<endl;
+    for(int i=0;i<numOfVertices;i++) {
+        cout<<"Enter the (+ve)weights for the row "<<i<<endl;
+        for(int j=0;j<numOfVertices;j++) {
+            cin>>adjMatrix[i][j];
+            while(adjMatrix[i][j]<0) {
+                cout<<"Weights should be +ve. Enter the weight again\n";
+                cin>>adjMatrix[i][j];
+            }
+        }
+    }
+    sources = erfasse_int(0,numOfVertices-1,"Enter the sources vertex\n");
+}
+ 
+ 
+void Dijkstra::initialize(){
+    for(int i=0;i<numOfVertices;i++) {
+        mark[i] = false;
+        predecessor[i] = -1;
+        distance[i] = INFINITY;
+    }
+    distance[sources]= 0;
+}
+ 
+ 
+int Dijkstra::getClosestUnmarkedNode(){
+    int minDistance = INFINITY;
+    int closestUnmarkedNode;
+    for(int i=0;i<numOfVertices;i++) {
+        if((!mark[i]) && ( minDistance >= distance[i])) {
+            minDistance = distance[i];
+            closestUnmarkedNode = i;
+        }
+    }
+    return closestUnmarkedNode;
+}
+ 
+ 
+void Dijkstra::calculateDistance(){
+    initialize();
+    int minDistance = INFINITY;
+    int closestUnmarkedNode;
+    int count = 0;
+    while(count < numOfVertices) {
+        closestUnmarkedNode = getClosestUnmarkedNode();
+        mark[closestUnmarkedNode] = true;
+        for(int i=0;i<numOfVertices;i++) {
+            if((!mark[i]) && (adjMatrix[closestUnmarkedNode][i]>0) ) {
+                if(distance[i] > distance[closestUnmarkedNode]+adjMatrix[closestUnmarkedNode][i]) {
+                    distance[i] = distance[closestUnmarkedNode]+adjMatrix[closestUnmarkedNode][i];
+                    predecessor[i] = closestUnmarkedNode;
+                }
+            }
+        }
+        count++;
+    }
+}
+ 
+ 
+void Dijkstra::printPath(int node){
+    if(node == sources)
+        cout<<(char)(node + 97)<<"..";
+    else if(predecessor[node] == -1)
+        cout<<"No path from “<<sources<<”to "<<(char)(node + 97)<<endl;
+    else {
+        printPath(predecessor[node]);
+        // cout<<(char) (node + 97)<<"..";
+        cout<<(char) (node + 97)<<"..";
+    }
+}
+ 
+void Dijkstra::output(){
+    for(int i=0;i<numOfVertices;i++) {
+        if(i == sources)
+            cout<<(char)(sources + 97)<<".."<<sources;
+        else
+            printPath(i);
+        cout<<"->"<<distance[i]<<endl;
+    }
+
 }
