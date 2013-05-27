@@ -1,0 +1,488 @@
+\hypertarget{eingabe_8h}{\section{helper/eingabe.h File Reference}
+\label{eingabe_8h}\index{helper/eingabe.\-h@{helper/eingabe.\-h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$cfloat$>$}\\*
+{\ttfamily \#include $<$limits.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+Include dependency graph for eingabe.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{eingabe_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{eingabe_8h_a2c9d7ef296b54cce1ad3b4e0c47e43fa}{eingabe} ()
+\item 
+long \hyperlink{eingabe_8h_ad8882eee77198f558c6ec27ea26f8a18}{erfasse\-\_\-long} (long min, long max)
+\item 
+long \hyperlink{eingabe_8h_a8d9ca8ef2f2c6a87247ba8d3af5becc3}{erfasse\-\_\-long} (long min, long max, string text)
+\item 
+double \hyperlink{eingabe_8h_a0bafda3bfb61639c9b994365b65b354d}{erfasse\-\_\-double} (double min, double max)
+\item 
+double \hyperlink{eingabe_8h_ae6b700f5d1a8a3a5fcd9cab76340ebda}{erfasse\-\_\-double} ()
+\item 
+double \hyperlink{eingabe_8h_aab14000f3650c2813b9ee356cc97f0e9}{erfasse\-\_\-double} (string text)
+\item 
+double \hyperlink{eingabe_8h_ad9967a618bd877d229817783da7c7f0a}{erfasse\-\_\-double} (string text, double min, double max)
+\item 
+int \hyperlink{eingabe_8h_aa6ff8cd9efd97a7c33948171aa41dff1}{erfasse\-\_\-int} (int min, int max, string text)
+\item 
+int \hyperlink{eingabe_8h_a6f4d4fa74ae47b6bd21dda9f9e1b735c}{erfasse\-\_\-int} (string text)
+\item 
+int \hyperlink{eingabe_8h_a44f150c7dcc454995f34c8ff991fd588}{erfasse\-\_\-int} ()
+\item 
+int \hyperlink{eingabe_8h_a6ed8ebda70d479be8719510ac7d31841}{erfasse\-\_\-int} (int min, int max)
+\item 
+int \hyperlink{eingabe_8h_a454c18a2620a26f9755dc341ae9a7943}{is\-\_\-numeric} (char $\ast$str)
+\item 
+int \hyperlink{eingabe_8h_a081cacbe6d2b71f50e1a1b5826fdb7bb}{pruefe\-\_\-bereich\-\_\-int} (int wert, int min, int max)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{eingabe_8h_a2c9d7ef296b54cce1ad3b4e0c47e43fa}{\index{eingabe.\-h@{eingabe.\-h}!eingabe@{eingabe}}
+\index{eingabe@{eingabe}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{eingabe}]{\setlength{\rightskip}{0pt plus 5cm}void eingabe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_a2c9d7ef296b54cce1ad3b4e0c47e43fa}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h_a2c9d7ef296b54cce1ad3b4e0c47e43fa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_a0bafda3bfb61639c9b994365b65b354d}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-double@{erfasse\-\_\-double}}
+\index{erfasse\-\_\-double@{erfasse\-\_\-double}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-double}]{\setlength{\rightskip}{0pt plus 5cm}double erfasse\-\_\-double (
+\begin{DoxyParamCaption}
+\item[{double}]{min, }
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_a0bafda3bfb61639c9b994365b65b354d}
+Erfasst eine Gleitkommazahl und prueft ob sie gueltig ist. 
+\begin{DoxyParams}{Parameters}
+{\em min} & minmaler Wert der eingegeben werden darf \\
+\hline
+{\em max} & maximaler Wert der eingegeben werden darf \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{eingabe_8h_a0bafda3bfb61639c9b994365b65b354d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{eingabe_8h_a0bafda3bfb61639c9b994365b65b354d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_ae6b700f5d1a8a3a5fcd9cab76340ebda}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-double@{erfasse\-\_\-double}}
+\index{erfasse\-\_\-double@{erfasse\-\_\-double}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-double}]{\setlength{\rightskip}{0pt plus 5cm}double erfasse\-\_\-double (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_ae6b700f5d1a8a3a5fcd9cab76340ebda}
+Erfasst eine Gleitkommazahl. \begin{DoxyReturn}{Returns}
+Gibt die eingegebene Gleitkommazahl zurueck. 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h_ae6b700f5d1a8a3a5fcd9cab76340ebda_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_aab14000f3650c2813b9ee356cc97f0e9}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-double@{erfasse\-\_\-double}}
+\index{erfasse\-\_\-double@{erfasse\-\_\-double}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-double}]{\setlength{\rightskip}{0pt plus 5cm}double erfasse\-\_\-double (
+\begin{DoxyParamCaption}
+\item[{string}]{text}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_aab14000f3650c2813b9ee356cc97f0e9}
+Erfasst eine Gleitkommazahl und gibt einen Text aus. 
+\begin{DoxyParams}{Parameters}
+{\em text} & der uebergeben wurde \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gibt die eingegebene Gleitkommazahl zurueck. 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h_aab14000f3650c2813b9ee356cc97f0e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_ad9967a618bd877d229817783da7c7f0a}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-double@{erfasse\-\_\-double}}
+\index{erfasse\-\_\-double@{erfasse\-\_\-double}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-double}]{\setlength{\rightskip}{0pt plus 5cm}double erfasse\-\_\-double (
+\begin{DoxyParamCaption}
+\item[{string}]{text, }
+\item[{double}]{min, }
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_ad9967a618bd877d229817783da7c7f0a}
+Erfasst eine Gleitkommazahl aus dem Bereich min bis max und gibt einen Text aus. 
+\begin{DoxyParams}{Parameters}
+{\em text} & Text der ausgegeben werden soll. \\
+\hline
+{\em min} & Minimaler Wert des Bereiches \\
+\hline
+{\em max} & Maximaler Wert des Bereiches \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h_ad9967a618bd877d229817783da7c7f0a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_aa6ff8cd9efd97a7c33948171aa41dff1}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-int@{erfasse\-\_\-int}}
+\index{erfasse\-\_\-int@{erfasse\-\_\-int}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int erfasse\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{int}]{min, }
+\item[{int}]{max, }
+\item[{string}]{text}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_aa6ff8cd9efd97a7c33948171aa41dff1}
+Erfasst eine Zahl aus dem Bereich min und max und gibt einen Text aus. 
+\begin{DoxyParams}{Parameters}
+{\em min} & Minimaler Wert der eingeben werden darf. \\
+\hline
+{\em max} & Maximaler Wert der eingeben werden darf. \\
+\hline
+{\em text} & Text der ausgegeben werden soll. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wert der eingeben wurde. 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{eingabe_8h_aa6ff8cd9efd97a7c33948171aa41dff1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_a6f4d4fa74ae47b6bd21dda9f9e1b735c}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-int@{erfasse\-\_\-int}}
+\index{erfasse\-\_\-int@{erfasse\-\_\-int}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int erfasse\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{string}]{text}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_a6f4d4fa74ae47b6bd21dda9f9e1b735c}
+Erfasst eine Zahl. 
+\begin{DoxyParams}{Parameters}
+{\em text} & Text der mit ausgegeben werden soll. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wert der eingeben wurde. 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h_a6f4d4fa74ae47b6bd21dda9f9e1b735c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_a44f150c7dcc454995f34c8ff991fd588}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-int@{erfasse\-\_\-int}}
+\index{erfasse\-\_\-int@{erfasse\-\_\-int}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int erfasse\-\_\-int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_a44f150c7dcc454995f34c8ff991fd588}
+Erfasst eine Zahl. \begin{DoxyReturn}{Returns}
+Wert der eingeben wurde. 
+\end{DoxyReturn}
+
+
+Definition at line 124 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{eingabe_8h_a44f150c7dcc454995f34c8ff991fd588_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_a6ed8ebda70d479be8719510ac7d31841}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-int@{erfasse\-\_\-int}}
+\index{erfasse\-\_\-int@{erfasse\-\_\-int}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int erfasse\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{int}]{min, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_a6ed8ebda70d479be8719510ac7d31841}
+Erfasst eine Zahl aus dem Bereich min und max. 
+\begin{DoxyParams}{Parameters}
+{\em min} & Minimaler Wert der eingeben werden darf. \\
+\hline
+{\em max} & Maximaler Wert der eingeben werden darf. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wert der eingeben wurde. 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{eingabe_8h_a6ed8ebda70d479be8719510ac7d31841_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h_a6ed8ebda70d479be8719510ac7d31841_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_ad8882eee77198f558c6ec27ea26f8a18}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-long@{erfasse\-\_\-long}}
+\index{erfasse\-\_\-long@{erfasse\-\_\-long}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-long}]{\setlength{\rightskip}{0pt plus 5cm}long erfasse\-\_\-long (
+\begin{DoxyParamCaption}
+\item[{long}]{min, }
+\item[{long}]{max}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_ad8882eee77198f558c6ec27ea26f8a18}
+Erfasst eine Zahl und prueft ob sie gueltig ist. 
+\begin{DoxyParams}{Parameters}
+{\em min} & minmaler Wert der eingegeben werden darf \\
+\hline
+{\em max} & maximaler Wert der eingegeben werden darf \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+erfasste Zahl. 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{eingabe_8h_ad8882eee77198f558c6ec27ea26f8a18_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h_ad8882eee77198f558c6ec27ea26f8a18_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_a8d9ca8ef2f2c6a87247ba8d3af5becc3}{\index{eingabe.\-h@{eingabe.\-h}!erfasse\-\_\-long@{erfasse\-\_\-long}}
+\index{erfasse\-\_\-long@{erfasse\-\_\-long}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{erfasse\-\_\-long}]{\setlength{\rightskip}{0pt plus 5cm}long erfasse\-\_\-long (
+\begin{DoxyParamCaption}
+\item[{long}]{min, }
+\item[{long}]{max, }
+\item[{string}]{text}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_a8d9ca8ef2f2c6a87247ba8d3af5becc3}
+Erfasst eine Zahl aus dem Bereich min und max. 
+\begin{DoxyParams}{Parameters}
+{\em min} & Minimaler Wert der eingeben werden darf. \\
+\hline
+{\em max} & Maximaler Wert der eingeben werden darf. \\
+\hline
+{\em text} & Text der mit ausgegeben werden soll. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wert der eingeben wurde. 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h_a8d9ca8ef2f2c6a87247ba8d3af5becc3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{eingabe_8h_a454c18a2620a26f9755dc341ae9a7943}{\index{eingabe.\-h@{eingabe.\-h}!is\-\_\-numeric@{is\-\_\-numeric}}
+\index{is\-\_\-numeric@{is\-\_\-numeric}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{is\-\_\-numeric}]{\setlength{\rightskip}{0pt plus 5cm}int is\-\_\-numeric (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_a454c18a2620a26f9755dc341ae9a7943}
+Prueft ob ein String eine Zahl ist. 
+\begin{DoxyParams}{Parameters}
+{\em str} & String der zu pruefen ist. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+laenge der Zahl. 
+\end{DoxyReturn}
+
+
+Definition at line 152 of file eingabe.\-cpp.
+
+\hypertarget{eingabe_8h_a081cacbe6d2b71f50e1a1b5826fdb7bb}{\index{eingabe.\-h@{eingabe.\-h}!pruefe\-\_\-bereich\-\_\-int@{pruefe\-\_\-bereich\-\_\-int}}
+\index{pruefe\-\_\-bereich\-\_\-int@{pruefe\-\_\-bereich\-\_\-int}!eingabe.h@{eingabe.\-h}}
+\subsubsection[{pruefe\-\_\-bereich\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int pruefe\-\_\-bereich\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{int}]{wert, }
+\item[{int}]{min, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{eingabe_8h_a081cacbe6d2b71f50e1a1b5826fdb7bb}
+Prueft den Bereich auf Gueltigkeit. 
+\begin{DoxyParams}{Parameters}
+{\em wert} & Wert der geprueft werden soll. \\
+\hline
+{\em min} & Minimaler Wert der eingeben werden darf. \\
+\hline
+{\em max} & Maximaler Wert der eingeben werden darf. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wert aus dem Bereich. 
+\end{DoxyReturn}
+
+
+Definition at line 180 of file eingabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eingabe_8h_a081cacbe6d2b71f50e1a1b5826fdb7bb_cgraph}
+\end{center}
+\end{figure}
+
+

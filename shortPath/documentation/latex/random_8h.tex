@@ -1,0 +1,259 @@
+\hypertarget{random_8h}{\section{helper/random.h File Reference}
+\label{random_8h}\index{helper/random.\-h@{helper/random.\-h}}
+}
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+Include dependency graph for random.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{random_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{random_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{random_8h_ad8076fcc381dc1998e84e91356cf6349}{initialisiere\-\_\-zufallsgenerator} (void)
+\item 
+int \hyperlink{random_8h_a97ee4d988f63d5afa24abb44c7126770}{zufallszahl\-\_\-int} (int max)
+\item 
+int \hyperlink{random_8h_a59450f41ec4c9e9061c19fc494e0e804}{liefere\-\_\-ganze\-\_\-zufallszahl} (int min, int max)
+\item 
+double \hyperlink{random_8h_abf028db593c155dc6753338773653372}{zufallszahl\-\_\-dbl} ()
+\item 
+double \hyperlink{random_8h_a06e20618a67c1a5b1b3c8b2a088356af}{zufallszahl\-\_\-dbl\-\_\-max} (double max)
+\item 
+double \hyperlink{random_8h_ab87584b0dce9ddeb6c30f29f2d022165}{zufallszahl\-\_\-dbl\-\_\-min\-\_\-max} (double min, double max)
+\item 
+char \hyperlink{random_8h_aff50220ab62d2fa4de5f2bf5697b967b}{liefere\-\_\-zufallszahl\-\_\-als\-\_\-char} ()
+\item 
+string \hyperlink{random_8h_a297393eed02f714c9f86806edf168ef0}{liefere\-\_\-zufallszahl\-\_\-als\-\_\-string} (int laenge)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{random_8h_ad8076fcc381dc1998e84e91356cf6349}{\index{random.\-h@{random.\-h}!initialisiere\-\_\-zufallsgenerator@{initialisiere\-\_\-zufallsgenerator}}
+\index{initialisiere\-\_\-zufallsgenerator@{initialisiere\-\_\-zufallsgenerator}!random.h@{random.\-h}}
+\subsubsection[{initialisiere\-\_\-zufallsgenerator}]{\setlength{\rightskip}{0pt plus 5cm}void initialisiere\-\_\-zufallsgenerator (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{random_8h_ad8076fcc381dc1998e84e91356cf6349}
+Initialisert den Zufallsgenerator. 
+
+Definition at line 8 of file random.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{random_8h_ad8076fcc381dc1998e84e91356cf6349_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{random_8h_a59450f41ec4c9e9061c19fc494e0e804}{\index{random.\-h@{random.\-h}!liefere\-\_\-ganze\-\_\-zufallszahl@{liefere\-\_\-ganze\-\_\-zufallszahl}}
+\index{liefere\-\_\-ganze\-\_\-zufallszahl@{liefere\-\_\-ganze\-\_\-zufallszahl}!random.h@{random.\-h}}
+\subsubsection[{liefere\-\_\-ganze\-\_\-zufallszahl}]{\setlength{\rightskip}{0pt plus 5cm}int liefere\-\_\-ganze\-\_\-zufallszahl (
+\begin{DoxyParamCaption}
+\item[{int}]{min, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{random_8h_a59450f41ec4c9e9061c19fc494e0e804}
+Liefert eine zufällig gewählte ganze Zahl aus dem Bereich von min bis max (einschliesslich) zurück. 
+\begin{DoxyParams}{Parameters}
+{\em min} & Legt die untere Grenze fest, aus dem die ganze Zahl gewählt wird. \\
+\hline
+{\em max} & Legt die obere Grenze fest, aus dem die ganze Zahl gewählt wird. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eine zufällig gewählte ganze Zahl aus dem Bereich min bis max. 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file random.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{random_8h_a59450f41ec4c9e9061c19fc494e0e804_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{random_8h_a59450f41ec4c9e9061c19fc494e0e804_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{random_8h_aff50220ab62d2fa4de5f2bf5697b967b}{\index{random.\-h@{random.\-h}!liefere\-\_\-zufallszahl\-\_\-als\-\_\-char@{liefere\-\_\-zufallszahl\-\_\-als\-\_\-char}}
+\index{liefere\-\_\-zufallszahl\-\_\-als\-\_\-char@{liefere\-\_\-zufallszahl\-\_\-als\-\_\-char}!random.h@{random.\-h}}
+\subsubsection[{liefere\-\_\-zufallszahl\-\_\-als\-\_\-char}]{\setlength{\rightskip}{0pt plus 5cm}char liefere\-\_\-zufallszahl\-\_\-als\-\_\-char (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{random_8h_aff50220ab62d2fa4de5f2bf5697b967b}
+\hypertarget{random_8h_a297393eed02f714c9f86806edf168ef0}{\index{random.\-h@{random.\-h}!liefere\-\_\-zufallszahl\-\_\-als\-\_\-string@{liefere\-\_\-zufallszahl\-\_\-als\-\_\-string}}
+\index{liefere\-\_\-zufallszahl\-\_\-als\-\_\-string@{liefere\-\_\-zufallszahl\-\_\-als\-\_\-string}!random.h@{random.\-h}}
+\subsubsection[{liefere\-\_\-zufallszahl\-\_\-als\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}string liefere\-\_\-zufallszahl\-\_\-als\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{int}]{laenge}
+\end{DoxyParamCaption}
+)}}\label{random_8h_a297393eed02f714c9f86806edf168ef0}
+\hypertarget{random_8h_abf028db593c155dc6753338773653372}{\index{random.\-h@{random.\-h}!zufallszahl\-\_\-dbl@{zufallszahl\-\_\-dbl}}
+\index{zufallszahl\-\_\-dbl@{zufallszahl\-\_\-dbl}!random.h@{random.\-h}}
+\subsubsection[{zufallszahl\-\_\-dbl}]{\setlength{\rightskip}{0pt plus 5cm}double zufallszahl\-\_\-dbl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{random_8h_abf028db593c155dc6753338773653372}
+Gibt eine Zufallszahl im als double Wert zurueck. \begin{DoxyReturn}{Returns}
+Zufallszahl 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file random.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{random_8h_abf028db593c155dc6753338773653372_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{random_8h_abf028db593c155dc6753338773653372_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{random_8h_a06e20618a67c1a5b1b3c8b2a088356af}{\index{random.\-h@{random.\-h}!zufallszahl\-\_\-dbl\-\_\-max@{zufallszahl\-\_\-dbl\-\_\-max}}
+\index{zufallszahl\-\_\-dbl\-\_\-max@{zufallszahl\-\_\-dbl\-\_\-max}!random.h@{random.\-h}}
+\subsubsection[{zufallszahl\-\_\-dbl\-\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}double zufallszahl\-\_\-dbl\-\_\-max (
+\begin{DoxyParamCaption}
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}}\label{random_8h_a06e20618a67c1a5b1b3c8b2a088356af}
+
+
+Definition at line 51 of file random.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{random_8h_a06e20618a67c1a5b1b3c8b2a088356af_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{random_8h_ab87584b0dce9ddeb6c30f29f2d022165}{\index{random.\-h@{random.\-h}!zufallszahl\-\_\-dbl\-\_\-min\-\_\-max@{zufallszahl\-\_\-dbl\-\_\-min\-\_\-max}}
+\index{zufallszahl\-\_\-dbl\-\_\-min\-\_\-max@{zufallszahl\-\_\-dbl\-\_\-min\-\_\-max}!random.h@{random.\-h}}
+\subsubsection[{zufallszahl\-\_\-dbl\-\_\-min\-\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}double zufallszahl\-\_\-dbl\-\_\-min\-\_\-max (
+\begin{DoxyParamCaption}
+\item[{double}]{min, }
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}}\label{random_8h_ab87584b0dce9ddeb6c30f29f2d022165}
+Gibt eine Zufallszahl aus dem Bereich min bis max. \begin{DoxyReturn}{Returns}
+Zufallszahl aus dem Bereich min bis max 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file random.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{random_8h_ab87584b0dce9ddeb6c30f29f2d022165_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{random_8h_a97ee4d988f63d5afa24abb44c7126770}{\index{random.\-h@{random.\-h}!zufallszahl\-\_\-int@{zufallszahl\-\_\-int}}
+\index{zufallszahl\-\_\-int@{zufallszahl\-\_\-int}!random.h@{random.\-h}}
+\subsubsection[{zufallszahl\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int zufallszahl\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{random_8h_a97ee4d988f63d5afa24abb44c7126770}
+Liefert eine zufällig gewählte ganze Zahl aus dem Bereich von 0 bis (max -\/ 1) zurück. 
+\begin{DoxyParams}{Parameters}
+{\em max} & Legt den Bereich fest, aus dem die ganze Zahl gewählt wird. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eine zufällig gewählte ganze Zahl aus dem Bereich 0 bis (max -\/ 1). Achtung\-: Wenn max $<$= 0 oder max $>$ R\-A\-N\-D\-\_\-\-M\-A\-X ist, wird -\/1 geliefert. 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file random.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{random_8h_a97ee4d988f63d5afa24abb44c7126770_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{random_8h_a97ee4d988f63d5afa24abb44c7126770_icgraph}
+\end{center}
+\end{figure}
+
+

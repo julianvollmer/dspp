@@ -1,0 +1,248 @@
+\hypertarget{main_8h}{\section{main.\-h File Reference}
+\label{main_8h}\index{main.\-h@{main.\-h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}lib/\-Path\-Element.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lib/\-Path\-Vector.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}helper/random.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}helper/ausgabe.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}helper/eingabe.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}helper/load\-\_\-file.\-h\char`\"{}}\\*
+Include dependency graph for main.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{main_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8h_a8ccfa1c963516c3255b0463b91b26a4b}{anleitung} ()
+\item 
+int \hyperlink{main_8h_ae83fcdbeb2b6757fc741ae953b633ee1}{menu} ()
+\item 
+void \hyperlink{main_8h_a7b051d042ddeb2c242349737a78a3f12}{testing\-\_\-purpose} (int \hyperlink{load__file_8cpp_a617a47c70795bcff659815ad0efd2266}{counter})
+\item 
+bool \hyperlink{main_8h_a925b46731bdff2413254c40ed967dd5a}{parameter\-\_\-ok} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{main_8h_a1aaf78de8ac0b372c056372700daa5e5}{verarbeite\-\_\-eingabe} (int weiter, \hyperlink{class_dijkstra}{Dijkstra} $\ast$dk)
+\item 
+void \hyperlink{main_8h_a2b50f27ffdd1ac3d90060748c15e43db}{boost\-\_\-it} ()
+\item 
+void \hyperlink{main_8h_a40a5537410c178c3428bb4cafc16d1e6}{set\-\_\-starting\-\_\-point} (\hyperlink{class_dijkstra}{Dijkstra} $\ast$dk)
+\item 
+void \hyperlink{main_8h_a4d54648a3d7c5129aa6f5557a743d753}{test\-\_\-new\-\_\-dijkstra} (\hyperlink{class_dijkstra}{Dijkstra} $\ast$dk)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8h_a8ccfa1c963516c3255b0463b91b26a4b}{\index{main.\-h@{main.\-h}!anleitung@{anleitung}}
+\index{anleitung@{anleitung}!main.h@{main.\-h}}
+\subsubsection[{anleitung}]{\setlength{\rightskip}{0pt plus 5cm}void anleitung (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a8ccfa1c963516c3255b0463b91b26a4b}
+Zeigt die Anleitung zu dem Programm 
+
+Definition at line 114 of file main.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{main_8h_a8ccfa1c963516c3255b0463b91b26a4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8h_a2b50f27ffdd1ac3d90060748c15e43db}{\index{main.\-h@{main.\-h}!boost\-\_\-it@{boost\-\_\-it}}
+\index{boost\-\_\-it@{boost\-\_\-it}!main.h@{main.\-h}}
+\subsubsection[{boost\-\_\-it}]{\setlength{\rightskip}{0pt plus 5cm}void boost\-\_\-it (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a2b50f27ffdd1ac3d90060748c15e43db}
+\hypertarget{main_8h_ae83fcdbeb2b6757fc741ae953b633ee1}{\index{main.\-h@{main.\-h}!menu@{menu}}
+\index{menu@{menu}!main.h@{main.\-h}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}int menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8h_ae83fcdbeb2b6757fc741ae953b633ee1}
+
+
+Definition at line 83 of file main.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8h_ae83fcdbeb2b6757fc741ae953b633ee1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{main_8h_ae83fcdbeb2b6757fc741ae953b633ee1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8h_a925b46731bdff2413254c40ed967dd5a}{\index{main.\-h@{main.\-h}!parameter\-\_\-ok@{parameter\-\_\-ok}}
+\index{parameter\-\_\-ok@{parameter\-\_\-ok}!main.h@{main.\-h}}
+\subsubsection[{parameter\-\_\-ok}]{\setlength{\rightskip}{0pt plus 5cm}bool parameter\-\_\-ok (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a925b46731bdff2413254c40ed967dd5a}
+Prueft, ob keiner, oder der eingegeben Parameter grosser als 0 ist. 
+\begin{DoxyParams}{Parameters}
+{\em argc} & Anzahl der eingegeben Parameter \\
+\hline
+{\em argv} & Die eingegeben Parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true wenn die Parameter ok sind. 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file main.\-cpp.
+
+\hypertarget{main_8h_a40a5537410c178c3428bb4cafc16d1e6}{\index{main.\-h@{main.\-h}!set\-\_\-starting\-\_\-point@{set\-\_\-starting\-\_\-point}}
+\index{set\-\_\-starting\-\_\-point@{set\-\_\-starting\-\_\-point}!main.h@{main.\-h}}
+\subsubsection[{set\-\_\-starting\-\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}void set\-\_\-starting\-\_\-point (
+\begin{DoxyParamCaption}
+\item[{{\bf Dijkstra} $\ast$}]{dk}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a40a5537410c178c3428bb4cafc16d1e6}
+Zeigt das Menu und erfasst die Eingabe. 
+
+Definition at line 78 of file main.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8h_a40a5537410c178c3428bb4cafc16d1e6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8h_a4d54648a3d7c5129aa6f5557a743d753}{\index{main.\-h@{main.\-h}!test\-\_\-new\-\_\-dijkstra@{test\-\_\-new\-\_\-dijkstra}}
+\index{test\-\_\-new\-\_\-dijkstra@{test\-\_\-new\-\_\-dijkstra}!main.h@{main.\-h}}
+\subsubsection[{test\-\_\-new\-\_\-dijkstra}]{\setlength{\rightskip}{0pt plus 5cm}void test\-\_\-new\-\_\-dijkstra (
+\begin{DoxyParamCaption}
+\item[{{\bf Dijkstra} $\ast$}]{dk}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a4d54648a3d7c5129aa6f5557a743d753}
+testet den \hyperlink{class_dijkstra}{Dijkstra} Algo 
+\begin{DoxyParams}{Parameters}
+{\em dk} & Objekt mit dem gearbeitet werden soll \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file main.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8h_a4d54648a3d7c5129aa6f5557a743d753_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8h_a4d54648a3d7c5129aa6f5557a743d753_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8h_a7b051d042ddeb2c242349737a78a3f12}{\index{main.\-h@{main.\-h}!testing\-\_\-purpose@{testing\-\_\-purpose}}
+\index{testing\-\_\-purpose@{testing\-\_\-purpose}!main.h@{main.\-h}}
+\subsubsection[{testing\-\_\-purpose}]{\setlength{\rightskip}{0pt plus 5cm}void testing\-\_\-purpose (
+\begin{DoxyParamCaption}
+\item[{int}]{counter}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a7b051d042ddeb2c242349737a78a3f12}
+\hypertarget{main_8h_a1aaf78de8ac0b372c056372700daa5e5}{\index{main.\-h@{main.\-h}!verarbeite\-\_\-eingabe@{verarbeite\-\_\-eingabe}}
+\index{verarbeite\-\_\-eingabe@{verarbeite\-\_\-eingabe}!main.h@{main.\-h}}
+\subsubsection[{verarbeite\-\_\-eingabe}]{\setlength{\rightskip}{0pt plus 5cm}void verarbeite\-\_\-eingabe (
+\begin{DoxyParamCaption}
+\item[{int}]{weiter, }
+\item[{{\bf Dijkstra} $\ast$}]{dk}
+\end{DoxyParamCaption}
+)}}\label{main_8h_a1aaf78de8ac0b372c056372700daa5e5}
+Verarbeitet die Eingabe 
+\begin{DoxyParams}{Parameters}
+{\em weiter} & Ausgewählte Menüpunkt \\
+\hline
+{\em dk} & \hyperlink{class_dijkstra}{Dijkstra} Objekt mit dem gearbeitet werden soll \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file main.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8h_a1aaf78de8ac0b372c056372700daa5e5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{main_8h_a1aaf78de8ac0b372c056372700daa5e5_icgraph}
+\end{center}
+\end{figure}
+
+

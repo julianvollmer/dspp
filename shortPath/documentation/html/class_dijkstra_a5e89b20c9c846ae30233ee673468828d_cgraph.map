@@ -1,0 +1,4 @@
+<map id="Dijkstra::calculate_distance" name="Dijkstra::calculate_distance">
+<area shape="rect" id="node3" href="$class_dijkstra.html#a0f7f7f26abbe38dc975d1b73da1fd352" title="Dijkstra::initialize" alt="" coords="188,5,308,33"/>
+<area shape="rect" id="node5" href="$class_dijkstra.html#ac2ec4910268eec4102f0d975e30b15e1" title="Dijkstra::get_closed\l_unmarked_node" alt="" coords="179,57,317,101"/>
+</map>
