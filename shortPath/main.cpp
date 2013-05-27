@@ -9,14 +9,14 @@
 int main(int argc, char *argv[]){
 	unsigned int (*matrix)[nodenum][nodenum] = 0;
 	
-int eingabe = 0;
-
+	int eingabe = 0;
+	initialisiere_zufallsgenerator();
 	// if(parameter_ok(argc, argv)){
 		Dijkstra *dk = new Dijkstra();	
-		dk->get(matrix);
-		dk->setMatrix(*matrix);
-		dk->setSource(8);
-		dk->calculate(true);
+		// dk->get(matrix);
+		// dk->setMatrix(*matrix);
+		// dk->setSource(8);
+		// dk->calculate(true);
 		do{
 			loesche_bildschirm_mit_header();
 			eingabe = menu();
@@ -31,29 +31,22 @@ int eingabe = 0;
 
     return 0;
 }
-
+/**
+ * Verarbeitet die Eingabe
+ * @param weiter Ausgewählte Menüpunkt
+ * @param dk     Dijkstra Objekt mit dem gearbeitet werden soll
+ */
 void verarbeite_eingabe(int weiter, Dijkstra *dk){
 	int auswahl = 0;
 	
 	switch (weiter)
     {
-	    case 1:
-	    	set_starting_point(dk);
-	    break;
-
-	    case 2: 
-	        dk->trace();
-	    break;
-
-	    case 3: 
-	         dk->calculate(true);
-	    break;
-
-	    case 4: 
+	    
+	    case 1: 
 	        load_file();
 
 	    break;
-	    case 5: 
+	    case 2: 
 	        test_new_dijkstra(dk);
 
 	    break;
@@ -63,11 +56,18 @@ void verarbeite_eingabe(int weiter, Dijkstra *dk){
     } 
 }
 
-
+/**
+ * testet den Dijkstra Algo
+ * @param dk Objekt mit dem gearbeitet werden soll
+ */
 void test_new_dijkstra(Dijkstra *dk){
-	dk->read();
-    dk->calculateDistance();
+	dk->init_random();
+    dk->init_source();
+    dk->calculate_distance();
     dk->output();
+
+    dk->print();
+    
 }
 
 
@@ -83,9 +83,6 @@ void set_starting_point(Dijkstra *dk){
 int menu(){
 	string menuepunkte[] = 
 						{
-							"Zufaellig neue Knoten erstellen",
-							"Knoten ausgeben",
-							"Berechne kuerzesten Weg",
 							"Datei einlesen",
 							"test_new_dijkstra"
 							
