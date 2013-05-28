@@ -123,7 +123,9 @@ int Dijkstra::get_closed_unmarked_node(){
     return closest_unmarked_node;
 }
  
- 
+ /**
+  * Here is where the magic happens
+  */
 void Dijkstra::calculate_distance(){
     initialize();
     int minDistance = INFINITY;
