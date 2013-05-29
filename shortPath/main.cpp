@@ -4,8 +4,17 @@
 //
 //  Created by Julian Vollmer on 21.04.13.
 //  Copyright (c) 2013 Julian Vollmer. All rights reserved.
-//
+
+
+
 #include "main.h"
+
+/**
+ * Last version with array, translate it to vector.
+ * @param  argc [description]
+ * @param  argv [description]
+ * @return      [description]
+ */
 int main(int argc, char *argv[]){
 	unsigned int (*matrix)[nodenum][nodenum] = 0;
 	
