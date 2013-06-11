@@ -12,7 +12,6 @@
 #include "helper/load_file.h"
 
 
-using namespace boost;
 
 void anleitung();
 int menu();
