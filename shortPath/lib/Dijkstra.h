@@ -1,82 +1,45 @@
 #ifndef __dijkstra
 #define __dijkstra
 
-#include <iostream>
-#include <utility>
-#include <algorithm>
 #include <vector>
-
-#include "../helper/eingabe.h"
-#include "../helper/helpers.h"
-#include "../helper/random.h"
-
-#include "boost/graph/graph_traits.hpp"
-#include "boost/graph/adjacency_list.hpp"
+#include <iostream>
 using namespace std;
-
-// Unendlich "definieren"
-#define INF INT_MAX
-
-// Anzahl an Knoten muss "hart" festgelegt werden
-#define nodenum 99999
 
 class Dijkstra {
 
 public:
 	Dijkstra();
 
-    /*
-    * Function read() reads No of vertices, Adjacency Matrix and source
-    * Matrix from the user. The number of vertices must be greather than
-    * zero, all members of Adjacency Matrix must be postive as distances
-    * are always positive. The source vertex must also be positive from 0
-    * to noOfVertices - 1
-    */
-    void read();
- 
-    /*
-    * Function initialize initializes all the data members at the begining of
-    * the execution. The distance between source to source is zero and all other
-    * distances between source and vertices are infinity. The mark is initialized
-    * to false and predecessor is initialized to -1
-    */
-    void initialize();
- 
-    /*
-    * Function get_closed_unmarked_node returns the node which is nearest from the
-    * Predecessor marked node. If the node is already marked as visited, then it search
-    * for another node.
-    */
-    int get_closed_unmarked_node();
-    
-    /*
-    * Function calculate_distance calculates the minimum distances from the source node to
-    * Other node.
-    */
-    void calculate_distance();
-    
-    /*
-    * Function output prints the results
-    */
-    void output();
-    void printPath(int);    
-    void setMatrix(unsigned int matrix[nodenum][nodenum]);
-    void setSource(unsigned int root);
-    void get(unsigned int (*&retVal)[nodenum][nodenum]);
-    void init_random();
-    void init_source();
-    void add_random_row();
-    void print();
-
+    string      get_name();
+    int         get_distance();
+    vector<int> get_distances_to_other();
+    int         get_predecessor();
+    bool        get_mark();
+    int         get_position();
+    void        set_name(string name);
+    void        set_distance(int distnace);
+    void        set_predecessor(int predecessor);
+    void        set_mark(bool mark);    
+    void        add_distances_to_other(int distance);   
+    void        set_position(int position);
+    void        print_distances();
+    int         get_distance_from_specific(int position);
+    void        add_distance(int distance);
+    void        init_distances();
+    int         get_shortest_distance();
 private:
-    unsigned int intern[nodenum][nodenum];
-    unsigned int root;
-    unsigned int distance[nodenum];         // Array für Entfernungen/Kosten
-    unsigned int predecessor[nodenum]; // Array für Vorgängerknoten
-    int adjMatrix[nodenum][nodenum];
-    bool mark[nodenum]; //keep track of visited node
-    int source;
-    int num_of_vertices;     
+    
+    int predecessor;// Array für Vorgängerknoten
+    bool mark;//keep track of visited node
+    string name;
+    vector<int> distances;
+    int position;
+    int distance;
+
+    void        set_distance_to_myself_zero();
+
+    
+    
 };
 
 #endif /* __dijkstra */

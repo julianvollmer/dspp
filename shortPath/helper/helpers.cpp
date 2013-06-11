@@ -12,3 +12,9 @@ int string_to_number(string str){
     	Result = 0;
  return Result;
 }
+
+string concat_string_and_int(string str, int i){
+	std::stringstream sstm;
+	sstm << str << i;
+	return sstm.str();
+}

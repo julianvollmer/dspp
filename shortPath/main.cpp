@@ -16,21 +16,23 @@
  * @return      [description]
  */
 int main(int argc, char *argv[]){
-	unsigned int (*matrix)[nodenum][nodenum] = 0;
+	
 	
 	int eingabe = 0;
-	initialisiere_zufallsgenerator();
+	// initialisiere_zufallsgenerator();
 	// if(parameter_ok(argc, argv)){
-		Dijkstra *dk = new Dijkstra();	
-		// dk->get(matrix);
-		// dk->setMatrix(*matrix);
-		// dk->setSource(8);
-		// dk->calculate(true);
-		do{
-			loesche_bildschirm_mit_header();
-			eingabe = menu();
-			verarbeite_eingabe(eingabe, dk);
-		}while(eingabe);
+		// Dijkstra *dk = new Dijkstra();	
+		ShortPath *sp = new ShortPath();
+		sp->init_random();
+		sp->calculate_distance();
+		sp->print();
+		
+		sp->output();
+		// do{
+		// 	loesche_bildschirm_mit_header();
+		// 	eingabe = menu();
+		// 	verarbeite_eingabe(eingabe, dk);
+		// }while(eingabe);
 
 	// }
 
@@ -45,39 +47,39 @@ int main(int argc, char *argv[]){
  * @param weiter Ausgewählte Menüpunkt
  * @param dk     Dijkstra Objekt mit dem gearbeitet werden soll
  */
-void verarbeite_eingabe(int weiter, Dijkstra *dk){
-	int auswahl = 0;
+// void verarbeite_eingabe(int weiter, Dijkstra *dk){
+// 	int auswahl = 0;
 	
-	switch (weiter)
-    {
+// 	switch (weiter)
+//     {
 	    
-	    case 1: 
-	        load_file();
+// 	    case 1: 
+// 	        load_file();
 
-	    break;
-	    case 2: 
-	        test_new_dijkstra(dk);
+// 	    break;
+// 	    case 2: 
+// 	        test_new_dijkstra(dk);
 
-	    break;
+// 	    break;
 
-	    default:
-	    	cout << "Vielen Dank für die Nutzung!" << endl;
-    } 
-}
+// 	    default:
+// 	    	cout << "Vielen Dank für die Nutzung!" << endl;
+//     } 
+// }
 
 /**
  * testet den Dijkstra Algo
  * @param dk Objekt mit dem gearbeitet werden soll
  */
-void test_new_dijkstra(Dijkstra *dk){
-	dk->init_random();
-    dk->init_source();
-    dk->calculate_distance();
-    dk->output();
+// void test_new_dijkstra(Dijkstra *dk){
+// 	dk->init_random();
+//     dk->init_source();
+//     dk->calculate_distance();
+//     dk->output();
 
-    dk->print();
+//     dk->print();
     
-}
+// }
 
 
 /**
@@ -87,7 +89,7 @@ void test_new_dijkstra(Dijkstra *dk){
 void set_starting_point(Dijkstra *dk){
 	int input = 0;
 	input = erfasse_int(0, nodenum-1, "Bitte geben sie den Startpunkt ein.");
-	dk->setSource(input);
+	// dk->setSource(input);
 }
 int menu(){
 	string menuepunkte[] = 

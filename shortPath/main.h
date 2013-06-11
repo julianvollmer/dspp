@@ -4,8 +4,8 @@
 #ifndef MAIN_H_
 #define MAIN_H_
 #include <iostream>
-#include "lib/PathElement.h"
-#include "lib/PathVector.h"
+#include "lib/Dijkstra.h"
+ #include "lib/ShortPath.h"
 #include "helper/random.h"
 #include "helper/ausgabe.h"
 #include "helper/eingabe.h"
