@@ -28,6 +28,7 @@ int main(int argc, char *argv[]){
 		sp->print();
 		
 		sp->output();
+		// sp->show_dk();
 		// do{
 		// 	loesche_bildschirm_mit_header();
 		// 	eingabe = menu();

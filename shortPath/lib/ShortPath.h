@@ -34,6 +34,8 @@ public:
     * to noOfVertices - 1
     */
     void read();
+
+    void show_dk();
  
     /*
     * Function initialize initializes all the data members at the begining of
@@ -48,7 +50,7 @@ public:
     * Predecessor marked node. If the node is already marked as visited, then it search
     * for another node.
     */
-    int get_closed_unmarked_node();
+    int get_closest_unmarked_node();
     
     /*
     * Function calculate_distance calculates the minimum distances from the source node to

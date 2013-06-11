@@ -98,20 +98,21 @@ void ShortPath::init_source(){
 void ShortPath::initialize(){
     for(int i=0;i<num_of_vertices;i++) {
         elements[i].set_mark(false);
-        predecessor[i] = -1;
+        //predecessor[i] = -1;
+        elements[i].set_predecessor(-1);
         distance[i] = INFINITY;
     }
     distance[source]= 0;
 }
  
  
-int ShortPath::get_closed_unmarked_node(){
+int ShortPath::get_closest_unmarked_node(){
     int minDistance = INFINITY;
     int closest_unmarked_node;
     for(int i=0;i<num_of_vertices;i++) {
-        if((!elements[i].get_mark()) && ( minDistance >= elements[i].get_distance())) {
-            minDistance = elements[i].get_distance();
-            cout << minDistance  << "can't be right ?!?!?!" << endl;
+        if((!elements[i].get_mark()) && ( minDistance >= elements[i].get_distance_from_specific(source))) {
+            minDistance = elements[i].get_distance_from_specific(source);
+            // cout << minDistance  << "can't be right ?!?!?!" << endl;
             closest_unmarked_node = i;
         }
     }
@@ -128,22 +129,42 @@ void ShortPath::calculate_distance(){
     int closest_unmarked_node;
     int count = 0;
     while(count < num_of_vertices) {
-        closest_unmarked_node = get_closed_unmarked_node();
+        closest_unmarked_node = get_closest_unmarked_node();
         elements[closest_unmarked_node].set_mark(true);
         for(int i = 0; i < num_of_vertices; i++) {
             if((!elements[i].get_mark()) && (elements[closest_unmarked_node].get_distance_from_specific(i) > 0) ) {
-                if(elements[i].get_distance() > elements[closest_unmarked_node].get_distance() + elements[closest_unmarked_node].get_distance_from_specific(i)) {
-                    elements[i].set_distance(elements[closest_unmarked_node].get_distance() + elements[closest_unmarked_node].get_distance_from_specific(i));
+                if(elements[i].get_distance_from_specific(source) > elements[closest_unmarked_node].get_distance_from_specific(source) + elements[closest_unmarked_node].get_distance_from_specific(i)) {
+                    elements[i].set_distance(elements[closest_unmarked_node].get_distance_from_specific(source) + elements[closest_unmarked_node].get_distance_from_specific(i));
                     // elements[i].add_distance(elements[closest_unmarked_node].get_distance_from_specific(i));
                     elements[i].set_predecessor(closest_unmarked_node);
                     // cout << "juhu" <<elements[closest_unmarked_node].get_distance_from_specific(i)<< endl;
+                    cout << "closest_unmarked_node if " << closest_unmarked_node<<endl;
                 }
+                
             }
         }
+        cout << "closest_unmarked_node not if " << closest_unmarked_node<<endl;
         count++;
     }
 }
 
+
+void ShortPath::show_dk(){
+    for (int i = 0; i < num_of_vertices; ++i){
+        for (int j = 0; j < num_of_vertices; ++j){
+            cout <<"alkfjadsölasd:"<< elements[i].get_distance_from_specific(j) << endl ;
+        }
+    cout << "next element"<< endl <<endl;    
+    }
+            
+    cout << "get distance()"<<endl <<endl <<endl ;
+
+         for (int i = 0; i < num_of_vertices; ++i){
+     
+            cout <<"alkfjadsölasd:"<< elements[i].get_distance_from_specific(source) << endl ;
+    }       
+    
+}
 
 
  /**
@@ -171,7 +192,7 @@ void ShortPath::output(){
             cout<<source<<".."<<source;
         else
             printPath(i);
-        cout<<"->"<<elements[i].get_distance()<<endl;
+        cout<<"->"<<elements[i].get_distance_from_specific(source)<<endl;
     }
 
 }
