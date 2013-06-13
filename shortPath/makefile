@@ -9,7 +9,7 @@ OBJS=lib/Dijkstra.o lib/ShortPath.o helper/random.o helper/ausgabe.o helper/eing
 
 # Flags and stuff, change as required
 OPTIMZE=-O3
-CFLAGS= -fopenmp -ggdb $(OPTIMIZE) -Wall
+CXXFLAGS= -fopenmp -ggdb $(OPTIMIZE) -Wall
 LDFLAGS= -fopenmp -lm
 CC=gcc
 
