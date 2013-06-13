@@ -118,16 +118,15 @@ void ShortPath::calculate_distance_multiproc(){
     omp_set_num_threads(4);
     
     initialize();
-    cout << "threads " << omp_get_num_threads() << endl;
     int minDistance = INFINITY;
     int closest_unmarked_node;
     int count = 0;
+
     while(count < num_of_vertices) {
         closest_unmarked_node = get_closest_unmarked_node();
         elements[closest_unmarked_node].set_mark(true);
-        #pragma opm parallel for
+        #pragma omp parallel for 
         for(int i = 0; i < num_of_vertices; i++) {
-          cout << "thread num" << omp_get_thread_num() << endl;
             if((!elements[i].get_mark()) && (elements[closest_unmarked_node].get_distance_from_specific(i) > 0) ) {
                 if(distances[i] > distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i)) {
                     distances[i] = distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i);

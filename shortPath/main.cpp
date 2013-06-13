@@ -22,9 +22,17 @@ int main(int argc, char *argv[]){
 	// initialisiere_zufallsgenerator();
 	// if(parameter_ok(argc, argv)){
 		// Dijkstra *dk = new Dijkstra();	
+    omp_set_num_threads(2);
+    cout << "trying threads:";
+    #pragma omp parallel for 
+    for(int i = 0; i < 8; i++) {
+        cout << " " << omp_get_thread_num() << " "; 
+    }
+    cout << endl;
 		ShortPath *sp = new ShortPath();
 		sp->init_random();
 
+    
     cout << "Naive" << endl;
     start = clock();
 		sp->calculate_distance();
