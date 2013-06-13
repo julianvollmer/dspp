@@ -1,6 +1,5 @@
 #include "ShortPath.h"
 
-
 ShortPath::ShortPath(){
 
 };
@@ -89,6 +88,7 @@ void ShortPath::init_source(){
  
  
 void ShortPath::initialize(){
+    distances.clear();
     for(int i=0;i<num_of_vertices;i++) {
         elements[i].set_mark(false);
         elements[i].set_predecessor(-1);
@@ -114,6 +114,35 @@ int ShortPath::get_closest_unmarked_node(){
  /**
   * Here is where the magic happens
   */
+void ShortPath::calculate_distance_multiproc(){
+    omp_set_num_threads(4);
+    
+    initialize();
+    cout << "threads " << omp_get_num_threads() << endl;
+    int minDistance = INFINITY;
+    int closest_unmarked_node;
+    int count = 0;
+    while(count < num_of_vertices) {
+        closest_unmarked_node = get_closest_unmarked_node();
+        elements[closest_unmarked_node].set_mark(true);
+        #pragma opm parallel for
+        for(int i = 0; i < num_of_vertices; i++) {
+          cout << "thread num" << omp_get_thread_num() << endl;
+            if((!elements[i].get_mark()) && (elements[closest_unmarked_node].get_distance_from_specific(i) > 0) ) {
+                if(distances[i] > distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i)) {
+                    distances[i] = distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i);
+                    // elements[i].add_distance(elements[closest_unmarked_node].get_distance_from_specific(i));
+                    elements[i].set_predecessor(closest_unmarked_node);
+                    // cout << "juhu" <<elements[closest_unmarked_node].get_distance_from_specific(i)<< endl;
+                }
+                
+            }
+        }
+        count++;
+    }
+}
+
+
 void ShortPath::calculate_distance(){
     
     initialize();
@@ -137,8 +166,6 @@ void ShortPath::calculate_distance(){
         count++;
     }
 }
-
-
 void ShortPath::show_dk(){
     for (int i = 0; i < num_of_vertices; ++i){
         for (int j = 0; j < num_of_vertices; ++j){

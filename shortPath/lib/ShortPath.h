@@ -5,6 +5,7 @@
 #include <utility>
 #include <algorithm>
 #include <vector>
+#include <omp.h>
 
 #include "../helper/eingabe.h"
 #include "../helper/helpers.h"
@@ -57,6 +58,7 @@ public:
     * Other node.
     */
     void calculate_distance();
+    void calculate_distance_multiproc();
     
     /*
     * Function output prints the results

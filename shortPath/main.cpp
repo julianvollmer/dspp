@@ -24,10 +24,23 @@ int main(int argc, char *argv[]){
 		// Dijkstra *dk = new Dijkstra();	
 		ShortPath *sp = new ShortPath();
 		sp->init_random();
+
+    cout << "Naive" << endl;
+    start = clock();
 		sp->calculate_distance();
+    stop = clock();
+    t = (double) (stop-start)/CLOCKS_PER_SEC;
+    cout << "Run time: " << t << endl;
+		//sp->output();
+    cout << "Multicore" << endl;
+    start = clock();
+		sp->calculate_distance_multiproc();
+    stop = clock();
+    t = (double) (stop-start)/CLOCKS_PER_SEC;
+    cout << "Run time: " << t << endl;
 		//sp->print();
 		
-		sp->output();
+		//sp->output();
 		// sp->show_dk();
 		// do{
 		// 	loesche_bildschirm_mit_header();

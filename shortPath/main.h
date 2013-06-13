@@ -10,6 +10,7 @@
 #include "helper/ausgabe.h"
 #include "helper/eingabe.h"
 #include "helper/load_file.h"
+#include <time.h>
 
 
 
@@ -21,5 +22,7 @@ void verarbeite_eingabe(int weiter, Dijkstra *dk);
 void boost_it();
 void set_starting_point(Dijkstra *dk);
 void test_new_dijkstra(Dijkstra *dk);
+clock_t start, stop;
+double t;
 
 #endif /* MAIN_H_ */
