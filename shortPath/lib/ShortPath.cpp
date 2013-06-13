@@ -6,12 +6,6 @@ ShortPath::ShortPath(){
 };
 
 
-
-void ShortPath::setSource(unsigned int root) {
-    this->root = root;
-}
-
-
 void ShortPath::init_random_distances(){
     int size = elements.size();    
     for (vector<Dijkstra>::iterator it = elements.begin() ; it != elements.end(); ++it){
@@ -72,7 +66,6 @@ void ShortPath::init_random(){
     num_of_vertices = erfasse_int(0,INT_MAX,"Geben Sie die Anzahl der Knoten des Graphen ein:");    
      for(int i = 0; i < num_of_vertices; i++){
         Dijkstra d;
-        d.set_distance(0);
         d.set_name(concat_string_and_int("J&P",i));
         d.set_mark(false);
         d.set_predecessor(-1);
@@ -98,11 +91,10 @@ void ShortPath::init_source(){
 void ShortPath::initialize(){
     for(int i=0;i<num_of_vertices;i++) {
         elements[i].set_mark(false);
-        //predecessor[i] = -1;
         elements[i].set_predecessor(-1);
-        distance[i] = INFINITY;
+        distances.push_back(INT_MAX);
     }
-    distance[source]= 0;
+    distances[source]= 0;
 }
  
  
@@ -133,8 +125,8 @@ void ShortPath::calculate_distance(){
         elements[closest_unmarked_node].set_mark(true);
         for(int i = 0; i < num_of_vertices; i++) {
             if((!elements[i].get_mark()) && (elements[closest_unmarked_node].get_distance_from_specific(i) > 0) ) {
-                if(elements[i].get_distance_from_specific(source) > elements[closest_unmarked_node].get_distance_from_specific(source) + elements[closest_unmarked_node].get_distance_from_specific(i)) {
-                    elements[i].set_distance(elements[closest_unmarked_node].get_distance_from_specific(source) + elements[closest_unmarked_node].get_distance_from_specific(i));
+                if(distances[i] > distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i)) {
+                    distances[i] = distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i);
                     // elements[i].add_distance(elements[closest_unmarked_node].get_distance_from_specific(i));
                     elements[i].set_predecessor(closest_unmarked_node);
                     // cout << "juhu" <<elements[closest_unmarked_node].get_distance_from_specific(i)<< endl;
@@ -192,7 +184,7 @@ void ShortPath::output(){
             cout<<source<<".."<<source;
         else
             printPath(i);
-        cout<<"->"<<elements[i].get_distance_from_specific(source)<<endl;
+        cout<<"->"<<distances[i]<<endl;
     }
 
 }

@@ -24,6 +24,7 @@ public:
     void        set_position(int position);
     void        print_distances();
     int         get_distance_from_specific(int position);
+    void        set_distance_to_specific(int position, int value);
     void        add_distance(int distance);
     void        init_distances();
     int         get_shortest_distance();

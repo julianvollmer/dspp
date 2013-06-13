@@ -1,5 +1,6 @@
 #include "Dijkstra.h"
 
+#include <limits.h>
 
 Dijkstra::Dijkstra(){
     init_distances();
@@ -21,6 +22,11 @@ int Dijkstra::get_distance_from_specific(int position){
         return distances[position];
     else
         return 0;
+}
+
+void Dijkstra::set_distance_to_specific(int position, int value){
+    if(position < distances.size())
+        distances[position] = value;
 }
 
 string Dijkstra::get_name(){
