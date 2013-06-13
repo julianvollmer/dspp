@@ -63,7 +63,7 @@ void ShortPath::print_horizontal_line(){
 void ShortPath::init_random(){
     // vector<*Dijkstra> sp;
 
-    num_of_vertices = erfasse_int(0,INT_MAX,"Geben Sie die Anzahl der Knoten des Graphen ein:");    
+    num_of_vertices = erfasse_int(0,INFINITY,"Geben Sie die Anzahl der Knoten des Graphen ein:");    
      for(int i = 0; i < num_of_vertices; i++){
         Dijkstra d;
         d.set_name(concat_string_and_int("J&P",i));
@@ -92,7 +92,7 @@ void ShortPath::initialize(){
     for(int i=0;i<num_of_vertices;i++) {
         elements[i].set_mark(false);
         elements[i].set_predecessor(-1);
-        distances.push_back(INT_MAX);
+        distances.push_back(INFINITY);
     }
     distances[source]= 0;
 }
@@ -102,8 +102,8 @@ int ShortPath::get_closest_unmarked_node(){
     int minDistance = INFINITY;
     int closest_unmarked_node;
     for(int i=0;i<num_of_vertices;i++) {
-        if((!elements[i].get_mark()) && ( minDistance >= elements[i].get_distance_from_specific(source))) {
-            minDistance = elements[i].get_distance_from_specific(source);
+        if((!elements[i].get_mark()) && ( minDistance >= distances[i])) {
+            minDistance = distances[i];
             // cout << minDistance  << "can't be right ?!?!?!" << endl;
             closest_unmarked_node = i;
         }
@@ -130,12 +130,10 @@ void ShortPath::calculate_distance(){
                     // elements[i].add_distance(elements[closest_unmarked_node].get_distance_from_specific(i));
                     elements[i].set_predecessor(closest_unmarked_node);
                     // cout << "juhu" <<elements[closest_unmarked_node].get_distance_from_specific(i)<< endl;
-                    cout << "closest_unmarked_node if " << closest_unmarked_node<<endl;
                 }
                 
             }
         }
-        cout << "closest_unmarked_node not if " << closest_unmarked_node<<endl;
         count++;
     }
 }

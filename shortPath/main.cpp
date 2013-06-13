@@ -25,7 +25,7 @@ int main(int argc, char *argv[]){
 		ShortPath *sp = new ShortPath();
 		sp->init_random();
 		sp->calculate_distance();
-		sp->print();
+		//sp->print();
 		
 		sp->output();
 		// sp->show_dk();
