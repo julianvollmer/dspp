@@ -69,9 +69,9 @@ public:
 
 
     void printPath(int);    
-    void setMatrix(unsigned int matrix[nodenum][nodenum]);
+    // void setMatrix(unsigned int matrix[nodenum][nodenum]);
     void setSource(unsigned int root);
-    void get(unsigned int (*&retVal)[nodenum][nodenum]);
+    // void get(unsigned int (*&retVal)[nodenum][nodenum]);
     void init_random();
     void init_source();
     void add_random_row();
@@ -80,12 +80,12 @@ public:
 private:
     vector<Dijkstra> elements;
     
-    unsigned int intern[nodenum][nodenum];
+    
     unsigned int root;
     unsigned int distance[nodenum];         // Array für Entfernungen/Kosten
     unsigned int predecessor[nodenum]; // Array für Vorgängerknoten
-    int adjMatrix[nodenum][nodenum];
-    bool mark[nodenum]; //keep track of visited node
+    
+    
     int source;
     int num_of_vertices;    
 
