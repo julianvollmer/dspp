@@ -5,6 +5,10 @@ ShortPath::ShortPath(){
 };
 
 
+void ShortPath::add_row(Dijkstra element){
+    this->elements.push_back(element);
+}
+
 void ShortPath::init_random_distances(){
     int size = elements.size();    
     for (vector<Dijkstra>::iterator it = elements.begin() ; it != elements.end(); ++it){
@@ -12,13 +16,24 @@ void ShortPath::init_random_distances(){
         
         int pos = it->get_position();
         for(int i = 0; i < size && i < pos; i++){
-            it->add_distances_to_other(liefere_ganze_zufallszahl(1,250));    
+            if((liefere_ganze_zufallszahl(1,8)%2)==0){
+                it->add_distances_to_other(0);    
+                
+            }
+            else{
+                it->add_distances_to_other(liefere_ganze_zufallszahl(1,250));    
+
+                }
         }
         it->add_distances_to_other(0);
     }
     reflect_to_other_side();
 
 } 
+
+int ShortPath::size(){
+    return this->elements.size();
+}
 
 void ShortPath::reflect_to_other_side(){
     int tmp = 0;
@@ -59,10 +74,9 @@ void ShortPath::print_horizontal_line(){
     cout << "***";
 }
 
-void ShortPath::init_random(){
-    // vector<*Dijkstra> sp;
 
-    num_of_vertices = erfasse_int(0,INFINITY,"Geben Sie die Anzahl der Knoten des Graphen ein:");    
+void ShortPath::init_random(int anz){
+    num_of_vertices = anz;
      for(int i = 0; i < num_of_vertices; i++){
         Dijkstra d;
         d.set_name(concat_string_and_int("J&P",i));
@@ -73,20 +87,16 @@ void ShortPath::init_random(){
      }
         init_random_distances();
 }
-
-
-
-
-
-
+void ShortPath::init_random(){
+    num_of_vertices = erfasse_int(0,INFINITY,"Geben Sie die Anzahl der Knoten des Graphen ein:");    
+    init_random(num_of_vertices);
+}
 
 void ShortPath::init_source(){
      source = erfasse_int(0,num_of_vertices-1,"Enter the source vertex\n");
 }
 
 
- 
- 
 void ShortPath::initialize(){
     distances.clear();
     for(int i=0;i<num_of_vertices;i++) {
@@ -115,7 +125,7 @@ int ShortPath::get_closest_unmarked_node(){
   * Here is where the magic happens
   */
 void ShortPath::calculate_distance_multiproc(){
-    omp_set_num_threads(4);
+    omp_set_num_threads(1);
     
     initialize();
     int minDistance = INFINITY;

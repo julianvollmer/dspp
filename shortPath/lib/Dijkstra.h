@@ -22,6 +22,7 @@ public:
     void        set_mark(bool mark);    
     void        add_distances_to_other(int distance);   
     void        set_position(int position);
+    void        set_distance_vector(vector<int> v);
     void        print_distances();
     int         get_distance_from_specific(int position);
     void        set_distance_to_specific(int position, int value);

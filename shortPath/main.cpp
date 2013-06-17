@@ -19,48 +19,36 @@ int main(int argc, char *argv[]){
 	
 	
 	int eingabe = 0;
-	// initialisiere_zufallsgenerator();
-	// if(parameter_ok(argc, argv)){
-		// Dijkstra *dk = new Dijkstra();	
-    omp_set_num_threads(2);
-    cout << "trying threads:";
-    #pragma omp parallel for 
-    for(int i = 0; i < 8; i++) {
-        cout << " " << omp_get_thread_num() << " "; 
-    }
-    cout << endl;
-		ShortPath *sp = new ShortPath();
-		sp->init_random();
-
+	number_of_graphs = 2001;
     
-    cout << "Naive" << endl;
-    start = clock();
-		sp->calculate_distance();
-    stop = clock();
-    t = (double) (stop-start)/CLOCKS_PER_SEC;
-    cout << "Run time: " << t << endl;
-		//sp->output();
-    cout << "Multicore" << endl;
-    start = clock();
-		sp->calculate_distance_multiproc();
-    stop = clock();
-    t = (double) (stop-start)/CLOCKS_PER_SEC;
-    cout << "Run time: " << t << endl;
-		//sp->print();
+   if(parameter_ok(argc, argv)){
+		if(argc == 2){
+			number_of_graphs = atoi(argv[1]);
+		}
+			
+		else{
+			cout << "yep";
+			number_of_graphs = 1000;
+		}
+			
+		ShortPath *sp = new ShortPath();
+		sp->init_random(number_of_graphs);
+
+
+		// sp->print();
 		
-		//sp->output();
+		// sp->output();
 		// sp->show_dk();
-		// do{
-		// 	loesche_bildschirm_mit_header();
-		// 	eingabe = menu();
-		// 	verarbeite_eingabe(eingabe, dk);
-		// }while(eingabe);
+		 do{
+		 	loesche_bildschirm_mit_header();
+		 	eingabe = menu();
+		 	verarbeite_eingabe(eingabe, sp);
+		 }while(eingabe);
 
-	// }
 
-	// else
+	}
+	else
 		anleitung();
-	
 
     return 0;
 }
@@ -69,56 +57,92 @@ int main(int argc, char *argv[]){
  * @param weiter Ausgewählte Menüpunkt
  * @param dk     Dijkstra Objekt mit dem gearbeitet werden soll
  */
-// void verarbeite_eingabe(int weiter, Dijkstra *dk){
-// 	int auswahl = 0;
+void verarbeite_eingabe(int weiter, ShortPath *sp){
+	int auswahl = 0;
 	
-// 	switch (weiter)
-//     {
+	switch (weiter)
+    {
 	    
-// 	    case 1: 
-// 	        load_file();
+	    case 1: 
+	        load_file();
+	    break;
 
-// 	    break;
-// 	    case 2: 
-// 	        test_new_dijkstra(dk);
+	    case 2: 
+	        do_shortpath_calculation(sp);
+	    break;
+	    case 3: 
+	        do_shortpath_calculation_mulitproc(sp);
+	    break;
+	    case 4: 
+	        set_number_of_graphs(sp);
+	    break;
+	    case 5: 
+	        set_number_of_cores(sp);
+	    break;
+	    case 6: 
+	        sp->print();
+	    break;
+	    case 7: 
+	        sp->output();
+	    break;
 
-// 	    break;
 
-// 	    default:
-// 	    	cout << "Vielen Dank für die Nutzung!" << endl;
-//     } 
-// }
+	    default:
+	    	cout << "Vielen Dank für die Nutzung!" << endl;
+    } 
+}
 
-/**
- * testet den Dijkstra Algo
- * @param dk Objekt mit dem gearbeitet werden soll
- */
-// void test_new_dijkstra(Dijkstra *dk){
-// 	dk->init_random();
-//     dk->init_source();
-//     dk->calculate_distance();
-//     dk->output();
+void load_graph_from_file(){
+	load_file();
+	
+}
 
-//     dk->print();
+void do_shortpath_calculation(ShortPath *sp){
+	 cout << "Naive" << endl;
+    start = clock();
+		sp->calculate_distance();
+    stop = clock();
+    t = (double) (stop-start)/CLOCKS_PER_SEC;
+    cout << "Run time: " << t << endl;
+		
     
-// }
+}
+
+void set_number_of_graphs(ShortPath *sp){
+	number_of_graphs = erfasse_int(1, 20000, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
+	sp->init_random(number_of_graphs);
+}
+
+void set_number_of_cores(ShortPath *sp){
+	number_of_cores = erfasse_int(1, 20000, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
+	sp->init_random(number_of_graphs);
+}
+
+void do_shortpath_calculation_mulitproc(ShortPath *sp){
+	cout << "Multicore" << endl;
+    start = clock();
+		sp->calculate_distance_multiproc();
+    stop = clock();
+    t = (double) (stop-start)/CLOCKS_PER_SEC;
+    cout << "Run time: " << t << endl;
+}
 
 
 /**
  * Zeigt das Menu und erfasst die Eingabe.
  */
 
-void set_starting_point(Dijkstra *dk){
-	int input = 0;
-	input = erfasse_int(0, nodenum-1, "Bitte geben sie den Startpunkt ein.");
-	// dk->setSource(input);
-}
+
 int menu(){
 	string menuepunkte[] = 
 						{
 							"Datei einlesen",
-							"test_new_dijkstra"
-							
+							"Kuerzte Wege (ohne Threads)",
+							"Kuerzte Wege (mit Threads)",
+							"Setze Anzahl der zu berechnenden Graphen",	
+							"Anzahl der Threads fuer Multicore",
+							"Schreibe Adjazenzmatrix auf Terminal",
+							"Schreibe Wegberechnung auf Terminal"
 						};
 
 	int anz_punkte = sizeof(menuepunkte) / sizeof(menuepunkte[0]);
@@ -138,7 +162,10 @@ int menu(){
  * @return true wenn die Parameter ok sind.
  */
 bool parameter_ok(int argc, char *argv[]){
-	return (argc == 2 && atoi(argv[1]) > 0);
+	return (
+			(argc == 2 && atoi(argv[1]) > 0 && atoi(argv[1]) < 20000) || 
+			(argc == 1)
+		);
 }
 
 /**

@@ -78,7 +78,9 @@ void Dijkstra::set_mark(bool mark){
     this->mark = mark;
 }
 
-
+void Dijkstra::set_distance_vector(vector<int> v){
+    this->distances = v;
+}
 
 void Dijkstra::add_distances_to_other(int distance){
     this->distances.push_back(distance);

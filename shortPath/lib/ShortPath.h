@@ -10,6 +10,7 @@
 #include "../helper/eingabe.h"
 #include "../helper/helpers.h"
 #include "../helper/random.h"
+
 #include "Dijkstra.h"
 
 #include "boost/graph/graph_traits.hpp"
@@ -59,7 +60,8 @@ public:
     */
     void calculate_distance();
     void calculate_distance_multiproc();
-    
+    void add_row(Dijkstra element);
+    int size();
     /*
     * Function output prints the results
     */
@@ -74,6 +76,7 @@ public:
     // void setMatrix(unsigned int matrix[nodenum][nodenum]);
     // void get(unsigned int (*&retVal)[nodenum][nodenum]);
     void init_random();
+    void init_random(int anz);
     void init_source();
     void add_random_row();
     void print();
