@@ -82,7 +82,7 @@ public:
     void init_source();
     void add_random_row();
     void print();
-
+    void clear();
 private:
     vector<Dijkstra> elements;
     vector<int> distances;

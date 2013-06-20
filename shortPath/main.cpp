@@ -32,11 +32,6 @@ int main(int argc, char *argv[]){
 		if(argc == 2){
 			number_of_graphs = atoi(argv[1]);
 		}
-			
-		else{
-			number_of_graphs = 1000;
-		}
-			
 		
 		sp->init_random(number_of_graphs);
 
@@ -110,10 +105,13 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 }
 
 void load_graph_from_file(){
+	sp->clear();
 	load_file();
 
 	 sp = getShortPathObject();
 }
+
+
 
 void do_shortpath_calculation(ShortPath *sp){
 	 cout << "Naive" << endl;

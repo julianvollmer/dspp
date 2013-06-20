@@ -92,6 +92,7 @@ void Dijkstra::set_position(int position){
 }
 
 int Dijkstra::get_length(){
+    cout << this->distances.size() << endl;
     return this->distances.size();
 }
 
