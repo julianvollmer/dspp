@@ -8,7 +8,7 @@ int result;
 string tmp_result;
 int rownum = 0;
 vector<int> weights;
-ShortPath sp;
+ShortPath *spObject = new ShortPath;
 
 void load_file(){
 	ifstream Quelldatei;                          // neuen Lese-Stream erzeugen 
@@ -32,9 +32,12 @@ void load_file(){
 	show_vector();
 }
 
+ShortPath* getShortPathObject(){
+	return spObject;
+}
 
 void show_vector(){
-	cout << "my size is " << sp.size()<<endl;
+	cout << "my size is " << spObject->size()<<endl;
 }
 
 
@@ -66,7 +69,7 @@ void create_nodes_from_file_char_2(char c){
 void add_row(vector<int> v){
 	Dijkstra d ;
 	d.set_distance_vector(v);
-	sp.add_row(d);
+	spObject->add_row(d);
 }
 
 

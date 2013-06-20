@@ -34,11 +34,10 @@ int main(int argc, char *argv[]){
 		}
 			
 		else{
-			cout << "yep";
 			number_of_graphs = 1000;
 		}
 			
-		ShortPath *sp = new ShortPath();
+		
 		sp->init_random(number_of_graphs);
 
 
@@ -101,7 +100,8 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 
 void load_graph_from_file(){
 	load_file();
-	// sp = getShortPathObject();
+
+	 sp = getShortPathObject();
 }
 
 void do_shortpath_calculation(ShortPath *sp){
@@ -121,7 +121,7 @@ void set_number_of_graphs(ShortPath *sp){
 }
 
 void set_number_of_cores(ShortPath *sp){
-	number_of_cores = erfasse_int(1, 20000, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
+	number_of_cores = erfasse_int(1, 16, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
 	sp->init_random(number_of_graphs);
 }
 

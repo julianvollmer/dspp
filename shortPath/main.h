@@ -32,5 +32,5 @@ clock_t start, stop;
 double t;
 int number_of_graphs;
 int number_of_cores;
-
+ShortPath *sp = new ShortPath();
 #endif /* MAIN_H_ */
