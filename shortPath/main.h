@@ -3,14 +3,14 @@
  */
 #ifndef MAIN_H_
 #define MAIN_H_
-#include <iostream>
+#include "iostream"
 #include "lib/Dijkstra.h"
- #include "lib/ShortPath.h"
+#include "lib/ShortPath.h"
 #include "helper/random.h"
 #include "helper/ausgabe.h"
 #include "helper/eingabe.h"
 #include "helper/load_file.h"
-#include <time.h>
+#include "time.h"
 
 
 
@@ -26,6 +26,7 @@ void do_shortpath_calculation(ShortPath *sp);
 void do_shortpath_calculation_mulitproc(ShortPath *sp);
 void set_number_of_graphs(ShortPath *sp);
 void set_number_of_cores(ShortPath *sp);
+void load_graph_from_file();
 
 clock_t start, stop;
 double t;

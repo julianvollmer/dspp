@@ -2,7 +2,7 @@
 #define __dijkstra
 
 #include <vector>
-#include <iostream>
+#include "iostream"
 using namespace std;
 
 class Dijkstra {

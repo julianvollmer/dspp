@@ -6,7 +6,14 @@
 //  Copyright (c) 2013 Julian Vollmer. All rights reserved.
 
 
-
+#include <iostream>
+#include "lib/Dijkstra.h"
+#include "lib/ShortPath.h"
+#include "helper/random.h"
+#include "helper/ausgabe.h"
+#include "helper/eingabe.h"
+#include "helper/load_file.h"
+#include "time.h"
 #include "main.h"
 
 /**
@@ -64,7 +71,7 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
     {
 	    
 	    case 1: 
-	        load_file();
+	        load_graph_from_file();
 	    break;
 
 	    case 2: 
@@ -94,7 +101,7 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 
 void load_graph_from_file(){
 	load_file();
-	
+	// sp = getShortPathObject();
 }
 
 void do_shortpath_calculation(ShortPath *sp){
@@ -176,5 +183,5 @@ void anleitung(){
 	cout << "Das Programm berechnet den kuerzesten Weg mit hilfe von mehreren Prozessoren"<<endl;
 	cout << "Es kann ohne Parameter oder mit einem Paramter aufgerufen werden"<<endl;
 	cout << "Wird das Programm mit einem Parameter aufgerufen muss dieser eine Zahl sein"<<endl;
-	cout << "Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden"<<endl;
+	std::cout << "Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden"<<endl;
 }

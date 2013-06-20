@@ -24,5 +24,6 @@ void load_file();
 void create_nodes_from_file_char(char c);
 void create_nodes_from_file_char_2(char c);
 void show_vector();
-void add_row(vector<int> v);
+void add_row(vector<int> v);	
+ShortPath getShortPathObject();
 #endif /* defined(__shortPath) */

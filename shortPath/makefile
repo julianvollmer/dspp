@@ -8,7 +8,7 @@ OBJS=lib/Dijkstra.o lib/ShortPath.o helper/random.o helper/ausgabe.o helper/eing
 #TESTS=core_test
 
 # Flags and stuff, change as required
-OPTIMZE=-O3
+#OPTIMZE=-O3
 #CXXFLAGS= -fopenmp  -ggdb $(OPTIMIZE) -Wall
 CXXFLAGS= -fopenmp
 #LDFLAGS= -fopenmp -lm
