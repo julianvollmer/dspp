@@ -29,6 +29,7 @@ public:
     void        add_distance(int distance);
     void        init_distances();
     int         get_shortest_distance();
+    int         get_length();
 private:
     
     int predecessor;// Array für Vorgängerknoten

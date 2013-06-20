@@ -73,24 +73,35 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 	        load_graph_from_file();
 	    break;
 
-	    case 2: 
+	     case 2: 
 	        do_shortpath_calculation(sp);
 	    break;
+	    
 	    case 3: 
 	        do_shortpath_calculation_mulitproc(sp);
 	    break;
+	    
 	    case 4: 
 	        set_number_of_graphs(sp);
 	    break;
+	    
 	    case 5: 
 	        set_number_of_cores(sp);
 	    break;
+	    
 	    case 6: 
 	        sp->print();
 	    break;
+	    
 	    case 7: 
 	        sp->output();
 	    break;
+
+	     case 8: 
+	        write_graph_to_file(sp);
+	    break;
+
+	  
 
 
 	    default:
@@ -149,7 +160,8 @@ int menu(){
 							"Setze Anzahl der zu berechnenden Graphen",	
 							"Anzahl der Threads fuer Multicore",
 							"Schreibe Adjazenzmatrix auf Terminal",
-							"Schreibe Wegberechnung auf Terminal"
+							"Schreibe Wegberechnung auf Terminal",
+							"Speichere Adjazenzmatrix"
 						};
 
 	int anz_punkte = sizeof(menuepunkte) / sizeof(menuepunkte[0]);

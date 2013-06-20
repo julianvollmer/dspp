@@ -91,6 +91,10 @@ void Dijkstra::set_position(int position){
     this->position = position;
 }
 
+int Dijkstra::get_length(){
+    return this->distances.size();
+}
+
 void Dijkstra::print_distances(){
     cout << this->name << '\t';
     for (vector<int>::iterator it = distances.begin() ; it != distances.end(); ++it){

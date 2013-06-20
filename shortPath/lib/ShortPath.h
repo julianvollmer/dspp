@@ -70,6 +70,8 @@ public:
 
     void init_random_distances();
 
+    vector<Dijkstra> get_elements();
+
 
 
     void printPath(int);    

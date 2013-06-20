@@ -5,6 +5,10 @@ ShortPath::ShortPath(){
 };
 
 
+vector<Dijkstra> ShortPath::get_elements(){
+    return this->elements;
+}
+
 void ShortPath::add_row(Dijkstra element){
     this->elements.push_back(element);
 }

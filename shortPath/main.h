@@ -10,6 +10,7 @@
 #include "helper/ausgabe.h"
 #include "helper/eingabe.h"
 #include "helper/load_file.h"
+#include "helper/write_file.h"
 #include "time.h"
 
 
