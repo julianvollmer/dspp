@@ -1,0 +1,500 @@
+\hypertarget{class_short_path}{\section{Short\-Path Class Reference}
+\label{class_short_path}\index{Short\-Path@{Short\-Path}}
+}
+
+
+{\ttfamily \#include $<$Short\-Path.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_short_path_aa1f54b3eb632252e0e4f34fed4110d54}{Short\-Path} ()
+\item 
+void \hyperlink{class_short_path_a977e9df25e204c35a343da0df6b38694}{read} ()
+\item 
+void \hyperlink{class_short_path_a113f044a61c1eacafb73df55e12f3803}{initialize} ()
+\item 
+int \hyperlink{class_short_path_ae218a65d8dd2620afc8c088679c5ab98}{get\-\_\-closest\-\_\-unmarked\-\_\-node} ()
+\item 
+void \hyperlink{class_short_path_af4ddb3c9a160c273bdc99b3fb43fd58d}{calculate\-\_\-distance} ()
+\item 
+void \hyperlink{class_short_path_a74f3fa59ffd3e061ef75a7962fbe3cfa}{calculate\-\_\-distance\-\_\-multiproc} ()
+\item 
+void \hyperlink{class_short_path_af65d23be9601ccf34becf9922c88c263}{add\-\_\-row} (\hyperlink{class_dijkstra}{Dijkstra} element)
+\item 
+int \hyperlink{class_short_path_a70c679581d979db7ac0cf8d0980651f5}{size} ()
+\item 
+void \hyperlink{class_short_path_aa4ede1b3713f60bef1f23193510199df}{output} ()
+\item 
+void \hyperlink{class_short_path_a24387db998bac1e88493dc4cf838a68b}{init\-\_\-random\-\_\-distances} ()
+\item 
+vector$<$ \hyperlink{class_dijkstra}{Dijkstra} $>$ \hyperlink{class_short_path_abf528c510136ea8014abfdd993949a02}{get\-\_\-elements} ()
+\item 
+void \hyperlink{class_short_path_a363cac67e1c10f524feab977073c35e9}{print\-Path} (int)
+\item 
+void \hyperlink{class_short_path_af3c6bd7d7b552ca6fa60b89a49db8566}{init\-\_\-random} ()
+\item 
+void \hyperlink{class_short_path_a1edee840fd8a1deec46d7c8ee4573bae}{init\-\_\-random} (int anz)
+\item 
+void \hyperlink{class_short_path_a388a3b66967f667a16b16f0f6fb044f3}{init\-\_\-source} ()
+\item 
+void \hyperlink{class_short_path_afa9098bdffcaaa0d77435dee10a2275f}{add\-\_\-random\-\_\-row} ()
+\item 
+void \hyperlink{class_short_path_a15edde62ae2c1a9f149815fb846c768e}{print} ()
+\item 
+void \hyperlink{class_short_path_a1c0cf18c306d022d72393979e37463c8}{clear} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file Short\-Path.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_short_path_aa1f54b3eb632252e0e4f34fed4110d54}{\index{Short\-Path@{Short\-Path}!Short\-Path@{Short\-Path}}
+\index{Short\-Path@{Short\-Path}!ShortPath@{Short\-Path}}
+\subsubsection[{Short\-Path}]{\setlength{\rightskip}{0pt plus 5cm}Short\-Path\-::\-Short\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_aa1f54b3eb632252e0e4f34fed4110d54}
+
+
+Definition at line 3 of file Short\-Path.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_short_path_afa9098bdffcaaa0d77435dee10a2275f}{\index{Short\-Path@{Short\-Path}!add\-\_\-random\-\_\-row@{add\-\_\-random\-\_\-row}}
+\index{add\-\_\-random\-\_\-row@{add\-\_\-random\-\_\-row}!ShortPath@{Short\-Path}}
+\subsubsection[{add\-\_\-random\-\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::add\-\_\-random\-\_\-row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_afa9098bdffcaaa0d77435dee10a2275f}
+\hypertarget{class_short_path_af65d23be9601ccf34becf9922c88c263}{\index{Short\-Path@{Short\-Path}!add\-\_\-row@{add\-\_\-row}}
+\index{add\-\_\-row@{add\-\_\-row}!ShortPath@{Short\-Path}}
+\subsubsection[{add\-\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::add\-\_\-row (
+\begin{DoxyParamCaption}
+\item[{{\bf Dijkstra}}]{element}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_af65d23be9601ccf34becf9922c88c263}
+
+
+Definition at line 16 of file Short\-Path.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_af65d23be9601ccf34becf9922c88c263_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_af4ddb3c9a160c273bdc99b3fb43fd58d}{\index{Short\-Path@{Short\-Path}!calculate\-\_\-distance@{calculate\-\_\-distance}}
+\index{calculate\-\_\-distance@{calculate\-\_\-distance}!ShortPath@{Short\-Path}}
+\subsubsection[{calculate\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::calculate\-\_\-distance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_af4ddb3c9a160c273bdc99b3fb43fd58d}
+
+
+Definition at line 156 of file Short\-Path.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_short_path_af4ddb3c9a160c273bdc99b3fb43fd58d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_af4ddb3c9a160c273bdc99b3fb43fd58d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_a74f3fa59ffd3e061ef75a7962fbe3cfa}{\index{Short\-Path@{Short\-Path}!calculate\-\_\-distance\-\_\-multiproc@{calculate\-\_\-distance\-\_\-multiproc}}
+\index{calculate\-\_\-distance\-\_\-multiproc@{calculate\-\_\-distance\-\_\-multiproc}!ShortPath@{Short\-Path}}
+\subsubsection[{calculate\-\_\-distance\-\_\-multiproc}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::calculate\-\_\-distance\-\_\-multiproc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a74f3fa59ffd3e061ef75a7962fbe3cfa}
+Here is where the magic happens 
+
+Definition at line 130 of file Short\-Path.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_short_path_a74f3fa59ffd3e061ef75a7962fbe3cfa_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a74f3fa59ffd3e061ef75a7962fbe3cfa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_a1c0cf18c306d022d72393979e37463c8}{\index{Short\-Path@{Short\-Path}!clear@{clear}}
+\index{clear@{clear}!ShortPath@{Short\-Path}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a1c0cf18c306d022d72393979e37463c8}
+
+
+Definition at line 12 of file Short\-Path.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a1c0cf18c306d022d72393979e37463c8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_ae218a65d8dd2620afc8c088679c5ab98}{\index{Short\-Path@{Short\-Path}!get\-\_\-closest\-\_\-unmarked\-\_\-node@{get\-\_\-closest\-\_\-unmarked\-\_\-node}}
+\index{get\-\_\-closest\-\_\-unmarked\-\_\-node@{get\-\_\-closest\-\_\-unmarked\-\_\-node}!ShortPath@{Short\-Path}}
+\subsubsection[{get\-\_\-closest\-\_\-unmarked\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}int Short\-Path\-::get\-\_\-closest\-\_\-unmarked\-\_\-node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_ae218a65d8dd2620afc8c088679c5ab98}
+
+
+Definition at line 115 of file Short\-Path.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_ae218a65d8dd2620afc8c088679c5ab98_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_abf528c510136ea8014abfdd993949a02}{\index{Short\-Path@{Short\-Path}!get\-\_\-elements@{get\-\_\-elements}}
+\index{get\-\_\-elements@{get\-\_\-elements}!ShortPath@{Short\-Path}}
+\subsubsection[{get\-\_\-elements}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Dijkstra} $>$ Short\-Path\-::get\-\_\-elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_abf528c510136ea8014abfdd993949a02}
+
+
+Definition at line 8 of file Short\-Path.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_abf528c510136ea8014abfdd993949a02_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_af3c6bd7d7b552ca6fa60b89a49db8566}{\index{Short\-Path@{Short\-Path}!init\-\_\-random@{init\-\_\-random}}
+\index{init\-\_\-random@{init\-\_\-random}!ShortPath@{Short\-Path}}
+\subsubsection[{init\-\_\-random}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::init\-\_\-random (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_af3c6bd7d7b552ca6fa60b89a49db8566}
+
+
+Definition at line 93 of file Short\-Path.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_af3c6bd7d7b552ca6fa60b89a49db8566_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_af3c6bd7d7b552ca6fa60b89a49db8566_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_a1edee840fd8a1deec46d7c8ee4573bae}{\index{Short\-Path@{Short\-Path}!init\-\_\-random@{init\-\_\-random}}
+\index{init\-\_\-random@{init\-\_\-random}!ShortPath@{Short\-Path}}
+\subsubsection[{init\-\_\-random}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::init\-\_\-random (
+\begin{DoxyParamCaption}
+\item[{int}]{anz}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a1edee840fd8a1deec46d7c8ee4573bae}
+
+
+Definition at line 80 of file Short\-Path.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a1edee840fd8a1deec46d7c8ee4573bae_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_a24387db998bac1e88493dc4cf838a68b}{\index{Short\-Path@{Short\-Path}!init\-\_\-random\-\_\-distances@{init\-\_\-random\-\_\-distances}}
+\index{init\-\_\-random\-\_\-distances@{init\-\_\-random\-\_\-distances}!ShortPath@{Short\-Path}}
+\subsubsection[{init\-\_\-random\-\_\-distances}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::init\-\_\-random\-\_\-distances (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a24387db998bac1e88493dc4cf838a68b}
+
+
+Definition at line 20 of file Short\-Path.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a24387db998bac1e88493dc4cf838a68b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a24387db998bac1e88493dc4cf838a68b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_a388a3b66967f667a16b16f0f6fb044f3}{\index{Short\-Path@{Short\-Path}!init\-\_\-source@{init\-\_\-source}}
+\index{init\-\_\-source@{init\-\_\-source}!ShortPath@{Short\-Path}}
+\subsubsection[{init\-\_\-source}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::init\-\_\-source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a388a3b66967f667a16b16f0f6fb044f3}
+
+
+Definition at line 98 of file Short\-Path.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a388a3b66967f667a16b16f0f6fb044f3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_a113f044a61c1eacafb73df55e12f3803}{\index{Short\-Path@{Short\-Path}!initialize@{initialize}}
+\index{initialize@{initialize}!ShortPath@{Short\-Path}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a113f044a61c1eacafb73df55e12f3803}
+
+
+Definition at line 103 of file Short\-Path.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a113f044a61c1eacafb73df55e12f3803_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_aa4ede1b3713f60bef1f23193510199df}{\index{Short\-Path@{Short\-Path}!output@{output}}
+\index{output@{output}!ShortPath@{Short\-Path}}
+\subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_aa4ede1b3713f60bef1f23193510199df}
+print the output on the console 
+
+Definition at line 200 of file Short\-Path.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_short_path_aa4ede1b3713f60bef1f23193510199df_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_aa4ede1b3713f60bef1f23193510199df_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_a15edde62ae2c1a9f149815fb846c768e}{\index{Short\-Path@{Short\-Path}!print@{print}}
+\index{print@{print}!ShortPath@{Short\-Path}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a15edde62ae2c1a9f149815fb846c768e}
+
+
+Definition at line 53 of file Short\-Path.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a15edde62ae2c1a9f149815fb846c768e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_a363cac67e1c10f524feab977073c35e9}{\index{Short\-Path@{Short\-Path}!print\-Path@{print\-Path}}
+\index{print\-Path@{print\-Path}!ShortPath@{Short\-Path}}
+\subsubsection[{print\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::print\-Path (
+\begin{DoxyParamCaption}
+\item[{int}]{node}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a363cac67e1c10f524feab977073c35e9}
+Prints the path to the node 
+\begin{DoxyParams}{Parameters}
+{\em node} & Node or target \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 185 of file Short\-Path.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a363cac67e1c10f524feab977073c35e9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_short_path_a977e9df25e204c35a343da0df6b38694}{\index{Short\-Path@{Short\-Path}!read@{read}}
+\index{read@{read}!ShortPath@{Short\-Path}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a977e9df25e204c35a343da0df6b38694}
+\hypertarget{class_short_path_a70c679581d979db7ac0cf8d0980651f5}{\index{Short\-Path@{Short\-Path}!size@{size}}
+\index{size@{size}!ShortPath@{Short\-Path}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Short\-Path\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_short_path_a70c679581d979db7ac0cf8d0980651f5}
+
+
+Definition at line 39 of file Short\-Path.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_short_path_a70c679581d979db7ac0cf8d0980651f5_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{_short_path_8h}{Short\-Path.\-h}\item 
+lib/\hyperlink{_short_path_8cpp}{Short\-Path.\-cpp}\end{DoxyCompactItemize}

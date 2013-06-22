@@ -1,0 +1,4 @@
+<map id="add_row" name="add_row">
+<area shape="rect" id="node3" href="$class_dijkstra.html#abed971366356f3ffcfbedaf1391c8d7e" title="Dijkstra::set_distance\l_vector" alt="" coords="126,5,274,49"/>
+<area shape="rect" id="node5" href="$class_short_path.html#af65d23be9601ccf34becf9922c88c263" title="ShortPath::add_row" alt="" coords="130,73,270,101"/>
+</map>
