@@ -16,20 +16,24 @@ public:
     int         get_predecessor();
     bool        get_mark();
     int         get_position();
+    int         get_distance_from_specific(int position);
+    int         get_shortest_distance();
+    int         get_length();
+
     void        set_name(string name);
     void        set_distance(int distnace);
     void        set_predecessor(int predecessor);
     void        set_mark(bool mark);    
-    void        add_distances_to_other(int distance);   
     void        set_position(int position);
     void        set_distance_vector(vector<int> v);
-    void        print_distances();
-    int         get_distance_from_specific(int position);
     void        set_distance_to_specific(int position, int value);
+
+    void        add_distances_to_other(int distance);   
     void        add_distance(int distance);
-    void        init_distances();
-    int         get_shortest_distance();
-    int         get_length();
+    
+    void        print_distances();
+    void        init_distances();    
+    
 private:
     
     int predecessor;// Array für Vorgängerknoten

@@ -24,8 +24,7 @@ void load_file(){
 			char c;                                   // und jetzt, jedes Zeichen ... 
 			string input;
 			while (Quelldatei.get(c)) {               // ... einzeln ... 
-				// create_nodes_from_file_char(c);
-				create_nodes_from_file_char_2(c);
+				create_nodes_from_file_char(c);
 			} 
 		} 
 	} 
@@ -46,8 +45,7 @@ void validate_dataformat(){
 
 }
 
-void create_nodes_from_file_char_2(char c){
-
+void create_nodes_from_file_char(char c){
 	if(c == ' ' || c == '\n'){
 		weights.push_back(string_to_number(tmp_result));
 		cout << "aktueller Wert " << tmp_result << " wurde in graph eingeführt" <<endl;
@@ -57,7 +55,7 @@ void create_nodes_from_file_char_2(char c){
 				cout <<endl<<endl<<endl<< "reihe " << rownum++ << " abgearbeitet"<< endl;
 				tmp_result = "";
 				add_row(weights);
-				
+				weights.clear();
 			}
 	}
 	else{
@@ -67,6 +65,7 @@ void create_nodes_from_file_char_2(char c){
 }
 
 void add_row(vector<int> v){
+	cout << "lalla: " << spObject->size() << endl;
 	Dijkstra d ;
 	d.set_distance_vector(v);
 	spObject->add_row(d);
@@ -98,8 +97,6 @@ void create_nodes_from_file_char(char c){
 			    default:
 			    	 cout << "Verkackt!" << endl;
 		    }
-
-		
 	}
 	
 	if (c == '\n'){

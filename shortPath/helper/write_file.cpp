@@ -3,24 +3,35 @@
 
 void write_graph_to_file(ShortPath *sp){
 	ofstream myfile;
-	int length = 0;
+	
 	string filename = "example";
 	// if(is_file_aviable(filename)){
 	  	myfile.open(filename.c_str());		
 	  	 
-		for (vector<Dijkstra>::iterator it = sp->get_elements().begin() ; it != sp->get_elements().end(); ++it){
-			length = it->get_length();
+	  	vector<Dijkstra> d = sp->get_elements();
+	  	int length_d = d.size();
+	  	cout <<"Size"<<length_d<<endl;
+	  	
+	  	for(int i = 0; i < length_d; i++){
+	  		vector<int> weights = d.at(i).get_distances_to_other();
+	  		int length_w = weights.size();
+	  		cout << length_w<< "here it is"<< endl;
 
-			for(int i = 0; i < 10; i++){
-			// cout << length << endl; 
-			myfile << it->get_distance_from_specific(i); 
-			myfile << ' ';
-			// cout << "nummer : " << i << endl;
-			}
-			// cout << "next round :D" << endl << endl;
+	  		for(int j = 0; j < length_w; j++){
+	  			cout << weights.at(j) << "value" <<endl;
+  				myfile << weights.at(j);	
+				myfile << ' ';
+				}
+				myfile << '\n';
+			  }
 
-			myfile << '\n';
-    }
+
+		// for (vector<Dijkstra>::iterator it = sp->get_elements().begin() ; it != sp->get_elements().end(); it++){
+		// 	int length = it->distances.size();
+		// 	cout << "length" <<length<<endl;
+		// 	for(int i = 0; i < 10; i++){
+		
+  //   }
 
     
 
