@@ -20,8 +20,6 @@ void ShortPath::add_row(Dijkstra element){
 void ShortPath::init_random_distances(){
     int size = elements.size();    
     for (vector<Dijkstra>::iterator it = elements.begin() ; it != elements.end(); ++it){
-        // cout << ' ' << it->get_name() << endl;
-        
         int pos = it->get_position();
         for(int i = 0; i < size && i < pos; i++){
             if((liefere_ganze_zufallszahl(1,8)%2)==0){
@@ -45,15 +43,12 @@ int ShortPath::size(){
 
 void ShortPath::reflect_to_other_side(){
     int tmp = 0;
-    
-    
     for (int j = 0; j < elements.size(); j++){
         for(int i = elements[j].get_position()+1; i < elements.size(); i++){
             tmp = elements[i].get_distance_from_specific(j);
             elements[j].add_distances_to_other(tmp);    
         }
     }
-    
 }
 
 void ShortPath::print(){
@@ -107,6 +102,7 @@ void ShortPath::init_source(){
 
 void ShortPath::initialize(){
     distances.clear();
+    num_of_vertices = elements.size();
     for(int i=0;i<num_of_vertices;i++) {
         elements[i].set_mark(false);
         elements[i].set_predecessor(-1);
@@ -148,9 +144,7 @@ void ShortPath::calculate_distance_multiproc(){
             if((!elements[i].get_mark()) && (elements[closest_unmarked_node].get_distance_from_specific(i) > 0) ) {
                 if(distances[i] > distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i)) {
                     distances[i] = distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i);
-                    // elements[i].add_distance(elements[closest_unmarked_node].get_distance_from_specific(i));
                     elements[i].set_predecessor(closest_unmarked_node);
-                    // cout << "juhu" <<elements[closest_unmarked_node].get_distance_from_specific(i)<< endl;
                 }
                 
             }
@@ -173,9 +167,9 @@ void ShortPath::calculate_distance(){
             if((!elements[i].get_mark()) && (elements[closest_unmarked_node].get_distance_from_specific(i) > 0) ) {
                 if(distances[i] > distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i)) {
                     distances[i] = distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i);
-                    // elements[i].add_distance(elements[closest_unmarked_node].get_distance_from_specific(i));
+                    
                     elements[i].set_predecessor(closest_unmarked_node);
-                    // cout << "juhu" <<elements[closest_unmarked_node].get_distance_from_specific(i)<< endl;
+                    
                 }
                 
             }

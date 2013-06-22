@@ -33,7 +33,7 @@ void validate_dataformat(){
 void create_nodes_from_file_char(char c){
 	if(c == ' ' || c == '\n'){
 		weights.push_back(string_to_number(tmp_result));
-		// cout << "aktueller Wert " << tmp_result << " wurde in graph eingeführt" <<endl;
+		
 		tmp_result = "";
 		if (c == '\n'){
 				counter = 0;
