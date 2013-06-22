@@ -24,11 +24,10 @@ void ShortPath::init_random_distances(){
         for(int i = 0; i < size && i < pos; i++){
             if((liefere_ganze_zufallszahl(1,8)%2)==0){
                 it->add_distances_to_other(0);    
-                
             }
-            else{
-                it->add_distances_to_other(liefere_ganze_zufallszahl(1,250));    
 
+            else {
+                    it->add_distances_to_other(liefere_ganze_zufallszahl(1,250));    
                 }
         }
         it->add_distances_to_other(0);
@@ -71,7 +70,7 @@ void ShortPath::print(){
 }
 
 void ShortPath::print_horizontal_line(){
-    for(int i = 0; i < 8*elements.size()+1;i++){
+    for (int i = 0; i < 8*elements.size()+1;i++){
         cout << '*';
     }
     cout << "***";
@@ -80,16 +79,17 @@ void ShortPath::print_horizontal_line(){
 
 void ShortPath::init_random(int anz){
     num_of_vertices = anz;
-     for(int i = 0; i < num_of_vertices; i++){
+    for (int i = 0; i < num_of_vertices; i++){
         Dijkstra d;
         d.set_name(concat_string_and_int("J&P",i));
         d.set_mark(false);
         d.set_predecessor(-1);
         d.set_position(i);
         elements.push_back(d);
-     }
-        init_random_distances();
+    }
+    init_random_distances();
 }
+
 void ShortPath::init_random(){
     num_of_vertices = erfasse_int(0,INFINITY,"Geben Sie die Anzahl der Knoten des Graphen ein:");    
     init_random(num_of_vertices);
@@ -118,7 +118,6 @@ int ShortPath::get_closest_unmarked_node(){
     for(int i=0;i<num_of_vertices;i++) {
         if((!elements[i].get_mark()) && ( minDistance >= distances[i])) {
             minDistance = distances[i];
-            // cout << minDistance  << "can't be right ?!?!?!" << endl;
             closest_unmarked_node = i;
         }
     }
@@ -176,22 +175,6 @@ void ShortPath::calculate_distance(){
         }
         count++;
     }
-}
-void ShortPath::show_dk(){
-    for (int i = 0; i < num_of_vertices; ++i){
-        for (int j = 0; j < num_of_vertices; ++j){
-            cout <<"alkfjadsölasd:"<< elements[i].get_distance_from_specific(j) << endl ;
-        }
-    cout << "next element"<< endl <<endl;    
-    }
-            
-    cout << "get distance()"<<endl <<endl <<endl ;
-
-         for (int i = 0; i < num_of_vertices; ++i){
-     
-            cout <<"alkfjadsölasd:"<< elements[i].get_distance_from_specific(source) << endl ;
-    }       
-    
 }
 
 

@@ -1,5 +1,6 @@
 <map id="create_nodes_from_file_char" name="create_nodes_from_file_char">
 <area shape="rect" id="node3" href="$load__file_8h.html#a8ad648b86395c683b195b15e2116148c" title="load_file" alt="" coords="248,5,320,33"/>
-<area shape="rect" id="node5" href="$main_8h.html#a1aaf78de8ac0b372c056372700daa5e5" title="verarbeite_eingabe" alt="" coords="368,5,504,33"/>
-<area shape="rect" id="node7" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="552,5,602,33"/>
+<area shape="rect" id="node5" href="$main_8h.html#a98a18828ae07df779de7b6e17ce5d76a" title="load_graph_from_file" alt="" coords="368,5,515,33"/>
+<area shape="rect" id="node7" href="$main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425" title="verarbeite_eingabe" alt="" coords="563,5,698,33"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="747,5,797,33"/>
 </map>

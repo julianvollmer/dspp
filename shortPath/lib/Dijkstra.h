@@ -18,7 +18,6 @@ public:
     int         get_position();
     int         get_distance_from_specific(int position);
     int         get_shortest_distance();
-    int         get_length();
 
     void        set_name(string name);
     void        set_distance(int distnace);

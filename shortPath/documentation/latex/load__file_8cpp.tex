@@ -7,7 +7,7 @@ Include dependency graph for load\-\_\-file.\-cpp\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=233pt]{load__file_8cpp__incl}
+\includegraphics[width=350pt]{load__file_8cpp__incl}
 \end{center}
 \end{figure}
 \subsection*{Functions}
@@ -15,9 +15,13 @@ Include dependency graph for load\-\_\-file.\-cpp\-:
 \item 
 void \hyperlink{load__file_8cpp_a8ad648b86395c683b195b15e2116148c}{load\-\_\-file} ()
 \item 
+\hyperlink{class_short_path}{Short\-Path} $\ast$ \hyperlink{load__file_8cpp_a9befa0a6259aedaab522d46016e9bc51}{get\-Short\-Path\-Object} ()
+\item 
 void \hyperlink{load__file_8cpp_a05a7ed8536adb9ced046961c3658edd5}{validate\-\_\-dataformat} ()
 \item 
 void \hyperlink{load__file_8cpp_abbdc586b3b3f257e5b922b048fc638b2}{create\-\_\-nodes\-\_\-from\-\_\-file\-\_\-char} (char c)
+\item 
+void \hyperlink{load__file_8cpp_a17802900d7e5bb596e72d83e21edef59}{add\-\_\-row} (vector$<$ int $>$ v)
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -33,10 +37,51 @@ int \hyperlink{load__file_8cpp_aa01147b1f07072d246c76dc85d69df7c}{weight} = 0
 int \hyperlink{load__file_8cpp_a8b2e13c78efca330f06b6ddcd7464b41}{result}
 \item 
 string \hyperlink{load__file_8cpp_a082623d77205715c70bf4b8c0cfe373d}{tmp\-\_\-result}
+\item 
+int \hyperlink{load__file_8cpp_a93e8b154fe94e960d3dc355a10c3a8f7}{rownum} = 0
+\item 
+vector$<$ int $>$ \hyperlink{load__file_8cpp_a0f02108b830b721d1f110532291ca686}{weights}
+\item 
+\hyperlink{class_short_path}{Short\-Path} $\ast$ \hyperlink{load__file_8cpp_a2c6601c82034f436647fb14383822cd7}{sp\-Object} = new \hyperlink{class_short_path}{Short\-Path}
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
+\hypertarget{load__file_8cpp_a17802900d7e5bb596e72d83e21edef59}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!add\-\_\-row@{add\-\_\-row}}
+\index{add\-\_\-row@{add\-\_\-row}!load_file.cpp@{load\-\_\-file.\-cpp}}
+\subsubsection[{add\-\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-row (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$}]{v}
+\end{DoxyParamCaption}
+)}}\label{load__file_8cpp_a17802900d7e5bb596e72d83e21edef59}
+
+
+Definition at line 53 of file load\-\_\-file.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{load__file_8cpp_a17802900d7e5bb596e72d83e21edef59_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{load__file_8cpp_a17802900d7e5bb596e72d83e21edef59_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{load__file_8cpp_abbdc586b3b3f257e5b922b048fc638b2}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!create\-\_\-nodes\-\_\-from\-\_\-file\-\_\-char@{create\-\_\-nodes\-\_\-from\-\_\-file\-\_\-char}}
 \index{create\-\_\-nodes\-\_\-from\-\_\-file\-\_\-char@{create\-\_\-nodes\-\_\-from\-\_\-file\-\_\-char}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{create\-\_\-nodes\-\_\-from\-\_\-file\-\_\-char}]{\setlength{\rightskip}{0pt plus 5cm}void create\-\_\-nodes\-\_\-from\-\_\-file\-\_\-char (
@@ -46,7 +91,7 @@ string \hyperlink{load__file_8cpp_a082623d77205715c70bf4b8c0cfe373d}{tmp\-\_\-re
 )}}\label{load__file_8cpp_abbdc586b3b3f257e5b922b048fc638b2}
 
 
-Definition at line 36 of file load\-\_\-file.\-cpp.
+Definition at line 33 of file load\-\_\-file.\-cpp.
 
 
 
@@ -72,6 +117,29 @@ Here is the caller graph for this function\-:
 \end{figure}
 
 
+\hypertarget{load__file_8cpp_a9befa0a6259aedaab522d46016e9bc51}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!get\-Short\-Path\-Object@{get\-Short\-Path\-Object}}
+\index{get\-Short\-Path\-Object@{get\-Short\-Path\-Object}!load_file.cpp@{load\-\_\-file.\-cpp}}
+\subsubsection[{get\-Short\-Path\-Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Short\-Path}$\ast$ get\-Short\-Path\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{load__file_8cpp_a9befa0a6259aedaab522d46016e9bc51}
+
+
+Definition at line 25 of file load\-\_\-file.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{load__file_8cpp_a9befa0a6259aedaab522d46016e9bc51_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{load__file_8cpp_a8ad648b86395c683b195b15e2116148c}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!load\-\_\-file@{load\-\_\-file}}
 \index{load\-\_\-file@{load\-\_\-file}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{load\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void load\-\_\-file (
@@ -81,7 +149,7 @@ Here is the caller graph for this function\-:
 )}}\label{load__file_8cpp_a8ad648b86395c683b195b15e2116148c}
 
 
-Definition at line 11 of file load\-\_\-file.\-cpp.
+Definition at line 13 of file load\-\_\-file.\-cpp.
 
 
 
@@ -102,7 +170,7 @@ Here is the caller graph for this function\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=346pt]{load__file_8cpp_a8ad648b86395c683b195b15e2116148c_icgraph}
+\includegraphics[width=350pt]{load__file_8cpp_a8ad648b86395c683b195b15e2116148c_icgraph}
 \end{center}
 \end{figure}
 
@@ -116,7 +184,7 @@ Here is the caller graph for this function\-:
 )}}\label{load__file_8cpp_a05a7ed8536adb9ced046961c3658edd5}
 
 
-Definition at line 32 of file load\-\_\-file.\-cpp.
+Definition at line 29 of file load\-\_\-file.\-cpp.
 
 
 
@@ -142,6 +210,20 @@ Definition at line 4 of file load\-\_\-file.\-cpp.
 
 Definition at line 7 of file load\-\_\-file.\-cpp.
 
+\hypertarget{load__file_8cpp_a93e8b154fe94e960d3dc355a10c3a8f7}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!rownum@{rownum}}
+\index{rownum@{rownum}!load_file.cpp@{load\-\_\-file.\-cpp}}
+\subsubsection[{rownum}]{\setlength{\rightskip}{0pt plus 5cm}int rownum = 0}}\label{load__file_8cpp_a93e8b154fe94e960d3dc355a10c3a8f7}
+
+
+Definition at line 9 of file load\-\_\-file.\-cpp.
+
+\hypertarget{load__file_8cpp_a2c6601c82034f436647fb14383822cd7}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!sp\-Object@{sp\-Object}}
+\index{sp\-Object@{sp\-Object}!load_file.cpp@{load\-\_\-file.\-cpp}}
+\subsubsection[{sp\-Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Short\-Path}$\ast$ sp\-Object = new {\bf Short\-Path}}}\label{load__file_8cpp_a2c6601c82034f436647fb14383822cd7}
+
+
+Definition at line 11 of file load\-\_\-file.\-cpp.
+
 \hypertarget{load__file_8cpp_a082623d77205715c70bf4b8c0cfe373d}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!tmp\-\_\-result@{tmp\-\_\-result}}
 \index{tmp\-\_\-result@{tmp\-\_\-result}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{tmp\-\_\-result}]{\setlength{\rightskip}{0pt plus 5cm}string tmp\-\_\-result}}\label{load__file_8cpp_a082623d77205715c70bf4b8c0cfe373d}
@@ -162,4 +244,11 @@ Definition at line 5 of file load\-\_\-file.\-cpp.
 
 
 Definition at line 6 of file load\-\_\-file.\-cpp.
+
+\hypertarget{load__file_8cpp_a0f02108b830b721d1f110532291ca686}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!weights@{weights}}
+\index{weights@{weights}!load_file.cpp@{load\-\_\-file.\-cpp}}
+\subsubsection[{weights}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ weights}}\label{load__file_8cpp_a0f02108b830b721d1f110532291ca686}
+
+
+Definition at line 10 of file load\-\_\-file.\-cpp.
 

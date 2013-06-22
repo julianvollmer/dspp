@@ -1,4 +1,7 @@
 <map id="load_file" name="load_file">
-<area shape="rect" id="node3" href="$load__file_8cpp.html#abbdc586b3b3f257e5b922b048fc638b2" title="create_nodes_from_file_char" alt="" coords="126,5,320,33"/>
+<area shape="rect" id="node3" href="$load__file_8cpp.html#abbdc586b3b3f257e5b922b048fc638b2" title="create_nodes_from_file_char" alt="" coords="126,31,320,59"/>
 <area shape="rect" id="node5" href="$helpers_8cpp.html#a07fa49d604e024605441544ff5cbcb0e" title="string_to_number" alt="" coords="368,5,493,33"/>
+<area shape="rect" id="node7" href="$load__file_8cpp.html#a17802900d7e5bb596e72d83e21edef59" title="add_row" alt="" coords="394,57,467,85"/>
+<area shape="rect" id="node9" href="$class_dijkstra.html#abed971366356f3ffcfbedaf1391c8d7e" title="Dijkstra::set_distance\l_vector" alt="" coords="542,18,690,62"/>
+<area shape="rect" id="node11" href="$class_short_path.html#af65d23be9601ccf34becf9922c88c263" title="ShortPath::add_row" alt="" coords="546,86,686,114"/>
 </map>

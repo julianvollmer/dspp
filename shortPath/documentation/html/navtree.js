@@ -6,8 +6,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Functions", "functions_func.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -25,7 +24,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_dijkstra_8cpp.html"
+"_dijkstra_8cpp.html",
+"random_8h.html#ad8076fcc381dc1998e84e91356cf6349"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

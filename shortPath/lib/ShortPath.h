@@ -37,7 +37,6 @@ public:
     */
     void read();
 
-    void show_dk();
  
     /*
     * Function initialize initializes all the data members at the begining of

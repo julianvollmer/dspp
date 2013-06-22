@@ -1,6 +1,7 @@
 <map id="string_to_number" name="string_to_number">
 <area shape="rect" id="node3" href="$load__file_8h.html#abbdc586b3b3f257e5b922b048fc638b2" title="create_nodes_from_file_char" alt="" coords="179,5,373,33"/>
 <area shape="rect" id="node5" href="$load__file_8h.html#a8ad648b86395c683b195b15e2116148c" title="load_file" alt="" coords="422,5,493,33"/>
-<area shape="rect" id="node7" href="$main_8h.html#a1aaf78de8ac0b372c056372700daa5e5" title="verarbeite_eingabe" alt="" coords="542,5,677,33"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="726,5,776,33"/>
+<area shape="rect" id="node7" href="$main_8h.html#a98a18828ae07df779de7b6e17ce5d76a" title="load_graph_from_file" alt="" coords="541,5,688,33"/>
+<area shape="rect" id="node9" href="$main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425" title="verarbeite_eingabe" alt="" coords="736,5,872,33"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="920,5,970,33"/>
 </map>
