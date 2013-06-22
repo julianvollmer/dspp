@@ -11,35 +11,20 @@ vector<int> weights;
 ShortPath *spObject = new ShortPath;
 
 void load_file(){
-	ifstream Quelldatei;                          // neuen Lese-Stream erzeugen 
-	Quelldatei.open("in.txt", ios_base::in);      // Datei_1.txt öffnen 
+	ifstream Quelldatei;                          
+	Quelldatei.open("in.txt", ios_base::in);      
 
-	if (!Quelldatei)                              // Fehler beim Öffnen? 
-		cerr << "Eingabe-Datei kann nicht geöffnet werden\n"; 
-	else {                                        // falls es geklappt hat ... 
-		ofstream Zieldatei("out.txt");              // ja, richtig. Mit Dateinamen im Konstruktor wird die Datei implizit geöffnet 
-		if (!Zieldatei)                             // Fehler beim Öffnen? 
-			cerr << "Ausgabe-Datei kann nicht geöffnet werden\n"; 	
-		else {                                      // falls es funktioniert hat 
-			char c;                                   // und jetzt, jedes Zeichen ... 
-			string input;
-			while (Quelldatei.get(c)) {               // ... einzeln ... 
-				create_nodes_from_file_char(c);
-			} 
-		} 
+	char c;                               
+	string input;
+
+	while (Quelldatei.get(c)) {           
+		create_nodes_from_file_char(c);
 	} 
-	show_vector();
 }
 
 ShortPath* getShortPathObject(){
 	return spObject;
 }
-
-void show_vector(){
-	cout << "my size is " << spObject->size()<<endl;
-}
-
-
 
 void validate_dataformat(){
 
@@ -48,12 +33,13 @@ void validate_dataformat(){
 void create_nodes_from_file_char(char c){
 	if(c == ' ' || c == '\n'){
 		weights.push_back(string_to_number(tmp_result));
-		cout << "aktueller Wert " << tmp_result << " wurde in graph eingeführt" <<endl;
+		// cout << "aktueller Wert " << tmp_result << " wurde in graph eingeführt" <<endl;
 		tmp_result = "";
 		if (c == '\n'){
 				counter = 0;
-				cout <<endl<<endl<<endl<< "reihe " << rownum++ << " abgearbeitet"<< endl;
+				
 				tmp_result = "";
+				weights.pop_back();
 				add_row(weights);
 				weights.clear();
 			}
@@ -65,7 +51,6 @@ void create_nodes_from_file_char(char c){
 }
 
 void add_row(vector<int> v){
-	cout << "lalla: " << spObject->size() << endl;
 	Dijkstra d ;
 	d.set_distance_vector(v);
 	spObject->add_row(d);
@@ -74,33 +59,3 @@ void add_row(vector<int> v){
 
 
 
-void create_nodes_from_file_char(char c){
-	tmp_result += c;
-	if(c == ';'){
-		counter++;
-		switch (counter)
-		    {
-			    case 1:
-				   from = string_to_number(tmp_result);
-				   tmp_result = "";
-			    break;
-
-			    case 2:
-			    	to = string_to_number(tmp_result);
-			    	tmp_result = "";
-			    break;
-			    
-			    case 3:
-			    	weight = string_to_number(tmp_result);
-			    	tmp_result = "";
-			    break;
-			    default:
-			    	 cout << "Verkackt!" << endl;
-		    }
-	}
-	
-	if (c == '\n'){
-		counter = 0;
-		cout << "from " << from << " to " << to << " weight " << weight << endl;
-	}
-}
