@@ -1,9 +1,9 @@
 #include "helpers.h"
 
 /**
- * Konvertiert einen string in einen int Wert.
- * @param  str string der zurück gegeben werden soll.
- * @return     Der konvertierte string als int Wert.
+ * Converts a string to integer
+ * @param  str string to convert
+ * @return     convertet string as integer
  */
 int string_to_number(string str){
 	int Result;
@@ -13,6 +13,13 @@ int string_to_number(string str){
  return Result;
 }
 
+
+/**
+ * concat a string with an int
+ * @param  str string
+ * @param  i   integer to concat
+ * @return     string plus integer as string
+ */
 string concat_string_and_int(string str, int i){
 	std::stringstream sstm;
 	sstm << str << i;

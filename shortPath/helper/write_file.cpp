@@ -26,7 +26,11 @@ void write_graph_to_file(ShortPath *sp){
 
 }
 
-
+/**
+ * Check if the file is avaiable
+ * @param  filename Filename to check
+ * @return          always true
+ */
 bool is_file_aviable(string filename){
 	return true;
 }

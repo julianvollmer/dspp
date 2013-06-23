@@ -33,24 +33,18 @@ int main(int argc, char *argv[]){
 		if(argc == 2){
 			number_of_graphs = atoi(argv[1]);
 		}
-		
+
 		sp->init_random(number_of_graphs);
-
-
-		// sp->print();
-		
-		// sp->output();
-		// sp->show_dk();
 		 do{
 		 	loesche_bildschirm_mit_header();
 		 	eingabe = menu();
 		 	verarbeite_eingabe(eingabe, sp);
 		 }while(eingabe);
-
-
 	}
-	else
+	else{
 		anleitung();
+	}
+		
 
     return 0;
 }

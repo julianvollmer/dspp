@@ -23,6 +23,8 @@ using namespace std;
 	void create_nodes_from_file_char(char c);
 	void add_row(vector<int> v);	
 
+	bool validate_dataformat();
+
 	ShortPath* getShortPathObject();
 
 
