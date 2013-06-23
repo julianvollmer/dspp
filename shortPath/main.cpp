@@ -17,10 +17,11 @@
 #include "main.h"
 
 /**
- * Last version with array, translate it to vector.
- * @param  argc [description]
- * @param  argv [description]
- * @return      [description]
+ * This Programm shows different implementation of solving the shortest Path Problem with Dijkstra. 
+ * The different solutions realized with different Framework, mainly for multiprocessor operations.
+ * @param  argc Number of Arguments
+ * @param  argv Arguments given
+ * @return      Zero for 0k
  */
 int main(int argc, char *argv[]){
 	
@@ -54,9 +55,9 @@ int main(int argc, char *argv[]){
     return 0;
 }
 /**
- * Verarbeitet die Eingabe
- * @param weiter Ausgewählte Menüpunkt
- * @param dk     Dijkstra Objekt mit dem gearbeitet werden soll
+ * Handles the Input
+ * @param weiter Choosen menupoint
+ * @param dk     Dijkstra Objekt to work with
  */
 void verarbeite_eingabe(int weiter, ShortPath *sp){
 	int auswahl = 0;
@@ -104,6 +105,9 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
     } 
 }
 
+/**
+ * Loads the graph from a file
+ */
 void load_graph_from_file(){
 	sp->clear();
 	load_file();
@@ -112,7 +116,10 @@ void load_graph_from_file(){
 }
 
 
-
+/**
+ * Does the short path algorithm on the given object
+ * @param sp object for short path algorithm
+ */
 void do_shortpath_calculation(ShortPath *sp){
 	 cout << "Naive" << endl;
     start = clock();
@@ -124,16 +131,26 @@ void do_shortpath_calculation(ShortPath *sp){
     
 }
 
+/**
+ * Overrides the short path object with the number of graphs which init randomly.
+ * @param sp short path to override
+ */
 void set_number_of_graphs(ShortPath *sp){
 	number_of_graphs = erfasse_int(1, 20000, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
 	sp->init_random(number_of_graphs);
 }
-
+/**
+ * Set the number of cores to calculate NOCHMAL SCHAUEN!!!
+ * @param sp numerb of cores for calculation.
+ */
 void set_number_of_cores(ShortPath *sp){
 	number_of_cores = erfasse_int(1, 16, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
 	sp->init_random(number_of_graphs);
 }
-
+/**
+ * Calculates the short path algorithm with multiprocessors
+ * @param sp [description]
+ */
 void do_shortpath_calculation_mulitproc(ShortPath *sp){
 	cout << "Multicore" << endl;
     start = clock();
@@ -145,7 +162,7 @@ void do_shortpath_calculation_mulitproc(ShortPath *sp){
 
 
 /**
- * Zeigt das Menu und erfasst die Eingabe.
+ * Show up the menu and fetches the user input.
  */
 
 
@@ -186,7 +203,7 @@ bool parameter_ok(int argc, char *argv[]){
 }
 
 /**
- * Zeigt die Anleitung zu dem Programm
+ * Shows the description of the programm
  */
 void anleitung(){
 	cout << ":::ANLEITUNG:::"<<endl<<endl;
