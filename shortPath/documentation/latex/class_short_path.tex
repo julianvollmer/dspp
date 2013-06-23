@@ -10,8 +10,6 @@
 \item 
 \hyperlink{class_short_path_aa1f54b3eb632252e0e4f34fed4110d54}{Short\-Path} ()
 \item 
-void \hyperlink{class_short_path_a977e9df25e204c35a343da0df6b38694}{read} ()
-\item 
 void \hyperlink{class_short_path_a113f044a61c1eacafb73df55e12f3803}{initialize} ()
 \item 
 int \hyperlink{class_short_path_ae218a65d8dd2620afc8c088679c5ab98}{get\-\_\-closest\-\_\-unmarked\-\_\-node} ()
@@ -21,8 +19,6 @@ void \hyperlink{class_short_path_af4ddb3c9a160c273bdc99b3fb43fd58d}{calculate\-\
 void \hyperlink{class_short_path_a74f3fa59ffd3e061ef75a7962fbe3cfa}{calculate\-\_\-distance\-\_\-multiproc} ()
 \item 
 void \hyperlink{class_short_path_af65d23be9601ccf34becf9922c88c263}{add\-\_\-row} (\hyperlink{class_dijkstra}{Dijkstra} element)
-\item 
-int \hyperlink{class_short_path_a70c679581d979db7ac0cf8d0980651f5}{size} ()
 \item 
 void \hyperlink{class_short_path_aa4ede1b3713f60bef1f23193510199df}{output} ()
 \item 
@@ -49,7 +45,7 @@ void \hyperlink{class_short_path_a1c0cf18c306d022d72393979e37463c8}{clear} ()
 \subsection{Detailed Description}
 
 
-Definition at line 26 of file Short\-Path.\-h.
+Definition at line 23 of file Short\-Path.\-h.
 
 
 
@@ -61,9 +57,9 @@ Definition at line 26 of file Short\-Path.\-h.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_aa1f54b3eb632252e0e4f34fed4110d54}
+Constructor 
 
-
-Definition at line 3 of file Short\-Path.\-cpp.
+Definition at line 5 of file Short\-Path.\-cpp.
 
 
 
@@ -82,14 +78,18 @@ Definition at line 3 of file Short\-Path.\-cpp.
 \item[{{\bf Dijkstra}}]{element}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_af65d23be9601ccf34becf9922c88c263}
+Adds a row to the matrix 
+\begin{DoxyParams}{Parameters}
+{\em element} & \mbox{[}description\mbox{]} \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 16 of file Short\-Path.\-cpp.
+Definition at line 27 of file Short\-Path.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -107,12 +107,11 @@ Here is the caller graph for this function\-:
 )}}\label{class_short_path_af4ddb3c9a160c273bdc99b3fb43fd58d}
 
 
-Definition at line 156 of file Short\-Path.\-cpp.
+Definition at line 196 of file Short\-Path.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -123,8 +122,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -140,14 +138,13 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_a74f3fa59ffd3e061ef75a7962fbe3cfa}
-Here is where the magic happens 
+Function calculate\-\_\-distance calculates the minimum distances from the source node to Other node. 
 
-Definition at line 130 of file Short\-Path.\-cpp.
+Definition at line 170 of file Short\-Path.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -158,8 +155,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -175,14 +171,13 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_a1c0cf18c306d022d72393979e37463c8}
+Delete a elements 
+
+Definition at line 19 of file Short\-Path.\-cpp.
 
 
-Definition at line 12 of file Short\-Path.\-cpp.
 
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -198,14 +193,16 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_ae218a65d8dd2620afc8c088679c5ab98}
+Function get\-\_\-closed\-\_\-unmarked\-\_\-node returns the node which is nearest from the Predecessor marked node. If the node is already marked as visited, then it search for another node. \begin{DoxyReturn}{Returns}
+closest\-\_\-unmarked\-\_\-node closest unmarked node 
+\end{DoxyReturn}
 
 
-Definition at line 115 of file Short\-Path.\-cpp.
+Definition at line 154 of file Short\-Path.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -221,14 +218,16 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_abf528c510136ea8014abfdd993949a02}
+\begin{DoxyReturn}{Returns}
+Retuns all elements 
+\end{DoxyReturn}
 
 
-Definition at line 8 of file Short\-Path.\-cpp.
+Definition at line 12 of file Short\-Path.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -244,14 +243,13 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_af3c6bd7d7b552ca6fa60b89a49db8566}
+initialize a Graph with a specific size 
+
+Definition at line 118 of file Short\-Path.\-cpp.
 
 
-Definition at line 93 of file Short\-Path.\-cpp.
 
-
-
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -262,8 +260,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -279,14 +276,18 @@ Here is the caller graph for this function\-:
 \item[{int}]{anz}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_a1edee840fd8a1deec46d7c8ee4573bae}
+Initialize the random initialisation 
+\begin{DoxyParams}{Parameters}
+{\em anz} & \mbox{[}description\mbox{]} \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 80 of file Short\-Path.\-cpp.
+Definition at line 102 of file Short\-Path.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -302,14 +303,13 @@ Here is the call graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_a24387db998bac1e88493dc4cf838a68b}
+initialize the graph random 
+
+Definition at line 33 of file Short\-Path.\-cpp.
 
 
-Definition at line 20 of file Short\-Path.\-cpp.
 
-
-
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -320,8 +320,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -337,14 +336,13 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_a388a3b66967f667a16b16f0f6fb044f3}
+\mbox{[}\hyperlink{class_short_path_a388a3b66967f667a16b16f0f6fb044f3}{Short\-Path\-::init\-\_\-source} description\mbox{]} 
+
+Definition at line 126 of file Short\-Path.\-cpp.
 
 
-Definition at line 98 of file Short\-Path.\-cpp.
 
-
-
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -360,14 +358,13 @@ Here is the call graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_a113f044a61c1eacafb73df55e12f3803}
+Function initialize initializes all the data members at the begining of the execution. The distance between source to source is zero and all other distances between source and vertices are infinity. The mark is initialized to false and predecessor is initialized to -\/1 
+
+Definition at line 137 of file Short\-Path.\-cpp.
 
 
-Definition at line 103 of file Short\-Path.\-cpp.
 
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -385,12 +382,11 @@ Here is the caller graph for this function\-:
 )}}\label{class_short_path_aa4ede1b3713f60bef1f23193510199df}
 print the output on the console 
 
-Definition at line 200 of file Short\-Path.\-cpp.
+Definition at line 240 of file Short\-Path.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -401,8 +397,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -418,14 +413,13 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_short_path_a15edde62ae2c1a9f149815fb846c768e}
+prints the adjacency matrix. 
+
+Definition at line 69 of file Short\-Path.\-cpp.
 
 
-Definition at line 53 of file Short\-Path.\-cpp.
 
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -448,46 +442,15 @@ Prints the path to the node
 \end{DoxyParams}
 
 
-Definition at line 185 of file Short\-Path.\-cpp.
+Definition at line 225 of file Short\-Path.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_short_path_a363cac67e1c10f524feab977073c35e9_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_short_path_a977e9df25e204c35a343da0df6b38694}{\index{Short\-Path@{Short\-Path}!read@{read}}
-\index{read@{read}!ShortPath@{Short\-Path}}
-\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void Short\-Path\-::read (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_short_path_a977e9df25e204c35a343da0df6b38694}
-\hypertarget{class_short_path_a70c679581d979db7ac0cf8d0980651f5}{\index{Short\-Path@{Short\-Path}!size@{size}}
-\index{size@{size}!ShortPath@{Short\-Path}}
-\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Short\-Path\-::size (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_short_path_a70c679581d979db7ac0cf8d0980651f5}
-
-
-Definition at line 39 of file Short\-Path.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_short_path_a70c679581d979db7ac0cf8d0980651f5_icgraph}
 \end{center}
 \end{figure}
 

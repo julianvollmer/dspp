@@ -38,11 +38,7 @@ int \hyperlink{class_dijkstra_af9bcc9baee081c08a7e192781788284f}{get\-\_\-distan
 \item 
 int \hyperlink{class_dijkstra_ac015491614e395f46f0c63171aef3be1}{get\-\_\-shortest\-\_\-distance} ()
 \item 
-int \hyperlink{class_dijkstra_af242ba93afc5df393a4bbf9ab727b7f7}{get\-\_\-length} ()
-\item 
 void \hyperlink{class_dijkstra_a4e31f6a7349c13b57c9a41d4a6e5a7c7}{set\-\_\-name} (string name)
-\item 
-void \hyperlink{class_dijkstra_ae87cf779c98bc09e046f99c47c8bbf8a}{set\-\_\-distance} (int distnace)
 \item 
 void \hyperlink{class_dijkstra_a0d5649f1baa5ce2d2c65b276141d6f40}{set\-\_\-predecessor} (int predecessor)
 \item 
@@ -55,8 +51,6 @@ void \hyperlink{class_dijkstra_abed971366356f3ffcfbedaf1391c8d7e}{set\-\_\-dista
 void \hyperlink{class_dijkstra_a869289b1b15b665abf20bb04d6cc85c5}{set\-\_\-distance\-\_\-to\-\_\-specific} (int position, int value)
 \item 
 void \hyperlink{class_dijkstra_a85da246a755eebaf166f88af8e325107}{add\-\_\-distances\-\_\-to\-\_\-other} (int distance)
-\item 
-void \hyperlink{class_dijkstra_a20d31322ad6708ec27f1c66cd43a9e24}{add\-\_\-distance} (int distance)
 \item 
 void \hyperlink{class_dijkstra_af69ad1ca6722e8c37eff60719506c330}{print\-\_\-distances} ()
 \item 
@@ -79,14 +73,13 @@ Definition at line 6 of file dk\-\_\-cpl.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_ad7c7bb035ef96e4dbd652fe2bd11a2be}
+Construktor 
+
+Definition at line 8 of file Dijkstra.\-cpp.
 
 
-Definition at line 5 of file Dijkstra.\-cpp.
 
-
-
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -98,17 +91,6 @@ Here is the call graph for this function\-:
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_dijkstra_a20d31322ad6708ec27f1c66cd43a9e24}{\index{Dijkstra@{Dijkstra}!add\-\_\-distance@{add\-\_\-distance}}
-\index{add\-\_\-distance@{add\-\_\-distance}!Dijkstra@{Dijkstra}}
-\subsubsection[{add\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}void Dijkstra\-::add\-\_\-distance (
-\begin{DoxyParamCaption}
-\item[{int}]{distance}
-\end{DoxyParamCaption}
-)}}\label{class_dijkstra_a20d31322ad6708ec27f1c66cd43a9e24}
-
-
-Definition at line 67 of file Dijkstra.\-cpp.
-
 \hypertarget{class_dijkstra_a85da246a755eebaf166f88af8e325107}{\index{Dijkstra@{Dijkstra}!add\-\_\-distances\-\_\-to\-\_\-other@{add\-\_\-distances\-\_\-to\-\_\-other}}
 \index{add\-\_\-distances\-\_\-to\-\_\-other@{add\-\_\-distances\-\_\-to\-\_\-other}!Dijkstra@{Dijkstra}}
 \subsubsection[{add\-\_\-distances\-\_\-to\-\_\-other}]{\setlength{\rightskip}{0pt plus 5cm}void Dijkstra\-::add\-\_\-distances\-\_\-to\-\_\-other (
@@ -116,9 +98,14 @@ Definition at line 67 of file Dijkstra.\-cpp.
 \item[{int}]{distance}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_a85da246a755eebaf166f88af8e325107}
+Adds a distance to the edge 
+\begin{DoxyParams}{Parameters}
+{\em distance} & distance to add \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 95 of file Dijkstra.\-cpp.
+Definition at line 142 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_a110ea0c1486bf76fecec005f1eea56d0}{\index{Dijkstra@{Dijkstra}!calculate\-Distance@{calculate\-Distance}}
 \index{calculate\-Distance@{calculate\-Distance}!Dijkstra@{Dijkstra}}
@@ -133,8 +120,7 @@ Definition at line 107 of file dk\-\_\-cpl.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -150,9 +136,12 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_af1d9287898152d9581fae471af19cf78}
+Returns the distance to the target edge \begin{DoxyReturn}{Returns}
+Returns the distance to the target edge 
+\end{DoxyReturn}
 
 
-Definition at line 39 of file Dijkstra.\-cpp.
+Definition at line 64 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_af9bcc9baee081c08a7e192781788284f}{\index{Dijkstra@{Dijkstra}!get\-\_\-distance\-\_\-from\-\_\-specific@{get\-\_\-distance\-\_\-from\-\_\-specific}}
 \index{get\-\_\-distance\-\_\-from\-\_\-specific@{get\-\_\-distance\-\_\-from\-\_\-specific}!Dijkstra@{Dijkstra}}
@@ -161,9 +150,17 @@ Definition at line 39 of file Dijkstra.\-cpp.
 \item[{int}]{position}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_af9bcc9baee081c08a7e192781788284f}
+Returns the distance to a specific edge 
+\begin{DoxyParams}{Parameters}
+{\em position} & position of the edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+distance 
+\end{DoxyReturn}
 
 
-Definition at line 22 of file Dijkstra.\-cpp.
+Definition at line 36 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_acd3b982f95ee25ed09184bb0da75f0b7}{\index{Dijkstra@{Dijkstra}!get\-\_\-distances\-\_\-to\-\_\-other@{get\-\_\-distances\-\_\-to\-\_\-other}}
 \index{get\-\_\-distances\-\_\-to\-\_\-other@{get\-\_\-distances\-\_\-to\-\_\-other}!Dijkstra@{Dijkstra}}
@@ -172,20 +169,12 @@ Definition at line 22 of file Dijkstra.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_acd3b982f95ee25ed09184bb0da75f0b7}
+Returns all distances to the other edges in a vector \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 
 
-Definition at line 10 of file Dijkstra.\-cpp.
-
-\hypertarget{class_dijkstra_af242ba93afc5df393a4bbf9ab727b7f7}{\index{Dijkstra@{Dijkstra}!get\-\_\-length@{get\-\_\-length}}
-\index{get\-\_\-length@{get\-\_\-length}!Dijkstra@{Dijkstra}}
-\subsubsection[{get\-\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}int Dijkstra\-::get\-\_\-length (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_dijkstra_af242ba93afc5df393a4bbf9ab727b7f7}
-
-
-Definition at line 105 of file Dijkstra.\-cpp.
+Definition at line 17 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_a1351e93ccbbfef5f0ce6dab8d4df2ac0}{\index{Dijkstra@{Dijkstra}!get\-\_\-mark@{get\-\_\-mark}}
 \index{get\-\_\-mark@{get\-\_\-mark}!Dijkstra@{Dijkstra}}
@@ -194,9 +183,12 @@ Definition at line 105 of file Dijkstra.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_a1351e93ccbbfef5f0ce6dab8d4df2ac0}
+Returns if a edge is visited or not \begin{DoxyReturn}{Returns}
+Returns if a edge is visited or not 
+\end{DoxyReturn}
 
 
-Definition at line 47 of file Dijkstra.\-cpp.
+Definition at line 80 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_a2673be1aaa7fbae0656239e66a855134}{\index{Dijkstra@{Dijkstra}!get\-\_\-name@{get\-\_\-name}}
 \index{get\-\_\-name@{get\-\_\-name}!Dijkstra@{Dijkstra}}
@@ -205,9 +197,12 @@ Definition at line 47 of file Dijkstra.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_a2673be1aaa7fbae0656239e66a855134}
+Returns the name of the edge \begin{DoxyReturn}{Returns}
+Returns the name of the edge 
+\end{DoxyReturn}
 
 
-Definition at line 35 of file Dijkstra.\-cpp.
+Definition at line 56 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_ab067a351a7c993cb900f64495e49aa4c}{\index{Dijkstra@{Dijkstra}!get\-\_\-position@{get\-\_\-position}}
 \index{get\-\_\-position@{get\-\_\-position}!Dijkstra@{Dijkstra}}
@@ -216,9 +211,12 @@ Definition at line 35 of file Dijkstra.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_ab067a351a7c993cb900f64495e49aa4c}
+Returns the position \begin{DoxyReturn}{Returns}
+\mbox{[}description\mbox{]} 
+\end{DoxyReturn}
 
 
-Definition at line 51 of file Dijkstra.\-cpp.
+Definition at line 88 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_ad05e5384c101f91eded657061d1d9c30}{\index{Dijkstra@{Dijkstra}!get\-\_\-predecessor@{get\-\_\-predecessor}}
 \index{get\-\_\-predecessor@{get\-\_\-predecessor}!Dijkstra@{Dijkstra}}
@@ -227,9 +225,12 @@ Definition at line 51 of file Dijkstra.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_ad05e5384c101f91eded657061d1d9c30}
+Returns the predecessor \begin{DoxyReturn}{Returns}
+Returns the predecessor 
+\end{DoxyReturn}
 
 
-Definition at line 43 of file Dijkstra.\-cpp.
+Definition at line 72 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_ac015491614e395f46f0c63171aef3be1}{\index{Dijkstra@{Dijkstra}!get\-\_\-shortest\-\_\-distance@{get\-\_\-shortest\-\_\-distance}}
 \index{get\-\_\-shortest\-\_\-distance@{get\-\_\-shortest\-\_\-distance}!Dijkstra@{Dijkstra}}
@@ -238,9 +239,12 @@ Definition at line 43 of file Dijkstra.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_ac015491614e395f46f0c63171aef3be1}
+Return the distance to the closest point \begin{DoxyReturn}{Returns}
+distance 
+\end{DoxyReturn}
 
 
-Definition at line 55 of file Dijkstra.\-cpp.
+Definition at line 95 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_aa9df7dd7756870a4bb5ed14abfa93124}{\index{Dijkstra@{Dijkstra}!get\-Closest\-Unmarked\-Node@{get\-Closest\-Unmarked\-Node}}
 \index{get\-Closest\-Unmarked\-Node@{get\-Closest\-Unmarked\-Node}!Dijkstra@{Dijkstra}}
@@ -260,14 +264,13 @@ Definition at line 94 of file dk\-\_\-cpl.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_aa6f64ceb0d55bf0c41af82534b5d0335}
+All distance has to be I\-N\-T\-\_\-\-M\-A\-X at the begining 
+
+Definition at line 25 of file Dijkstra.\-cpp.
 
 
-Definition at line 16 of file Dijkstra.\-cpp.
 
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -300,8 +303,7 @@ Definition at line 140 of file dk\-\_\-cpl.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -317,9 +319,9 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_af69ad1ca6722e8c37eff60719506c330}
+Prints the distance to the root edge 
 
-
-Definition at line 112 of file Dijkstra.\-cpp.
+Definition at line 158 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_a45305244759e1634249dc04438c3e207}{\index{Dijkstra@{Dijkstra}!print\-Path@{print\-Path}}
 \index{print\-Path@{print\-Path}!Dijkstra@{Dijkstra}}
@@ -345,8 +347,7 @@ Definition at line 55 of file dk\-\_\-cpl.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -354,17 +355,6 @@ Here is the caller graph for this function\-:
 \end{center}
 \end{figure}
 
-
-\hypertarget{class_dijkstra_ae87cf779c98bc09e046f99c47c8bbf8a}{\index{Dijkstra@{Dijkstra}!set\-\_\-distance@{set\-\_\-distance}}
-\index{set\-\_\-distance@{set\-\_\-distance}!Dijkstra@{Dijkstra}}
-\subsubsection[{set\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}void Dijkstra\-::set\-\_\-distance (
-\begin{DoxyParamCaption}
-\item[{int}]{distnace}
-\end{DoxyParamCaption}
-)}}\label{class_dijkstra_ae87cf779c98bc09e046f99c47c8bbf8a}
-
-
-Definition at line 77 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_a869289b1b15b665abf20bb04d6cc85c5}{\index{Dijkstra@{Dijkstra}!set\-\_\-distance\-\_\-to\-\_\-specific@{set\-\_\-distance\-\_\-to\-\_\-specific}}
 \index{set\-\_\-distance\-\_\-to\-\_\-specific@{set\-\_\-distance\-\_\-to\-\_\-specific}!Dijkstra@{Dijkstra}}
@@ -374,9 +364,16 @@ Definition at line 77 of file Dijkstra.\-cpp.
 \item[{int}]{value}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_a869289b1b15b665abf20bb04d6cc85c5}
+Sets the distance to a specific edge 
+\begin{DoxyParams}{Parameters}
+{\em position} & target \\
+\hline
+{\em value} & distance \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 30 of file Dijkstra.\-cpp.
+Definition at line 48 of file Dijkstra.\-cpp.
 
 \hypertarget{class_dijkstra_abed971366356f3ffcfbedaf1391c8d7e}{\index{Dijkstra@{Dijkstra}!set\-\_\-distance\-\_\-vector@{set\-\_\-distance\-\_\-vector}}
 \index{set\-\_\-distance\-\_\-vector@{set\-\_\-distance\-\_\-vector}!Dijkstra@{Dijkstra}}
@@ -385,14 +382,18 @@ Definition at line 30 of file Dijkstra.\-cpp.
 \item[{vector$<$ int $>$}]{v}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_abed971366356f3ffcfbedaf1391c8d7e}
+Sets a vector as distances 
+\begin{DoxyParams}{Parameters}
+{\em v} & vector with distances \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 90 of file Dijkstra.\-cpp.
+Definition at line 134 of file Dijkstra.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -408,14 +409,18 @@ Here is the caller graph for this function\-:
 \item[{bool}]{mark}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_a75fcba38eab85c0fa15840a3d932156d}
+Return true if the egde was visited 
+\begin{DoxyParams}{Parameters}
+{\em mark} & true if visited \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 85 of file Dijkstra.\-cpp.
+Definition at line 126 of file Dijkstra.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -431,14 +436,18 @@ Here is the caller graph for this function\-:
 \item[{string}]{name}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_a4e31f6a7349c13b57c9a41d4a6e5a7c7}
+Sets a name to the edge 
+\begin{DoxyParams}{Parameters}
+{\em name} & name to set \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 73 of file Dijkstra.\-cpp.
+Definition at line 110 of file Dijkstra.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -454,14 +463,18 @@ Here is the caller graph for this function\-:
 \item[{int}]{position}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_a8f857a9ebf93c48e0a6296e85b0d2524}
+Sets the position of a edge 
+\begin{DoxyParams}{Parameters}
+{\em position} & position as integer \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 101 of file Dijkstra.\-cpp.
+Definition at line 151 of file Dijkstra.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -477,14 +490,18 @@ Here is the caller graph for this function\-:
 \item[{int}]{predecessor}
 \end{DoxyParamCaption}
 )}}\label{class_dijkstra_a0d5649f1baa5ce2d2c65b276141d6f40}
+Sets the predecessor 
+\begin{DoxyParams}{Parameters}
+{\em predecessor} & predecessor to set \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 81 of file Dijkstra.\-cpp.
+Definition at line 118 of file Dijkstra.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

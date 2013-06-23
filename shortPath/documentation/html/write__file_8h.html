@@ -33,6 +33,7 @@
    <div id="projectname">short Path
    &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">Das Programm wurde von Julian und Philip im rahmen des Faches bla bla bla</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('write__file_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,7 +117,7 @@ Include dependency graph for write_file.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="write__file_8h__incl.png" border="0" usemap="#helper_2write__file_8h" alt=""/></div>
 <map name="helper_2write__file_8h" id="helper_2write__file_8h">
-<area shape="rect" id="node7" href="_short_path_8h.html" title="../lib/ShortPath.h" alt="" coords="695,83,813,111"/><area shape="rect" id="node18" href="eingabe_8h.html" title="../helper/eingabe.h" alt="" coords="123,169,255,197"/><area shape="rect" id="node29" href="helpers_8h.html" title="../helper/helpers.h" alt="" coords="380,169,508,197"/><area shape="rect" id="node34" href="random_8h.html" title="../helper/random.h" alt="" coords="633,169,761,197"/><area shape="rect" id="node43" href="_dijkstra_8h.html" title="Dijkstra.h" alt="" coords="532,169,608,197"/></map>
+<area shape="rect" id="node7" href="_short_path_8h.html" title="../lib/ShortPath.h" alt="" coords="431,83,549,111"/><area shape="rect" id="node18" href="eingabe_8h.html" title="../helper/eingabe.h" alt="" coords="82,254,213,282"/><area shape="rect" id="node29" href="helpers_8h.html" title="../helper/helpers.h" alt="" coords="205,169,333,197"/><area shape="rect" id="node35" href="random_8h.html" title="../helper/random.h" alt="" coords="591,169,720,197"/><area shape="rect" id="node44" href="_dijkstra_8h.html" title="Dijkstra.h" alt="" coords="491,169,567,197"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -149,8 +150,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Check if the file is avaiable </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Filename to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>always true </dd></dl>
 
-<p>Definition at line <a class="el" href="write__file_8cpp_source.html#l00030">30</a> of file <a class="el" href="write__file_8cpp_source.html">write_file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="write__file_8cpp_source.html#l00037">37</a> of file <a class="el" href="write__file_8cpp_source.html">write_file.cpp</a>.</p>
 
 </div>
 </div>
@@ -167,8 +176,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Writes a graph to a file </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sp</td><td>graph </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="write__file_8cpp_source.html#l00004">4</a> of file <a class="el" href="write__file_8cpp_source.html">write_file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="write__file_8cpp_source.html#l00007">7</a> of file <a class="el" href="write__file_8cpp_source.html">write_file.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -196,7 +212,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d634f21e635b1ea642c8b957ecf78b4f.html">helper</a></li><li class="navelem"><a class="el" href="write__file_8h.html">write_file.h</a></li>
-    <li class="footer">Generated on Sat Jun 22 2013 14:00:38 for short Path by
+    <li class="footer">Generated on Sun Jun 23 2013 21:57:55 for short Path by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

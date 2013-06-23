@@ -2,8 +2,7 @@
 \label{load__file_8cpp}\index{helper/load\-\_\-file.\-cpp@{helper/load\-\_\-file.\-cpp}}
 }
 {\ttfamily \#include \char`\"{}load\-\_\-file.\-h\char`\"{}}\\*
-Include dependency graph for load\-\_\-file.\-cpp\-:
-\nopagebreak
+Include dependency graph for load\-\_\-file.\-cpp\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,7 +16,7 @@ void \hyperlink{load__file_8cpp_a8ad648b86395c683b195b15e2116148c}{load\-\_\-fil
 \item 
 \hyperlink{class_short_path}{Short\-Path} $\ast$ \hyperlink{load__file_8cpp_a9befa0a6259aedaab522d46016e9bc51}{get\-Short\-Path\-Object} ()
 \item 
-void \hyperlink{load__file_8cpp_a05a7ed8536adb9ced046961c3658edd5}{validate\-\_\-dataformat} ()
+bool \hyperlink{load__file_8cpp_abd51dd55a8afe9e6bedebc079cf01763}{validate\-\_\-dataformat} ()
 \item 
 void \hyperlink{load__file_8cpp_abbdc586b3b3f257e5b922b048fc638b2}{create\-\_\-nodes\-\_\-from\-\_\-file\-\_\-char} (char c)
 \item 
@@ -54,14 +53,18 @@ vector$<$ int $>$ \hyperlink{load__file_8cpp_a0f02108b830b721d1f110532291ca686}{
 \item[{vector$<$ int $>$}]{v}
 \end{DoxyParamCaption}
 )}}\label{load__file_8cpp_a17802900d7e5bb596e72d83e21edef59}
+Adds a row to the vector 
+\begin{DoxyParams}{Parameters}
+{\em v} & vector to which the will be added \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 53 of file load\-\_\-file.\-cpp.
+Definition at line 74 of file load\-\_\-file.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -72,8 +75,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -89,14 +91,18 @@ Here is the caller graph for this function\-:
 \item[{char}]{c}
 \end{DoxyParamCaption}
 )}}\label{load__file_8cpp_abbdc586b3b3f257e5b922b048fc638b2}
+Creates the nodes from the char of every file 
+\begin{DoxyParams}{Parameters}
+{\em c} & char from input file \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 33 of file load\-\_\-file.\-cpp.
+Definition at line 51 of file load\-\_\-file.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -107,8 +113,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -124,14 +129,16 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{load__file_8cpp_a9befa0a6259aedaab522d46016e9bc51}
+Returns the \hyperlink{class_short_path}{Short\-Path} object \begin{DoxyReturn}{Returns}
+Returns the \hyperlink{class_short_path}{Short\-Path} object 
+\end{DoxyReturn}
 
 
-Definition at line 25 of file load\-\_\-file.\-cpp.
+Definition at line 37 of file load\-\_\-file.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -147,14 +154,13 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{load__file_8cpp_a8ad648b86395c683b195b15e2116148c}
+loads a file an writes it to the graph 
+
+Definition at line 20 of file load\-\_\-file.\-cpp.
 
 
-Definition at line 13 of file load\-\_\-file.\-cpp.
 
-
-
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -165,8 +171,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -175,16 +180,19 @@ Here is the caller graph for this function\-:
 \end{figure}
 
 
-\hypertarget{load__file_8cpp_a05a7ed8536adb9ced046961c3658edd5}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!validate\-\_\-dataformat@{validate\-\_\-dataformat}}
+\hypertarget{load__file_8cpp_abd51dd55a8afe9e6bedebc079cf01763}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!validate\-\_\-dataformat@{validate\-\_\-dataformat}}
 \index{validate\-\_\-dataformat@{validate\-\_\-dataformat}!load_file.cpp@{load\-\_\-file.\-cpp}}
-\subsubsection[{validate\-\_\-dataformat}]{\setlength{\rightskip}{0pt plus 5cm}void validate\-\_\-dataformat (
+\subsubsection[{validate\-\_\-dataformat}]{\setlength{\rightskip}{0pt plus 5cm}bool validate\-\_\-dataformat (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{load__file_8cpp_a05a7ed8536adb9ced046961c3658edd5}
+)}}\label{load__file_8cpp_abd51dd55a8afe9e6bedebc079cf01763}
+Check if the dataformat is correct \begin{DoxyReturn}{Returns}
+always \-:) 
+\end{DoxyReturn}
 
 
-Definition at line 29 of file load\-\_\-file.\-cpp.
+Definition at line 44 of file load\-\_\-file.\-cpp.
 
 
 
@@ -192,63 +200,63 @@ Definition at line 29 of file load\-\_\-file.\-cpp.
 \hypertarget{load__file_8cpp_a617a47c70795bcff659815ad0efd2266}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!counter@{counter}}
 \index{counter@{counter}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{counter}]{\setlength{\rightskip}{0pt plus 5cm}int counter = 0}}\label{load__file_8cpp_a617a47c70795bcff659815ad0efd2266}
+Why all these can't be in \hyperlink{load__file_8h}{load\-\_\-file.\-h} ? 
 
-
-Definition at line 3 of file load\-\_\-file.\-cpp.
+Definition at line 7 of file load\-\_\-file.\-cpp.
 
 \hypertarget{load__file_8cpp_a16d981023742d3bd53f1385790714190}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!from@{from}}
 \index{from@{from}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{from}]{\setlength{\rightskip}{0pt plus 5cm}int from = 0}}\label{load__file_8cpp_a16d981023742d3bd53f1385790714190}
 
 
-Definition at line 4 of file load\-\_\-file.\-cpp.
+Definition at line 8 of file load\-\_\-file.\-cpp.
 
 \hypertarget{load__file_8cpp_a8b2e13c78efca330f06b6ddcd7464b41}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!result@{result}}
 \index{result@{result}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}int result}}\label{load__file_8cpp_a8b2e13c78efca330f06b6ddcd7464b41}
 
 
-Definition at line 7 of file load\-\_\-file.\-cpp.
+Definition at line 11 of file load\-\_\-file.\-cpp.
 
 \hypertarget{load__file_8cpp_a93e8b154fe94e960d3dc355a10c3a8f7}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!rownum@{rownum}}
 \index{rownum@{rownum}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{rownum}]{\setlength{\rightskip}{0pt plus 5cm}int rownum = 0}}\label{load__file_8cpp_a93e8b154fe94e960d3dc355a10c3a8f7}
 
 
-Definition at line 9 of file load\-\_\-file.\-cpp.
+Definition at line 13 of file load\-\_\-file.\-cpp.
 
 \hypertarget{load__file_8cpp_a2c6601c82034f436647fb14383822cd7}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!sp\-Object@{sp\-Object}}
 \index{sp\-Object@{sp\-Object}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{sp\-Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Short\-Path}$\ast$ sp\-Object = new {\bf Short\-Path}}}\label{load__file_8cpp_a2c6601c82034f436647fb14383822cd7}
 
 
-Definition at line 11 of file load\-\_\-file.\-cpp.
+Definition at line 15 of file load\-\_\-file.\-cpp.
 
 \hypertarget{load__file_8cpp_a082623d77205715c70bf4b8c0cfe373d}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!tmp\-\_\-result@{tmp\-\_\-result}}
 \index{tmp\-\_\-result@{tmp\-\_\-result}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{tmp\-\_\-result}]{\setlength{\rightskip}{0pt plus 5cm}string tmp\-\_\-result}}\label{load__file_8cpp_a082623d77205715c70bf4b8c0cfe373d}
 
 
-Definition at line 8 of file load\-\_\-file.\-cpp.
+Definition at line 12 of file load\-\_\-file.\-cpp.
 
 \hypertarget{load__file_8cpp_ac0ed249f3db34b8135fd2717bda56844}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!to@{to}}
 \index{to@{to}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{to}]{\setlength{\rightskip}{0pt plus 5cm}int to = 0}}\label{load__file_8cpp_ac0ed249f3db34b8135fd2717bda56844}
 
 
-Definition at line 5 of file load\-\_\-file.\-cpp.
+Definition at line 9 of file load\-\_\-file.\-cpp.
 
 \hypertarget{load__file_8cpp_aa01147b1f07072d246c76dc85d69df7c}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!weight@{weight}}
 \index{weight@{weight}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{weight}]{\setlength{\rightskip}{0pt plus 5cm}int weight = 0}}\label{load__file_8cpp_aa01147b1f07072d246c76dc85d69df7c}
 
 
-Definition at line 6 of file load\-\_\-file.\-cpp.
+Definition at line 10 of file load\-\_\-file.\-cpp.
 
 \hypertarget{load__file_8cpp_a0f02108b830b721d1f110532291ca686}{\index{load\-\_\-file.\-cpp@{load\-\_\-file.\-cpp}!weights@{weights}}
 \index{weights@{weights}!load_file.cpp@{load\-\_\-file.\-cpp}}
 \subsubsection[{weights}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ weights}}\label{load__file_8cpp_a0f02108b830b721d1f110532291ca686}
 
 
-Definition at line 10 of file load\-\_\-file.\-cpp.
+Definition at line 14 of file load\-\_\-file.\-cpp.
 

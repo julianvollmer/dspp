@@ -16,6 +16,8 @@
 #include "time.h"
 #include "main.h"
 
+
+
 /**
  * This Programm shows different implementation of solving the shortest Path Problem with Dijkstra. 
  * The different solutions realized with different Framework, mainly for multiprocessor operations.
@@ -161,18 +163,18 @@ void show_test(){
 	int second_run 	= 10000;
 	int third_run 	= 15000;
 
-	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	cout << endl <<"Calculating " << first_run << " egdes with single core" << endl;
 
 	cout << "it took us " << "1337" << " seconds to solve this" << endl;
 
-	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
-	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
-	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
-	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
-	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
-	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
-	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
-	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	cout << "Calculating " << first_run << " egdes with single core" << endl;
+	cout << "Calculating " << first_run << " egdes with single core" << endl;
+	cout << "Calculating " << first_run << " egdes with single core" << endl;
+	cout << "Calculating " << first_run << " egdes with single core" << endl;
+	cout << "Calculating " << first_run << " egdes with single core" << endl;
+	cout << "Calculating " << first_run << " egdes with single core" << endl;
+	cout << "Calculating " << first_run << " egdes with single core" << endl;
+	cout << "Calculating " << first_run << " egdes with single core" << endl;
 	
 }
 

@@ -7,16 +7,14 @@
 {\ttfamily \#include \char`\"{}helpers.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}../lib/\-Short\-Path.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}../lib/\-Dijkstra.\-h\char`\"{}}\\*
-Include dependency graph for load\-\_\-file.\-h\-:
-\nopagebreak
+Include dependency graph for load\-\_\-file.\-h\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{load__file_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\-:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -32,6 +30,8 @@ void \hyperlink{load__file_8h_abbdc586b3b3f257e5b922b048fc638b2}{create\-\_\-nod
 \item 
 void \hyperlink{load__file_8h_a17802900d7e5bb596e72d83e21edef59}{add\-\_\-row} (vector$<$ int $>$ v)
 \item 
+bool \hyperlink{load__file_8h_abd51dd55a8afe9e6bedebc079cf01763}{validate\-\_\-dataformat} ()
+\item 
 \hyperlink{class_short_path}{Short\-Path} $\ast$ \hyperlink{load__file_8h_a9befa0a6259aedaab522d46016e9bc51}{get\-Short\-Path\-Object} ()
 \end{DoxyCompactItemize}
 
@@ -44,14 +44,18 @@ void \hyperlink{load__file_8h_a17802900d7e5bb596e72d83e21edef59}{add\-\_\-row} (
 \item[{vector$<$ int $>$}]{v}
 \end{DoxyParamCaption}
 )}}\label{load__file_8h_a17802900d7e5bb596e72d83e21edef59}
+Adds a row to the vector 
+\begin{DoxyParams}{Parameters}
+{\em v} & vector to which the will be added \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 53 of file load\-\_\-file.\-cpp.
+Definition at line 74 of file load\-\_\-file.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -62,8 +66,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -79,14 +82,18 @@ Here is the caller graph for this function\-:
 \item[{char}]{c}
 \end{DoxyParamCaption}
 )}}\label{load__file_8h_abbdc586b3b3f257e5b922b048fc638b2}
+Creates the nodes from the char of every file 
+\begin{DoxyParams}{Parameters}
+{\em c} & char from input file \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 33 of file load\-\_\-file.\-cpp.
+Definition at line 51 of file load\-\_\-file.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -97,8 +104,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -114,14 +120,16 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{load__file_8h_a9befa0a6259aedaab522d46016e9bc51}
+Returns the \hyperlink{class_short_path}{Short\-Path} object \begin{DoxyReturn}{Returns}
+Returns the \hyperlink{class_short_path}{Short\-Path} object 
+\end{DoxyReturn}
 
 
-Definition at line 25 of file load\-\_\-file.\-cpp.
+Definition at line 37 of file load\-\_\-file.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -137,14 +145,13 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{load__file_8h_a8ad648b86395c683b195b15e2116148c}
+loads a file an writes it to the graph 
+
+Definition at line 20 of file load\-\_\-file.\-cpp.
 
 
-Definition at line 13 of file load\-\_\-file.\-cpp.
 
-
-
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -155,8 +162,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -164,4 +170,18 @@ Here is the caller graph for this function\-:
 \end{center}
 \end{figure}
 
+
+\hypertarget{load__file_8h_abd51dd55a8afe9e6bedebc079cf01763}{\index{load\-\_\-file.\-h@{load\-\_\-file.\-h}!validate\-\_\-dataformat@{validate\-\_\-dataformat}}
+\index{validate\-\_\-dataformat@{validate\-\_\-dataformat}!load_file.h@{load\-\_\-file.\-h}}
+\subsubsection[{validate\-\_\-dataformat}]{\setlength{\rightskip}{0pt plus 5cm}bool validate\-\_\-dataformat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{load__file_8h_abd51dd55a8afe9e6bedebc079cf01763}
+Check if the dataformat is correct \begin{DoxyReturn}{Returns}
+always \-:) 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file load\-\_\-file.\-cpp.
 

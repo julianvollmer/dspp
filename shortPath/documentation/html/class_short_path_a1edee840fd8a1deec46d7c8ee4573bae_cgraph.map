@@ -5,8 +5,7 @@
 <area shape="rect" id="node9" href="$class_dijkstra.html#a0d5649f1baa5ce2d2c65b276141d6f40" title="Dijkstra::set_predecessor" alt="" coords="211,161,383,189"/>
 <area shape="rect" id="node11" href="$class_dijkstra.html#a8f857a9ebf93c48e0a6296e85b0d2524" title="Dijkstra::set_position" alt="" coords="225,213,370,241"/>
 <area shape="rect" id="node13" href="$class_short_path.html#a24387db998bac1e88493dc4cf838a68b" title="ShortPath::init_random\l_distances" alt="" coords="218,265,376,309"/>
-<area shape="rect" id="node15" href="$class_short_path.html#a70c679581d979db7ac0cf8d0980651f5" title="ShortPath::size" alt="" coords="461,246,573,274"/>
-<area shape="rect" id="node17" href="$random_8cpp.html#a59450f41ec4c9e9061c19fc494e0e804" title="liefere_ganze_zufallszahl" alt="" coords="432,298,603,326"/>
-<area shape="rect" id="node19" href="$random_8cpp.html#a97ee4d988f63d5afa24abb44c7126770" title="zufallszahl_int" alt="" coords="651,298,757,326"/>
-<area shape="rect" id="node21" href="$random_8cpp.html#ad8076fcc381dc1998e84e91356cf6349" title="initialisiere_zufallsgenerator" alt="" coords="806,298,992,326"/>
+<area shape="rect" id="node15" href="$random_8cpp.html#a59450f41ec4c9e9061c19fc494e0e804" title="liefere_ganze_zufallszahl" alt="" coords="432,273,603,301"/>
+<area shape="rect" id="node17" href="$random_8cpp.html#a97ee4d988f63d5afa24abb44c7126770" title="zufallszahl_int" alt="" coords="651,273,757,301"/>
+<area shape="rect" id="node19" href="$random_8cpp.html#ad8076fcc381dc1998e84e91356cf6349" title="initialisiere_zufallsgenerator" alt="" coords="806,273,992,301"/>
 </map>

@@ -33,6 +33,7 @@
    <div id="projectname">short Path
    &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">Das Programm wurde von Julian und Philip im rahmen des Faches bla bla bla</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('helpers_8cpp.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,7 +115,7 @@ Include dependency graph for helpers.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="helpers_8cpp__incl.png" border="0" usemap="#helper_2helpers_8cpp" alt=""/></div>
 <map name="helper_2helpers_8cpp" id="helper_2helpers_8cpp">
-<area shape="rect" id="node3" href="helpers_8h.html" title="helpers.h" alt="" coords="50,83,125,111"/></map>
+<area shape="rect" id="node3" href="helpers_8h.html" title="helpers.h" alt="" coords="71,83,147,111"/><area shape="rect" id="node9" href="eingabe_8h.html" title="eingabe.h" alt="" coords="168,161,247,189"/></map>
 </div>
 </div>
 <p><a href="helpers_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -125,8 +126,41 @@ Functions</h2></td></tr>
 <tr class="separator:a07fa49d604e024605441544ff5cbcb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bdbd1bb26254e884c9ef70484dc4ee2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8cpp.html#a4bdbd1bb26254e884c9ef70484dc4ee2">concat_string_and_int</a> (string str, int i)</td></tr>
 <tr class="separator:a4bdbd1bb26254e884c9ef70484dc4ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83fcdbeb2b6757fc741ae953b633ee1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8cpp.html#ae83fcdbeb2b6757fc741ae953b633ee1">menu</a> ()</td></tr>
+<tr class="separator:ae83fcdbeb2b6757fc741ae953b633ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925b46731bdff2413254c40ed967dd5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8cpp.html#a925b46731bdff2413254c40ed967dd5a">parameter_ok</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:a925b46731bdff2413254c40ed967dd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ccfa1c963516c3255b0463b91b26a4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8cpp.html#a8ccfa1c963516c3255b0463b91b26a4b">anleitung</a> ()</td></tr>
+<tr class="separator:a8ccfa1c963516c3255b0463b91b26a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a8ccfa1c963516c3255b0463b91b26a4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anleitung </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shows the description of the programm </p>
+
+<p>Definition at line <a class="el" href="helpers_8cpp_source.html#l00072">72</a> of file <a class="el" href="helpers_8cpp_source.html">helpers.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpers_8cpp_a8ccfa1c963516c3255b0463b91b26a4b_icgraph.png" border="0" usemap="#helpers_8cpp_a8ccfa1c963516c3255b0463b91b26a4b_icgraph" alt=""/></div>
+<map name="helpers_8cpp_a8ccfa1c963516c3255b0463b91b26a4b_icgraph" id="helpers_8cpp_a8ccfa1c963516c3255b0463b91b26a4b_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="131,5,181,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a4bdbd1bb26254e884c9ef70484dc4ee2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -150,8 +184,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>concat a string with an int </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>string </td></tr>
+    <tr><td class="paramname">i</td><td>integer to concat </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string plus integer as string </dd></dl>
 
-<p>Definition at line <a class="el" href="helpers_8cpp_source.html#l00016">16</a> of file <a class="el" href="helpers_8cpp_source.html">helpers.cpp</a>.</p>
+<p>Definition at line <a class="el" href="helpers_8cpp_source.html#l00023">23</a> of file <a class="el" href="helpers_8cpp_source.html">helpers.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -159,6 +202,88 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="helpers_8cpp_a4bdbd1bb26254e884c9ef70484dc4ee2_icgraph.png" border="0" usemap="#helpers_8cpp_a4bdbd1bb26254e884c9ef70484dc4ee2_icgraph" alt=""/></div>
 <map name="helpers_8cpp_a4bdbd1bb26254e884c9ef70484dc4ee2_icgraph" id="helpers_8cpp_a4bdbd1bb26254e884c9ef70484dc4ee2_icgraph">
 <area shape="rect" id="node3" href="class_short_path.html#a1edee840fd8a1deec46d7c8ee4573bae" title="ShortPath::init_random" alt="" coords="205,5,363,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae83fcdbeb2b6757fc741ae953b633ee1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int menu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Show up the menu and fetches the user input. </p>
+
+<p>Definition at line <a class="el" href="helpers_8cpp_source.html#l00032">32</a> of file <a class="el" href="helpers_8cpp_source.html">helpers.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpers_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1_cgraph.png" border="0" usemap="#helpers_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1_cgraph" alt=""/></div>
+<map name="helpers_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1_cgraph" id="helpers_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1_cgraph">
+<area shape="rect" id="node3" href="eingabe_8cpp.html#a6ed8ebda70d479be8719510ac7d31841" title="erfasse_int" alt="" coords="110,5,197,33"/><area shape="rect" id="node5" href="eingabe_8cpp.html#ad8882eee77198f558c6ec27ea26f8a18" title="erfasse_long" alt="" coords="246,5,344,33"/><area shape="rect" id="node7" href="eingabe_8h.html#a2c9d7ef296b54cce1ad3b4e0c47e43fa" title="eingabe" alt="" coords="392,5,461,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpers_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1_icgraph.png" border="0" usemap="#helpers_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1_icgraph" alt=""/></div>
+<map name="helpers_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1_icgraph" id="helpers_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="110,5,160,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a925b46731bdff2413254c40ed967dd5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool parameter_ok </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prueft, ob keiner, oder der eingegeben Parameter grosser als 0 ist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Anzahl der eingegeben Parameter </td></tr>
+    <tr><td class="paramname">argv</td><td>Die eingegeben Parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true wenn die Parameter ok sind. </dd></dl>
+
+<p>Definition at line <a class="el" href="helpers_8cpp_source.html#l00062">62</a> of file <a class="el" href="helpers_8cpp_source.html">helpers.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="helpers_8cpp_a925b46731bdff2413254c40ed967dd5a_icgraph.png" border="0" usemap="#helpers_8cpp_a925b46731bdff2413254c40ed967dd5a_icgraph" alt=""/></div>
+<map name="helpers_8cpp_a925b46731bdff2413254c40ed967dd5a_icgraph" id="helpers_8cpp_a925b46731bdff2413254c40ed967dd5a_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="158,5,208,33"/></map>
 </div>
 </p>
 
@@ -177,14 +302,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Konvertiert einen string in einen int Wert. </p>
+<p>Converts a string to integer </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">str</td><td>string der zurück gegeben werden soll. </td></tr>
+    <tr><td class="paramname">str</td><td>string to convert </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Der konvertierte string als int Wert. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>convertet string as integer </dd></dl>
 
 <p>Definition at line <a class="el" href="helpers_8cpp_source.html#l00008">8</a> of file <a class="el" href="helpers_8cpp_source.html">helpers.cpp</a>.</p>
 
@@ -205,7 +330,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d634f21e635b1ea642c8b957ecf78b4f.html">helper</a></li><li class="navelem"><a class="el" href="helpers_8cpp.html">helpers.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 22 2013 14:00:38 for short Path by
+    <li class="footer">Generated on Sun Jun 23 2013 21:57:54 for short Path by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

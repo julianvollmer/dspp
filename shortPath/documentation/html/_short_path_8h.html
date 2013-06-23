@@ -33,6 +33,7 @@
    <div id="projectname">short Path
    &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">Das Programm wurde von Julian und Philip im rahmen des Faches bla bla bla</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_short_path_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -125,7 +126,7 @@ Include dependency graph for ShortPath.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="_short_path_8h__incl.png" border="0" usemap="#lib_2_short_path_8h" alt=""/></div>
 <map name="lib_2_short_path_8h" id="lib_2_short_path_8h">
-<area shape="rect" id="node13" href="eingabe_8h.html" title="../helper/eingabe.h" alt="" coords="145,91,276,119"/><area shape="rect" id="node24" href="helpers_8h.html" title="../helper/helpers.h" alt="" coords="304,91,432,119"/><area shape="rect" id="node29" href="random_8h.html" title="../helper/random.h" alt="" coords="507,91,636,119"/><area shape="rect" id="node38" href="_dijkstra_8h.html" title="Dijkstra.h" alt="" coords="660,91,736,119"/></map>
+<area shape="rect" id="node13" href="eingabe_8h.html" title="../helper/eingabe.h" alt="" coords="90,177,221,205"/><area shape="rect" id="node24" href="helpers_8h.html" title="../helper/helpers.h" alt="" coords="252,91,380,119"/><area shape="rect" id="node30" href="random_8h.html" title="../helper/random.h" alt="" coords="485,91,613,119"/><area shape="rect" id="node39" href="_dijkstra_8h.html" title="Dijkstra.h" alt="" coords="724,91,800,119"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -146,8 +147,6 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a12c2040f25d8e3a7b9e1c2024c618cb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_short_path_8h.html#a12c2040f25d8e3a7b9e1c2024c618cb6">INF</a>&#160;&#160;&#160;INT_MAX</td></tr>
 <tr class="separator:a12c2040f25d8e3a7b9e1c2024c618cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa29fcfa28efeea5e1694715520e60b49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_short_path_8h.html#aa29fcfa28efeea5e1694715520e60b49">nodenum</a>&#160;&#160;&#160;99999</td></tr>
-<tr class="separator:aa29fcfa28efeea5e1694715520e60b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a12c2040f25d8e3a7b9e1c2024c618cb6"></a>
@@ -164,27 +163,13 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa29fcfa28efeea5e1694715520e60b49"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define nodenum&#160;&#160;&#160;99999</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_short_path_8h_source.html#l00024">24</a> of file <a class="el" href="_short_path_8h_source.html">ShortPath.h</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="_short_path_8h.html">ShortPath.h</a></li>
-    <li class="footer">Generated on Sat Jun 22 2013 14:00:38 for short Path by
+    <li class="footer">Generated on Sun Jun 23 2013 21:57:55 for short Path by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

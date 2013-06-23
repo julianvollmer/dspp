@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "short Path", "index.html", [
+    [ "The mainpage documentation", "index.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -25,7 +26,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_dijkstra_8cpp.html",
-"random_8h.html#ad8076fcc381dc1998e84e91356cf6349"
+"write__file_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

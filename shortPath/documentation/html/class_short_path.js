@@ -15,7 +15,5 @@ var class_short_path =
     [ "initialize", "class_short_path.html#a113f044a61c1eacafb73df55e12f3803", null ],
     [ "output", "class_short_path.html#aa4ede1b3713f60bef1f23193510199df", null ],
     [ "print", "class_short_path.html#a15edde62ae2c1a9f149815fb846c768e", null ],
-    [ "printPath", "class_short_path.html#a363cac67e1c10f524feab977073c35e9", null ],
-    [ "read", "class_short_path.html#a977e9df25e204c35a343da0df6b38694", null ],
-    [ "size", "class_short_path.html#a70c679581d979db7ac0cf8d0980651f5", null ]
+    [ "printPath", "class_short_path.html#a363cac67e1c10f524feab977073c35e9", null ]
 ];

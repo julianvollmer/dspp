@@ -33,6 +33,7 @@
    <div id="projectname">short Path
    &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">Das Programm wurde von Julian und Philip im rahmen des Faches bla bla bla</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('helpers_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,18 +117,58 @@ $(document).ready(function(){initNavTree('helpers_8cpp_source.html','');});
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="helpers_8h.html#a4bdbd1bb26254e884c9ef70484dc4ee2">   16</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="helpers_8cpp.html#a4bdbd1bb26254e884c9ef70484dc4ee2">concat_string_and_int</a>(<span class="keywordtype">string</span> str, <span class="keywordtype">int</span> i){</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::stringstream sstm;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    sstm &lt;&lt; str &lt;&lt; i;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> sstm.str();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="helpers_8h.html#a4bdbd1bb26254e884c9ef70484dc4ee2">   23</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="helpers_8cpp.html#a4bdbd1bb26254e884c9ef70484dc4ee2">concat_string_and_int</a>(<span class="keywordtype">string</span> str, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::stringstream sstm;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    sstm &lt;&lt; str &lt;&lt; i;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> sstm.str();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="helpers_8h.html#ae83fcdbeb2b6757fc741ae953b633ee1">   32</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="helpers_8cpp.html#ae83fcdbeb2b6757fc741ae953b633ee1">menu</a>(){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">string</span> menuepunkte[] = </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                            <span class="stringliteral">&quot;Datei einlesen&quot;</span>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                            <span class="stringliteral">&quot;Kuerzte Wege (ohne Threads)&quot;</span>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                            <span class="stringliteral">&quot;Kuerzte Wege (mit Threads)&quot;</span>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                            <span class="stringliteral">&quot;Setze Anzahl der zu berechnenden Graphen&quot;</span>, </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                            <span class="stringliteral">&quot;Anzahl der Threads fuer Multicore&quot;</span>,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                            <span class="stringliteral">&quot;Schreibe Adjazenzmatrix auf Terminal&quot;</span>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                            <span class="stringliteral">&quot;Schreibe Wegberechnung auf Terminal&quot;</span>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                            <span class="stringliteral">&quot;Speichere Adjazenzmatrix&quot;</span>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                            <span class="stringliteral">&quot;Show Main Test!&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                        };</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> anz_punkte = <span class="keyword">sizeof</span>(menuepunkte) / <span class="keyword">sizeof</span>(menuepunkte[0]);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> weiter;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; anz_punkte; i++)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            cout &lt;&lt;<span class="stringliteral">&quot;(&quot;</span> &lt;&lt; i+1 &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; menuepunkte[i] &lt;&lt; endl;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Druecken Sie 0 zum Beeneden&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        weiter = <a class="code" href="eingabe_8cpp.html#a6ed8ebda70d479be8719510ac7d31841">erfasse_int</a>( 0, anz_punkte, <span class="stringliteral">&quot;Wie moechten Sie fortfahren&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> weiter;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="helpers_8h.html#a925b46731bdff2413254c40ed967dd5a">   62</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="helpers_8cpp.html#a925b46731bdff2413254c40ed967dd5a">parameter_ok</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]){</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> (</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            (argc == 2 &amp;&amp; atoi(argv[1]) &gt; 0 &amp;&amp; atoi(argv[1]) &lt; 20000) || </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            (argc == 1)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="helpers_8h.html#a8ccfa1c963516c3255b0463b91b26a4b">   72</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="helpers_8cpp.html#a8ccfa1c963516c3255b0463b91b26a4b">anleitung</a>(){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;:::ANLEITUNG:::&quot;</span>&lt;&lt;endl&lt;&lt;endl;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Das Programm berechnet den kuerzesten Weg mit hilfe von mehreren Prozessoren&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Es kann ohne Parameter oder mit einem Paramter aufgerufen werden&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Wird das Programm mit einem Parameter aufgerufen muss dieser eine Zahl sein&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d634f21e635b1ea642c8b957ecf78b4f.html">helper</a></li><li class="navelem"><a class="el" href="helpers_8cpp.html">helpers.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 22 2013 14:00:37 for short Path by
+    <li class="footer">Generated on Sun Jun 23 2013 21:57:54 for short Path by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

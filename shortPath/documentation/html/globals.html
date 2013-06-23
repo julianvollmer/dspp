@@ -33,6 +33,7 @@
    <div id="projectname">short Path
    &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">Das Programm wurde von Julian und Philip im rahmen des Faches bla bla bla</div>
   </td>
  </tr>
  </tbody>
@@ -125,7 +126,7 @@ $(document).ready(function(){initNavTree('globals.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -143,8 +144,8 @@ $(document).ready(function(){initNavTree('globals.html','');});
 , <a class="el" href="load__file_8h.html#a17802900d7e5bb596e72d83e21edef59">load_file.h</a>
 </li>
 <li>anleitung()
-: <a class="el" href="main_8cpp.html#a8ccfa1c963516c3255b0463b91b26a4b">main.cpp</a>
-, <a class="el" href="main_8h.html#a8ccfa1c963516c3255b0463b91b26a4b">main.h</a>
+: <a class="el" href="helpers_8cpp.html#a8ccfa1c963516c3255b0463b91b26a4b">helpers.cpp</a>
+, <a class="el" href="helpers_8h.html#a8ccfa1c963516c3255b0463b91b26a4b">helpers.h</a>
 </li>
 </ul>
 
@@ -308,16 +309,13 @@ $(document).ready(function(){initNavTree('globals.html','');});
 , <a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main.cpp</a>
 </li>
 <li>menu()
-: <a class="el" href="main_8cpp.html#ae83fcdbeb2b6757fc741ae953b633ee1">main.cpp</a>
-, <a class="el" href="main_8h.html#ae83fcdbeb2b6757fc741ae953b633ee1">main.h</a>
+: <a class="el" href="helpers_8cpp.html#ae83fcdbeb2b6757fc741ae953b633ee1">helpers.cpp</a>
+, <a class="el" href="helpers_8h.html#ae83fcdbeb2b6757fc741ae953b633ee1">helpers.h</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
-<li>nodenum
-: <a class="el" href="_short_path_8h.html#aa29fcfa28efeea5e1694715520e60b49">ShortPath.h</a>
-</li>
 <li>number_of_cores
 : <a class="el" href="main_8h.html#a0685b96c59a1d76b5912944a20f82ae3">main.h</a>
 </li>
@@ -329,8 +327,8 @@ $(document).ready(function(){initNavTree('globals.html','');});
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>parameter_ok()
-: <a class="el" href="main_8cpp.html#a925b46731bdff2413254c40ed967dd5a">main.cpp</a>
-, <a class="el" href="main_8h.html#a925b46731bdff2413254c40ed967dd5a">main.h</a>
+: <a class="el" href="helpers_8cpp.html#a925b46731bdff2413254c40ed967dd5a">helpers.cpp</a>
+, <a class="el" href="helpers_8h.html#a925b46731bdff2413254c40ed967dd5a">helpers.h</a>
 </li>
 <li>pruefe_bereich_int()
 : <a class="el" href="eingabe_8cpp.html#a081cacbe6d2b71f50e1a1b5826fdb7bb">eingabe.cpp</a>
@@ -362,12 +360,16 @@ $(document).ready(function(){initNavTree('globals.html','');});
 : <a class="el" href="ausgabe_8cpp.html#a0381140ca142dea69e5e466a45d8982c">ausgabe.cpp</a>
 , <a class="el" href="ausgabe_8h.html#a0381140ca142dea69e5e466a45d8982c">ausgabe.h</a>
 , <a class="el" href="ausgabe_8cpp.html#ad67b1282696f63e5b34b1647d274077f">ausgabe.cpp</a>
-, <a class="el" href="ausgabe_8h.html#a5b12b6a0fe6cc5d43f63e6f72b1b2d45">ausgabe.h</a>
+, <a class="el" href="ausgabe_8h.html#a1665a46b00999bb8a0aca574ed0ed827">ausgabe.h</a>
 , <a class="el" href="ausgabe_8cpp.html#a1665a46b00999bb8a0aca574ed0ed827">ausgabe.cpp</a>
 , <a class="el" href="ausgabe_8h.html#af641fdccfc7fc8e61718fb3638e527e7">ausgabe.h</a>
 , <a class="el" href="ausgabe_8cpp.html#ad428331d8837c1f886c98d996defa4c0">ausgabe.cpp</a>
+, <a class="el" href="ausgabe_8h.html#a7b6c3648ab9f0080c79ecb8aae689a0d">ausgabe.h</a>
+, <a class="el" href="ausgabe_8cpp.html#af641fdccfc7fc8e61718fb3638e527e7">ausgabe.cpp</a>
 , <a class="el" href="ausgabe_8h.html#abf47c230eab9d30163dd908e4a1f65e7">ausgabe.h</a>
-, <a class="el" href="ausgabe_8cpp.html#abf47c230eab9d30163dd908e4a1f65e7">ausgabe.cpp</a>
+, <a class="el" href="ausgabe_8cpp.html#a990c6f1274271b12da060a298a97412d">ausgabe.cpp</a>
+, <a class="el" href="ausgabe_8h.html#a9afeddc3a2e51a1d3c7e110fb16767cb">ausgabe.h</a>
+, <a class="el" href="ausgabe_8cpp.html#a34b32ea150b542c42bd16e8d74832f43">ausgabe.cpp</a>
 </li>
 <li>set_number_of_cores()
 : <a class="el" href="main_8cpp.html#ad3a8e7b669f614152e991768eec6bf5a">main.cpp</a>
@@ -381,15 +383,19 @@ $(document).ready(function(){initNavTree('globals.html','');});
 : <a class="el" href="main_8h.html#a40a5537410c178c3428bb4cafc16d1e6">main.h</a>
 </li>
 <li>setze_schalter()
-: <a class="el" href="ausgabe_8cpp.html#ae8c346aa92fc891022a940f2c5c75f95">ausgabe.cpp</a>
-, <a class="el" href="ausgabe_8h.html#ae8c346aa92fc891022a940f2c5c75f95">ausgabe.h</a>
+: <a class="el" href="ausgabe_8h.html#ae8c346aa92fc891022a940f2c5c75f95">ausgabe.h</a>
+, <a class="el" href="ausgabe_8cpp.html#ae8c346aa92fc891022a940f2c5c75f95">ausgabe.cpp</a>
+</li>
+<li>show_test()
+: <a class="el" href="main_8h.html#a09845967cc00cd01e6b5c5fd15db68e2">main.h</a>
+, <a class="el" href="main_8cpp.html#a09845967cc00cd01e6b5c5fd15db68e2">main.cpp</a>
 </li>
 <li>sp
 : <a class="el" href="main_8h.html#aebe100d08a8808e282d134c1f35d9e76">main.h</a>
 </li>
 <li>spaltenvorschub()
-: <a class="el" href="ausgabe_8h.html#abb46ef5c5d536396f1baa9c1a6ce1ccd">ausgabe.h</a>
-, <a class="el" href="ausgabe_8cpp.html#abb46ef5c5d536396f1baa9c1a6ce1ccd">ausgabe.cpp</a>
+: <a class="el" href="ausgabe_8cpp.html#abb46ef5c5d536396f1baa9c1a6ce1ccd">ausgabe.cpp</a>
+, <a class="el" href="ausgabe_8h.html#abb46ef5c5d536396f1baa9c1a6ce1ccd">ausgabe.h</a>
 </li>
 <li>spObject
 : <a class="el" href="load__file_8cpp.html#a2c6601c82034f436647fb14383822cd7">load_file.cpp</a>
@@ -401,8 +407,8 @@ $(document).ready(function(){initNavTree('globals.html','');});
 : <a class="el" href="main_8h.html#a9096bbe88481e9fe96deab5f2faff9a1">main.h</a>
 </li>
 <li>string_to_number()
-: <a class="el" href="helpers_8h.html#a07fa49d604e024605441544ff5cbcb0e">helpers.h</a>
-, <a class="el" href="helpers_8cpp.html#a07fa49d604e024605441544ff5cbcb0e">helpers.cpp</a>
+: <a class="el" href="helpers_8cpp.html#a07fa49d604e024605441544ff5cbcb0e">helpers.cpp</a>
+, <a class="el" href="helpers_8h.html#a07fa49d604e024605441544ff5cbcb0e">helpers.h</a>
 </li>
 </ul>
 
@@ -413,9 +419,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>test_new_dijkstra()
 : <a class="el" href="main_8h.html#a4d54648a3d7c5129aa6f5557a743d753">main.h</a>
-</li>
-<li>testing_purpose()
-: <a class="el" href="main_8h.html#a7b051d042ddeb2c242349737a78a3f12">main.h</a>
 </li>
 <li>tmp_result
 : <a class="el" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">load_file.cpp</a>
@@ -428,11 +431,12 @@ $(document).ready(function(){initNavTree('globals.html','');});
 
 <h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
 <li>validate_dataformat()
-: <a class="el" href="load__file_8cpp.html#a05a7ed8536adb9ced046961c3658edd5">load_file.cpp</a>
+: <a class="el" href="load__file_8cpp.html#abd51dd55a8afe9e6bedebc079cf01763">load_file.cpp</a>
+, <a class="el" href="load__file_8h.html#abd51dd55a8afe9e6bedebc079cf01763">load_file.h</a>
 </li>
 <li>verarbeite_eingabe()
-: <a class="el" href="main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425">main.h</a>
-, <a class="el" href="main_8cpp.html#a53a92fef69391d7e7e80d43fe5d9f425">main.cpp</a>
+: <a class="el" href="main_8cpp.html#a53a92fef69391d7e7e80d43fe5d9f425">main.cpp</a>
+, <a class="el" href="main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425">main.h</a>
 </li>
 </ul>
 
@@ -486,7 +490,7 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 22 2013 14:00:39 for short Path by
+    <li class="footer">Generated on Sun Jun 23 2013 21:57:55 for short Path by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
