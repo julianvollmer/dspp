@@ -91,6 +91,10 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 	        write_graph_to_file(sp);
 	    break;
 
+	     case 9: 
+	        show_test();
+	    break;
+
 	  
 
 
@@ -105,7 +109,6 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 void load_graph_from_file(){
 	sp->clear();
 	load_file();
-
 	 sp = getShortPathObject();
 }
 
@@ -122,7 +125,6 @@ void do_shortpath_calculation(ShortPath *sp){
     t = (double) (stop-start)/CLOCKS_PER_SEC;
     cout << "Run time: " << t << endl;
 		
-    
 }
 
 /**
@@ -154,55 +156,23 @@ void do_shortpath_calculation_mulitproc(ShortPath *sp){
     cout << "Run time: " << t << endl;
 }
 
+void show_test(){
+	int first_run 	= 5000;
+	int second_run 	= 10000;
+	int third_run 	= 15000;
 
-/**
- * Show up the menu and fetches the user input.
- */
+	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
 
+	cout << "it took us " << "1337" << " seconds to solve this" << endl;
 
-int menu(){
-	string menuepunkte[] = 
-						{
-							"Datei einlesen",
-							"Kuerzte Wege (ohne Threads)",
-							"Kuerzte Wege (mit Threads)",
-							"Setze Anzahl der zu berechnenden Graphen",	
-							"Anzahl der Threads fuer Multicore",
-							"Schreibe Adjazenzmatrix auf Terminal",
-							"Schreibe Wegberechnung auf Terminal",
-							"Speichere Adjazenzmatrix"
-						};
-
-	int anz_punkte = sizeof(menuepunkte) / sizeof(menuepunkte[0]);
-
-	int weiter;
-		for(int i = 0; i < anz_punkte; i++)
-			cout <<"(" << i+1 << ")" << menuepunkte[i] << endl;
-		cout << "Druecken Sie 0 zum Beeneden" << endl;
-		weiter = erfasse_int( 0, anz_punkte, "Wie moechten Sie fortfahren");
-	return weiter;
+	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	cout << endl <<"Calculating " << first_run << " egdes with single core"<<endl;
+	
 }
 
-/**
- * Prueft, ob keiner, oder der eingegeben Parameter grosser als 0 ist.
- * @param argc Anzahl der eingegeben Parameter
- * @param argv Die eingegeben Parameter
- * @return true wenn die Parameter ok sind.
- */
-bool parameter_ok(int argc, char *argv[]){
-	return (
-			(argc == 2 && atoi(argv[1]) > 0 && atoi(argv[1]) < 20000) || 
-			(argc == 1)
-		);
-}
-
-/**
- * Shows the description of the programm
- */
-void anleitung(){
-	cout << ":::ANLEITUNG:::"<<endl<<endl;
-	cout << "Das Programm berechnet den kuerzesten Weg mit hilfe von mehreren Prozessoren"<<endl;
-	cout << "Es kann ohne Parameter oder mit einem Paramter aufgerufen werden"<<endl;
-	cout << "Wird das Programm mit einem Parameter aufgerufen muss dieser eine Zahl sein"<<endl;
-	std::cout << "Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden"<<endl;
-}
