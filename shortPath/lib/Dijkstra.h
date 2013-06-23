@@ -20,15 +20,14 @@ public:
     int         get_shortest_distance();
 
     void        set_name(string name);
-    void        set_distance(int distnace);
+    
     void        set_predecessor(int predecessor);
     void        set_mark(bool mark);    
     void        set_position(int position);
     void        set_distance_vector(vector<int> v);
     void        set_distance_to_specific(int position, int value);
 
-    void        add_distances_to_other(int distance);   
-    void        add_distance(int distance);
+    void        add_distances_to_other(int distance);
     
     void        print_distances();
     void        init_distances();    

@@ -1,6 +1,9 @@
 #include "write_file.h"
 
-
+/**
+ * Writes a graph to a file
+ * @param sp graph 
+ */
 void write_graph_to_file(ShortPath *sp){
 	ofstream myfile;
 	

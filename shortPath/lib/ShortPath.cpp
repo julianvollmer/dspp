@@ -1,22 +1,35 @@
 #include "ShortPath.h"
-
+/**
+ * Constructor
+ */
 ShortPath::ShortPath(){
 
 };
 
-
+/**
+ * @return Retuns all elements
+ */
 vector<Dijkstra> ShortPath::get_elements(){
     return this->elements;
 }
 
+/**
+ * Delete a elements
+ */
 void ShortPath::clear(){
     this->elements.clear();
 }
 
+/**
+ * Adds a row to the matrix
+ * @param element [description]
+ */
 void ShortPath::add_row(Dijkstra element){
     this->elements.push_back(element);
 }
-
+/**
+ * initialize the graph random
+ */
 void ShortPath::init_random_distances(){
     int size = elements.size();    
     for (vector<Dijkstra>::iterator it = elements.begin() ; it != elements.end(); ++it){
@@ -36,10 +49,10 @@ void ShortPath::init_random_distances(){
 
 } 
 
-int ShortPath::size(){
-    return this->elements.size();
-}
 
+/**
+ * Normalize the adjacency matrix so that the way from a 2 d same as d 2 a
+ */
 void ShortPath::reflect_to_other_side(){
     int tmp = 0;
     for (int j = 0; j < elements.size(); j++){
@@ -50,6 +63,9 @@ void ShortPath::reflect_to_other_side(){
     }
 }
 
+/**
+ * prints the adjacency matrix.
+ */
 void ShortPath::print(){
     cout << '\t';     
     for (vector<Dijkstra>::iterator it = elements.begin() ; it != elements.end(); ++it){
@@ -69,6 +85,9 @@ void ShortPath::print(){
     cout << endl;
 }
 
+/**
+ * Prints a horizontal line between name an value
+ */
 void ShortPath::print_horizontal_line(){
     for (int i = 0; i < 8*elements.size()+1;i++){
         cout << '*';
@@ -76,7 +95,10 @@ void ShortPath::print_horizontal_line(){
     cout << "***";
 }
 
-
+/**
+ * Initialize the random initialisation
+ * @param anz [description]
+ */
 void ShortPath::init_random(int anz){
     num_of_vertices = anz;
     for (int i = 0; i < num_of_vertices; i++){
@@ -90,15 +112,27 @@ void ShortPath::init_random(int anz){
     init_random_distances();
 }
 
+/**
+ * initialize a Graph with a specific size
+ */
 void ShortPath::init_random(){
     num_of_vertices = erfasse_int(0,INFINITY,"Geben Sie die Anzahl der Knoten des Graphen ein:");    
     init_random(num_of_vertices);
 }
 
+/**
+ * [ShortPath::init_source description]
+ */
 void ShortPath::init_source(){
      source = erfasse_int(0,num_of_vertices-1,"Enter the source vertex\n");
 }
 
+/**
+ * Function initialize initializes all the data members at the begining of
+ * the execution. The distance between source to source is zero and all other
+ * distances between source and vertices are infinity. The mark is initialized
+ * to false and predecessor is initialized to -1
+ */
 
 void ShortPath::initialize(){
     distances.clear();
@@ -110,8 +144,13 @@ void ShortPath::initialize(){
     }
     distances[source]= 0;
 }
- 
- 
+
+/**
+ * Function get_closed_unmarked_node returns the node which is nearest from the
+ * Predecessor marked node. If the node is already marked as visited, then it search
+ * for another node.
+ * @return closest_unmarked_node closest unmarked node
+ */
 int ShortPath::get_closest_unmarked_node(){
     int minDistance = INFINITY;
     int closest_unmarked_node;
@@ -124,9 +163,10 @@ int ShortPath::get_closest_unmarked_node(){
     return closest_unmarked_node;
 }
  
- /**
-  * Here is where the magic happens
-  */
+/**
+ * Function calculate_distance calculates the minimum distances from the source node to
+ * Other node.
+ */
 void ShortPath::calculate_distance_multiproc(){
     omp_set_num_threads(1);
     

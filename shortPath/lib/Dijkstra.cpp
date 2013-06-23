@@ -2,6 +2,9 @@
 
 #include <limits.h>
 
+/**
+ * Construktor
+ */
 Dijkstra::Dijkstra(){
     init_distances();
 };
@@ -78,10 +81,17 @@ bool Dijkstra::get_mark(){
     return this->mark;
 }
 
+/**
+ * Returns the position
+ * @return [description]
+ */
 int Dijkstra::get_position(){
     return this->position;  
 }
-
+/**
+ * Return the distance to the closest point
+ * @return distance
+ */
 int Dijkstra::get_shortest_distance(){
     int min_distance = INT_MAX;
     for(int i = 0; i < distances.size();i++)
@@ -93,41 +103,51 @@ int Dijkstra::get_shortest_distance(){
     return min_distance;
 }
 
-
-void Dijkstra::add_distance(int distance){
-    if(this->distance == INT_MAX )
-        this->distance = 0;
-    this->distance += distance;
-}
-
+/**
+ * Sets a name to the edge
+ * @param name name to set
+ */ 
 void Dijkstra::set_name(string name){
     this->name = name;
 }
 
-void Dijkstra::set_distance(int distance){
-    this->distance = distance;
-}
-
+/**
+ * Sets the predecessor
+ * @param predecessor predecessor to set
+ */
 void Dijkstra::set_predecessor(int predecessor){
     this->predecessor = predecessor;
 }
 
+/**
+ * Return true if the egde was visited
+ * @param mark true if visited
+ */
 void Dijkstra::set_mark(bool mark){
     this->mark = mark;
 }
 
-
+/**
+ * Sets a vector as distances
+ * @param v vector with distances
+ */ 
 void Dijkstra::set_distance_vector(vector<int> v){
     this->distances = v;
 }
 
-
+/**
+ * Adds a distance to the edge
+ * @param distance distance to add
+ */
 void Dijkstra::add_distances_to_other(int distance){
     this->distances.push_back(distance);
 }
 
 
-
+/**
+ * Sets the position of a edge
+ * @param position position as integer
+ */     
 void Dijkstra::set_position(int position){
     this->position = position;
 }
