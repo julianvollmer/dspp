@@ -1,6 +1,7 @@
 #ifndef _HELPERS_H
 #define	_HELPERS_H
 #include <iostream>
+#include <stdlib.h>
 #include <sstream>
 
 

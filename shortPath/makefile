@@ -2,7 +2,7 @@
 TARGET=main
 
 # The objects that make up the main executables
-OBJS=lib/Dijkstra.o lib/ShortPath.o helper/random.o helper/ausgabe.o helper/eingabe.o helper/load_file.o helper/helpers.o 
+OBJS=lib/Dijkstra.o lib/ShortPath.o helper/random.o helper/ausgabe.o helper/eingabe.o helper/load_file.o helper/helpers.o helper/write_file.o 
 
 # The test executables
 #TESTS=core_test
