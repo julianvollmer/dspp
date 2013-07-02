@@ -280,7 +280,7 @@ void loesche_bildschirm() {
  * Loescht den Bildschirm der Konsole und schreibt den Header des Programmes.
  */
 void loesche_bildschirm_mit_header() {
-	// clrscr();
+	clrscr();
 	header();
 }
 /**

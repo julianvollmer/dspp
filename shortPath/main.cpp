@@ -117,7 +117,7 @@ void load_graph_from_file(){
  * @param sp object for short path algorithm
  */
 void do_shortpath_calculation(ShortPath *sp){
-	 cout << "Naive" << endl;
+	 cout << "Naive " ;
     start = omp_get_wtime();
 		sp->calculate_distance();
     stop = omp_get_wtime();
@@ -135,7 +135,7 @@ void set_number_of_graphs(ShortPath *sp){
 	sp->init_random(number_of_graphs);
 }
 /**
- * Set the number of cores to calculate NOCHMAL SCHAUEN!!!
+ * Set the number of cores to calculate
  * @param sp numerb of cores for calculation.
  */
 void set_number_of_cores(ShortPath *sp){
@@ -147,7 +147,7 @@ void set_number_of_cores(ShortPath *sp){
  * @param sp [description]
  */
 void do_shortpath_calculation_mulitproc(ShortPath *sp){
-	cout << "Multicore" << endl;
+	cout << "Multicore " ;
     start = omp_get_wtime();
 		sp->calculate_distance_multiproc();
     stop = omp_get_wtime();
@@ -163,30 +163,41 @@ void show_test(ShortPath *sp){
 	int fifth_run   = 20000;
 
 	sp->init_random(first_run);
+	cout << first_run << " Graphen werden mit einem Core berechnet"<<endl;
 	do_shortpath_calculation(sp);
+	cout << first_run << " Graphen werden mit 4 Cores berechnet"<<endl;
 	do_shortpath_calculation_mulitproc(sp);
 
 	sp->init_random(second_run);
+	cout << second_run << " Graphen werden mit einem Core berechnet"<<endl;
 	do_shortpath_calculation(sp);
+	cout << second_run << " Graphen werden mit 4 Cores berechnet"<<endl;
 	do_shortpath_calculation_mulitproc(sp);
 
 	sp->init_random(third_run);
+	cout << third_run << " Graphen werden mit einem Core berechnet"<<endl;
 	do_shortpath_calculation(sp);
+	cout << third_run << " Graphen werden mit 4 Cores berechnet"<<endl;
 	do_shortpath_calculation_mulitproc(sp);
 
-	sp->init_random(fourth_run);
+/*	sp->init_random(fourth_run);
+	cout << fourth_run << " Graphen werden mit einem Core berechnet"<<endl;
 	do_shortpath_calculation(sp);
+	cout << fourth_run << " Graphen werden mit 4 Cores berechnet"<<endl;
 	do_shortpath_calculation_mulitproc(sp);
 
 	sp->init_random(fifth_run);
+	cout << fifth_run << " Graphen werden mit einem Core berechnet"<<endl;
 	do_shortpath_calculation(sp);
+	cout << fifth_run << " Graphen werden mit 4 Cores berechnet"<<endl;
 	do_shortpath_calculation_mulitproc(sp);
 
 
 
 	sp->init_random(50);
 	full_path_search(sp);
-	full_path_search_multi(sp);
+	full_path_search_multi(sp);*/
+	erfasse_int(0,0,"Druecken sie 0 um fortzufahren");
 }
 
 void full_path_search(ShortPath *sp){

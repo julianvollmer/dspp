@@ -1,16 +1,16 @@
 #ifndef _AUSGABE_H
 #define	_AUSGABE_H
 #include <cstdlib>
-#ifdef __unix__
+//#ifdef __unix__ || __APPLE__
    #define clrscr() system("clear")
-#elif __BORLANDC__ && __MSDOS__
+/*#elif __BORLANDC__ && __MSDOS__ 
    #include <conio.h>
 #elif __WIN32__ || _MSC_VER
    #include <stdlib.h>
    #define clrscr() system("cls")
 #else
    #define clrscr() printf("clrscr() - Fehler!\n")
-#endif
+#endif*/
 #include <iostream>
 #include <stdio.h>
 #include <sstream>
