@@ -94,11 +94,8 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 	    break;
 
 	     case 9: 
-	        show_test();
+	        show_test(sp);
 	    break;
-
-	  
-
 
 	    default:
 	    	cout << "Vielen Dank für die Nutzung!" << endl;
@@ -158,23 +155,63 @@ void do_shortpath_calculation_mulitproc(ShortPath *sp){
     cout << "Run time: " << t << endl;
 }
 
-void show_test(){
-	int first_run 	= 5000;
-	int second_run 	= 10000;
-	int third_run 	= 15000;
+void show_test(ShortPath *sp){
+	int first_run 	= 1000;
+	int second_run 	= 3000;
+	int third_run 	= 5000;
+	int fourth_run  = 10000;
+	int fifth_run   = 20000;
 
-	cout << endl <<"Calculating " << first_run << " egdes with single core" << endl;
+	sp->init_random(third_run);
+	do_shortpath_calculation(sp);
+	do_shortpath_calculation_mulitproc(sp);
 
-	cout << "it took us " << "1337" << " seconds to solve this" << endl;
+	sp->init_random(fourth_run);
+	do_shortpath_calculation(sp);
+	do_shortpath_calculation_mulitproc(sp);
 
-	cout << "Calculating " << first_run << " egdes with single core" << endl;
-	cout << "Calculating " << first_run << " egdes with single core" << endl;
-	cout << "Calculating " << first_run << " egdes with single core" << endl;
-	cout << "Calculating " << first_run << " egdes with single core" << endl;
-	cout << "Calculating " << first_run << " egdes with single core" << endl;
-	cout << "Calculating " << first_run << " egdes with single core" << endl;
-	cout << "Calculating " << first_run << " egdes with single core" << endl;
-	cout << "Calculating " << first_run << " egdes with single core" << endl;
+	sp->init_random(fifth_run);
+	do_shortpath_calculation(sp);
+	do_shortpath_calculation_mulitproc(sp);
+
+
+/*
+	sp->init_random(100);
+	full_path_search(sp);
+	full_path_search_multi(sp);*/
+}
+
+void full_path_search(ShortPath *sp){
+	int length = sp->get_num_of_vertices();
+	cout << "Singlecore" << endl;
+    start = clock();
+	for (int i = 0; i < length; ++i)
+	{
+		sp->set_source(i);
+		sp->calculate_distance();
+	}
+	   stop = clock();
+    t = (double) (stop-start)/CLOCKS_PER_SEC;
+    cout << "Run time: " << t << endl;
+
+}
+void full_path_search_multi(ShortPath *sp){
+	omp_set_num_threads(2);
+
+	int length = sp->get_num_of_vertices();
 	
+	cout << "Multicore" << endl;
+    start = clock();
+   	
+   	#pragma omp parallel for 
+	for (int i = 0; i < length; ++i)
+	{
+		sp->set_source(i);
+		sp->calculate_distance_multiproc();
+	}
+	   stop = clock();
+    t = (double) (stop-start)/CLOCKS_PER_SEC;
+    cout << "Run time: " << t << endl;
+
 }
 
