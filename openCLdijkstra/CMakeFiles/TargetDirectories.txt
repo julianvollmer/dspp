@@ -1,1 +1,1 @@
-/home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/CMakeFiles/Dijkstra.dir
+/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/CMakeFiles/Dijkstra.dir

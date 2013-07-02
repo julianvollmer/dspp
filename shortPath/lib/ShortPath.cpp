@@ -183,11 +183,13 @@ void ShortPath::calculate_distance_multiproc(){
     int closest_unmarked_node;
     int count = 0;
 
-    #pragma omp parallel 
+
+  
+    #pragma omp parallel   
     while(count < num_of_vertices) {
         closest_unmarked_node = get_closest_unmarked_node();
         elements[closest_unmarked_node].set_mark(true);
-        #pragma omp for 
+        #pragma omp for schedule(guided)
         for(int i = 0; i < num_of_vertices; i++) {
             if((!elements[i].get_mark()) && (elements[closest_unmarked_node].get_distance_from_specific(i) > 0) ) {
                 if(distances[i] > distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i)) {

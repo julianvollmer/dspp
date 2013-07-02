@@ -4,10 +4,10 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/oclDijkstra.cpp" "/home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/CMakeFiles/Dijkstra.dir/oclDijkstra.o"
-  "/home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/oclDijkstraKernel.cpp" "/home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o"
+  "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/oclDijkstra.cpp" "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/CMakeFiles/Dijkstra.dir/oclDijkstra.o"
+  "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/oclDijkstraKernel.cpp" "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o"
   )
-SET(CMAKE_CXX_COMPILER_ID "GNU")
+SET(CMAKE_CXX_COMPILER_ID "Clang")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
@@ -15,6 +15,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

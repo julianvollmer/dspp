@@ -40,7 +40,7 @@ void show_test(ShortPath *sp);
 void full_path_search(ShortPath *sp);
 void full_path_search_multi(ShortPath *sp);
 
-clock_t start, stop;
+double start, stop;
 double t;
 int number_of_graphs;
 int number_of_cores;

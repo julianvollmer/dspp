@@ -26,22 +26,22 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/2.8.10.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /usr/local/Cellar/cmake/2.8.10.2/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.10.2/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra
+CMAKE_SOURCE_DIR = "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra
+CMAKE_BINARY_DIR = "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Dijkstra.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/Dijkstra.dir/flags.make
 
 CMakeFiles/Dijkstra.dir/oclDijkstra.o: CMakeFiles/Dijkstra.dir/flags.make
 CMakeFiles/Dijkstra.dir/oclDijkstra.o: oclDijkstra.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/CMakeFiles" $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Dijkstra.dir/oclDijkstra.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Dijkstra.dir/oclDijkstra.o -c /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/oclDijkstra.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Dijkstra.dir/oclDijkstra.o -c "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/oclDijkstra.cpp"
 
 CMakeFiles/Dijkstra.dir/oclDijkstra.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dijkstra.dir/oclDijkstra.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/oclDijkstra.cpp > CMakeFiles/Dijkstra.dir/oclDijkstra.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/oclDijkstra.cpp" > CMakeFiles/Dijkstra.dir/oclDijkstra.i
 
 CMakeFiles/Dijkstra.dir/oclDijkstra.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dijkstra.dir/oclDijkstra.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/oclDijkstra.cpp -o CMakeFiles/Dijkstra.dir/oclDijkstra.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/oclDijkstra.cpp" -o CMakeFiles/Dijkstra.dir/oclDijkstra.s
 
 CMakeFiles/Dijkstra.dir/oclDijkstra.o.requires:
 .PHONY : CMakeFiles/Dijkstra.dir/oclDijkstra.o.requires
@@ -77,17 +77,17 @@ CMakeFiles/Dijkstra.dir/oclDijkstra.o.provides.build: CMakeFiles/Dijkstra.dir/oc
 
 CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o: CMakeFiles/Dijkstra.dir/flags.make
 CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o: oclDijkstraKernel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/CMakeFiles" $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o -c /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/oclDijkstraKernel.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o -c "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/oclDijkstraKernel.cpp"
 
 CMakeFiles/Dijkstra.dir/oclDijkstraKernel.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dijkstra.dir/oclDijkstraKernel.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/oclDijkstraKernel.cpp > CMakeFiles/Dijkstra.dir/oclDijkstraKernel.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/oclDijkstraKernel.cpp" > CMakeFiles/Dijkstra.dir/oclDijkstraKernel.i
 
 CMakeFiles/Dijkstra.dir/oclDijkstraKernel.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dijkstra.dir/oclDijkstraKernel.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/oclDijkstraKernel.cpp -o CMakeFiles/Dijkstra.dir/oclDijkstraKernel.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/oclDijkstraKernel.cpp" -o CMakeFiles/Dijkstra.dir/oclDijkstraKernel.s
 
 CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o.requires:
 .PHONY : CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o.requires
@@ -109,7 +109,7 @@ Dijkstra_EXTERNAL_OBJECTS =
 Dijkstra: CMakeFiles/Dijkstra.dir/oclDijkstra.o
 Dijkstra: CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o
 Dijkstra: CMakeFiles/Dijkstra.dir/build.make
-Dijkstra: /usr/lib64/libboost_program_options.so
+Dijkstra: /usr/local/lib/libboost_program_options-mt.dylib
 Dijkstra: CMakeFiles/Dijkstra.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable Dijkstra"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Dijkstra.dir/link.txt --verbose=$(VERBOSE)
@@ -127,6 +127,6 @@ CMakeFiles/Dijkstra.dir/clean:
 .PHONY : CMakeFiles/Dijkstra.dir/clean
 
 CMakeFiles/Dijkstra.dir/depend:
-	cd /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra /home/sodoku/Projekte/htw/ParallelPrograming/openCLdijkstra/CMakeFiles/Dijkstra.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra" "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra" "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra" "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra" "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/openCLdijkstra/CMakeFiles/Dijkstra.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Dijkstra.dir/depend
 

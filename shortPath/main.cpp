@@ -118,10 +118,10 @@ void load_graph_from_file(){
  */
 void do_shortpath_calculation(ShortPath *sp){
 	 cout << "Naive" << endl;
-    start = clock();
+    start = omp_get_wtime();
 		sp->calculate_distance();
-    stop = clock();
-    t = (double) (stop-start)/CLOCKS_PER_SEC;
+    stop = omp_get_wtime();
+    t = (double) (stop-start);
     cout << "Run time: " << t << endl;
 		
 }
@@ -148,10 +148,10 @@ void set_number_of_cores(ShortPath *sp){
  */
 void do_shortpath_calculation_mulitproc(ShortPath *sp){
 	cout << "Multicore" << endl;
-    start = clock();
+    start = omp_get_wtime();
 		sp->calculate_distance_multiproc();
-    stop = clock();
-    t = (double) (stop-start)/CLOCKS_PER_SEC;
+    stop = omp_get_wtime();
+    t = (double) (stop-start);
     cout << "Run time: " << t << endl;
 }
 
@@ -161,6 +161,14 @@ void show_test(ShortPath *sp){
 	int third_run 	= 5000;
 	int fourth_run  = 10000;
 	int fifth_run   = 20000;
+
+	sp->init_random(first_run);
+	do_shortpath_calculation(sp);
+	do_shortpath_calculation_mulitproc(sp);
+
+	sp->init_random(second_run);
+	do_shortpath_calculation(sp);
+	do_shortpath_calculation_mulitproc(sp);
 
 	sp->init_random(third_run);
 	do_shortpath_calculation(sp);
@@ -175,10 +183,10 @@ void show_test(ShortPath *sp){
 	do_shortpath_calculation_mulitproc(sp);
 
 
-/*
-	sp->init_random(100);
+
+	sp->init_random(50);
 	full_path_search(sp);
-	full_path_search_multi(sp);*/
+	full_path_search_multi(sp);
 }
 
 void full_path_search(ShortPath *sp){
@@ -203,7 +211,7 @@ void full_path_search_multi(ShortPath *sp){
 	cout << "Multicore" << endl;
     start = clock();
    	
-   	#pragma omp parallel for 
+   	#pragma omp for schedule(static)
 	for (int i = 0; i < length; ++i)
 	{
 		sp->set_source(i);
