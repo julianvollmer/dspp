@@ -94,6 +94,7 @@ int Dijkstra::get_position(){
  */
 int Dijkstra::get_shortest_distance(){
     int min_distance = INT_MAX;
+    #pragma omp parallel for
     for(int i = 0; i < distances.size();i++)
     {   
         if(min_distance > distances[i])
