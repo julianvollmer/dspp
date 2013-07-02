@@ -36,6 +36,9 @@ void set_number_of_graphs(ShortPath *sp);
 void set_number_of_cores(ShortPath *sp);
 void load_graph_from_file();
 void show_test();
+void show_test(ShortPath *sp);
+void full_path_search(ShortPath *sp);
+void full_path_search_multi(ShortPath *sp);
 
 clock_t start, stop;
 double t;

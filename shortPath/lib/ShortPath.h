@@ -25,27 +25,16 @@ class ShortPath {
 public:
 	ShortPath();
 
-    
-        
-
- 
+    int get_num_of_vertices();
+    int set_source(int src);
     void initialize();
- 
-   int get_closest_unmarked_node();
-    
-   void calculate_distance();
+    int get_closest_unmarked_node();
+    void calculate_distance();
     void calculate_distance_multiproc();
     void add_row(Dijkstra element);
-
     void output();
-
-
     void init_random_distances();
-
     vector<Dijkstra> get_elements();
-
-
-
     void printPath(int);    
     void init_random();
     void init_random(int anz);
@@ -53,18 +42,15 @@ public:
     void add_random_row();
     void print();
     void clear();
+
 private:
     vector<Dijkstra> elements;
     vector<int> distances;
-    
-    
-    
-    
     int source;
     int num_of_vertices;    
-
     void print_horizontal_line();
     void reflect_to_other_side();
+
 };
 
 #endif /* __shortpath */

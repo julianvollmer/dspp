@@ -20,6 +20,14 @@ void ShortPath::clear(){
     this->elements.clear();
 }
 
+int ShortPath::get_num_of_vertices(){
+    return num_of_vertices;
+}
+
+int ShortPath::set_source(int src){
+    source = src;
+}
+
 /**
  * Adds a row to the matrix
  * @param element [description]
@@ -165,10 +173,10 @@ int ShortPath::get_closest_unmarked_node(){
  
 /**
  * Function calculate_distance calculates the minimum distances from the source node to
- * Other node.
+ * other node.
  */
 void ShortPath::calculate_distance_multiproc(){
-    omp_set_num_threads(1);
+    omp_set_num_threads(4);
     
     initialize();
     int minDistance = INFINITY;
@@ -186,14 +194,15 @@ void ShortPath::calculate_distance_multiproc(){
                     distances[i] = distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i);
                     elements[i].set_predecessor(closest_unmarked_node);
                 }
-                
             }
         }
         count++;
     }
 }
-
-
+/**
+ * Function calculate_distance calculates the minimum distances from the source node to
+ * other node.
+ */
 void ShortPath::calculate_distance(){
     
     initialize();
