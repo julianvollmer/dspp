@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/Dijkstra.dir/oclDijkstra.o CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o  -o Dijkstra -rdynamic -lboost_program_options 
