@@ -7,7 +7,7 @@
 #include <string.h>
 using namespace std;
 
-void eingabe();
+void erfasse_enter();
 long erfasse_long(long min, long max);
 long erfasse_long(long min, long max, string text);
 double erfasse_double(double min, double max);

@@ -1,5 +1,11 @@
 #include "eingabe.h"
 
+
+void erfasse_enter() {
+   std::cout << "Press ENTER to continue... " << flush;
+   std::cin.ignore( std::numeric_limits <std::streamsize> ::max(), '\n' );
+}
+
 /**
  * Erfasst eine Gleitkommazahl und prueft ob sie gueltig ist.
  * @param min minmaler Wert der eingegeben werden darf
