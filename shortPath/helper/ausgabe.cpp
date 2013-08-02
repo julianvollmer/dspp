@@ -31,6 +31,19 @@ void schreibe_zahl(long zahl, ios_base::fmtflags format[], int anzahl_formate) {
 		cout.unsetf(format[i]);
 }
 
+
+
+void print_number_from_matrix_int(int number){
+	cout << "|";
+	cout << number;
+	cout << "\t";
+	
+}
+void print_number_from_matrix_double(double number){
+	cout << "|";
+	zeige_zahl(number, 4);
+	cout << "\t";
+}
 /**
  * Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe
  * und schreibt eine Zahl auf den Bildschirm.
@@ -257,8 +270,7 @@ void zeige_zahl_von_bis(long double von, long double bis, long double abstand, s
 void zeige_zahl(double wert, streamsize praezision) {
 	Formattyp dez_rechts[] = { cout.dec, cout.right };
 	//char fuellzeichen = ' ';
-	schreibe_zahl(praezision, static_cast<long double> (wert), praezision + 8,
-			dez_rechts, 2);
+	schreibe_zahl(praezision, static_cast<long double> (wert), praezision + 8, dez_rechts, 2);
 }
 
 /**
@@ -387,10 +399,6 @@ void wait(){
 	getline(cin,str);
 }
 
-string konvertiere_int(int number)
-{
-	ostringstream convert;
-	convert << number;
 
-	return convert.str();
-}
+
+

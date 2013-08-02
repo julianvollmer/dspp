@@ -38,6 +38,9 @@ void full_path_search(ShortPath *sp);
 void full_path_search_multi(ShortPath *sp);
 void print_show_test_header();
 void do_one_run(ShortPath *sp, int num_of_graphs, int num_of_cores);
+void print_run(ShortPath *sp);
+
+void print_show_test_footer();
 
 double start, stop;
 double t;

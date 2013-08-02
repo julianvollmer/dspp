@@ -23,6 +23,9 @@ void header();
 typedef ios_base::fmtflags Formattyp;
 void setze_schalter(ios_base::fmtflags format);
 
+void print_number_from_matrix_int(int number);
+void print_number_from_matrix_double(double number);
+
 void schreibe_zahl(long zahl,ios_base::fmtflags format[], int anzahl_formate);
 void schreibe_zahl(long zahl, ios_base::fmtflags format);
 void schreibe_zahl(long zahl, streamsize feldbreite, ios_base::fmtflags format[], int anzahl_formate);
@@ -50,8 +53,6 @@ void schreibe_text(string text, streamsize feldbreite);
 
 void schreibe_zahl(double zahl, streamsize feldbreite, char fuellzeichen, ios_base::fmtflags format[], int anzahl_formate);
 void schreibe_zahl(int zahl, streamsize feldbreite, char fuellzeichen, ios_base::fmtflags format[], int anzahl_formate);
-
-string konvertiere_int(int number);
 
 void wait();
 #endif

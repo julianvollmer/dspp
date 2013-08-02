@@ -17,3 +17,4 @@ int menu();
 bool parameter_ok(int argc, char *argv[]);
 
 #endif /*_HELPERS_H*/
+string konvertiere_int(int number);

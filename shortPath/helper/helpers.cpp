@@ -13,6 +13,13 @@ int string_to_number(string str){
  return Result;
 }
 
+string konvertiere_int(int number)
+{
+	ostringstream convert;
+	convert << number;
+
+	return convert.str();
+}
 
 /**
  * concat a string with an int

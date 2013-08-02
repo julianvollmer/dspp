@@ -43,7 +43,7 @@ void ShortPath::init_random_distances(){
     for (vector<Dijkstra>::iterator it = elements.begin() ; it != elements.end(); ++it){
         int pos = it->get_position();
         for(int i = 0; i < size && i < pos; i++){
-            if((liefere_ganze_zufallszahl(1,8)%2)==0){
+            if((liefere_ganze_zufallszahl(0,1000)%1000)==0){
                 it->add_distances_to_other(0);    
             }
 
@@ -91,6 +91,7 @@ void ShortPath::print(){
     }
 
     cout << endl;
+    erfasse_enter();
 }
 
 /**
@@ -257,5 +258,7 @@ void ShortPath::output(){
             printPath(i);
         cout<<"->"<<distances[i]<<endl;
     }
+
+    erfasse_enter();
 
 }
