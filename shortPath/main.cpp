@@ -143,7 +143,7 @@ void set_num_of_threads(ShortPath *sp){
  */
 void do_shortpath_calculation_mulitproc(ShortPath *sp){
     start = omp_get_wtime();
-		sp->calculate_distance_multiproc();
+	sp->calculate_distance_multiproc();
     stop = omp_get_wtime();
     t = (double) (stop-start);
     print_number_from_matrix_double(t);
@@ -175,18 +175,22 @@ for (int i = 0; i < number_of_seperator; i++){
 void show_test(ShortPath *sp){
 	loesche_bildschirm();
 	print_show_test_header(65);
+	int adder =  sp->get_num_of_vertices();
+	for(int i = 0; i < 8; i++){
+		sp->init_random(adder);
+		print_run(sp);	
+		adder+=sp->get_num_of_vertices();
+	}
 	
-	print_run(sp);
 	
 	print_show_test_footer(65);
 	erfasse_enter();
 }
 
 void print_run(ShortPath *sp){
-	int number_of_graphs = 1000;
-	sp->init_random(number_of_graphs);
+	
 
-	print_number_from_matrix_int(number_of_graphs);
+	print_number_from_matrix_int(sp->get_num_of_vertices());
 	
 	do_one_run(sp);	
 	
