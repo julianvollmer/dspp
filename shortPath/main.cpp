@@ -14,8 +14,6 @@
 #include "time.h"
 #include "main.h"
 
-
-
 /**
  * This Programm shows different implementation of solving the shortest Path Problem with Dijkstra. 
  * The different solutions realized with different Framework, mainly for multiprocessor operations.
@@ -27,7 +25,7 @@ int main(int argc, char *argv[]){
 	
 	
 	int eingabe = 0;
-	number_of_graphs = 2001;
+	number_of_graphs = 2000;
     
    if(parameter_ok(argc, argv)){
 		if(argc == 2){
@@ -177,13 +175,9 @@ for (int i = 0; i < number_of_seperator; i++){
 void show_test(ShortPath *sp){
 	loesche_bildschirm();
 	print_show_test_header(65);
+	
 	print_run(sp);
-	print_run(sp);
-	print_run(sp);
-	print_run(sp);
-	print_run(sp);
-	print_run(sp);
-	print_run(sp);
+	
 	print_show_test_footer(65);
 	erfasse_enter();
 }
@@ -191,6 +185,7 @@ void show_test(ShortPath *sp){
 void print_run(ShortPath *sp){
 	int number_of_graphs = 1000;
 	sp->init_random(number_of_graphs);
+
 	print_number_from_matrix_int(number_of_graphs);
 	
 	do_one_run(sp);	
@@ -207,7 +202,6 @@ void do_one_run(ShortPath *sp){
 	
 	sp->set_number_of_threads(4);
 	do_shortpath_calculation_mulitproc(sp);
-
 }
 
 void full_path_search(ShortPath *sp){
@@ -221,7 +215,6 @@ void full_path_search(ShortPath *sp){
 	stop = clock();
     t = (double) (stop-start)/CLOCKS_PER_SEC;
     cout<<t;
-
 }
 
 void full_path_search_multi(ShortPath *sp){
@@ -241,6 +234,5 @@ void full_path_search_multi(ShortPath *sp){
 	   stop = clock();
     t = (double) (stop-start)/CLOCKS_PER_SEC;
     cout << "Run time: " << t << endl;
-
 }
 

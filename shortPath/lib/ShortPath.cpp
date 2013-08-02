@@ -114,6 +114,7 @@ void ShortPath::print_horizontal_line(){
  */
 void ShortPath::init_random(int anz){
     num_of_vertices = anz;
+    elements.clear();
     for (int i = 0; i < num_of_vertices; i++){
         Dijkstra d;
         d.set_name(concat_string_and_int("J&P",i));
