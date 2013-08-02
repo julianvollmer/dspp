@@ -34,13 +34,15 @@ void schreibe_zahl(long zahl, ios_base::fmtflags format[], int anzahl_formate) {
 
 
 void print_number_from_matrix_int(int number){
-	cout << "|";
+	cout << "| ";
+	// ios_base::fmtflags format = cout.right;
+	setze_schalter(cout.right)	;
 	cout << number;
-	cout << "\t";
+	cout << "\t\t";
 	
 }
 void print_number_from_matrix_double(double number){
-	cout << "|";
+	cout << "| ";
 	zeige_zahl(number, 4);
 	cout << "\t";
 }

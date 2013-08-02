@@ -3,7 +3,7 @@
  * Constructor
  */
 ShortPath::ShortPath(){
-
+    omp_set_num_threads(4);
 };
 
 /**
@@ -26,6 +26,10 @@ int ShortPath::get_num_of_vertices(){
 
 int ShortPath::set_source(int src){
     source = src;
+}
+
+int ShortPath::set_number_of_threads(int number){
+    omp_set_num_threads(number);
 }
 
 /**
@@ -177,20 +181,18 @@ int ShortPath::get_closest_unmarked_node(){
  * other node.
  */
 void ShortPath::calculate_distance_multiproc(){
-    omp_set_num_threads(4);
+    
     
     initialize();
     int minDistance = INFINITY;
     int closest_unmarked_node;
     int count = 0;
 
-
-  
     #pragma omp parallel   
     while(count < num_of_vertices) {
         closest_unmarked_node = get_closest_unmarked_node();
         elements[closest_unmarked_node].set_mark(true);
-        #pragma omp for schedule(guided)
+        // #pragma omp for schedule(guided)
         for(int i = 0; i < num_of_vertices; i++) {
             if((!elements[i].get_mark()) && (elements[closest_unmarked_node].get_distance_from_specific(i) > 0) ) {
                 if(distances[i] > distances[closest_unmarked_node] + elements[closest_unmarked_node].get_distance_from_specific(i)) {

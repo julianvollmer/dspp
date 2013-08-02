@@ -30,14 +30,14 @@ void test_new_dijkstra(Dijkstra *dk);
 void do_shortpath_calculation(ShortPath *sp);
 void do_shortpath_calculation_mulitproc(ShortPath *sp);
 void set_number_of_graphs(ShortPath *sp);
-void set_number_of_cores(ShortPath *sp);
+void set_num_of_threads(ShortPath *sp);
 void load_graph_from_file();
 void show_test();
 void show_test(ShortPath *sp);
 void full_path_search(ShortPath *sp);
 void full_path_search_multi(ShortPath *sp);
 void print_show_test_header();
-void do_one_run(ShortPath *sp, int num_of_graphs, int num_of_cores);
+void do_one_run(ShortPath *sp);
 void print_run(ShortPath *sp);
 
 void print_show_test_footer();
@@ -45,6 +45,6 @@ void print_show_test_footer();
 double start, stop;
 double t;
 int number_of_graphs;
-int number_of_cores;
+int number_of_threads;
 ShortPath *sp = new ShortPath();
 #endif /* MAIN_H_ */

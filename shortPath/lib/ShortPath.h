@@ -42,7 +42,7 @@ public:
     void add_random_row();
     void print();
     void clear();
-
+    int set_number_of_threads(int number);
 private:
     vector<Dijkstra> elements;
     vector<int> distances;

@@ -4,8 +4,6 @@
 //
 //  Created by Julian Vollmer on 21.04.13.
 //  Copyright (c) 2013 Julian Vollmer. All rights reserved.
-
-
 #include <iostream>
 #include "lib/Dijkstra.h"
 #include "lib/ShortPath.h"
@@ -78,7 +76,7 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 	    break;
 	    
 	    case 5: 
-	        set_number_of_cores(sp);
+	        set_num_of_threads(sp);
 	    break;
 	    
 	    case 6: 
@@ -134,12 +132,12 @@ void set_number_of_graphs(ShortPath *sp){
 	sp->init_random(number_of_graphs);
 }
 /**
- * Set the number of cores to calculate
- * @param sp numerb of cores for calculation.
+ * Set the number of threads to calculate
+ * @param sp numerb of threads for calculation.
  */
-void set_number_of_cores(ShortPath *sp){
-	number_of_cores = erfasse_int(1, 16, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
-	sp->init_random(number_of_graphs);
+void set_num_of_threads(ShortPath *sp){
+	number_of_threads = erfasse_int(1, 16, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
+	sp->set_number_of_threads(number_of_graphs);
 }
 /**
  * Calculates the short path algorithm with multiprocessors
@@ -154,10 +152,19 @@ void do_shortpath_calculation_mulitproc(ShortPath *sp){
 }
 
 void print_show_test_header(int number_of_seperator){
-	cout << "hier bin ich !"<<endl;
+	
 	for (int i = 0; i < number_of_seperator; i++){
 		cout << '-';
 	}
+
+	cout << endl;
+	
+	cout << "| Anzahl Knoten" << "\t| " << "Single" << "\t| " << "Multi(2)" << "\t| " << "Multi(4)" << "\t| "<<endl;
+	
+	for (int i = 0; i < number_of_seperator; i++){
+		cout << '-';
+	}
+	
 	cout << endl;
 }
 void print_show_test_footer(int number_of_seperator){
@@ -168,29 +175,38 @@ for (int i = 0; i < number_of_seperator; i++){
 }
 
 void show_test(ShortPath *sp){
-	print_show_test_header(80);
+	loesche_bildschirm();
+	print_show_test_header(65);
 	print_run(sp);
-	print_show_test_footer(80);
+	print_run(sp);
+	print_run(sp);
+	print_run(sp);
+	print_run(sp);
+	print_run(sp);
+	print_run(sp);
+	print_show_test_footer(65);
 	erfasse_enter();
 }
 
 void print_run(ShortPath *sp){
 	int number_of_graphs = 1000;
+	sp->init_random(number_of_graphs);
 	print_number_from_matrix_int(number_of_graphs);
-	do_one_run(sp,number_of_graphs,0);	
-	do_one_run(sp,number_of_graphs,0);	
-	do_one_run(sp,number_of_graphs,0);	
+	
+	do_one_run(sp);	
+	
 	cout << "|" << endl;
 }
 
-void do_one_run(ShortPath *sp, int num_of_graphs, int num_of_cores){
-	sp->init_random(num_of_graphs);
-	if(num_of_cores == 0){
-		do_shortpath_calculation(sp);
-	}
-	else{
-		do_shortpath_calculation_mulitproc(sp);
-	}
+void do_one_run(ShortPath *sp){
+	
+	do_shortpath_calculation(sp);
+
+	sp->set_number_of_threads(2);
+	do_shortpath_calculation_mulitproc(sp);
+	
+	sp->set_number_of_threads(4);
+	do_shortpath_calculation_mulitproc(sp);
 
 }
 
@@ -207,6 +223,7 @@ void full_path_search(ShortPath *sp){
     cout<<t;
 
 }
+
 void full_path_search_multi(ShortPath *sp){
 	omp_set_num_threads(2);
 
