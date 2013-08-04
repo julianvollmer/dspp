@@ -10,7 +10,8 @@
 {\ttfamily \#include \char`\"{}helper/load\-\_\-file.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}time.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}main.\-h\char`\"{}}\\*
-Include dependency graph for main.\-cpp\-:\nopagebreak
+Include dependency graph for main.\-cpp\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,15 +31,67 @@ void \hyperlink{main_8cpp_aac864b2b3fd9c1780a4d5d1ca0d2bb7c}{do\-\_\-shortpath\-
 \item 
 void \hyperlink{main_8cpp_a9a5698d4286176723286f58c409e8201}{set\-\_\-number\-\_\-of\-\_\-graphs} (\hyperlink{class_short_path}{Short\-Path} $\ast$\hyperlink{main_8h_aebe100d08a8808e282d134c1f35d9e76}{sp})
 \item 
-void \hyperlink{main_8cpp_ad3a8e7b669f614152e991768eec6bf5a}{set\-\_\-number\-\_\-of\-\_\-cores} (\hyperlink{class_short_path}{Short\-Path} $\ast$\hyperlink{main_8h_aebe100d08a8808e282d134c1f35d9e76}{sp})
+void \hyperlink{main_8cpp_a536ce23b42e2cd1725b3c7dc08bbe2c4}{set\-\_\-num\-\_\-of\-\_\-threads} (\hyperlink{class_short_path}{Short\-Path} $\ast$\hyperlink{main_8h_aebe100d08a8808e282d134c1f35d9e76}{sp})
 \item 
 void \hyperlink{main_8cpp_a94d1aacfd89738f4fb4f64d66299a9a6}{do\-\_\-shortpath\-\_\-calculation\-\_\-mulitproc} (\hyperlink{class_short_path}{Short\-Path} $\ast$\hyperlink{main_8h_aebe100d08a8808e282d134c1f35d9e76}{sp})
 \item 
-void \hyperlink{main_8cpp_a09845967cc00cd01e6b5c5fd15db68e2}{show\-\_\-test} ()
+void \hyperlink{main_8cpp_a9d296739bd8d20273c96396373763273}{print\-\_\-header} (int number\-\_\-of\-\_\-seperator)
+\item 
+void \hyperlink{main_8cpp_a3cac5cdf5fc50766999cb9c6dcbb1ab0}{print\-\_\-footer} (int number\-\_\-of\-\_\-seperator)
+\item 
+void \hyperlink{main_8cpp_a317c0a148ec0f2c18e8f003837810922}{show\-\_\-performance\-\_\-test} (\hyperlink{class_short_path}{Short\-Path} $\ast$\hyperlink{main_8h_aebe100d08a8808e282d134c1f35d9e76}{sp})
+\item 
+void \hyperlink{main_8cpp_ad8e427b3d41b041639cb41c1e2cf2a82}{print\-\_\-run} (\hyperlink{class_short_path}{Short\-Path} $\ast$\hyperlink{main_8h_aebe100d08a8808e282d134c1f35d9e76}{sp})
+\item 
+void \hyperlink{main_8cpp_a9dfef61c7cd08e2ca856daeb7aef7790}{do\-\_\-one\-\_\-run} (\hyperlink{class_short_path}{Short\-Path} $\ast$\hyperlink{main_8h_aebe100d08a8808e282d134c1f35d9e76}{sp})
+\item 
+void \hyperlink{main_8cpp_a96690a8074c88b8b91d2d2b493ada874}{full\-\_\-path\-\_\-search} (\hyperlink{class_short_path}{Short\-Path} $\ast$\hyperlink{main_8h_aebe100d08a8808e282d134c1f35d9e76}{sp})
+\item 
+void \hyperlink{main_8cpp_a576a04ef8ece9b16dd85fcf0beb6fada}{full\-\_\-path\-\_\-search\-\_\-multi} (\hyperlink{class_short_path}{Short\-Path} $\ast$\hyperlink{main_8h_aebe100d08a8808e282d134c1f35d9e76}{sp})
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
+\hypertarget{main_8cpp_a9dfef61c7cd08e2ca856daeb7aef7790}{\index{main.\-cpp@{main.\-cpp}!do\-\_\-one\-\_\-run@{do\-\_\-one\-\_\-run}}
+\index{do\-\_\-one\-\_\-run@{do\-\_\-one\-\_\-run}!main.cpp@{main.\-cpp}}
+\subsubsection[{do\-\_\-one\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}void do\-\_\-one\-\_\-run (
+\begin{DoxyParamCaption}
+\item[{{\bf Short\-Path} $\ast$}]{sp}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a9dfef61c7cd08e2ca856daeb7aef7790}
+Does a search to the graph. 
+\begin{DoxyParams}{Parameters}
+{\em sp} & Graph to search. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 209 of file main.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a9dfef61c7cd08e2ca856daeb7aef7790_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a9dfef61c7cd08e2ca856daeb7aef7790_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{main_8cpp_aac864b2b3fd9c1780a4d5d1ca0d2bb7c}{\index{main.\-cpp@{main.\-cpp}!do\-\_\-shortpath\-\_\-calculation@{do\-\_\-shortpath\-\_\-calculation}}
 \index{do\-\_\-shortpath\-\_\-calculation@{do\-\_\-shortpath\-\_\-calculation}!main.cpp@{main.\-cpp}}
 \subsubsection[{do\-\_\-shortpath\-\_\-calculation}]{\setlength{\rightskip}{0pt plus 5cm}void do\-\_\-shortpath\-\_\-calculation (
@@ -53,11 +106,12 @@ Does the short path algorithm on the given object
 \end{DoxyParams}
 
 
-Definition at line 122 of file main.\-cpp.
+Definition at line 116 of file main.\-cpp.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -68,7 +122,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -91,11 +146,12 @@ Calculates the short path algorithm with multiprocessors
 \end{DoxyParams}
 
 
-Definition at line 152 of file main.\-cpp.
+Definition at line 145 of file main.\-cpp.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -106,11 +162,68 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{main_8cpp_a94d1aacfd89738f4fb4f64d66299a9a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8cpp_a96690a8074c88b8b91d2d2b493ada874}{\index{main.\-cpp@{main.\-cpp}!full\-\_\-path\-\_\-search@{full\-\_\-path\-\_\-search}}
+\index{full\-\_\-path\-\_\-search@{full\-\_\-path\-\_\-search}!main.cpp@{main.\-cpp}}
+\subsubsection[{full\-\_\-path\-\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}void full\-\_\-path\-\_\-search (
+\begin{DoxyParamCaption}
+\item[{{\bf Short\-Path} $\ast$}]{sp}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a96690a8074c88b8b91d2d2b493ada874}
+Make a full path search without multithreads. 
+\begin{DoxyParams}{Parameters}
+{\em sp} & graph to search \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 223 of file main.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a96690a8074c88b8b91d2d2b493ada874_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8cpp_a576a04ef8ece9b16dd85fcf0beb6fada}{\index{main.\-cpp@{main.\-cpp}!full\-\_\-path\-\_\-search\-\_\-multi@{full\-\_\-path\-\_\-search\-\_\-multi}}
+\index{full\-\_\-path\-\_\-search\-\_\-multi@{full\-\_\-path\-\_\-search\-\_\-multi}!main.cpp@{main.\-cpp}}
+\subsubsection[{full\-\_\-path\-\_\-search\-\_\-multi}]{\setlength{\rightskip}{0pt plus 5cm}void full\-\_\-path\-\_\-search\-\_\-multi (
+\begin{DoxyParamCaption}
+\item[{{\bf Short\-Path} $\ast$}]{sp}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a576a04ef8ece9b16dd85fcf0beb6fada}
+Make a full path search with multithreads 
+\begin{DoxyParams}{Parameters}
+{\em sp} & graph to search \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 242 of file main.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a576a04ef8ece9b16dd85fcf0beb6fada_cgraph}
 \end{center}
 \end{figure}
 
@@ -124,7 +237,7 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{main_8cpp_a98a18828ae07df779de7b6e17ce5d76a}
 Loads the graph from a file 
 
-Definition at line 111 of file main.\-cpp.
+Definition at line 105 of file main.\-cpp.
 
 
 
@@ -168,11 +281,12 @@ Zero for 0k
 \end{DoxyReturn}
 
 
-Definition at line 28 of file main.\-cpp.
+Definition at line 24 of file main.\-cpp.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -181,40 +295,138 @@ Here is the call graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{main_8cpp_ad3a8e7b669f614152e991768eec6bf5a}{\index{main.\-cpp@{main.\-cpp}!set\-\_\-number\-\_\-of\-\_\-cores@{set\-\_\-number\-\_\-of\-\_\-cores}}
-\index{set\-\_\-number\-\_\-of\-\_\-cores@{set\-\_\-number\-\_\-of\-\_\-cores}!main.cpp@{main.\-cpp}}
-\subsubsection[{set\-\_\-number\-\_\-of\-\_\-cores}]{\setlength{\rightskip}{0pt plus 5cm}void set\-\_\-number\-\_\-of\-\_\-cores (
+\hypertarget{main_8cpp_a3cac5cdf5fc50766999cb9c6dcbb1ab0}{\index{main.\-cpp@{main.\-cpp}!print\-\_\-footer@{print\-\_\-footer}}
+\index{print\-\_\-footer@{print\-\_\-footer}!main.cpp@{main.\-cpp}}
+\subsubsection[{print\-\_\-footer}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-footer (
 \begin{DoxyParamCaption}
-\item[{{\bf Short\-Path} $\ast$}]{sp}
+\item[{int}]{number\-\_\-of\-\_\-seperator}
 \end{DoxyParamCaption}
-)}}\label{main_8cpp_ad3a8e7b669f614152e991768eec6bf5a}
-Set the number of cores to calculate N\-O\-C\-H\-M\-A\-L S\-C\-H\-A\-U\-E\-N!!! 
+)}}\label{main_8cpp_a3cac5cdf5fc50766999cb9c6dcbb1ab0}
+Prints the footer of the matrix. 
 \begin{DoxyParams}{Parameters}
-{\em sp} & numerb of cores for calculation. \\
+{\em number\-\_\-of\-\_\-seperator} & number of seperators needed. \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 144 of file main.\-cpp.
+Definition at line 172 of file main.\-cpp.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{main_8cpp_ad3a8e7b669f614152e991768eec6bf5a_cgraph}
+\includegraphics[width=350pt]{main_8cpp_a3cac5cdf5fc50766999cb9c6dcbb1ab0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8cpp_a9d296739bd8d20273c96396373763273}{\index{main.\-cpp@{main.\-cpp}!print\-\_\-header@{print\-\_\-header}}
+\index{print\-\_\-header@{print\-\_\-header}!main.cpp@{main.\-cpp}}
+\subsubsection[{print\-\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-header (
+\begin{DoxyParamCaption}
+\item[{int}]{number\-\_\-of\-\_\-seperator}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a9d296739bd8d20273c96396373763273}
+Prints the header of the matrix. 
+\begin{DoxyParams}{Parameters}
+{\em number\-\_\-of\-\_\-seperator} & number of seperators needed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 156 of file main.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a9d296739bd8d20273c96396373763273_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8cpp_ad8e427b3d41b041639cb41c1e2cf2a82}{\index{main.\-cpp@{main.\-cpp}!print\-\_\-run@{print\-\_\-run}}
+\index{print\-\_\-run@{print\-\_\-run}!main.cpp@{main.\-cpp}}
+\subsubsection[{print\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-run (
+\begin{DoxyParamCaption}
+\item[{{\bf Short\-Path} $\ast$}]{sp}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_ad8e427b3d41b041639cb41c1e2cf2a82}
+Prints the output in the terminal. 
+\begin{DoxyParams}{Parameters}
+{\em sp} & Graph to print. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 199 of file main.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ad8e427b3d41b041639cb41c1e2cf2a82_cgraph}
 \end{center}
 \end{figure}
 
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{main_8cpp_ad3a8e7b669f614152e991768eec6bf5a_icgraph}
+\includegraphics[width=350pt]{main_8cpp_ad8e427b3d41b041639cb41c1e2cf2a82_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8cpp_a536ce23b42e2cd1725b3c7dc08bbe2c4}{\index{main.\-cpp@{main.\-cpp}!set\-\_\-num\-\_\-of\-\_\-threads@{set\-\_\-num\-\_\-of\-\_\-threads}}
+\index{set\-\_\-num\-\_\-of\-\_\-threads@{set\-\_\-num\-\_\-of\-\_\-threads}!main.cpp@{main.\-cpp}}
+\subsubsection[{set\-\_\-num\-\_\-of\-\_\-threads}]{\setlength{\rightskip}{0pt plus 5cm}void set\-\_\-num\-\_\-of\-\_\-threads (
+\begin{DoxyParamCaption}
+\item[{{\bf Short\-Path} $\ast$}]{sp}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a536ce23b42e2cd1725b3c7dc08bbe2c4}
+Set the number of threads to calculate 
+\begin{DoxyParams}{Parameters}
+{\em sp} & numerb of threads for calculation. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 137 of file main.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a536ce23b42e2cd1725b3c7dc08bbe2c4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a536ce23b42e2cd1725b3c7dc08bbe2c4_icgraph}
 \end{center}
 \end{figure}
 
@@ -233,11 +445,12 @@ Overrides the short path object with the number of graphs which init randomly.
 \end{DoxyParams}
 
 
-Definition at line 136 of file main.\-cpp.
+Definition at line 129 of file main.\-cpp.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -257,24 +470,42 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{main_8cpp_a09845967cc00cd01e6b5c5fd15db68e2}{\index{main.\-cpp@{main.\-cpp}!show\-\_\-test@{show\-\_\-test}}
-\index{show\-\_\-test@{show\-\_\-test}!main.cpp@{main.\-cpp}}
-\subsubsection[{show\-\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}void show\-\_\-test (
+\hypertarget{main_8cpp_a317c0a148ec0f2c18e8f003837810922}{\index{main.\-cpp@{main.\-cpp}!show\-\_\-performance\-\_\-test@{show\-\_\-performance\-\_\-test}}
+\index{show\-\_\-performance\-\_\-test@{show\-\_\-performance\-\_\-test}!main.cpp@{main.\-cpp}}
+\subsubsection[{show\-\_\-performance\-\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}void show\-\_\-performance\-\_\-test (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf Short\-Path} $\ast$}]{sp}
 \end{DoxyParamCaption}
-)}}\label{main_8cpp_a09845967cc00cd01e6b5c5fd15db68e2}
+)}}\label{main_8cpp_a317c0a148ec0f2c18e8f003837810922}
+Shows up the test 
+\begin{DoxyParams}{Parameters}
+{\em sp} & Graph to search \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 161 of file main.\-cpp.
+Definition at line 183 of file main.\-cpp.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{main_8cpp_a09845967cc00cd01e6b5c5fd15db68e2_icgraph}
+\includegraphics[width=350pt]{main_8cpp_a317c0a148ec0f2c18e8f003837810922_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a317c0a148ec0f2c18e8f003837810922_icgraph}
 \end{center}
 \end{figure}
 
@@ -296,11 +527,12 @@ Handles the Input
 \end{DoxyParams}
 
 
-Definition at line 58 of file main.\-cpp.
+Definition at line 51 of file main.\-cpp.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

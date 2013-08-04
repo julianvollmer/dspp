@@ -4,6 +4,7 @@ var eingabe_8cpp =
     [ "erfasse_double", "eingabe_8cpp.html#ae6b700f5d1a8a3a5fcd9cab76340ebda", null ],
     [ "erfasse_double", "eingabe_8cpp.html#aab14000f3650c2813b9ee356cc97f0e9", null ],
     [ "erfasse_double", "eingabe_8cpp.html#ad9967a618bd877d229817783da7c7f0a", null ],
+    [ "erfasse_enter", "eingabe_8cpp.html#a531a5a0633eae43467dfe292cd521ead", null ],
     [ "erfasse_int", "eingabe_8cpp.html#a6ed8ebda70d479be8719510ac7d31841", null ],
     [ "erfasse_int", "eingabe_8cpp.html#aa6ff8cd9efd97a7c33948171aa41dff1", null ],
     [ "erfasse_int", "eingabe_8cpp.html#a44f150c7dcc454995f34c8ff991fd588", null ],

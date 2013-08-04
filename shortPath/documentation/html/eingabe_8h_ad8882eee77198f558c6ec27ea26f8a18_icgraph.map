@@ -3,11 +3,12 @@
 <area shape="rect" id="node5" href="$eingabe_8h.html#a6ed8ebda70d479be8719510ac7d31841" title="erfasse_int" alt="" coords="158,161,245,189"/>
 <area shape="rect" id="node7" href="$eingabe_8h.html#a6f4d4fa74ae47b6bd21dda9f9e1b735c" title="erfasse_int" alt="" coords="334,5,421,33"/>
 <area shape="rect" id="node9" href="$eingabe_8h.html#a081cacbe6d2b71f50e1a1b5826fdb7bb" title="pruefe_bereich_int" alt="" coords="311,57,443,85"/>
-<area shape="rect" id="node11" href="$helpers_8h.html#ae83fcdbeb2b6757fc741ae953b633ee1" title="menu" alt="" coords="753,109,807,137"/>
+<area shape="rect" id="node11" href="$helpers_8h.html#ae83fcdbeb2b6757fc741ae953b633ee1" title="menu" alt="" coords="758,109,813,137"/>
 <area shape="rect" id="node15" href="$class_short_path.html#af3c6bd7d7b552ca6fa60b89a49db8566" title="ShortPath::init_random" alt="" coords="298,161,456,189"/>
-<area shape="rect" id="node18" href="$main_8h.html#a9a5698d4286176723286f58c409e8201" title="set_number_of_graphs" alt="" coords="505,213,663,241"/>
-<area shape="rect" id="node23" href="$main_8h.html#ad3a8e7b669f614152e991768eec6bf5a" title="set_number_of_cores" alt="" coords="509,265,659,293"/>
-<area shape="rect" id="node26" href="$class_short_path.html#a388a3b66967f667a16b16f0f6fb044f3" title="ShortPath::init_source" alt="" coords="301,315,454,343"/>
-<area shape="rect" id="node13" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="896,161,946,189"/>
-<area shape="rect" id="node20" href="$main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425" title="verarbeite_eingabe" alt="" coords="712,213,848,241"/>
+<area shape="rect" id="node18" href="$main_8h.html#a9a5698d4286176723286f58c409e8201" title="set_number_of_graphs" alt="" coords="507,265,666,293"/>
+<area shape="rect" id="node26" href="$class_short_path.html#a388a3b66967f667a16b16f0f6fb044f3" title="ShortPath::init_source" alt="" coords="301,265,454,293"/>
+<area shape="rect" id="node29" href="$main_8h.html#a536ce23b42e2cd1725b3c7dc08bbe2c4" title="set_num_of_threads" alt="" coords="515,317,658,345"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="902,161,952,189"/>
+<area shape="rect" id="node23" href="$main_8h.html#a317c0a148ec0f2c18e8f003837810922" title="show_performance_test" alt="" coords="505,213,668,241"/>
+<area shape="rect" id="node20" href="$main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425" title="verarbeite_eingabe" alt="" coords="718,238,853,266"/>
 </map>

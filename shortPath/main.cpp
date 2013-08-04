@@ -22,8 +22,6 @@
  * @return      Zero for 0k
  */
 int main(int argc, char *argv[]){
-	
-	
 	int eingabe = 0;
 	number_of_graphs = 2000;
     
@@ -40,10 +38,9 @@ int main(int argc, char *argv[]){
 		 }while(eingabe);
 	}
 	else{
-		anleitung();
+		help();
 	}
-		
-
+	
     return 0;
 }
 /**
@@ -90,7 +87,11 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 	    break;
 
 	     case 9: 
-	        show_test(sp);
+	        show_performance_test(sp);
+	    break;
+
+	     case 10: 
+	        help();
 	    break;
 
 	    default:
@@ -104,7 +105,7 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
 void load_graph_from_file(){
 	sp->clear();
 	load_file();
-	 sp = getShortPathObject();
+	sp = getShortPathObject();
 }
 
 
@@ -114,7 +115,7 @@ void load_graph_from_file(){
  */
 void do_shortpath_calculation(ShortPath *sp){
     start = omp_get_wtime();
-		sp->calculate_distance();
+	sp->calculate_distance();
     stop = omp_get_wtime();
     t = (double) (stop-start);
     print_number_from_matrix_double(t);
@@ -126,7 +127,7 @@ void do_shortpath_calculation(ShortPath *sp){
  * @param sp short path to override
  */
 void set_number_of_graphs(ShortPath *sp){
-	number_of_graphs = erfasse_int(1, 20000, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
+	number_of_graphs = erfasse_int(1, 20000, "Bitte geben sie die Anzahl der zu erfassenden Knoten ein");
 	sp->init_random(number_of_graphs);
 }
 /**
@@ -134,7 +135,7 @@ void set_number_of_graphs(ShortPath *sp){
  * @param sp numerb of threads for calculation.
  */
 void set_num_of_threads(ShortPath *sp){
-	number_of_threads = erfasse_int(1, 16, "Bitte geben sie die Anzahl der zu erfassenden Graphen ein");
+	number_of_threads = erfasse_int(1, 16, "Bitte geben sie die Anzahl der zu erfassenden Knoten ein");
 	sp->set_number_of_threads(number_of_graphs);
 }
 /**
@@ -148,55 +149,63 @@ void do_shortpath_calculation_mulitproc(ShortPath *sp){
     t = (double) (stop-start);
     print_number_from_matrix_double(t);
 }
-
-void print_show_test_header(int number_of_seperator){
-	
+/**
+ * Prints the header of the matrix.
+ * @param number_of_seperator number of seperators needed.
+ */
+void print_header(int number_of_seperator){
 	for (int i = 0; i < number_of_seperator; i++){
 		cout << '-';
 	}
-
 	cout << endl;
-	
 	cout << "| Anzahl Knoten" << "\t| " << "Single" << "\t| " << "Multi(2)" << "\t| " << "Multi(4)" << "\t| "<<endl;
-	
 	for (int i = 0; i < number_of_seperator; i++){
 		cout << '-';
 	}
-	
 	cout << endl;
 }
-void print_show_test_footer(int number_of_seperator){
-for (int i = 0; i < number_of_seperator; i++){
+
+/**
+ * Prints the footer of the matrix.
+ * @param number_of_seperator number of seperators needed.
+ */
+void print_footer(int number_of_seperator){
+	for (int i = 0; i < number_of_seperator; i++){
 		cout << '-';
 	}	
 	cout << endl;
 }
 
-void show_test(ShortPath *sp){
+/**
+ * Shows up the test
+ * @param sp Graph to search
+ */
+void show_performance_test(ShortPath *sp){
 	loesche_bildschirm();
-	print_show_test_header(65);
+	print_header(65);
 	int adder =  sp->get_num_of_vertices();
 	for(int i = 0; i < 8; i++){
 		sp->init_random(adder);
 		print_run(sp);	
 		adder+=sp->get_num_of_vertices();
 	}
-	
-	
-	print_show_test_footer(65);
+	print_footer(65);
 	erfasse_enter();
 }
-
+/**
+ * Prints the output in the terminal.
+ * @param sp Graph to print.
+ */
 void print_run(ShortPath *sp){
-	
-
 	print_number_from_matrix_int(sp->get_num_of_vertices());
-	
 	do_one_run(sp);	
-	
 	cout << "|" << endl;
 }
 
+/**
+ * Does a search to the graph.
+ * @param sp Graph to search.
+ */
 void do_one_run(ShortPath *sp){
 	
 	do_shortpath_calculation(sp);
@@ -207,7 +216,10 @@ void do_one_run(ShortPath *sp){
 	sp->set_number_of_threads(4);
 	do_shortpath_calculation_mulitproc(sp);
 }
-
+/**
+ * Make a full path search without multithreads.
+ * @param sp graph to search
+ */
 void full_path_search(ShortPath *sp){
 	int length = sp->get_num_of_vertices();
     start = clock();
@@ -219,14 +231,18 @@ void full_path_search(ShortPath *sp){
 	stop = clock();
     t = (double) (stop-start)/CLOCKS_PER_SEC;
     cout<<t;
+    erfasse_enter();
+    loesche_bildschirm();
 }
 
+/**
+ * Make a full path search with multithreads
+ * @param sp graph to search
+ */
 void full_path_search_multi(ShortPath *sp){
-	omp_set_num_threads(2);
-
 	int length = sp->get_num_of_vertices();
 	
-	cout << "Multicore" << endl;
+	
     start = clock();
    	
    	#pragma omp for schedule(static)
@@ -237,6 +253,8 @@ void full_path_search_multi(ShortPath *sp){
 	}
 	   stop = clock();
     t = (double) (stop-start)/CLOCKS_PER_SEC;
-    cout << "Run time: " << t << endl;
+    cout << t;
+    erfasse_enter();
+    loesche_bildschirm();
 }
 

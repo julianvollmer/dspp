@@ -1,10 +1,10 @@
 <map id="main.h" name="main.h">
-<area shape="rect" id="node5" href="$_dijkstra_8h.html" title="lib/Dijkstra.h" alt="" coords="740,246,833,274"/>
-<area shape="rect" id="node10" href="$_short_path_8h.html" title="lib/ShortPath.h" alt="" coords="879,161,987,189"/>
-<area shape="rect" id="node20" href="$eingabe_8h.html" title="../helper/eingabe.h" alt="" coords="1242,331,1373,359"/>
-<area shape="rect" id="node37" href="$random_8h.html" title="../helper/random.h" alt="" coords="306,246,435,274"/>
-<area shape="rect" id="node52" href="$ausgabe_8h.html" title="helper/ausgabe.h" alt="" coords="4,246,128,274"/>
-<area shape="rect" id="node60" href="$load__file_8h.html" title="helper/load_file.h" alt="" coords="524,83,647,111"/>
-<area shape="rect" id="node69" href="$write__file_8h.html" title="helper/write_file.h" alt="" coords="670,83,796,111"/>
-<area shape="rect" id="node31" href="$helpers_8h.html" title="../helper/helpers.h" alt="" coords="467,246,595,274"/>
+<area shape="rect" id="node5" href="$_dijkstra_8h.html" title="lib/Dijkstra.h" alt="" coords="98,246,192,274"/>
+<area shape="rect" id="node10" href="$_short_path_8h.html" title="lib/ShortPath.h" alt="" coords="823,161,931,189"/>
+<area shape="rect" id="node20" href="$eingabe_8h.html" title="../helper/eingabe.h" alt="" coords="1523,331,1655,359"/>
+<area shape="rect" id="node39" href="$random_8h.html" title="../helper/random.h" alt="" coords="318,246,447,274"/>
+<area shape="rect" id="node54" href="$ausgabe_8h.html" title="helper/ausgabe.h" alt="" coords="471,246,595,274"/>
+<area shape="rect" id="node62" href="$load__file_8h.html" title="helper/load_file.h" alt="" coords="236,83,359,111"/>
+<area shape="rect" id="node71" href="$write__file_8h.html" title="helper/write_file.h" alt="" coords="638,83,764,111"/>
+<area shape="rect" id="node31" href="$helpers_8h.html" title="../helper/helpers.h" alt="" coords="620,246,748,274"/>
 </map>

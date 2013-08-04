@@ -13,6 +13,11 @@ int string_to_number(string str){
  return Result;
 }
 
+/**
+ * Converters a integer to a string
+ * @param  number number to be converted
+ * @return        number as string
+ */
 string konvertiere_int(int number)
 {
 	ostringstream convert;
@@ -42,12 +47,13 @@ int menu(){
 							"Datei einlesen",
 							"Kuerzte Wege (ohne Threads)",
 							"Kuerzte Wege (mit Threads)",
-							"Setze Anzahl der zu berechnenden Graphen",	
+							"Setze Anzahl der zu berechnenden Knoten",	
 							"Anzahl der Threads fuer Multicore",
 							"Schreibe Adjazenzmatrix auf Terminal",
 							"Schreibe Wegberechnung auf Terminal",
 							"Speichere Adjazenzmatrix",
-							"Show Main Test!"
+							"Show Main Test!",
+							"Hilfe"
 						};
 
 	int anz_punkte = sizeof(menuepunkte) / sizeof(menuepunkte[0]);
@@ -76,10 +82,11 @@ bool parameter_ok(int argc, char *argv[]){
 /**
  * Shows the description of the programm
  */
-void anleitung(){
+void help(){
 	cout << ":::ANLEITUNG:::"<<endl<<endl;
 	cout << "Das Programm berechnet den kuerzesten Weg mit hilfe von mehreren Prozessoren"<<endl;
 	cout << "Es kann ohne Parameter oder mit einem Paramter aufgerufen werden"<<endl;
 	cout << "Wird das Programm mit einem Parameter aufgerufen muss dieser eine Zahl sein"<<endl;
 	std::cout << "Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden"<<endl;
+	erfasse_enter();
 }

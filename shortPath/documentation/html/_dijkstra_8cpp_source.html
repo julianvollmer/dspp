@@ -159,55 +159,56 @@ $(document).ready(function(){initNavTree('_dijkstra_8cpp_source.html','');});
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="class_dijkstra.html#ac015491614e395f46f0c63171aef3be1">   95</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dijkstra.html#ac015491614e395f46f0c63171aef3be1">Dijkstra::get_shortest_distance</a>(){</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> min_distance = INT_MAX;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; distances.size();i++)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {   </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span>(min_distance &gt; distances[i])</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            min_distance =  distances[i];</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> min_distance;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a4e31f6a7349c13b57c9a41d4a6e5a7c7">  110</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a4e31f6a7349c13b57c9a41d4a6e5a7c7">Dijkstra::set_name</a>(<span class="keywordtype">string</span> name){</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    this-&gt;name = name;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a0d5649f1baa5ce2d2c65b276141d6f40">  118</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a0d5649f1baa5ce2d2c65b276141d6f40">Dijkstra::set_predecessor</a>(<span class="keywordtype">int</span> predecessor){</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    this-&gt;predecessor = predecessor;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a75fcba38eab85c0fa15840a3d932156d">  126</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a75fcba38eab85c0fa15840a3d932156d">Dijkstra::set_mark</a>(<span class="keywordtype">bool</span> mark){</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    this-&gt;mark = mark;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="class_dijkstra.html#abed971366356f3ffcfbedaf1391c8d7e">  134</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#abed971366356f3ffcfbedaf1391c8d7e">Dijkstra::set_distance_vector</a>(vector&lt;int&gt; v){</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    this-&gt;distances = v;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a85da246a755eebaf166f88af8e325107">  142</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a85da246a755eebaf166f88af8e325107">Dijkstra::add_distances_to_other</a>(<span class="keywordtype">int</span> distance){</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    this-&gt;distances.push_back(distance);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//#pragma omp parallel for</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; distances.size();i++)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {   </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span>(min_distance &gt; distances[i])</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            min_distance =  distances[i];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> min_distance;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a4e31f6a7349c13b57c9a41d4a6e5a7c7">  111</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a4e31f6a7349c13b57c9a41d4a6e5a7c7">Dijkstra::set_name</a>(<span class="keywordtype">string</span> name){</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    this-&gt;name = name;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a0d5649f1baa5ce2d2c65b276141d6f40">  119</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a0d5649f1baa5ce2d2c65b276141d6f40">Dijkstra::set_predecessor</a>(<span class="keywordtype">int</span> predecessor){</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    this-&gt;predecessor = predecessor;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a75fcba38eab85c0fa15840a3d932156d">  127</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a75fcba38eab85c0fa15840a3d932156d">Dijkstra::set_mark</a>(<span class="keywordtype">bool</span> mark){</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    this-&gt;mark = mark;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="code" href="class_dijkstra.html#abed971366356f3ffcfbedaf1391c8d7e">  135</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#abed971366356f3ffcfbedaf1391c8d7e">Dijkstra::set_distance_vector</a>(vector&lt;int&gt; v){</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    this-&gt;distances = v;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a85da246a755eebaf166f88af8e325107">  143</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a85da246a755eebaf166f88af8e325107">Dijkstra::add_distances_to_other</a>(<span class="keywordtype">int</span> distance){</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    this-&gt;distances.push_back(distance);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a8f857a9ebf93c48e0a6296e85b0d2524">  151</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a8f857a9ebf93c48e0a6296e85b0d2524">Dijkstra::set_position</a>(<span class="keywordtype">int</span> position){</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    this-&gt;position = position;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="code" href="class_dijkstra.html#af69ad1ca6722e8c37eff60719506c330">  158</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#af69ad1ca6722e8c37eff60719506c330">Dijkstra::print_distances</a>(){</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    cout &lt;&lt; this-&gt;name &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> (vector&lt;int&gt;::iterator it = distances.begin() ; it != distances.end(); ++it){</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            cout &lt;&lt; *it &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    cout &lt;&lt; endl;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="class_dijkstra.html#a8f857a9ebf93c48e0a6296e85b0d2524">  152</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#a8f857a9ebf93c48e0a6296e85b0d2524">Dijkstra::set_position</a>(<span class="keywordtype">int</span> position){</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    this-&gt;position = position;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="code" href="class_dijkstra.html#af69ad1ca6722e8c37eff60719506c330">  159</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dijkstra.html#af69ad1ca6722e8c37eff60719506c330">Dijkstra::print_distances</a>(){</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    cout &lt;&lt; this-&gt;name &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">for</span> (vector&lt;int&gt;::iterator it = distances.begin() ; it != distances.end(); ++it){</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            cout &lt;&lt; *it &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="_dijkstra_8cpp.html">Dijkstra.cpp</a></li>
-    <li class="footer">Generated on Sun Jun 23 2013 21:57:54 for short Path by
+    <li class="footer">Generated on Mon Aug 5 2013 00:16:24 for short Path by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

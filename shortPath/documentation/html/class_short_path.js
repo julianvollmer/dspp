@@ -8,6 +8,7 @@ var class_short_path =
     [ "clear", "class_short_path.html#a1c0cf18c306d022d72393979e37463c8", null ],
     [ "get_closest_unmarked_node", "class_short_path.html#ae218a65d8dd2620afc8c088679c5ab98", null ],
     [ "get_elements", "class_short_path.html#abf528c510136ea8014abfdd993949a02", null ],
+    [ "get_num_of_vertices", "class_short_path.html#a04ad21508536061dc0f83aafa2fe25f3", null ],
     [ "init_random", "class_short_path.html#af3c6bd7d7b552ca6fa60b89a49db8566", null ],
     [ "init_random", "class_short_path.html#a1edee840fd8a1deec46d7c8ee4573bae", null ],
     [ "init_random_distances", "class_short_path.html#a24387db998bac1e88493dc4cf838a68b", null ],
@@ -15,5 +16,7 @@ var class_short_path =
     [ "initialize", "class_short_path.html#a113f044a61c1eacafb73df55e12f3803", null ],
     [ "output", "class_short_path.html#aa4ede1b3713f60bef1f23193510199df", null ],
     [ "print", "class_short_path.html#a15edde62ae2c1a9f149815fb846c768e", null ],
-    [ "printPath", "class_short_path.html#a363cac67e1c10f524feab977073c35e9", null ]
+    [ "printPath", "class_short_path.html#a363cac67e1c10f524feab977073c35e9", null ],
+    [ "set_number_of_threads", "class_short_path.html#a353d2a4cd4d25e57b4038f82ce3e1c79", null ],
+    [ "set_source", "class_short_path.html#a82c56315bdb4245a028a060ab63dd866", null ]
 ];

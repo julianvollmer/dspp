@@ -6,14 +6,15 @@ var searchData=
   ['set_5fdistance_5fvector',['set_distance_vector',['../class_dijkstra.html#abed971366356f3ffcfbedaf1391c8d7e',1,'Dijkstra']]],
   ['set_5fmark',['set_mark',['../class_dijkstra.html#a75fcba38eab85c0fa15840a3d932156d',1,'Dijkstra']]],
   ['set_5fname',['set_name',['../class_dijkstra.html#a4e31f6a7349c13b57c9a41d4a6e5a7c7',1,'Dijkstra']]],
-  ['set_5fnumber_5fof_5fcores',['set_number_of_cores',['../main_8cpp.html#ad3a8e7b669f614152e991768eec6bf5a',1,'set_number_of_cores(ShortPath *sp):&#160;main.cpp'],['../main_8h.html#ad3a8e7b669f614152e991768eec6bf5a',1,'set_number_of_cores(ShortPath *sp):&#160;main.cpp']]],
+  ['set_5fnum_5fof_5fthreads',['set_num_of_threads',['../main_8cpp.html#a536ce23b42e2cd1725b3c7dc08bbe2c4',1,'set_num_of_threads(ShortPath *sp):&#160;main.cpp'],['../main_8h.html#a536ce23b42e2cd1725b3c7dc08bbe2c4',1,'set_num_of_threads(ShortPath *sp):&#160;main.cpp']]],
   ['set_5fnumber_5fof_5fgraphs',['set_number_of_graphs',['../main_8cpp.html#a9a5698d4286176723286f58c409e8201',1,'set_number_of_graphs(ShortPath *sp):&#160;main.cpp'],['../main_8h.html#a9a5698d4286176723286f58c409e8201',1,'set_number_of_graphs(ShortPath *sp):&#160;main.cpp']]],
+  ['set_5fnumber_5fof_5fthreads',['set_number_of_threads',['../class_short_path.html#a353d2a4cd4d25e57b4038f82ce3e1c79',1,'ShortPath']]],
   ['set_5fposition',['set_position',['../class_dijkstra.html#a8f857a9ebf93c48e0a6296e85b0d2524',1,'Dijkstra']]],
   ['set_5fpredecessor',['set_predecessor',['../class_dijkstra.html#a0d5649f1baa5ce2d2c65b276141d6f40',1,'Dijkstra']]],
-  ['set_5fstarting_5fpoint',['set_starting_point',['../main_8h.html#a40a5537410c178c3428bb4cafc16d1e6',1,'main.h']]],
+  ['set_5fsource',['set_source',['../class_short_path.html#a82c56315bdb4245a028a060ab63dd866',1,'ShortPath']]],
   ['setze_5fschalter',['setze_schalter',['../ausgabe_8cpp.html#ae8c346aa92fc891022a940f2c5c75f95',1,'setze_schalter(ios_base::fmtflags format):&#160;ausgabe.cpp'],['../ausgabe_8h.html#ae8c346aa92fc891022a940f2c5c75f95',1,'setze_schalter(ios_base::fmtflags format):&#160;ausgabe.cpp']]],
   ['shortpath',['ShortPath',['../class_short_path.html#aa1f54b3eb632252e0e4f34fed4110d54',1,'ShortPath']]],
-  ['show_5ftest',['show_test',['../main_8cpp.html#a09845967cc00cd01e6b5c5fd15db68e2',1,'show_test():&#160;main.cpp'],['../main_8h.html#a09845967cc00cd01e6b5c5fd15db68e2',1,'show_test():&#160;main.cpp']]],
+  ['show_5fperformance_5ftest',['show_performance_test',['../main_8cpp.html#a317c0a148ec0f2c18e8f003837810922',1,'show_performance_test(ShortPath *sp):&#160;main.cpp'],['../main_8h.html#a317c0a148ec0f2c18e8f003837810922',1,'show_performance_test(ShortPath *sp):&#160;main.cpp']]],
   ['spaltenvorschub',['spaltenvorschub',['../ausgabe_8cpp.html#abb46ef5c5d536396f1baa9c1a6ce1ccd',1,'spaltenvorschub(streamsize feldbreite):&#160;ausgabe.cpp'],['../ausgabe_8h.html#abb46ef5c5d536396f1baa9c1a6ce1ccd',1,'spaltenvorschub(streamsize feldbreite):&#160;ausgabe.cpp']]],
   ['string_5fto_5fnumber',['string_to_number',['../helpers_8cpp.html#a07fa49d604e024605441544ff5cbcb0e',1,'string_to_number(string str):&#160;helpers.cpp'],['../helpers_8h.html#a07fa49d604e024605441544ff5cbcb0e',1,'string_to_number(string str):&#160;helpers.cpp']]]
 ];

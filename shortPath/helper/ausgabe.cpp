@@ -31,8 +31,10 @@ void schreibe_zahl(long zahl, ios_base::fmtflags format[], int anzahl_formate) {
 		cout.unsetf(format[i]);
 }
 
-
-
+/**
+ * Prints the number in the matrix.
+ * @param number integer value to print.
+ */
 void print_number_from_matrix_int(int number){
 	cout << "| ";
 	// ios_base::fmtflags format = cout.right;
@@ -41,6 +43,10 @@ void print_number_from_matrix_int(int number){
 	cout << "\t\t";
 	
 }
+/**
+ * Prints the number in the matrix.
+ * @param number double value to print.
+ */
 void print_number_from_matrix_double(double number){
 	cout << "| ";
 	zeige_zahl(number, 4);

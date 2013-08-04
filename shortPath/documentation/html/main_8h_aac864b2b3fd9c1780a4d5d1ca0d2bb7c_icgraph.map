@@ -1,4 +1,7 @@
 <map id="do_shortpath_calculation" name="do_shortpath_calculation">
-<area shape="rect" id="node3" href="$main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425" title="verarbeite_eingabe" alt="" coords="224,5,360,33"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="408,5,458,33"/>
+<area shape="rect" id="node3" href="$main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425" title="verarbeite_eingabe" alt="" coords="702,6,837,34"/>
+<area shape="rect" id="node7" href="$main_8h.html#a9dfef61c7cd08e2ca856daeb7aef7790" title="do_one_run" alt="" coords="224,31,317,59"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="886,6,936,34"/>
+<area shape="rect" id="node9" href="$main_8h.html#ad8e427b3d41b041639cb41c1e2cf2a82" title="print_run" alt="" coords="366,31,440,59"/>
+<area shape="rect" id="node11" href="$main_8h.html#a317c0a148ec0f2c18e8f003837810922" title="show_performance_test" alt="" coords="489,31,652,59"/>
 </map>

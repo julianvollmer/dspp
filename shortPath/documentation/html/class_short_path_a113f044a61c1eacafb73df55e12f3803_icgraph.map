@@ -1,8 +1,13 @@
 <map id="ShortPath::initialize" name="ShortPath::initialize">
-<area shape="rect" id="node3" href="$class_short_path.html#a74f3fa59ffd3e061ef75a7962fbe3cfa" title="ShortPath::calculate\l_distance_multiproc" alt="" coords="190,5,330,49"/>
-<area shape="rect" id="node11" href="$class_short_path.html#af4ddb3c9a160c273bdc99b3fb43fd58d" title="ShortPath::calculate\l_distance" alt="" coords="190,73,330,117"/>
-<area shape="rect" id="node5" href="$main_8h.html#a94d1aacfd89738f4fb4f64d66299a9a6" title="do_shortpath_calculation\l_mulitproc" alt="" coords="379,7,549,51"/>
-<area shape="rect" id="node7" href="$main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425" title="verarbeite_eingabe" alt="" coords="598,46,733,74"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="782,46,832,74"/>
-<area shape="rect" id="node13" href="$main_8h.html#aac864b2b3fd9c1780a4d5d1ca0d2bb7c" title="do_shortpath_calculation" alt="" coords="379,77,549,105"/>
+<area shape="rect" id="node3" href="$class_short_path.html#a74f3fa59ffd3e061ef75a7962fbe3cfa" title="ShortPath::calculate\l_distance_multiproc" alt="" coords="190,57,330,101"/>
+<area shape="rect" id="node20" href="$class_short_path.html#af4ddb3c9a160c273bdc99b3fb43fd58d" title="ShortPath::calculate\l_distance" alt="" coords="190,125,330,169"/>
+<area shape="rect" id="node5" href="$main_8h.html#a94d1aacfd89738f4fb4f64d66299a9a6" title="do_shortpath_calculation\l_mulitproc" alt="" coords="379,5,549,49"/>
+<area shape="rect" id="node18" href="$main_8h.html#a576a04ef8ece9b16dd85fcf0beb6fada" title="full_path_search_multi" alt="" coords="387,73,541,101"/>
+<area shape="rect" id="node7" href="$main_8h.html#a53a92fef69391d7e7e80d43fe5d9f425" title="verarbeite_eingabe" alt="" coords="1075,67,1210,95"/>
+<area shape="rect" id="node11" href="$main_8h.html#a9dfef61c7cd08e2ca856daeb7aef7790" title="do_one_run" alt="" coords="598,67,690,95"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1259,67,1309,95"/>
+<area shape="rect" id="node13" href="$main_8h.html#ad8e427b3d41b041639cb41c1e2cf2a82" title="print_run" alt="" coords="739,67,813,95"/>
+<area shape="rect" id="node15" href="$main_8h.html#a317c0a148ec0f2c18e8f003837810922" title="show_performance_test" alt="" coords="862,67,1026,95"/>
+<area shape="rect" id="node22" href="$main_8h.html#aac864b2b3fd9c1780a4d5d1ca0d2bb7c" title="do_shortpath_calculation" alt="" coords="379,125,549,153"/>
+<area shape="rect" id="node26" href="$main_8h.html#a96690a8074c88b8b91d2d2b493ada874" title="full_path_search" alt="" coords="404,177,524,205"/>
 </map>

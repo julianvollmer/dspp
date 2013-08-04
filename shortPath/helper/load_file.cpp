@@ -4,16 +4,17 @@
 /**
  * Why all these can't be in load_file.h ? 
  */
-int counter = 0;
-int from = 0;
-int to = 0;
-int weight = 0;
-int result;
-string tmp_result;
-int rownum = 0;
-vector<int> weights;
-ShortPath *spObject = new ShortPath;
+	int counter = 0;
+	int from = 0;
+	int to = 0;
+	int weight = 0;
+	int result;
+	string tmp_result;
+	int rownum = 0;
+	vector<int> weights;
+	ShortPath *spObject = new ShortPath;
 
+	
 /**
  * loads a file an writes it to the graph
  */

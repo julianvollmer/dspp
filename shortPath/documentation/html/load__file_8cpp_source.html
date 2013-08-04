@@ -110,69 +110,70 @@ $(document).ready(function(){initNavTree('load__file_8cpp_source.html','');});
 <a href="load__file_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="load__file_8h.html">load_file.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a617a47c70795bcff659815ad0efd2266">    7</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#a617a47c70795bcff659815ad0efd2266">counter</a> = 0;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a16d981023742d3bd53f1385790714190">    8</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#a16d981023742d3bd53f1385790714190">from</a> = 0;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#ac0ed249f3db34b8135fd2717bda56844">    9</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#ac0ed249f3db34b8135fd2717bda56844">to</a> = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#aa01147b1f07072d246c76dc85d69df7c">   10</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#aa01147b1f07072d246c76dc85d69df7c">weight</a> = 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a8b2e13c78efca330f06b6ddcd7464b41">   11</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#a8b2e13c78efca330f06b6ddcd7464b41">result</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">   12</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a93e8b154fe94e960d3dc355a10c3a8f7">   13</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#a93e8b154fe94e960d3dc355a10c3a8f7">rownum</a> = 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">   14</a></span>&#160;vector&lt;int&gt; <a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a2c6601c82034f436647fb14383822cd7">   15</a></span>&#160;<a class="code" href="class_short_path.html">ShortPath</a> *<a class="code" href="load__file_8cpp.html#a2c6601c82034f436647fb14383822cd7">spObject</a> = <span class="keyword">new</span> <a class="code" href="class_short_path.html">ShortPath</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a617a47c70795bcff659815ad0efd2266">    7</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#a617a47c70795bcff659815ad0efd2266">counter</a> = 0;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a16d981023742d3bd53f1385790714190">    8</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#a16d981023742d3bd53f1385790714190">from</a> = 0;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#ac0ed249f3db34b8135fd2717bda56844">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#ac0ed249f3db34b8135fd2717bda56844">to</a> = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#aa01147b1f07072d246c76dc85d69df7c">   10</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#aa01147b1f07072d246c76dc85d69df7c">weight</a> = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a8b2e13c78efca330f06b6ddcd7464b41">   11</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#a8b2e13c78efca330f06b6ddcd7464b41">result</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">   12</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a93e8b154fe94e960d3dc355a10c3a8f7">   13</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="load__file_8cpp.html#a93e8b154fe94e960d3dc355a10c3a8f7">rownum</a> = 0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">   14</a></span>&#160;    vector&lt;int&gt; <a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="load__file_8cpp.html#a2c6601c82034f436647fb14383822cd7">   15</a></span>&#160;    <a class="code" href="class_short_path.html">ShortPath</a> *<a class="code" href="load__file_8cpp.html#a2c6601c82034f436647fb14383822cd7">spObject</a> = <span class="keyword">new</span> <a class="code" href="class_short_path.html">ShortPath</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="load__file_8h.html#a8ad648b86395c683b195b15e2116148c">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="load__file_8cpp.html#a8ad648b86395c683b195b15e2116148c">load_file</a>(){</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ifstream Quelldatei;                          </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Quelldatei.open(<span class="stringliteral">&quot;in.txt&quot;</span>, ios_base::in);      </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">char</span> c;                               </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">string</span> input;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">while</span> (Quelldatei.get(c)) {           </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="load__file_8cpp.html#abbdc586b3b3f257e5b922b048fc638b2">create_nodes_from_file_char</a>(c);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    } </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="load__file_8h.html#a9befa0a6259aedaab522d46016e9bc51">   37</a></span>&#160;<a class="code" href="class_short_path.html">ShortPath</a>* <a class="code" href="load__file_8cpp.html#a9befa0a6259aedaab522d46016e9bc51">getShortPathObject</a>(){</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="load__file_8cpp.html#a2c6601c82034f436647fb14383822cd7">spObject</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="load__file_8h.html#abd51dd55a8afe9e6bedebc079cf01763">   44</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="load__file_8cpp.html#abd51dd55a8afe9e6bedebc079cf01763">validate_dataformat</a>(){</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>; <span class="comment">// ;)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="load__file_8h.html#abbdc586b3b3f257e5b922b048fc638b2">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="load__file_8cpp.html#abbdc586b3b3f257e5b922b048fc638b2">create_nodes_from_file_char</a>(<span class="keywordtype">char</span> c){</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span>(c == <span class="charliteral">&#39; &#39;</span> || c == <span class="charliteral">&#39;\n&#39;</span>){</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>.push_back(<a class="code" href="helpers_8cpp.html#a07fa49d604e024605441544ff5cbcb0e">string_to_number</a>(<a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a>));</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;\n&#39;</span>){</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="load__file_8cpp.html#a617a47c70795bcff659815ad0efd2266">counter</a> = 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>.pop_back();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="load__file_8cpp.html#a17802900d7e5bb596e72d83e21edef59">add_row</a>(<a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>.clear();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a> += c;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="load__file_8h.html#a17802900d7e5bb596e72d83e21edef59">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="load__file_8cpp.html#a17802900d7e5bb596e72d83e21edef59">add_row</a>(vector&lt;int&gt; v){</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_dijkstra.html">Dijkstra</a> d ;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    d.<a class="code" href="class_dijkstra.html#abed971366356f3ffcfbedaf1391c8d7e">set_distance_vector</a>(v);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    spObject-&gt;<a class="code" href="class_short_path.html#af65d23be9601ccf34becf9922c88c263">add_row</a>(d);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="load__file_8h.html#a8ad648b86395c683b195b15e2116148c">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="load__file_8cpp.html#a8ad648b86395c683b195b15e2116148c">load_file</a>(){</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ifstream Quelldatei;                          </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Quelldatei.open(<span class="stringliteral">&quot;in.txt&quot;</span>, ios_base::in);      </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">char</span> c;                               </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">string</span> input;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">while</span> (Quelldatei.get(c)) {           </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="load__file_8cpp.html#abbdc586b3b3f257e5b922b048fc638b2">create_nodes_from_file_char</a>(c);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    } </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="load__file_8h.html#a9befa0a6259aedaab522d46016e9bc51">   38</a></span>&#160;<a class="code" href="class_short_path.html">ShortPath</a>* <a class="code" href="load__file_8cpp.html#a9befa0a6259aedaab522d46016e9bc51">getShortPathObject</a>(){</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="load__file_8cpp.html#a2c6601c82034f436647fb14383822cd7">spObject</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="load__file_8h.html#abd51dd55a8afe9e6bedebc079cf01763">   45</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="load__file_8cpp.html#abd51dd55a8afe9e6bedebc079cf01763">validate_dataformat</a>(){</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>; <span class="comment">// ;)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="load__file_8h.html#abbdc586b3b3f257e5b922b048fc638b2">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="load__file_8cpp.html#abbdc586b3b3f257e5b922b048fc638b2">create_nodes_from_file_char</a>(<span class="keywordtype">char</span> c){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span>(c == <span class="charliteral">&#39; &#39;</span> || c == <span class="charliteral">&#39;\n&#39;</span>){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>.push_back(<a class="code" href="helpers_8cpp.html#a07fa49d604e024605441544ff5cbcb0e">string_to_number</a>(<a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a>));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;\n&#39;</span>){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="load__file_8cpp.html#a617a47c70795bcff659815ad0efd2266">counter</a> = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>.pop_back();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="load__file_8cpp.html#a17802900d7e5bb596e72d83e21edef59">add_row</a>(<a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <a class="code" href="load__file_8cpp.html#a0f02108b830b721d1f110532291ca686">weights</a>.clear();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="load__file_8cpp.html#a082623d77205715c70bf4b8c0cfe373d">tmp_result</a> += c;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="load__file_8h.html#a17802900d7e5bb596e72d83e21edef59">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="load__file_8cpp.html#a17802900d7e5bb596e72d83e21edef59">add_row</a>(vector&lt;int&gt; v){</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="class_dijkstra.html">Dijkstra</a> d ;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    d.<a class="code" href="class_dijkstra.html#abed971366356f3ffcfbedaf1391c8d7e">set_distance_vector</a>(v);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    spObject-&gt;<a class="code" href="class_short_path.html#af65d23be9601ccf34becf9922c88c263">add_row</a>(d);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d634f21e635b1ea642c8b957ecf78b4f.html">helper</a></li><li class="navelem"><a class="el" href="load__file_8cpp.html">load_file.cpp</a></li>
-    <li class="footer">Generated on Sun Jun 23 2013 21:57:54 for short Path by
+    <li class="footer">Generated on Mon Aug 5 2013 00:16:24 for short Path by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

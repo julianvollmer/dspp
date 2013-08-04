@@ -7,6 +7,7 @@ var searchData=
   ['get_5felements',['get_elements',['../class_short_path.html#abf528c510136ea8014abfdd993949a02',1,'ShortPath']]],
   ['get_5fmark',['get_mark',['../class_dijkstra.html#a1351e93ccbbfef5f0ce6dab8d4df2ac0',1,'Dijkstra']]],
   ['get_5fname',['get_name',['../class_dijkstra.html#a2673be1aaa7fbae0656239e66a855134',1,'Dijkstra']]],
+  ['get_5fnum_5fof_5fvertices',['get_num_of_vertices',['../class_short_path.html#a04ad21508536061dc0f83aafa2fe25f3',1,'ShortPath']]],
   ['get_5fposition',['get_position',['../class_dijkstra.html#ab067a351a7c993cb900f64495e49aa4c',1,'Dijkstra']]],
   ['get_5fpredecessor',['get_predecessor',['../class_dijkstra.html#ad05e5384c101f91eded657061d1d9c30',1,'Dijkstra']]],
   ['get_5fshortest_5fdistance',['get_shortest_distance',['../class_dijkstra.html#ac015491614e395f46f0c63171aef3be1',1,'Dijkstra']]],

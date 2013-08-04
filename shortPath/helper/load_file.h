@@ -17,19 +17,9 @@
 #include "../lib/Dijkstra.h"
 
 using namespace std;
-
-
 	void load_file();
 	void create_nodes_from_file_char(char c);
 	void add_row(vector<int> v);	
-
 	bool validate_dataformat();
-
 	ShortPath* getShortPathObject();
-
-
-
-
-
-
-#endif /* defined(__shortPath) */
+#endif /* defined(__load_file) */

@@ -16,6 +16,10 @@ void \hyperlink{ausgabe_8cpp_ae8c346aa92fc891022a940f2c5c75f95}{setze\-\_\-schal
 \item 
 void \hyperlink{ausgabe_8cpp_a3109f9f4c65293eb538b2697fda647c9}{schreibe\-\_\-zahl} (long zahl, ios\-\_\-base\-::fmtflags format\mbox{[}$\,$\mbox{]}, int anzahl\-\_\-formate)
 \item 
+void \hyperlink{ausgabe_8cpp_ad9369e6d8029bd00bba7b041ed0edfc8}{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-int} (int number)
+\item 
+void \hyperlink{ausgabe_8cpp_a4d7bb24e0d2df3eb7b8c30232f08e4cc}{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-double} (double number)
+\item 
 void \hyperlink{ausgabe_8cpp_af597975886c508e6ad4449837c23b61e}{schreibe\-\_\-zahl} (long zahl, ios\-\_\-base\-::fmtflags format)
 \item 
 void \hyperlink{ausgabe_8cpp_a9afeddc3a2e51a1d3c7e110fb16767cb}{schreibe\-\_\-zahl} (long zahl, streamsize feldbreite, ios\-\_\-base\-::fmtflags format\mbox{[}$\,$\mbox{]}, int anzahl\-\_\-formate)
@@ -71,8 +75,6 @@ void \hyperlink{ausgabe_8cpp_ab5931634ab2fd4e7863dd5be7d7f6b19}{schreibe\-\_\-te
 void \hyperlink{ausgabe_8cpp_a2384f3389f4ad78d1c0f96058bef3024}{schreibe\-\_\-text} (string text, streamsize feldbreite, char fuellzeichen, ios\-\_\-base\-::fmtflags format\mbox{[}$\,$\mbox{]}, int anzahl\-\_\-formate)
 \item 
 void \hyperlink{ausgabe_8cpp_aa3b21853f890838c88d047d6c2786917}{wait} ()
-\item 
-string \hyperlink{ausgabe_8cpp_a5cbb0fa0e9d3dd1f310d0e9e64f0011b}{konvertiere\-\_\-int} (int number)
 \end{DoxyCompactItemize}
 
 
@@ -86,7 +88,7 @@ string \hyperlink{ausgabe_8cpp_a5cbb0fa0e9d3dd1f310d0e9e64f0011b}{konvertiere\-\
 )}}\label{ausgabe_8cpp_a42662dc47ec6886db83f4fa886f87e32}
 Schreibt einen Header fuer das Programm. 
 
-Definition at line 289 of file ausgabe.\-cpp.
+Definition at line 309 of file ausgabe.\-cpp.
 
 
 
@@ -99,17 +101,6 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{ausgabe_8cpp_a5cbb0fa0e9d3dd1f310d0e9e64f0011b}{\index{ausgabe.\-cpp@{ausgabe.\-cpp}!konvertiere\-\_\-int@{konvertiere\-\_\-int}}
-\index{konvertiere\-\_\-int@{konvertiere\-\_\-int}!ausgabe.cpp@{ausgabe.\-cpp}}
-\subsubsection[{konvertiere\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}string konvertiere\-\_\-int (
-\begin{DoxyParamCaption}
-\item[{int}]{number}
-\end{DoxyParamCaption}
-)}}\label{ausgabe_8cpp_a5cbb0fa0e9d3dd1f310d0e9e64f0011b}
-
-
-Definition at line 390 of file ausgabe.\-cpp.
-
 \hypertarget{ausgabe_8cpp_a83c6a2f7b4a96e0c20b2119f3960022d}{\index{ausgabe.\-cpp@{ausgabe.\-cpp}!loesche\-\_\-bildschirm@{loesche\-\_\-bildschirm}}
 \index{loesche\-\_\-bildschirm@{loesche\-\_\-bildschirm}!ausgabe.cpp@{ausgabe.\-cpp}}
 \subsubsection[{loesche\-\_\-bildschirm}]{\setlength{\rightskip}{0pt plus 5cm}void loesche\-\_\-bildschirm (
@@ -119,7 +110,19 @@ Definition at line 390 of file ausgabe.\-cpp.
 )}}\label{ausgabe_8cpp_a83c6a2f7b4a96e0c20b2119f3960022d}
 Loescht den Bildschirminhalt der Konsole. 
 
-Definition at line 276 of file ausgabe.\-cpp.
+Definition at line 296 of file ausgabe.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ausgabe_8cpp_a83c6a2f7b4a96e0c20b2119f3960022d_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{ausgabe_8cpp_a5db6071f8d9d29f5e775bb27d50480a4}{\index{ausgabe.\-cpp@{ausgabe.\-cpp}!loesche\-\_\-bildschirm\-\_\-mit\-\_\-header@{loesche\-\_\-bildschirm\-\_\-mit\-\_\-header}}
 \index{loesche\-\_\-bildschirm\-\_\-mit\-\_\-header@{loesche\-\_\-bildschirm\-\_\-mit\-\_\-header}!ausgabe.cpp@{ausgabe.\-cpp}}
@@ -130,7 +133,7 @@ Definition at line 276 of file ausgabe.\-cpp.
 )}}\label{ausgabe_8cpp_a5db6071f8d9d29f5e775bb27d50480a4}
 Loescht den Bildschirm der Konsole und schreibt den Header des Programmes. 
 
-Definition at line 282 of file ausgabe.\-cpp.
+Definition at line 302 of file ausgabe.\-cpp.
 
 
 
@@ -150,6 +153,86 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=256pt]{ausgabe_8cpp_a5db6071f8d9d29f5e775bb27d50480a4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ausgabe_8cpp_a4d7bb24e0d2df3eb7b8c30232f08e4cc}{\index{ausgabe.\-cpp@{ausgabe.\-cpp}!print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-double@{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-double}}
+\index{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-double@{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-double}!ausgabe.cpp@{ausgabe.\-cpp}}
+\subsubsection[{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-double}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-double (
+\begin{DoxyParamCaption}
+\item[{double}]{number}
+\end{DoxyParamCaption}
+)}}\label{ausgabe_8cpp_a4d7bb24e0d2df3eb7b8c30232f08e4cc}
+Prints the number in the matrix. 
+\begin{DoxyParams}{Parameters}
+{\em number} & double value to print. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file ausgabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ausgabe_8cpp_a4d7bb24e0d2df3eb7b8c30232f08e4cc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ausgabe_8cpp_a4d7bb24e0d2df3eb7b8c30232f08e4cc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ausgabe_8cpp_ad9369e6d8029bd00bba7b041ed0edfc8}{\index{ausgabe.\-cpp@{ausgabe.\-cpp}!print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-int@{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-int}}
+\index{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-int@{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-int}!ausgabe.cpp@{ausgabe.\-cpp}}
+\subsubsection[{print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-number\-\_\-from\-\_\-matrix\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{int}]{number}
+\end{DoxyParamCaption}
+)}}\label{ausgabe_8cpp_ad9369e6d8029bd00bba7b041ed0edfc8}
+Prints the number in the matrix. 
+\begin{DoxyParams}{Parameters}
+{\em number} & integer value to print. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file ausgabe.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{ausgabe_8cpp_ad9369e6d8029bd00bba7b041ed0edfc8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ausgabe_8cpp_ad9369e6d8029bd00bba7b041ed0edfc8_icgraph}
 \end{center}
 \end{figure}
 
@@ -174,7 +257,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 303 of file ausgabe.\-cpp.
+Definition at line 323 of file ausgabe.\-cpp.
 
 
 
@@ -221,7 +304,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 319 of file ausgabe.\-cpp.
+Definition at line 339 of file ausgabe.\-cpp.
 
 
 
@@ -251,7 +334,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 330 of file ausgabe.\-cpp.
+Definition at line 350 of file ausgabe.\-cpp.
 
 \hypertarget{ausgabe_8cpp_aeded53f62c8030087f76c69a5e974918}{\index{ausgabe.\-cpp@{ausgabe.\-cpp}!schreibe\-\_\-text@{schreibe\-\_\-text}}
 \index{schreibe\-\_\-text@{schreibe\-\_\-text}!ausgabe.cpp@{ausgabe.\-cpp}}
@@ -273,7 +356,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 344 of file ausgabe.\-cpp.
+Definition at line 364 of file ausgabe.\-cpp.
 
 
 
@@ -309,7 +392,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 359 of file ausgabe.\-cpp.
+Definition at line 379 of file ausgabe.\-cpp.
 
 
 
@@ -348,7 +431,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 375 of file ausgabe.\-cpp.
+Definition at line 395 of file ausgabe.\-cpp.
 
 
 
@@ -396,7 +479,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -422,7 +506,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 40 of file ausgabe.\-cpp.
+Definition at line 61 of file ausgabe.\-cpp.
 
 
 
@@ -458,7 +542,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe. und schr
 \end{DoxyParams}
 
 
-Definition at line 53 of file ausgabe.\-cpp.
+Definition at line 74 of file ausgabe.\-cpp.
 
 
 
@@ -491,7 +575,7 @@ Schreibt eine Zahl mit bestimmten Foramtierungen.
 \end{DoxyParams}
 
 
-Definition at line 66 of file ausgabe.\-cpp.
+Definition at line 87 of file ausgabe.\-cpp.
 
 
 
@@ -530,7 +614,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe. und schr
 \end{DoxyParams}
 
 
-Definition at line 80 of file ausgabe.\-cpp.
+Definition at line 101 of file ausgabe.\-cpp.
 
 
 
@@ -566,7 +650,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe. und schr
 \end{DoxyParams}
 
 
-Definition at line 95 of file ausgabe.\-cpp.
+Definition at line 116 of file ausgabe.\-cpp.
 
 
 
@@ -599,7 +683,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 107 of file ausgabe.\-cpp.
+Definition at line 128 of file ausgabe.\-cpp.
 
 
 
@@ -629,7 +713,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 121 of file ausgabe.\-cpp.
+Definition at line 142 of file ausgabe.\-cpp.
 
 
 
@@ -665,7 +749,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 134 of file ausgabe.\-cpp.
+Definition at line 155 of file ausgabe.\-cpp.
 
 
 
@@ -698,7 +782,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 148 of file ausgabe.\-cpp.
+Definition at line 169 of file ausgabe.\-cpp.
 
 
 
@@ -737,7 +821,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 162 of file ausgabe.\-cpp.
+Definition at line 183 of file ausgabe.\-cpp.
 
 
 
@@ -779,7 +863,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 179 of file ausgabe.\-cpp.
+Definition at line 200 of file ausgabe.\-cpp.
 
 
 
@@ -818,7 +902,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 194 of file ausgabe.\-cpp.
+Definition at line 215 of file ausgabe.\-cpp.
 
 
 
@@ -857,7 +941,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 206 of file ausgabe.\-cpp.
+Definition at line 227 of file ausgabe.\-cpp.
 
 
 
@@ -893,7 +977,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 218 of file ausgabe.\-cpp.
+Definition at line 239 of file ausgabe.\-cpp.
 
 
 
@@ -932,7 +1016,7 @@ Setzt verschiendene Schalter zu Steuerung und Formatierung der Ausgabe und schre
 \end{DoxyParams}
 
 
-Definition at line 232 of file ausgabe.\-cpp.
+Definition at line 253 of file ausgabe.\-cpp.
 
 
 
@@ -963,7 +1047,8 @@ Definition at line 6 of file ausgabe.\-cpp.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -986,7 +1071,7 @@ Macht einene Spaltenvorschub um die Uebergebene laenge.
 \end{DoxyParams}
 
 
-Definition at line 268 of file ausgabe.\-cpp.
+Definition at line 288 of file ausgabe.\-cpp.
 
 \hypertarget{ausgabe_8cpp_aa3b21853f890838c88d047d6c2786917}{\index{ausgabe.\-cpp@{ausgabe.\-cpp}!wait@{wait}}
 \index{wait@{wait}!ausgabe.cpp@{ausgabe.\-cpp}}
@@ -997,7 +1082,7 @@ Definition at line 268 of file ausgabe.\-cpp.
 )}}\label{ausgabe_8cpp_aa3b21853f890838c88d047d6c2786917}
 Haelt das Programm an nach druecken einer beliebigen Taste wird es fortgefuehrt. 
 
-Definition at line 384 of file ausgabe.\-cpp.
+Definition at line 404 of file ausgabe.\-cpp.
 
 \hypertarget{ausgabe_8cpp_a3737ce85b2d24f69b0960cebb26bea22}{\index{ausgabe.\-cpp@{ausgabe.\-cpp}!zeige\-\_\-zahl@{zeige\-\_\-zahl}}
 \index{zeige\-\_\-zahl@{zeige\-\_\-zahl}!ausgabe.cpp@{ausgabe.\-cpp}}
@@ -1016,7 +1101,7 @@ Dient der Ausgabe einer Gleitkommazahl mit entsprechender Praezision.
 \end{DoxyParams}
 
 
-Definition at line 257 of file ausgabe.\-cpp.
+Definition at line 278 of file ausgabe.\-cpp.
 
 
 
@@ -1031,11 +1116,12 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=284pt]{ausgabe_8cpp_a3737ce85b2d24f69b0960cebb26bea22_icgraph}
+\includegraphics[width=350pt]{ausgabe_8cpp_a3737ce85b2d24f69b0960cebb26bea22_icgraph}
 \end{center}
 \end{figure}
 
@@ -1063,7 +1149,7 @@ Zeigt die Zahlen aus einem Bereich mit einem definierten abstand und schreibt ei
 \end{DoxyParams}
 
 
-Definition at line 247 of file ausgabe.\-cpp.
+Definition at line 268 of file ausgabe.\-cpp.
 
 
 

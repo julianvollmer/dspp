@@ -1,6 +1,8 @@
 #include "eingabe.h"
 
-
+/**
+ * Erfasst die Enter-Taste.
+ **/
 void erfasse_enter() {
    std::cout << "Press ENTER to continue... " << flush;
    std::cin.ignore( std::numeric_limits <std::streamsize> ::max(), '\n' );

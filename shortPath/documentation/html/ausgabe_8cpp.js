@@ -1,9 +1,10 @@
 var ausgabe_8cpp =
 [
     [ "header", "ausgabe_8cpp.html#a42662dc47ec6886db83f4fa886f87e32", null ],
-    [ "konvertiere_int", "ausgabe_8cpp.html#a5cbb0fa0e9d3dd1f310d0e9e64f0011b", null ],
     [ "loesche_bildschirm", "ausgabe_8cpp.html#a83c6a2f7b4a96e0c20b2119f3960022d", null ],
     [ "loesche_bildschirm_mit_header", "ausgabe_8cpp.html#a5db6071f8d9d29f5e775bb27d50480a4", null ],
+    [ "print_number_from_matrix_double", "ausgabe_8cpp.html#a4d7bb24e0d2df3eb7b8c30232f08e4cc", null ],
+    [ "print_number_from_matrix_int", "ausgabe_8cpp.html#ad9369e6d8029bd00bba7b041ed0edfc8", null ],
     [ "schreibe_text", "ausgabe_8cpp.html#af8892c7dec59109baad426d539524dd6", null ],
     [ "schreibe_text", "ausgabe_8cpp.html#a8124928a2d5ba8cb70d8368896ac6827", null ],
     [ "schreibe_text", "ausgabe_8cpp.html#a7b5a0354b89dacb17865e4735fea6a4f", null ],

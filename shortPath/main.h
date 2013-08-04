@@ -24,23 +24,24 @@ add `.dox` to your file patterns or `mainpage.dox` to your INPUT files.
 
 
 void verarbeite_eingabe(int weiter, ShortPath *sp);
-void boost_it();
-void set_starting_point(Dijkstra *dk);
-void test_new_dijkstra(Dijkstra *dk);
-void do_shortpath_calculation(ShortPath *sp);
-void do_shortpath_calculation_mulitproc(ShortPath *sp);
+
 void set_number_of_graphs(ShortPath *sp);
 void set_num_of_threads(ShortPath *sp);
+
 void load_graph_from_file();
-void show_test();
-void show_test(ShortPath *sp);
+
+void show_performance_test(ShortPath *sp);
+
 void full_path_search(ShortPath *sp);
 void full_path_search_multi(ShortPath *sp);
-void print_show_test_header();
+void do_shortpath_calculation(ShortPath *sp);
+void do_shortpath_calculation_mulitproc(ShortPath *sp);
 void do_one_run(ShortPath *sp);
+
 void print_run(ShortPath *sp);
 
-void print_show_test_footer();
+void print_header();
+void print_footer();
 
 double start, stop;
 double t;
