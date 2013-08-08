@@ -1,9 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1375654533 "DSPP.tex" "DSPP.pdf" "DSPP" 1375654534
+["pdflatex"] 1375966911 "DSPP.tex" "DSPP.pdf" "DSPP" 1375966912
   "./chapter/10_einleitung.tex" 1375483771 755 2f5db9567bc82932833186a12bf11725 ""
   "./chapter/20_dijkstra.tex" 1375484081 54 897dcd0e9fc760de44095b789bab5ec6 ""
-  "./chapter/25_ablaufplan.tex" 1375654533 351 75a964afe813392bee5f126c7a5b6e8b ""
+  "./chapter/25_ablaufplan.tex" 1375655123 626 697281578c7110bf47edbab8c77924d7 ""
   "./chapter/30_ui_design.tex" 1375515673 176 b8df1cd9a83a6d6ff4812a519099b3f5 ""
+  "./chapter/40_weitere_informationen.tex" 1375966908 130 aa164fc4b8a4c36f47a3f07e79af87ed ""
   "./chapter/Header.tex" 1375483842 3350 4e802b678877843887f533cbdf611fad ""
   "./chapter/abstract.tex" 1375479801 546 bb6bdecc788a4c8fbc05dc9e6a657a98 ""
   "./chapter/variablen.tex" 1339590827 1133 ed5b37286cc3cec7f81b07e79bfba717 ""
@@ -148,11 +149,11 @@
   "/usr/local/texlive/2012/texmf-dist/tex/latex/ucs/utf8x.def" 1334964138 8036 88c15f86d1cbde381b7e6ae67a0891b8 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty" 1264379145 21932 e3a9cf32ee9b853b42be14c2f25b873c ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
-  "DSPP.aux" 1375654534 2602 fb7d6f5fd896d9dc9d34f9e56bd6e34a ""
-  "DSPP.lof" 1375654534 307 290f60bc4f59cc5b479f552e10e77b0d ""
-  "DSPP.out" 1375654534 584 3687c6bd189c96eaec512a9ca66c7692 ""
-  "DSPP.tex" 1375654462 939 f0bd41cac1e50a5a7f653592717ad0d0 ""
-  "DSPP.toc" 1375654534 774 727eccab4cfe7072ab864ee07af7b0a5 ""
+  "DSPP.aux" 1375966912 3188 6457b29bb4ef90203345eb9cd17bc36c ""
+  "DSPP.lof" 1375966912 327 1a7899b470821570c431b6670140a9a8 ""
+  "DSPP.out" 1375966912 893 4312c9ca6b56a0876f72dfe3b46b72fc ""
+  "DSPP.tex" 1375966839 1014 1a50cbc020701dd7277d2e9f3fe4774d ""
+  "DSPP.toc" 1375966912 1156 4768b8c9f9483e736f219361a9565eb7 ""
   (generated)
   "DSPP.aux"
   "DSPP.pdf"

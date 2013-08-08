@@ -1,0 +1,27 @@
+%!TEX root = ../DSPP.tex
+\section{Wie läuft sein Performance Test ab}
+
+\begin{itemize}
+	\item Knoten werden zufällig erzeugt
+	\item Knotenanzahl wird um 2000 Knoten erhöht
+\end{itemize}
+
+\section{Eckdaten}
+Es gibt zu einer wahrscheinlichkeit von 0.1\% ein Verbindung zwischen 2 Punkten.
+\begin{verbatim} 
+void ShortPath::init_random_distances(){
+    ...
+	if((liefere_ganze_zufallszahl(0,1000)%1000)==0){
+	    it->add_distances_to_other(0);    
+	}
+	else{
+	        it->add_distances_to_other(liefere_ganze_zufallszahl(1,250));    
+	    }
+    ...
+} 
+
+\end{verbatim} 
+
+
+\section{Speedup-Berechnung}
+hier die Speedup-Berechnung.

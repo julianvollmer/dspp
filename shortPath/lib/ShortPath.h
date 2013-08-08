@@ -26,7 +26,7 @@ public:
 	ShortPath();
 
     int get_num_of_vertices();
-    int set_source(int src);
+    void set_source(int src);
     void initialize();
     int get_closest_unmarked_node();
     void calculate_distance();
@@ -42,7 +42,7 @@ public:
     void add_random_row();
     void print();
     void clear();
-    int set_number_of_threads(int number);
+    void set_number_of_threads(int number);
 private:
     vector<Dijkstra> elements;
     vector<int> distances;

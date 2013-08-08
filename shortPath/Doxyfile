@@ -2,9 +2,9 @@
 # Project related configuration options
 #---------------------------------------------------------------------------
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = "short Path"
+PROJECT_NAME           = "Short Path"
 PROJECT_NUMBER         = 1.0
-PROJECT_BRIEF          = "Das Programm wurde von Julian und Philip im rahmen des Faches bla bla bla"
+PROJECT_BRIEF          = ""
 PROJECT_LOGO           = "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/shortPath/other/logo.gif"
 OUTPUT_DIRECTORY       = "/Users/julianvollmer/Dropbox/Uni/Master/03_Semester/DS & PP/DSPPProjekt/shortPath/documentation"
 CREATE_SUBDIRS         = NO

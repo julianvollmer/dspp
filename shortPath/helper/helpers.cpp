@@ -52,7 +52,7 @@ int menu(){
 							"Schreibe Adjazenzmatrix auf Terminal",
 							"Schreibe Wegberechnung auf Terminal",
 							"Speichere Adjazenzmatrix",
-							"Show Main Test!",
+							"Zeige Vergleichstest",
 							"Hilfe"
 						};
 
@@ -84,9 +84,47 @@ bool parameter_ok(int argc, char *argv[]){
  */
 void help(){
 	cout << ":::ANLEITUNG:::"<<endl<<endl;
-	cout << "Das Programm berechnet den kuerzesten Weg mit hilfe von mehreren Prozessoren"<<endl;
-	cout << "Es kann ohne Parameter oder mit einem Paramter aufgerufen werden"<<endl;
-	cout << "Wird das Programm mit einem Parameter aufgerufen muss dieser eine Zahl sein"<<endl;
-	std::cout << "Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden"<<endl;
+	cout << "Das Programm berechnet den kuerzesten Weg mit hilfe von mehreren Prozessoren."<<endl;
+	cout << "Es kann ohne Parameter oder mit einem Paramter aufgerufen werden."<<endl;
+	cout << "Wird das Programm mit einem Parameter aufgerufen muss dieser eine Zahl sein."<<endl;
+	cout << "Diese Zahl gibt an, wie viele Knoten zufaellig erzeugt werden sollen."<<endl;
+	cout << "Viel Freude bei der Benutzung."<<endl;
 	erfasse_enter();
 }
+
+/**
+ * Loads the graph from a file
+ */
+void load_graph_from_file(){
+	sp->clear();
+	load_file();
+	sp = getShortPathObject();
+}
+
+/**
+ * Prints the footer of the matrix.
+ * @param number_of_seperator number of seperators needed.
+ */
+void print_footer(int number_of_seperator){
+	for (int i = 0; i < number_of_seperator; i++){
+		cout << '-';
+	}	
+	cout << endl;
+}
+
+/**
+ * Prints the header of the matrix.
+ * @param number_of_seperator number of seperators needed.
+ */
+void print_header(int number_of_seperator){
+	for (int i = 0; i < number_of_seperator; i++){
+		cout << '-';
+	}
+	cout << endl;
+	cout << "| Anzahl Knoten" << "\t| " << "Single" << "\t| " << "Multi(2)" << "\t| " << "Multi(4)" << "\t| "<<endl;
+	for (int i = 0; i < number_of_seperator; i++){
+		cout << '-';
+	}
+	cout << endl;
+}
+

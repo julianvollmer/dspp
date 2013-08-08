@@ -20,15 +20,25 @@ void ShortPath::clear(){
     this->elements.clear();
 }
 
+/**
+ * Returns the number of vertices
+ * @return number of vertices
+ */
 int ShortPath::get_num_of_vertices(){
     return num_of_vertices;
 }
-
-int ShortPath::set_source(int src){
+/**
+ * Sets the source where the algorithm starts
+ * @param  src source where the algorithm starts.
+ */
+void ShortPath::set_source(int src){
     source = src;
 }
-
-int ShortPath::set_number_of_threads(int number){
+/**
+ * Sets the number of threads
+ * @param  number number of threads
+ */
+void ShortPath::set_number_of_threads(int number){
     omp_set_num_threads(number);
 }
 
@@ -135,7 +145,7 @@ void ShortPath::init_random(){
 }
 
 /**
- * [ShortPath::init_source description]
+ * initializes the source via user interaktion.
  */
 void ShortPath::init_source(){
      source = erfasse_int(0,num_of_vertices-1,"Enter the source vertex\n");

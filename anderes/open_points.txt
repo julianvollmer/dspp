@@ -1,0 +1,26 @@
+offene Punkte!
+
+1. load_file.cpp 
+	Den Bereich in die Header auslagern, leider nicht so einfach ....
+	/**
+	 * Why all these can't be in load_file.h ? 
+	 */
+		int counter = 0;
+		int from = 0;
+		int to = 0;
+		int weight = 0;
+		int result;
+		string tmp_result;
+		int rownum = 0;
+		vector<int> weights;
+		ShortPath *spObject = new ShortPath;
+
+2. Makefile erstellen!
+	lib/ShortPath.cpp: In member function ‘void ShortPath::init_random()’:
+	lib/ShortPath.cpp:143: warning: overflow in implicit constant conversion
+	lib/ShortPath.cpp: In member function ‘int ShortPath::get_closest_unmarked_node()’:
+	lib/ShortPath.cpp:179: warning: overflow in implicit constant conversion
+	lib/ShortPath.cpp: In member function ‘void ShortPath::calculate_distance_multiproc()’:
+	lib/ShortPath.cpp:198: warning: overflow in implicit constant conversion
+	lib/ShortPath.cpp: In member function ‘void ShortPath::calculate_distance()’:
+	lib/ShortPath.cpp:224: warning: overflow in implicit constant conversion

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>short Path: helper/random.cpp Source File</title>
+<title>Short Path: helper/random.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.gif"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">short Path
+   <div id="projectname">Short Path
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Das Programm wurde von Julian und Philip im rahmen des Faches bla bla bla</div>
   </td>
  </tr>
  </tbody>
@@ -137,23 +136,23 @@ $(document).ready(function(){initNavTree('random_8cpp_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> rand() / (double(RAND_MAX)+1);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="random_8h.html#a06e20618a67c1a5b1b3c8b2a088356af">   51</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="random_8cpp.html#a06e20618a67c1a5b1b3c8b2a088356af">zufallszahl_dbl_max</a>(<span class="keywordtype">double</span> max) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="random_8cpp.html#abf028db593c155dc6753338773653372">zufallszahl_dbl</a>() * max;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="random_8h.html#ab87584b0dce9ddeb6c30f29f2d022165">   58</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="random_8cpp.html#ab87584b0dce9ddeb6c30f29f2d022165">zufallszahl_dbl_min_max</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (min &gt; max) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="random_8cpp.html#abf028db593c155dc6753338773653372">zufallszahl_dbl</a>() * (min - max) + max;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="random_8cpp.html#abf028db593c155dc6753338773653372">zufallszahl_dbl</a>() * (max - min) + min;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="random_8h.html#a06e20618a67c1a5b1b3c8b2a088356af">   56</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="random_8cpp.html#a06e20618a67c1a5b1b3c8b2a088356af">zufallszahl_dbl_max</a>(<span class="keywordtype">double</span> max) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="random_8cpp.html#abf028db593c155dc6753338773653372">zufallszahl_dbl</a>() * max;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="random_8h.html#ab87584b0dce9ddeb6c30f29f2d022165">   63</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="random_8cpp.html#ab87584b0dce9ddeb6c30f29f2d022165">zufallszahl_dbl_min_max</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (min &gt; max) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="random_8cpp.html#abf028db593c155dc6753338773653372">zufallszahl_dbl</a>() * (min - max) + max;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="random_8cpp.html#abf028db593c155dc6753338773653372">zufallszahl_dbl</a>() * (max - min) + min;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d634f21e635b1ea642c8b957ecf78b4f.html">helper</a></li><li class="navelem"><a class="el" href="random_8cpp.html">random.cpp</a></li>
-    <li class="footer">Generated on Mon Aug 5 2013 00:16:24 for short Path by
+    <li class="footer">Generated on Thu Aug 8 2013 14:36:04 for Short Path by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

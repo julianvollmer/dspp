@@ -1,8 +1,0 @@
-<map id="Dijkstra::init_random" name="Dijkstra::init_random">
-<area shape="rect" id="node3" href="$eingabe_8cpp.html#a6ed8ebda70d479be8719510ac7d31841" title="erfasse_int" alt="" coords="239,5,326,33"/>
-<area shape="rect" id="node9" href="$random_8cpp.html#a59450f41ec4c9e9061c19fc494e0e804" title="liefere_ganze_zufallszahl" alt="" coords="197,57,368,85"/>
-<area shape="rect" id="node5" href="$eingabe_8cpp.html#ad8882eee77198f558c6ec27ea26f8a18" title="erfasse_long" alt="" coords="420,5,518,33"/>
-<area shape="rect" id="node7" href="$eingabe_8h.html#a2c9d7ef296b54cce1ad3b4e0c47e43fa" title="eingabe" alt="" coords="630,5,698,33"/>
-<area shape="rect" id="node11" href="$random_8cpp.html#a97ee4d988f63d5afa24abb44c7126770" title="zufallszahl_int" alt="" coords="417,57,522,85"/>
-<area shape="rect" id="node13" href="$random_8cpp.html#ad8076fcc381dc1998e84e91356cf6349" title="initialisiere_zufallsgenerator" alt="" coords="571,57,757,85"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="lib/PathVector.h" name="lib/PathVector.h">
-<area shape="rect" id="node7" href="$_path_element_8h.html" title="PathElement.h" alt="" coords="230,83,337,111"/>
-<area shape="rect" id="node11" href="$random_8h.html" title="../helper/random.h" alt="" coords="245,169,373,197"/>
-<area shape="rect" id="node20" href="$ausgabe_8h.html" title="../helper/ausgabe.h" alt="" coords="4,169,139,197"/>
-<area shape="rect" id="node28" href="$_dijkstra_8h.html" title="Dijkstra.h" alt="" coords="758,83,833,111"/>
-<area shape="rect" id="node36" href="$eingabe_8h.html" title="../helper/eingabe.h" alt="" coords="1274,169,1405,197"/>
-<area shape="rect" id="node47" href="$helpers_8h.html" title="../helper/helpers.h" alt="" coords="399,169,527,197"/>
-</map>

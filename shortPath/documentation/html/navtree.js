@@ -1,7 +1,7 @@
 var NAVTREE =
 [
-  [ "short Path", "index.html", [
-    [ "The mainpage documentation", "index.html", null ],
+  [ "Short Path", "index.html", [
+    [ "Hallo Welt!", "index.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],

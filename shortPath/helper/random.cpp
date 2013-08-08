@@ -48,6 +48,11 @@ double zufallszahl_dbl() {
 	return rand() / (double(RAND_MAX)+1);
 }
 
+/**
+ * Gibt eine Zufallszahl im als double Wert zurueck, die groeßer ist als der übergebene Wert.
+ * @param  max minimale Zufallszahl
+ * @return     Zufallszahl
+ */
 double zufallszahl_dbl_max(double max) {
     return zufallszahl_dbl() * max;
 }

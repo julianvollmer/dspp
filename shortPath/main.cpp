@@ -19,7 +19,7 @@
  * The different solutions realized with different Framework, mainly for multiprocessor operations.
  * @param  argc Number of Arguments
  * @param  argv Arguments given
- * @return      Zero for 0k
+ * @return      Zero for Ok
  */
 int main(int argc, char *argv[]){
 	int eingabe = 0;
@@ -99,15 +99,6 @@ void verarbeite_eingabe(int weiter, ShortPath *sp){
     } 
 }
 
-/**
- * Loads the graph from a file
- */
-void load_graph_from_file(){
-	sp->clear();
-	load_file();
-	sp = getShortPathObject();
-}
-
 
 /**
  * Does the short path algorithm on the given object
@@ -149,32 +140,7 @@ void do_shortpath_calculation_mulitproc(ShortPath *sp){
     t = (double) (stop-start);
     print_number_from_matrix_double(t);
 }
-/**
- * Prints the header of the matrix.
- * @param number_of_seperator number of seperators needed.
- */
-void print_header(int number_of_seperator){
-	for (int i = 0; i < number_of_seperator; i++){
-		cout << '-';
-	}
-	cout << endl;
-	cout << "| Anzahl Knoten" << "\t| " << "Single" << "\t| " << "Multi(2)" << "\t| " << "Multi(4)" << "\t| "<<endl;
-	for (int i = 0; i < number_of_seperator; i++){
-		cout << '-';
-	}
-	cout << endl;
-}
 
-/**
- * Prints the footer of the matrix.
- * @param number_of_seperator number of seperators needed.
- */
-void print_footer(int number_of_seperator){
-	for (int i = 0; i < number_of_seperator; i++){
-		cout << '-';
-	}	
-	cout << endl;
-}
 
 /**
  * Shows up the test
@@ -184,10 +150,10 @@ void show_performance_test(ShortPath *sp){
 	loesche_bildschirm();
 	print_header(65);
 	int adder =  sp->get_num_of_vertices();
-	for(int i = 0; i < 8; i++){
+	for(int i = 0; i < 10; i++){
 		sp->init_random(adder);
 		print_run(sp);	
-		adder+=sp->get_num_of_vertices();
+		adder+=2000;
 	}
 	print_footer(65);
 	erfasse_enter();
@@ -241,7 +207,6 @@ void full_path_search(ShortPath *sp){
  */
 void full_path_search_multi(ShortPath *sp){
 	int length = sp->get_num_of_vertices();
-	
 	
     start = clock();
    	
