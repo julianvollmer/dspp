@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/Dijkstra.dir/oclDijkstra.o CMakeFiles/Dijkstra.dir/oclDijkstraKernel.o  -o Dijkstra  /usr/local/lib/libboost_program_options-mt.dylib 
